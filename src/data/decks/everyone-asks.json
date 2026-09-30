@@ -1,0 +1,975 @@
+{
+  "id": "everyone-asks",
+  "section": "everyday",
+  "icon": "question",
+  "title": "The Questions Everyone Asks",
+  "tagline": "Same questions, better answers.",
+  "description": "\"Where are you from?\" \"What do you do?\" \"Is Nepal safe?\" You'll hear these a thousand times. Learn answers that are honest, a little funny, and easy to reply to.",
+  "vibe": [
+    {
+      "id": "ea-vibe-01",
+      "setting": "Cafe, first minute of a chat",
+      "scenario": "A traveller asks you, \"So where are you from?\"",
+      "options": [
+        {
+          "text": "Right here — born two streets from the lake. I'm the souvenir you can't take home.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "Nepal. Obviously.",
+          "grade": "miss",
+          "tone": "Dismissive"
+        },
+        {
+          "text": "I'm from Pokhara. I was born here and I grew up here, and my family is also from here.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Answer + a hook",
+      "why": "A plain fact plus one playful detail gives them something to laugh at and something to ask about."
+    },
+    {
+      "id": "ea-vibe-02",
+      "setting": "Rooftop bar",
+      "scenario": "Someone asks, \"What do you do?\"",
+      "options": [
+        {
+          "text": "I work in tourism.",
+          "grade": "okay",
+          "tone": "Plain"
+        },
+        {
+          "text": "Why do you want to know? That's a bit personal, no?",
+          "grade": "miss",
+          "tone": "Defensive"
+        },
+        {
+          "text": "Officially, tourism. Unofficially, I'm the guy who knows where the best momos are.",
+          "grade": "best",
+          "tone": "Playful"
+        }
+      ],
+      "pattern": "Official + unofficial",
+      "why": "The job answers the question. The \"unofficial\" part shows who you are and gives them an easy next question."
+    },
+    {
+      "id": "ea-vibe-03",
+      "setting": "Hostel common room",
+      "scenario": "A first-time solo traveller asks seriously, \"Is Nepal safe?\"",
+      "options": [
+        {
+          "text": "Totally safe! Nothing ever happens here, you can do anything, go anywhere, anytime, no problem at all!",
+          "grade": "miss",
+          "tone": "Over-promising"
+        },
+        {
+          "text": "Generally, yes — people here look out for visitors. Use normal sense at night, and watch the traffic more than the people.",
+          "grade": "best",
+          "tone": "Honest reassurance"
+        },
+        {
+          "text": "Yes, very safe.",
+          "grade": "okay",
+          "tone": "Brief"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "A serious question deserves a real answer. Honest and reassuring beats a promise you can't keep."
+    },
+    {
+      "id": "ea-vibe-04",
+      "setting": "Trekking shop",
+      "scenario": "A tourist grins: \"Have you ever climbed Everest?\"",
+      "options": [
+        {
+          "text": "Only in my dreams — and even there I needed oxygen.",
+          "grade": "best",
+          "tone": "Self-deprecating"
+        },
+        {
+          "text": "No, I haven't.",
+          "grade": "okay",
+          "tone": "Plain"
+        },
+        {
+          "text": "No. Not every Nepali climbs Everest, you know. That's a stereotype, and honestly it's a bit annoying.",
+          "grade": "miss",
+          "tone": "Irritated"
+        }
+      ],
+      "pattern": "Play with the stereotype",
+      "why": "They're not being rude, just curious. A joke keeps it warm; a lecture makes them regret asking."
+    },
+    {
+      "id": "ea-vibe-05",
+      "setting": "Cafe",
+      "scenario": "A traveller asks, \"What's your favourite place in Nepal?\"",
+      "options": [
+        {
+          "text": "Everywhere is nice. I don't really have one.",
+          "grade": "miss",
+          "tone": "Empty"
+        },
+        {
+          "text": "A tiny teahouse above Ghandruk where the owner sings while she cooks. The mountains are a bonus.",
+          "grade": "best",
+          "tone": "Specific"
+        },
+        {
+          "text": "Pokhara, but also Kathmandu, and Chitwan, and Mustang, and Ilam… there are so many, it's hard to choose.",
+          "grade": "okay",
+          "tone": "Listing"
+        }
+      ],
+      "pattern": "Be specific",
+      "why": "One small, real detail makes your answer a story. Use your own real place — the specific detail is what matters."
+    },
+    {
+      "id": "ea-vibe-06",
+      "setting": "Bus",
+      "scenario": "A traveller asks, \"Do you speak Hindi?\"",
+      "options": [
+        {
+          "text": "Enough to follow a Bollywood film and guess the villain early. Nepali is my first language, though.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "Nepali and Hindi are totally different languages, you know. We're not India.",
+          "grade": "miss",
+          "tone": "Defensive"
+        },
+        {
+          "text": "A little.",
+          "grade": "okay",
+          "tone": "Brief"
+        }
+      ],
+      "pattern": "Answer + a picture",
+      "why": "You answered honestly, cleared up the mix-up gently, and gave them a smile."
+    },
+    {
+      "id": "ea-vibe-07",
+      "setting": "Guesthouse dinner",
+      "scenario": "An older traveller asks casually, \"How old are you?\"",
+      "options": [
+        {
+          "text": "That's a rude question.",
+          "grade": "miss",
+          "tone": "Offended"
+        },
+        {
+          "text": "Old enough to know the best momo shop, young enough to still eat twenty.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "I'm twenty-eight. My birthday is in March, so almost twenty-nine, actually.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Dodge with a smile",
+      "why": "You can answer or dodge, but do it warmly. In many cultures this question is just friendly."
+    },
+    {
+      "id": "ea-vibe-08",
+      "setting": "Village homestay",
+      "scenario": "A traveller asks, \"Are you married?\"",
+      "options": [
+        {
+          "text": "Why, are you interested?",
+          "grade": "miss",
+          "tone": "Too forward"
+        },
+        {
+          "text": "No, I'm not married. Not yet. Maybe in a few years, I don't know, we'll see what happens.",
+          "grade": "okay",
+          "tone": "Plain"
+        },
+        {
+          "text": "Not yet. My mother reminds me every day, so please don't join her team.",
+          "grade": "best",
+          "tone": "Warm joke"
+        }
+      ],
+      "pattern": "Share a little",
+      "why": "A small, true detail about your family makes you human and funny. Flirting back at a general question is a gamble."
+    },
+    {
+      "id": "ea-vibe-09",
+      "setting": "Street food stall",
+      "scenario": "A traveller asks, \"What should I eat in Nepal?\"",
+      "options": [
+        {
+          "text": "Try dal bhat and momo.",
+          "grade": "okay",
+          "tone": "Useful"
+        },
+        {
+          "text": "Dal bhat for power, momos for joy, and sel roti if you catch a festival. In that order.",
+          "grade": "best",
+          "tone": "Playful list"
+        },
+        {
+          "text": "Whatever. Everything here is spicy anyway, so it doesn't really matter what you order.",
+          "grade": "miss",
+          "tone": "Dismissive"
+        }
+      ],
+      "pattern": "Rule of three",
+      "why": "Three items, each with a reason, is a rhythm people remember. It sounds like advice from a friend."
+    },
+    {
+      "id": "ea-vibe-10",
+      "setting": "Temple entrance",
+      "scenario": "A new arrival asks, \"Why does everyone say 'namaste' to me?\"",
+      "options": [
+        {
+          "text": "Because you're a tourist.",
+          "grade": "miss",
+          "tone": "Confusing"
+        },
+        {
+          "text": "It means hello. You can say it anytime — morning, afternoon, evening. It's like \"hi\", but for everything.",
+          "grade": "okay",
+          "tone": "Explaining"
+        },
+        {
+          "text": "It's hello with extra respect. Say it back with your hands together and watch people's faces light up.",
+          "grade": "best",
+          "tone": "Warm"
+        }
+      ],
+      "pattern": "Explain + invite them to try",
+      "why": "You explained it and gave them a small action. Now they'll try it, and it'll work."
+    },
+    {
+      "id": "ea-vibe-11",
+      "setting": "Cafe",
+      "scenario": "A traveller asks, \"Do you like living here?\"",
+      "options": [
+        {
+          "text": "No, I want to leave. There are no jobs, nothing works, everyone my age wants to go abroad.",
+          "grade": "miss",
+          "tone": "Too heavy"
+        },
+        {
+          "text": "Most days, yes. The traffic, no. The view from my window, always.",
+          "grade": "best",
+          "tone": "Honest + specific"
+        },
+        {
+          "text": "Yes, I like it.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Honest in three beats",
+      "why": "Real life has good and bad. Three short beats show both, and end on the good."
+    },
+    {
+      "id": "ea-vibe-12",
+      "setting": "Hostel",
+      "scenario": "A traveller asks, \"Can you recommend a trekking guide?\"",
+      "options": [
+        {
+          "text": "Me! I'm the best. Special price for you, we can go tomorrow, I promise you won't regret it!",
+          "grade": "miss",
+          "tone": "Hard sell"
+        },
+        {
+          "text": "I can give you two names I trust. Meet both, and pick the one who laughs at your jokes — you'll be together for ten days.",
+          "grade": "best",
+          "tone": "Trustworthy"
+        },
+        {
+          "text": "Yes, I know a guide.",
+          "grade": "okay",
+          "tone": "Vague"
+        }
+      ],
+      "pattern": "Advice, not a sales pitch",
+      "why": "Giving them a choice builds trust. People remember the local who helped, not the one who pushed."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "ea-yes-01",
+      "prompt": "Where are you from?",
+      "cards": [
+        {
+          "text": "Nepal.",
+          "keepsGoing": false,
+          "why": "They already guessed that."
+        },
+        {
+          "text": "Pokhara, born and raised. What about you — where's home, and do you miss it yet?",
+          "keepsGoing": true,
+          "why": "Answers, then asks two easy questions back."
+        }
+      ],
+      "pattern": "Answer + ask back"
+    },
+    {
+      "id": "ea-yes-02",
+      "prompt": "Do you get tired of tourists?",
+      "cards": [
+        {
+          "text": "Only the ones who skip the momos. You're safe so far — what have you tried?",
+          "keepsGoing": true,
+          "why": "A friendly joke that includes them, then a question."
+        },
+        {
+          "text": "Sometimes, yes.",
+          "keepsGoing": false,
+          "why": "Honest, but now they feel like a burden."
+        }
+      ],
+      "pattern": "Joke + include them"
+    },
+    {
+      "id": "ea-yes-03",
+      "prompt": "Have you ever been abroad?",
+      "cards": [
+        {
+          "text": "No, visas are hard for us.",
+          "keepsGoing": false,
+          "why": "True and important, but it ends the chat on a low note."
+        },
+        {
+          "text": "Not yet — so tell me about yours. What's one thing I'd find really weird there?",
+          "keepsGoing": true,
+          "why": "Turns it into a fun question about their world."
+        }
+      ],
+      "pattern": "Turn it to their world"
+    },
+    {
+      "id": "ea-yes-04",
+      "prompt": "What's the best time to visit Nepal?",
+      "cards": [
+        {
+          "text": "October.",
+          "keepsGoing": false,
+          "why": "Correct, and complete, and over."
+        },
+        {
+          "text": "Autumn for clear mountains, spring for flowers. Honestly, whenever you're here is the best time. How long are you staying?",
+          "keepsGoing": true,
+          "why": "Useful, warm, and a question to keep it going."
+        }
+      ],
+      "pattern": "Answer + compliment + ask"
+    },
+    {
+      "id": "ea-yes-05",
+      "prompt": "Is it rude to eat with my left hand?",
+      "cards": [
+        {
+          "text": "Yes, don't do that.",
+          "keepsGoing": false,
+          "why": "Makes them nervous and gives no help."
+        },
+        {
+          "text": "Traditionally the right hand is for eating, but people will forgive you. Want to try dal bhat the local way?",
+          "keepsGoing": true,
+          "why": "Honest, relaxed, and an invitation to learn."
+        }
+      ],
+      "pattern": "Reassure + invite"
+    },
+    {
+      "id": "ea-yes-06",
+      "prompt": "What do Nepali people do for fun?",
+      "cards": [
+        {
+          "text": "Same as everyone.",
+          "keepsGoing": false,
+          "why": "True, and completely boring."
+        },
+        {
+          "text": "Tea, cards, gossip, and more tea. Want to see a real Nepali card game? Warning: we get loud.",
+          "keepsGoing": true,
+          "why": "A funny list, then a real invitation."
+        },
+        {
+          "text": "I don't know, many things.",
+          "keepsGoing": false,
+          "why": "Nothing for them to hold on to."
+        }
+      ],
+      "pattern": "Funny list + invitation"
+    },
+    {
+      "id": "ea-yes-07",
+      "prompt": "Why is the music on the buses so loud?",
+      "cards": [
+        {
+          "text": "It keeps the driver awake and the passengers entertained. By hour three you'll know every song. Got a favourite yet?",
+          "keepsGoing": true,
+          "why": "A funny explanation and a question they'll laugh at."
+        },
+        {
+          "text": "I don't know, they just do.",
+          "keepsGoing": false,
+          "why": "No answer and no fun."
+        }
+      ],
+      "pattern": "Explain with a smile"
+    },
+    {
+      "id": "ea-yes-08",
+      "prompt": "How do you say 'delicious' in Nepali?",
+      "cards": [
+        {
+          "text": "Mitho.",
+          "keepsGoing": false,
+          "why": "Correct, but you stopped at the dictionary."
+        },
+        {
+          "text": "\"Mitho!\" Say it to the cook and you might get a second plate. Try it on me first — say it like you mean it.",
+          "keepsGoing": true,
+          "why": "Teaches the word, gives a reason to use it, and invites them to practise."
+        }
+      ],
+      "pattern": "Teach + make it a game"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "ea-up-01",
+      "clunky": "I am, um, from Nepal, from Pokhara, here only, like.",
+      "tiles": [
+        "I'm from Pokhara —",
+        "born",
+        "two streets",
+        "from the lake."
+      ],
+      "distractors": [
+        "um",
+        "here only",
+        "like"
+      ],
+      "answers": [
+        [
+          "I'm from Pokhara —",
+          "born",
+          "two streets",
+          "from the lake."
+        ]
+      ],
+      "why": "One place, one detail. The detail is what makes them ask more."
+    },
+    {
+      "id": "ea-up-02",
+      "clunky": "I work in, like, tourism, so, many things, guiding, some cafe, like that.",
+      "tiles": [
+        "I work in tourism —",
+        "guiding in the season,",
+        "coffee",
+        "the rest of the year."
+      ],
+      "distractors": [
+        "like",
+        "many things",
+        "like that"
+      ],
+      "answers": [
+        [
+          "I work in tourism —",
+          "guiding in the season,",
+          "coffee",
+          "the rest of the year."
+        ]
+      ],
+      "why": "Give your job a shape: what you do, and when. It sounds organised and interesting."
+    },
+    {
+      "id": "ea-up-03",
+      "clunky": "Nepal is safe, very safe, no problem, very very safe.",
+      "tiles": [
+        "Nepal is",
+        "very safe for travellers —",
+        "just watch",
+        "the traffic."
+      ],
+      "distractors": [
+        "no problem",
+        "very very",
+        "safe, very safe"
+      ],
+      "answers": [
+        [
+          "Nepal is",
+          "very safe for travellers —",
+          "just watch",
+          "the traffic."
+        ]
+      ],
+      "why": "Say it once, then add one honest detail. The detail makes the reassurance believable."
+    },
+    {
+      "id": "ea-up-04",
+      "clunky": "The best time is, maybe, October, November, because the weather is, like, clear.",
+      "tiles": [
+        "Come in October",
+        "or November —",
+        "the sky is clear",
+        "and the mountains show off."
+      ],
+      "distractors": [
+        "maybe",
+        "like",
+        "because the weather is"
+      ],
+      "answers": [
+        [
+          "Come in October",
+          "or November —",
+          "the sky is clear",
+          "and the mountains show off."
+        ]
+      ],
+      "why": "Start with the answer as an invitation (\"Come in…\"), then give the reason as a picture."
+    },
+    {
+      "id": "ea-up-05",
+      "clunky": "I don't know, many foods are good, dal bhat also, momo also.",
+      "tiles": [
+        "Start with momos,",
+        "then",
+        "try dal bhat",
+        "for real power."
+      ],
+      "distractors": [
+        "I don't know",
+        "also",
+        "many foods are good"
+      ],
+      "answers": [
+        [
+          "Start with momos,",
+          "then",
+          "try dal bhat",
+          "for real power."
+        ]
+      ],
+      "why": "An order (\"start with… then…\") sounds like expert advice."
+    },
+    {
+      "id": "ea-up-06",
+      "clunky": "No, I did not climb Everest, it is very expensive and very difficult.",
+      "tiles": [
+        "Not yet —",
+        "I'm saving up",
+        "for the oxygen",
+        "and the courage."
+      ],
+      "distractors": [
+        "very expensive",
+        "it is",
+        "very difficult"
+      ],
+      "answers": [
+        [
+          "Not yet —",
+          "I'm saving up",
+          "for the oxygen",
+          "and the courage."
+        ]
+      ],
+      "why": "\"Not yet\" is more fun than \"no\". The ending turns a fact into a joke."
+    },
+    {
+      "id": "ea-up-07",
+      "clunky": "Yes, I like living here, it is good, nice, peaceful, good.",
+      "tiles": [
+        "I love it here —",
+        "slow mornings,",
+        "big mountains,",
+        "good people."
+      ],
+      "distractors": [
+        "it is good",
+        "nice",
+        "peaceful, good"
+      ],
+      "answers": [
+        [
+          "I love it here —",
+          "slow mornings,",
+          "big mountains,",
+          "good people."
+        ]
+      ],
+      "why": "Three short pictures in a row have rhythm. Much better than repeating \"good\"."
+    },
+    {
+      "id": "ea-up-08",
+      "clunky": "Namaste means, like, hello, but also, um, respect, something like that.",
+      "tiles": [
+        "Namaste",
+        "is hello",
+        "with a little",
+        "bow of respect."
+      ],
+      "distractors": [
+        "like",
+        "um",
+        "something like that"
+      ],
+      "answers": [
+        [
+          "Namaste",
+          "is hello",
+          "with a little",
+          "bow of respect."
+        ]
+      ],
+      "why": "One clean definition. No hedging needed — you know this better than they do."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "ea-drop-01",
+      "fact": "Dal bhat — rice, lentil soup, vegetables and pickle — is Nepal's everyday meal. Teahouses on trekking routes usually give free refills.",
+      "source": "Nepal Tourism Board; common teahouse practice on trekking routes",
+      "prompt": "A trekker asks, \"Why does everyone here eat dal bhat every day?\"",
+      "options": [
+        {
+          "text": "Because it's cheap and people don't have money for other food.",
+          "grade": "miss",
+          "why": "Reduces a much-loved meal to poverty. Not the full story, and not kind."
+        },
+        {
+          "text": "Because it's the only meal with free refills and its own slogan — \"dal bhat power, 24 hour\". Try it on day one of the trek.",
+          "grade": "best",
+          "why": "Fun, true, and it makes them want to try it."
+        },
+        {
+          "text": "Dal bhat is the national everyday meal, and refills are usually free.",
+          "grade": "okay",
+          "why": "Accurate, a bit like a guidebook."
+        }
+      ],
+      "pattern": "Fact + slogan"
+    },
+    {
+      "id": "ea-drop-02",
+      "fact": "\"Namaste\" comes from Sanskrit and means roughly \"I bow to you\".",
+      "source": "Encyclopaedia Britannica, \"namaste\"",
+      "prompt": "A traveller asks, \"What does namaste actually mean?\"",
+      "options": [
+        {
+          "text": "It's just hello, nothing special.",
+          "grade": "miss",
+          "why": "Sells short something beautiful."
+        },
+        {
+          "text": "It means \"I bow to you\".",
+          "grade": "okay",
+          "why": "Correct, but it stops before the good part."
+        },
+        {
+          "text": "Roughly \"I bow to you\". So every time you say it, you're being quietly very polite — and people notice.",
+          "grade": "best",
+          "why": "Meaning plus why it matters to them."
+        }
+      ],
+      "pattern": "Meaning + why it matters"
+    },
+    {
+      "id": "ea-drop-03",
+      "fact": "October and November usually have the clearest mountain views in Nepal, after the monsoon clears the air. Spring is the second-best season.",
+      "source": "Nepal Tourism Board (seasonal travel advice)",
+      "prompt": "A traveller asks, \"When's the best time to see the mountains?\"",
+      "options": [
+        {
+          "text": "Anytime. It doesn't matter.",
+          "grade": "miss",
+          "why": "It really does matter, and they asked you for a reason."
+        },
+        {
+          "text": "October and November — the monsoon washes the sky clean. Spring comes second, with rhododendrons as the prize.",
+          "grade": "best",
+          "why": "Clear answer, a picture, and a bonus tip."
+        },
+        {
+          "text": "October and November are usually the best months, because the monsoon rain is finished and the air is clean, so the views are clear.",
+          "grade": "okay",
+          "why": "Correct and complete, but long and flat — no picture, no bonus."
+        }
+      ],
+      "pattern": "Answer + picture + bonus"
+    },
+    {
+      "id": "ea-drop-04",
+      "fact": "Nepali is written in the Devanagari script, the same alphabet used for Hindi.",
+      "source": "Encyclopaedia Britannica, \"Nepali language\"",
+      "prompt": "A traveller points at a shop sign: \"Is that Hindi?\"",
+      "options": [
+        {
+          "text": "Same alphabet, different language. It's Nepali — like Spanish and Italian sharing one alphabet.",
+          "grade": "best",
+          "why": "Corrects gently with a comparison they understand."
+        },
+        {
+          "text": "No! It's Nepali. Everyone mixes that up and it's so annoying.",
+          "grade": "miss",
+          "why": "Makes them feel stupid for a normal mistake."
+        },
+        {
+          "text": "No, it's Nepali, written in the Devanagari script.",
+          "grade": "okay",
+          "why": "Correct, but \"Devanagari\" alone won't help them."
+        }
+      ],
+      "pattern": "Correct with a comparison"
+    },
+    {
+      "id": "ea-drop-05",
+      "fact": "Nepal's 2021 census counted about 29 million people.",
+      "source": "National Statistics Office, Nepal, \"National Population and Housing Census 2021\"",
+      "prompt": "A traveller asks, \"How many people live in Nepal?\"",
+      "options": [
+        {
+          "text": "A lot.",
+          "grade": "miss",
+          "why": "You could have been interesting here."
+        },
+        {
+          "text": "About 29 million at the last census — and every one of them has an opinion on the best momo shop.",
+          "grade": "best",
+          "why": "The number, plus a joke that makes it human."
+        },
+        {
+          "text": "About 29 million people, according to the national census in 2021. Most of them live in the Terai and the hills.",
+          "grade": "okay",
+          "why": "Accurate, but lots of information and no fun."
+        }
+      ],
+      "pattern": "Number + a human joke"
+    },
+    {
+      "id": "ea-drop-06",
+      "fact": "In Nepal it's polite to give and receive money, food and gifts with your right hand, or with both hands for extra respect.",
+      "source": "Nepal Tourism Board (visitor etiquette advice)",
+      "prompt": "A traveller hands money to an old shopkeeper with their left hand. The shopkeeper frowns a little.",
+      "options": [
+        {
+          "text": "You just insulted him.",
+          "grade": "miss",
+          "why": "Dramatic and embarrassing. It won't help next time."
+        },
+        {
+          "text": "Quick local tip: give money with your right hand — or both hands for extra respect. Watch the smiles change.",
+          "grade": "best",
+          "why": "Quiet, useful, and it promises a nice result."
+        },
+        {
+          "text": "In Nepal you should always use your right hand to give money, because the left hand is traditionally seen as unclean here.",
+          "grade": "okay",
+          "why": "Helpful, but loud and a bit embarrassing for them in front of the shopkeeper."
+        }
+      ],
+      "pattern": "Quiet tip"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "ea-word-01",
+      "sentence": "My job is very interesting.",
+      "target": "very interesting",
+      "options": [
+        {
+          "text": "fascinating",
+          "grade": "best",
+          "why": "Strong and common. It makes people curious."
+        },
+        {
+          "text": "riveting",
+          "grade": "okay",
+          "why": "Good word, but less common in speech."
+        },
+        {
+          "text": "okay",
+          "grade": "miss",
+          "why": "Now it sounds boring."
+        }
+      ],
+      "meaning": "Extremely interesting.",
+      "example": "Talking to people from forty countries a week is fascinating."
+    },
+    {
+      "id": "ea-word-02",
+      "sentence": "Pokhara is a very relaxing place.",
+      "target": "very relaxing",
+      "options": [
+        {
+          "text": "serene",
+          "grade": "okay",
+          "why": "Beautiful but a little formal."
+        },
+        {
+          "text": "boring",
+          "grade": "miss",
+          "why": "Relaxing is not the same as boring."
+        },
+        {
+          "text": "laid-back",
+          "grade": "best",
+          "why": "Casual, friendly, and exactly the vibe."
+        }
+      ],
+      "meaning": "Relaxed and easy-going.",
+      "example": "Lakeside has a laid-back feel, even in high season."
+    },
+    {
+      "id": "ea-word-03",
+      "sentence": "The people in my village are very friendly.",
+      "target": "very friendly",
+      "options": [
+        {
+          "text": "so welcoming",
+          "grade": "best",
+          "why": "Says they open their homes, not just smile."
+        },
+        {
+          "text": "nice",
+          "grade": "miss",
+          "why": "Weaker than \"very friendly\"."
+        },
+        {
+          "text": "hospitable",
+          "grade": "okay",
+          "why": "Correct, but a bit formal for chat."
+        }
+      ],
+      "meaning": "Making you feel at home right away.",
+      "example": "The family at the homestay was so welcoming."
+    },
+    {
+      "id": "ea-word-04",
+      "sentence": "Dal bhat gives you a lot of energy.",
+      "target": "gives you a lot of energy",
+      "options": [
+        {
+          "text": "is tasty",
+          "grade": "miss",
+          "why": "True, but a different point."
+        },
+        {
+          "text": "keeps you going all day",
+          "grade": "best",
+          "why": "Everyday English that paints a picture."
+        },
+        {
+          "text": "is extraordinarily invigorating",
+          "grade": "okay",
+          "why": "Sounds like an advert for an energy drink."
+        }
+      ],
+      "meaning": "Gives you energy for a long time.",
+      "example": "A strong tea at six keeps me going till noon."
+    },
+    {
+      "id": "ea-word-05",
+      "sentence": "Kathmandu is very crowded and busy.",
+      "target": "very crowded and busy",
+      "options": [
+        {
+          "text": "chaotic in a fun way",
+          "grade": "best",
+          "why": "Honest and positive at the same time."
+        },
+        {
+          "text": "quiet",
+          "grade": "miss",
+          "why": "The opposite."
+        },
+        {
+          "text": "frenetic and tumultuous",
+          "grade": "okay",
+          "why": "Correct, but hard words that many travellers won't know."
+        }
+      ],
+      "meaning": "Very busy and a bit crazy, but enjoyable.",
+      "example": "Asan market is chaotic in a fun way."
+    },
+    {
+      "id": "ea-word-06",
+      "sentence": "In July it rains very heavily here.",
+      "target": "rains very heavily",
+      "options": [
+        {
+          "text": "drizzles",
+          "grade": "miss",
+          "why": "Means light rain. Wrong direction."
+        },
+        {
+          "text": "precipitates heavily",
+          "grade": "okay",
+          "why": "Weather-report English, not conversation."
+        },
+        {
+          "text": "pours",
+          "grade": "best",
+          "why": "One short word. Everyone understands."
+        }
+      ],
+      "meaning": "Rains very hard.",
+      "example": "It pours every afternoon in the monsoon."
+    },
+    {
+      "id": "ea-word-07",
+      "sentence": "Everest is a very famous mountain.",
+      "target": "very famous",
+      "options": [
+        {
+          "text": "renowned",
+          "grade": "okay",
+          "why": "Correct, a bit formal."
+        },
+        {
+          "text": "legendary",
+          "grade": "best",
+          "why": "Famous plus stories. It fits Everest."
+        },
+        {
+          "text": "known",
+          "grade": "miss",
+          "why": "Weaker than famous."
+        }
+      ],
+      "meaning": "Very famous, with stories told about it.",
+      "example": "The momos at that little shop are legendary."
+    },
+    {
+      "id": "ea-word-08",
+      "sentence": "I was very surprised when I saw the price.",
+      "target": "very surprised",
+      "options": [
+        {
+          "text": "shocked",
+          "grade": "best",
+          "why": "Clear, strong and common."
+        },
+        {
+          "text": "interested",
+          "grade": "miss",
+          "why": "A different feeling."
+        },
+        {
+          "text": "flabbergasted",
+          "grade": "okay",
+          "why": "Fun word, but many learners won't know it."
+        }
+      ],
+      "meaning": "Very surprised, often in a bad way.",
+      "example": "I was shocked at how cheap the fruit was."
+    }
+  ]
+}

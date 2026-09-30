@@ -4,6 +4,8 @@ import type { Result } from '../lib/srs'
 import { Button } from '../components/Button'
 import { PatternChip } from '../components/GradeBadge'
 import { useHotkeys } from '../lib/useHotkeys'
+import { useProgress, type SavedLine } from '../store/progress'
+import { StarIcon } from '../components/icons'
 
 const headline: Record<Result | 'timeout', { text: string; cls: string }> = {
   best: { text: 'Nailed it', cls: 'bg-good-soft text-good' },
@@ -18,6 +20,7 @@ export function Feedback({
   xp,
   pattern,
   why,
+  save,
   onNext,
   children,
 }: {
@@ -26,6 +29,8 @@ export function Feedback({
   xp: number
   pattern?: string
   why?: string
+  /** The model line for this item, offered for the learner's phrasebook. */
+  save?: SavedLine
   onNext: () => void
   children?: ReactNode
 }) {
@@ -53,9 +58,31 @@ export function Feedback({
       )}
       {why && <p className="text-[15px] leading-relaxed text-ink">{why}</p>}
       {children}
+      {save && <SaveLineButton line={save} />}
       <Button autoFocus onClick={onNext} className="w-full">
         Continue
       </Button>
     </motion.section>
+  )
+}
+
+export function SaveLineButton({ line }: { line: SavedLine }) {
+  const saved = useProgress((s) => s.saved.some((l) => l.text === line.text))
+  const toggle = useProgress((s) => s.toggleSaved)
+  return (
+    <button
+      type="button"
+      onClick={() => toggle(line)}
+      aria-pressed={saved}
+      className={`flex items-start gap-3 rounded-2xl border p-3 text-left text-sm transition ${
+        saved ? 'border-marigold bg-meh-soft' : 'border-line bg-surface hover:border-marigold'
+      }`}
+    >
+      <StarIcon className={`mt-0.5 size-5 shrink-0 ${saved ? 'text-marigold' : 'text-muted'}`} />
+      <span>
+        <span className="block font-semibold">{saved ? 'Saved to your lines' : 'Save this line'}</span>
+        <span className="block text-muted">“{line.text}”</span>
+      </span>
+    </button>
   )
 }

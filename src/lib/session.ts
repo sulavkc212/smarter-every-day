@@ -38,12 +38,34 @@ export function mastery(items: SessionItem[], progress: ProgressMap): number {
   return items.filter((s) => isMastered(progress[s.item.id])).length / items.length
 }
 
-/** The first deck is always open; each later deck opens when the one before it is mastered enough. */
+/**
+ * The first deck of every section is always open. Each later deck opens when the
+ * deck before it in the same section is mastered enough.
+ */
 export function unlockedDeckIds(ds: Deck[], progress: ProgressMap): Set<string> {
   const open = new Set<string>()
-  for (const [i, d] of ds.entries()) {
-    if (i === 0 || mastery(deckItems(ds[i - 1]), progress) >= UNLOCK_THRESHOLD) open.add(d.id)
-    else break
+  const blocked = new Set<string>()
+  const previous = new Map<string, Deck>()
+  for (const d of ds) {
+    const prev = previous.get(d.section)
+    previous.set(d.section, d)
+    if (blocked.has(d.section)) continue
+    if (!prev || mastery(deckItems(prev), progress) >= UNLOCK_THRESHOLD) open.add(d.id)
+    else blocked.add(d.section)
   }
   return open
+}
+
+/** The deck a learner should play next: the least-mastered open deck, preferring Everyday Talk. */
+export function nextUpDeck(ds: Deck[], progress: ProgressMap): Deck | undefined {
+  const open = unlockedDeckIds(ds, progress)
+  const candidates = ds.filter((d) => open.has(d.id))
+  const unfinished = candidates.filter((d) => mastery(deckItems(d), progress) < UNLOCK_THRESHOLD)
+  return (unfinished.length > 0 ? unfinished : candidates)[0]
+}
+
+/** Pool for the Daily 10: everything in the open decks. `buildSession` puts due reviews first. */
+export function dailyPool(ds: Deck[], progress: ProgressMap): SessionItem[] {
+  const open = unlockedDeckIds(ds, progress)
+  return ds.filter((d) => open.has(d.id)).flatMap((d) => deckItems(d))
 }

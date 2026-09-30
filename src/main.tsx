@@ -1,24 +1,30 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createHashRouter, RouterProvider } from 'react-router'
+import { createHashRouter, Navigate, RouterProvider } from 'react-router'
 import './index.css'
 import { Layout } from './components/Layout'
-import { Home } from './pages/Home'
+import { Today } from './pages/Today'
+import { Explore } from './pages/Explore'
+import { ReviewPage } from './pages/ReviewPage'
+import { Me } from './pages/Me'
 import { DeckPage } from './pages/DeckPage'
-import { Play, Review } from './pages/Play'
-import { Settings } from './pages/Settings'
+import { Daily, Play, Review } from './pages/Play'
 
 // Hash routing keeps the app working on any static host with no rewrite rules.
 const router = createHashRouter([
   {
     element: <Layout />,
     children: [
-      { path: '/', element: <Home /> },
+      { path: '/', element: <Today /> },
+      { path: '/explore', element: <Explore /> },
+      { path: '/review', element: <ReviewPage /> },
+      { path: '/me', element: <Me /> },
       { path: '/deck/:deckId', element: <DeckPage /> },
+      { path: '/play/daily', element: <Daily /> },
       { path: '/play/:deckId', element: <Play /> },
-      { path: '/review', element: <Review /> },
-      { path: '/settings', element: <Settings /> },
-      { path: '*', element: <Home /> },
+      { path: '/review/play', element: <Review /> },
+      { path: '/settings', element: <Navigate to="/me" replace /> },
+      { path: '*', element: <Navigate to="/" replace /> },
     ],
   },
 ])

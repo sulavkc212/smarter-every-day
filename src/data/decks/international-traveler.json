@@ -1,5 +1,7 @@
 {
   "id": "international-traveler",
+  "section": "culture",
+  "icon": "globe",
   "title": "The International Traveler",
   "tagline": "Curious, worldly, never a Wikipedia page.",
   "description": "Cross-cultural small talk, questions that get people talking about home, and weaving geography and history into a chat with visitors from everywhere.",
@@ -907,5 +909,6 @@
       ],
       "pattern": "Answer + a comparison they'll repeat"
     }
-  ]
+  ],
+  "wordPower": []
 }

@@ -127,6 +127,7 @@ export function VibeDrill({ item, onResult, onNext }: DrillProps<VibeItem>) {
           xp={xp}
           pattern={item.pattern}
           why={item.why}
+          save={{ text: item.options.find((o) => o.grade === 'best')!.text, pattern: item.pattern }}
           onNext={onNext}
         />
       )}

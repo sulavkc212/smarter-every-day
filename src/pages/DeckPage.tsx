@@ -1,36 +1,45 @@
 import { Link, Navigate, useParams } from 'react-router'
-import { decks, deckItems, getDeck, UNLOCK_THRESHOLD } from '../data'
-import { drillInfo, drillKinds } from '../data/schema'
+import { decks, deckItems, getDeck, sectionDecks, UNLOCK_THRESHOLD } from '../data'
+import { drillInfo, drillKinds, sections } from '../data/schema'
 import { mastery, unlockedDeckIds } from '../lib/session'
 import { isMastered } from '../lib/srs'
 import { useProgress } from '../store/progress'
-import { ProgressBar } from '../components/ProgressBar'
+import { MasteryRing } from '../components/DeckIcon'
 import { BackIcon } from '../components/icons'
 
 export function DeckPage() {
   const { deckId = '' } = useParams()
   const progress = useProgress((s) => s.progress)
   const deck = getDeck(deckId)
-  if (!deck || !unlockedDeckIds(decks, progress).has(deck.id)) return <Navigate to="/" replace />
+  if (!deck || !unlockedDeckIds(decks, progress).has(deck.id)) return <Navigate to="/explore" replace />
 
   const m = mastery(deckItems(deck), progress)
+  const section = sections.find((s) => s.id === deck.section)!
+  const siblings = sectionDecks(deck.section)
+  const next = siblings[siblings.findIndex((d) => d.id === deck.id) + 1]
+  const kinds = drillKinds.filter((k) => deckItems(deck, k).length > 0)
 
   return (
     <div className="flex flex-col gap-6">
-      <Link to="/" className="-ml-2 flex w-fit items-center gap-1 rounded-full px-2 py-1 text-sm text-muted hover:text-ink">
-        <BackIcon className="size-4" /> All decks
+      <Link
+        to={`/explore#${section.id}`}
+        className="-ml-2 flex w-fit items-center gap-1 rounded-full px-2 py-1 text-sm text-muted hover:text-ink"
+      >
+        <BackIcon className="size-4" /> {section.title}
       </Link>
-      <section>
-        <h1 className="font-display text-3xl font-bold leading-tight">{deck.title}</h1>
-        <p className="mt-2 leading-relaxed text-muted">{deck.description}</p>
-        <div className="mt-4 flex items-center gap-3">
-          <ProgressBar value={m} label="Deck mastery" tone="marigold" />
-          <span className="shrink-0 text-xs font-semibold tabular-nums text-muted">{Math.round(m * 100)}% mastered</span>
+      <section className="flex items-start gap-4">
+        <MasteryRing value={m} icon={deck.icon} />
+        <div className="min-w-0">
+          <h1 className="font-display text-3xl font-bold leading-tight">{deck.title}</h1>
+          <p className="mt-1 text-sm font-semibold text-marigold-ink">{Math.round(m * 100)}% mastered</p>
         </div>
-        {m < UNLOCK_THRESHOLD && deck.id !== decks.at(-1)!.id && (
-          <p className="mt-2 text-xs text-muted">Reach {Math.round(UNLOCK_THRESHOLD * 100)}% to unlock the next deck.</p>
-        )}
       </section>
+      <p className="-mt-2 leading-relaxed text-muted">{deck.description}</p>
+      {next && m < UNLOCK_THRESHOLD && (
+        <p className="-mt-3 text-xs text-muted">
+          Reach {Math.round(UNLOCK_THRESHOLD * 100)}% to unlock {next.title}.
+        </p>
+      )}
 
       <Link
         to={`/play/${deck.id}`}
@@ -42,7 +51,7 @@ export function DeckPage() {
       <section className="flex flex-col gap-3">
         <h2 className="font-display text-xl font-bold">Or drill one skill</h2>
         <div className="grid gap-3 sm:grid-cols-2">
-          {drillKinds.map((kind) => {
+          {kinds.map((kind) => {
             const items = deckItems(deck, kind)
             const done = items.filter((s) => isMastered(progress[s.item.id])).length
             return (

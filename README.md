@@ -12,17 +12,27 @@ A frontend-only React app. All content lives in JSON; there is no backend. Progr
 | **Yes, And…** | Never killing a conversation | Swipe cards right if they keep the volley going, left if they shut it down. Drag, buttons or ← / → keys. |
 | **Sentence Upgrader** | Structure and cutting filler | Rebuild a clunky thought from tiles. Tap to place, drag to reorder. Filler tiles ("like", "um") are traps. |
 | **Knowledge Drop-In** | Using facts socially | A sourced fact card, then pick the line that uses it like a person would. |
+| **Word Power** | Vocabulary | Swap a tired word ("very nice") for one that lands ("stunning"). The trap is the fancy word most travellers won't know. |
 
-Every answer is graded **best / okay / miss** and comes with a named *pattern* ("Playful threat", "Read the room", "Correct with a story") and a one-line *why*. The point is to learn the pattern, not memorise the answer.
+Every answer is graded **best / okay / miss** and comes with a named *pattern* ("Playful threat", "Read the room", "Correct with a story") and a one-line *why*. The point is to learn the pattern, not memorise the answer. Any model line can be starred into **Saved lines**, a personal phrasebook on the Review tab.
 
-## Decks
+## Sections and decks
 
-1. **Lakeside Cafe Casual**: small talk, ordering, weather, compliments
-2. **Cheeky & Flirty**: warm teasing, plus "read the room" items where not flirting is the right call
-3. **The Articulate Leader**: briefings, instructions to staff, complaints, disagreement
-4. **The International Traveler**: cross-cultural chat, good questions, geography and history
+About 500 items across 12 decks. The first deck in each section is open; the next unlocks at 60% mastery of the one before it.
 
-Each deck has 10 items per drill (160 in total). A deck unlocks at 70% mastery of the one before it.
+| Section | Decks |
+| --- | --- |
+| Everyday Talk | Lakeside Cafe Casual → Street & Travel Chat → The Questions Everyone Asks |
+| Conversation Craft | Openers → Keep It Flowing → Be Memorable |
+| Charm & Wit | Cheeky & Flirty → Playful Banter |
+| Culture Talk | Music & Bands → The International Traveler → What's Happening |
+| Leadership | The Articulate Leader |
+
+**What's Happening** holds dated news cards (`date`, `expires`). They hide themselves after their expiry day, so stale news never shows. Refresh this deck every few months.
+
+## Navigation
+
+Four tabs: **Today** (Daily 10, continue, next up, line of the day), **Explore** (sections and decks), **Review** (due items and saved lines) and **Me** (stats, mastery by section, settings).
 
 ## Progress
 
@@ -58,3 +68,8 @@ Decks live in `src/data/decks/*.json`. The schema is in `src/data/validate.ts`, 
 - Item ids are unique across all decks.
 
 Tone: warm and specific, never mean. Wrong options should be tempting, not strawmen. The best option shouldn't always be the longest one.
+- Word Power `target` must appear in its `sentence`.
+- News items need `date` and `expires`.
+- In every deck, the best option may be the longest in at most 65% of questions, so "pick the longest" never works.
+
+Language: plain English that a traveller with basic English understands. The wit comes from ideas and timing, not rare words.

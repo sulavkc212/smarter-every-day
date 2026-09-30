@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { decks, deckItems } from '../data'
-import { buildSession, mastery, reviewPool, unlockedDeckIds } from './session'
+import type { Deck } from '../data/schema'
+import { buildSession, mastery, nextUpDeck, reviewPool, unlockedDeckIds } from './session'
 import { record, type ItemProgress } from './srs'
 import { seeded } from './random'
 
@@ -23,14 +24,40 @@ describe('session builder', () => {
     expect(buildSession(pool, progress, day, 3, seeded(2)).map((s) => s.item.id)).toContain(missed)
   })
 
-  it('unlocks the next deck at 70% mastery', () => {
+  it('opens the first deck of each section and unlocks within a section at 60%', () => {
+    const vibe = (id: string) => ({
+      id,
+      setting: 's',
+      scenario: 's',
+      pattern: 'p',
+      why: 'w',
+      options: [
+        { text: 'a', grade: 'best' as const, tone: 't' },
+        { text: 'b', grade: 'okay' as const, tone: 't' },
+        { text: 'c', grade: 'miss' as const, tone: 't' },
+      ],
+    })
+    const make = (id: string, section: Deck['section']): Deck => ({
+      id,
+      section,
+      icon: 'cup',
+      title: id,
+      tagline: '',
+      description: '',
+      vibe: Array.from({ length: 10 }, (_, i) => vibe(`${id}-${i}`)),
+      yesAnd: [],
+      upgrader: [],
+      dropIn: [],
+      wordPower: [],
+    })
+    const ds = [make('a1', 'everyday'), make('a2', 'everyday'), make('a3', 'everyday'), make('b1', 'craft'), make('b2', 'craft')]
     const progress: Record<string, ItemProgress> = {}
-    expect([...unlockedDeckIds(decks, progress)]).toEqual(['lakeside-cafe'])
-    const first = deckItems(decks[0])
-    const needed = Math.ceil(first.length * 0.7)
-    for (const s of first.slice(0, needed)) progress[s.item.id] = { box: 2, lastSeen: day, seen: 2, best: 2 }
-    expect(mastery(first, progress)).toBeGreaterThanOrEqual(0.7)
-    expect([...unlockedDeckIds(decks, progress)]).toEqual(['lakeside-cafe', 'cheeky-flirty'])
+    expect([...unlockedDeckIds(ds, progress)]).toEqual(['a1', 'b1'])
+
+    for (const s of deckItems(ds[0]).slice(0, 6)) progress[s.item.id] = { box: 2, lastSeen: day, seen: 2, best: 2 }
+    expect(mastery(deckItems(ds[0]), progress)).toBe(0.6)
+    expect([...unlockedDeckIds(ds, progress)]).toEqual(['a1', 'a2', 'b1'])
+    expect(nextUpDeck(ds, progress)?.id).toBe('a2')
   })
 
   it('review pool only holds items that are due', () => {

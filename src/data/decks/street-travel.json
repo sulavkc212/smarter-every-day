@@ -1,0 +1,1022 @@
+{
+  "id": "street-travel",
+  "section": "everyday",
+  "icon": "bus",
+  "title": "Street & Travel Chat",
+  "tagline": "Bus parks, bargaining and 'which way to…?'",
+  "description": "Buses, taxis, permits, shops and directions. The small moments on the street where a helpful, funny local becomes the best part of someone's trip.",
+  "vibe": [
+    {
+      "id": "st-vibe-01",
+      "setting": "Tourist bus park, Pokhara",
+      "scenario": "A confused backpacker points at a bus: \"Is this the bus to Chitwan?\" It isn't.",
+      "options": [
+        {
+          "text": "No.",
+          "grade": "okay",
+          "tone": "Minimal"
+        },
+        {
+          "text": "Not this one — this one's off to Kathmandu. Yours is at the end of the row. Want me to walk you over?",
+          "grade": "best",
+          "tone": "Helpful"
+        },
+        {
+          "text": "No, it's the wrong bus. You should always check the sign first — it's in the front window, in Nepali and in English, look.",
+          "grade": "miss",
+          "tone": "Lecturing"
+        }
+      ],
+      "pattern": "Help, then go one step further",
+      "why": "Answering is good. Walking them over is the moment they tell their friends about later."
+    },
+    {
+      "id": "st-vibe-02",
+      "setting": "Taxi stand",
+      "scenario": "A taxi driver asks a tourist for double the normal fare. She looks at you for help.",
+      "options": [
+        {
+          "text": "Dai, she's my friend — give her the local price and I'll send everyone from my cafe to you.",
+          "grade": "best",
+          "tone": "Win-win"
+        },
+        {
+          "text": "All taxi drivers here are cheats. Just walk, it's better.",
+          "grade": "miss",
+          "tone": "Insulting"
+        },
+        {
+          "text": "That's too expensive.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Win-win negotiation",
+      "why": "You helped her without making the driver lose face, and you gave him a reason to say yes."
+    },
+    {
+      "id": "st-vibe-03",
+      "setting": "Crowded local bus",
+      "scenario": "A traveller is standing in the aisle, holding a huge backpack. You have a seat.",
+      "options": [
+        {
+          "text": "(Close your eyes and pretend to sleep.)",
+          "grade": "miss",
+          "tone": "Avoiding"
+        },
+        {
+          "text": "You can put your bag here, on the floor, next to my feet. There is some space here.",
+          "grade": "okay",
+          "tone": "Helpful"
+        },
+        {
+          "text": "Put your bag on my lap. It looks heavier than both of us.",
+          "grade": "best",
+          "tone": "Helpful + funny"
+        }
+      ],
+      "pattern": "Help with a joke",
+      "why": "A small kindness plus a small joke is the fastest way to start a friendly chat on a long bus ride."
+    },
+    {
+      "id": "st-vibe-04",
+      "setting": "Lakeside road",
+      "scenario": "A tourist asks how to get to the World Peace Pagoda.",
+      "options": [
+        {
+          "text": "It's far. Why do you want to go there? It's just a white building on a hill, honestly.",
+          "grade": "miss",
+          "tone": "Dismissive"
+        },
+        {
+          "text": "Take a boat across the lake, then walk up for about an hour. The view at the top pays you back for every step.",
+          "grade": "best",
+          "tone": "Helpful + vivid"
+        },
+        {
+          "text": "It's over there, on the hill.",
+          "grade": "okay",
+          "tone": "Vague"
+        }
+      ],
+      "pattern": "Directions with a reward",
+      "why": "Clear steps first, then a reason to go. People walk faster when you've promised them something."
+    },
+    {
+      "id": "st-vibe-05",
+      "setting": "Shop in Thamel",
+      "scenario": "You're buying a scarf. The shopkeeper smiles: \"Special price for you, my friend!\"",
+      "options": [
+        {
+          "text": "Stop lying. Everyone says that.",
+          "grade": "miss",
+          "tone": "Rude"
+        },
+        {
+          "text": "How much is it? Please tell me the real price, not the tourist price. I live here, you know.",
+          "grade": "okay",
+          "tone": "Blunt"
+        },
+        {
+          "text": "Is that the special price for friends, or the special price for tourists? I can't tell yet.",
+          "grade": "best",
+          "tone": "Cheeky"
+        }
+      ],
+      "pattern": "Tease the script",
+      "why": "Everyone knows the line. Playing with it shows you know the game, and bargaining with a smile gets better prices."
+    },
+    {
+      "id": "st-vibe-06",
+      "setting": "Trekking permit office",
+      "scenario": "A trekker in the queue sighs: \"This line is so slow.\"",
+      "options": [
+        {
+          "text": "Good news: this is the hardest part of the whole trek. The mountains are easier than this queue.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "Yes, it's slow.",
+          "grade": "okay",
+          "tone": "Agreeing"
+        },
+        {
+          "text": "It's Nepal. Everything is slow here. You'll have to get used to it.",
+          "grade": "miss",
+          "tone": "Negative"
+        }
+      ],
+      "pattern": "Shared suffering, made funny",
+      "why": "Complaining together is a real bond, but a joke turns it into something you both enjoy."
+    },
+    {
+      "id": "st-vibe-07",
+      "setting": "Village near Ghandruk",
+      "scenario": "A tourist asks you, \"Can I take a photo of that grandmother spinning wool?\"",
+      "options": [
+        {
+          "text": "Just take it quickly before she notices. She won't mind.",
+          "grade": "miss",
+          "tone": "Disrespectful"
+        },
+        {
+          "text": "Ask her first — a smile and \"photo?\" works. Most people say yes, and she might want to see it after.",
+          "grade": "best",
+          "tone": "Respectful"
+        },
+        {
+          "text": "Sure, take it.",
+          "grade": "okay",
+          "tone": "Careless"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "You helped the traveller and protected the grandmother's dignity. Showing her the photo often starts a lovely moment."
+    },
+    {
+      "id": "st-vibe-08",
+      "setting": "Hostel reception",
+      "scenario": "A new arrival asks, \"Is there anything fun to do tonight?\"",
+      "options": [
+        {
+          "text": "There are bars on Lakeside.",
+          "grade": "okay",
+          "tone": "Plain"
+        },
+        {
+          "text": "Not really. It's pretty boring here at night, most places close early and everyone sleeps.",
+          "grade": "miss",
+          "tone": "Deflating"
+        },
+        {
+          "text": "Live music on Lakeside, or the rooftop at sunset — with the worst jokes in Pokhara. That's me.",
+          "grade": "best",
+          "tone": "Cheeky"
+        }
+      ],
+      "pattern": "Offer + self-deprecating hook",
+      "why": "Real options, then a joke about yourself. It's an invitation without pressure."
+    },
+    {
+      "id": "st-vibe-09",
+      "setting": "ATM on Lakeside",
+      "scenario": "The ATM rejects a traveller's card twice. They start to panic.",
+      "options": [
+        {
+          "text": "That happens a lot with foreign cards. Try the bank ATM across the road — it usually likes visitors more.",
+          "grade": "best",
+          "tone": "Calming"
+        },
+        {
+          "text": "Your card is probably blocked. Did you tell your bank you were travelling? You really should always tell them before…",
+          "grade": "miss",
+          "tone": "Lecture"
+        },
+        {
+          "text": "Maybe try another ATM.",
+          "grade": "okay",
+          "tone": "Helpful"
+        }
+      ],
+      "pattern": "Calm them, then fix it",
+      "why": "Panic needs a calm voice and one clear next step. The light joke tells them it's normal."
+    },
+    {
+      "id": "st-vibe-10",
+      "setting": "Highway bus",
+      "scenario": "The bus is stuck behind a slow tractor. The foreigner next to you sighs loudly.",
+      "options": [
+        {
+          "text": "The traffic is bad.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "This always happens. The roads in Nepal are the worst in the world, honestly, I hate it.",
+          "grade": "miss",
+          "tone": "Complaining"
+        },
+        {
+          "text": "We call this the Nepali express. Slow, but you see everything.",
+          "grade": "best",
+          "tone": "Playful"
+        }
+      ],
+      "pattern": "Give it a name",
+      "why": "Naming the annoying thing makes it funny. Now it's a story they'll tell, not just a delay."
+    },
+    {
+      "id": "st-vibe-11",
+      "setting": "Trekking shop",
+      "scenario": "A trekker shows you a giant backpack: \"Is this too much for the Poon Hill trek?\"",
+      "options": [
+        {
+          "text": "Maybe a bit heavy. Poon Hill has a lot of stairs, so maybe you can leave some things at the hotel.",
+          "grade": "okay",
+          "tone": "Soft"
+        },
+        {
+          "text": "It's perfect — if you're moving house. What's in there that you'll actually use?",
+          "grade": "best",
+          "tone": "Teasing + useful"
+        },
+        {
+          "text": "Yes, that's crazy. You'll die on the stairs.",
+          "grade": "miss",
+          "tone": "Harsh"
+        }
+      ],
+      "pattern": "Tease, then help",
+      "why": "The joke tells them the truth kindly, and the question helps them fix it."
+    },
+    {
+      "id": "st-vibe-12",
+      "setting": "Fruit stall",
+      "scenario": "A tourist is bargaining very hard with an old fruit seller over ten rupees.",
+      "options": [
+        {
+          "text": "Wow, you're really cheap.",
+          "grade": "miss",
+          "tone": "Insulting"
+        },
+        {
+          "text": "(Say nothing. It's not your business, and you don't want to embarrass anyone in front of the whole street.)",
+          "grade": "okay",
+          "tone": "Staying out"
+        },
+        {
+          "text": "Honestly, ten rupees is less than ten cents for you — and it's her lunch. I'd let her win this one.",
+          "grade": "best",
+          "tone": "Kind honesty"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "Put the numbers in perspective, kindly and quietly. You help both people without shaming anyone."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "st-yes-01",
+      "prompt": "The bus was so bumpy, my coffee became a milkshake.",
+      "cards": [
+        {
+          "text": "The roads are bad here.",
+          "keepsGoing": false,
+          "why": "True, but it kills the joke."
+        },
+        {
+          "text": "Then you've done the Nepali highway properly. Where did you start from?",
+          "keepsGoing": true,
+          "why": "Accepts the joke, adds a badge of honour, then asks about them."
+        }
+      ],
+      "pattern": "Accept + ask back"
+    },
+    {
+      "id": "st-yes-02",
+      "prompt": "I've never been on a motorbike before.",
+      "cards": [
+        {
+          "text": "It's dangerous. Don't do it.",
+          "keepsGoing": false,
+          "why": "Shuts the door and sounds like a parent."
+        },
+        {
+          "text": "Then start slow — Pokhara is a good place for it. Where would you want to ride first?",
+          "keepsGoing": true,
+          "why": "Encourages safely and asks a question they can dream about."
+        }
+      ],
+      "pattern": "Encourage + ask"
+    },
+    {
+      "id": "st-yes-03",
+      "prompt": "Which is better, Pokhara or Kathmandu?",
+      "cards": [
+        {
+          "text": "Kathmandu is the big party, Pokhara is the long nap after. How many days do you have?",
+          "keepsGoing": true,
+          "why": "A picture that answers, then a question that helps them plan."
+        },
+        {
+          "text": "Pokhara, obviously.",
+          "keepsGoing": false,
+          "why": "A fun opinion, but nothing to reply to."
+        },
+        {
+          "text": "Both are good.",
+          "keepsGoing": false,
+          "why": "Safe and empty."
+        }
+      ],
+      "pattern": "Compare with a picture"
+    },
+    {
+      "id": "st-yes-04",
+      "prompt": "I think I got ripped off by the taxi.",
+      "cards": [
+        {
+          "text": "Yes, they always do that.",
+          "keepsGoing": false,
+          "why": "Confirms their bad feeling and ends there."
+        },
+        {
+          "text": "How much did you pay? I'll tell you if you should laugh or cry.",
+          "keepsGoing": true,
+          "why": "Invites the story and promises a fun verdict."
+        }
+      ],
+      "pattern": "Invite the story"
+    },
+    {
+      "id": "st-yes-05",
+      "prompt": "My phone has no signal up here.",
+      "cards": [
+        {
+          "text": "There's no signal in the mountains.",
+          "keepsGoing": false,
+          "why": "They already know that."
+        },
+        {
+          "text": "Welcome to the real Nepal. Want me to show you the one rock where everyone stands to get a bar?",
+          "keepsGoing": true,
+          "why": "Makes it an adventure and offers a funny local secret."
+        }
+      ],
+      "pattern": "Make it an adventure"
+    },
+    {
+      "id": "st-yes-06",
+      "prompt": "I lost my sunglasses on the boat.",
+      "cards": [
+        {
+          "text": "Oh no.",
+          "keepsGoing": false,
+          "why": "Sympathy, then silence."
+        },
+        {
+          "text": "Then the lake has a new pair. Want to borrow mine until you find a shop?",
+          "keepsGoing": true,
+          "why": "A light joke plus a real offer. Kind and easy to answer."
+        }
+      ],
+      "pattern": "Joke + offer"
+    },
+    {
+      "id": "st-yes-07",
+      "prompt": "How do I say thank you in Nepali?",
+      "cards": [
+        {
+          "text": "Dhanyabad.",
+          "keepsGoing": false,
+          "why": "Correct, but you stopped at the dictionary."
+        },
+        {
+          "text": "Dhanyabad. Say it with a big smile and people will forgive any accent. Try it on me.",
+          "keepsGoing": true,
+          "why": "Teaches it, adds a tip, and invites them to practise with you."
+        }
+      ],
+      "pattern": "Teach + invite them to try"
+    },
+    {
+      "id": "st-yes-08",
+      "prompt": "I'm trekking alone. Is that weird?",
+      "cards": [
+        {
+          "text": "It's better with a guide.",
+          "keepsGoing": false,
+          "why": "Maybe true, but it answers a different question and ends the chat."
+        },
+        {
+          "text": "Not at all. By the first teahouse you'll have more friends than you want. Where are you starting?",
+          "keepsGoing": true,
+          "why": "Reassures, adds a fun picture, then asks about their plan."
+        },
+        {
+          "text": "A little bit, yes.",
+          "keepsGoing": false,
+          "why": "Confirms their worry and gives them nothing."
+        }
+      ],
+      "pattern": "Reassure + ask"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "st-up-01",
+      "clunky": "Excuse me, sorry, where is, um, the bus park, the tourist one?",
+      "tiles": [
+        "Excuse me —",
+        "which way",
+        "to the tourist",
+        "bus park?"
+      ],
+      "distractors": [
+        "sorry",
+        "um",
+        "the tourist one"
+      ],
+      "answers": [
+        [
+          "Excuse me —",
+          "which way",
+          "to the tourist",
+          "bus park?"
+        ]
+      ],
+      "why": "\"Excuse me\" is enough politeness. Then one clean question."
+    },
+    {
+      "id": "st-up-02",
+      "clunky": "How much is this, like, the price, for this one?",
+      "tiles": [
+        "How much",
+        "is this",
+        "scarf?"
+      ],
+      "distractors": [
+        "like",
+        "the price",
+        "for this one"
+      ],
+      "answers": [
+        [
+          "How much",
+          "is this",
+          "scarf?"
+        ]
+      ],
+      "why": "Name the thing. A short, confident question sounds like someone who knows prices."
+    },
+    {
+      "id": "st-up-03",
+      "clunky": "It's maybe too expensive, can you maybe make it little less?",
+      "tiles": [
+        "It's a bit",
+        "over my budget —",
+        "could you do",
+        "eight hundred?"
+      ],
+      "distractors": [
+        "maybe",
+        "little less",
+        "can you maybe"
+      ],
+      "answers": [
+        [
+          "It's a bit",
+          "over my budget —",
+          "could you do",
+          "eight hundred?"
+        ]
+      ],
+      "why": "Name a number. A clear offer gets a clear answer; \"a little less\" gets a tiny discount."
+    },
+    {
+      "id": "st-up-04",
+      "clunky": "The trek was very very hard but also very very beautiful.",
+      "tiles": [
+        "The trek",
+        "broke my legs",
+        "and",
+        "fixed my soul."
+      ],
+      "distractors": [
+        "very very",
+        "also",
+        "hard but"
+      ],
+      "answers": [
+        [
+          "The trek",
+          "broke my legs",
+          "and",
+          "fixed my soul."
+        ]
+      ],
+      "why": "Two opposite pictures in one line. It's memorable because it's balanced, not because it's long."
+    },
+    {
+      "id": "st-up-05",
+      "clunky": "Sorry to disturb, but I think, maybe, this is my seat?",
+      "tiles": [
+        "Excuse me,",
+        "I think",
+        "you're in",
+        "my seat."
+      ],
+      "distractors": [
+        "sorry to disturb",
+        "maybe",
+        "but"
+      ],
+      "answers": [
+        [
+          "Excuse me,",
+          "I think",
+          "you're in",
+          "my seat."
+        ]
+      ],
+      "why": "Polite and clear at the same time. One soft word (\"I think\") is enough."
+    },
+    {
+      "id": "st-up-06",
+      "clunky": "Is there, like, a good place near here for eating, local food?",
+      "tiles": [
+        "Where do",
+        "locals eat",
+        "around here?"
+      ],
+      "distractors": [
+        "like",
+        "a good place",
+        "for eating"
+      ],
+      "answers": [
+        [
+          "Where do",
+          "locals eat",
+          "around here?"
+        ]
+      ],
+      "why": "This is the question travellers love. Short, and it gets the best answers."
+    },
+    {
+      "id": "st-up-07",
+      "clunky": "The bus will go at seven, so we must, um, be here at like 6:30.",
+      "tiles": [
+        "The bus leaves at seven,",
+        "so",
+        "let's meet",
+        "here at 6:30."
+      ],
+      "distractors": [
+        "um",
+        "like",
+        "we must"
+      ],
+      "answers": [
+        [
+          "The bus leaves at seven,",
+          "so",
+          "let's meet",
+          "here at 6:30."
+        ]
+      ],
+      "why": "Fact, then plan. \"Let's meet\" is friendlier than \"we must\"."
+    },
+    {
+      "id": "st-up-08",
+      "clunky": "I don't know the way, sorry, I am also, like, new here.",
+      "tiles": [
+        "I'm new here too —",
+        "let's find it",
+        "together."
+      ],
+      "distractors": [
+        "sorry",
+        "I don't know the way",
+        "like"
+      ],
+      "answers": [
+        [
+          "I'm new here too —",
+          "let's find it",
+          "together."
+        ]
+      ],
+      "why": "Turn \"I can't help\" into \"let's do it together\". Same facts, much warmer."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "st-drop-01",
+      "fact": "The Annapurna Conservation Area is Nepal's largest protected area. Trekking permit fees help pay for conservation and local community projects.",
+      "source": "National Trust for Nature Conservation, \"Annapurna Conservation Area Project\"",
+      "prompt": "A trekker grumbles, \"Why do I need a permit just to walk in the hills?\"",
+      "options": [
+        {
+          "text": "It's just the government taking money from tourists.",
+          "grade": "miss",
+          "why": "Not true, and it spoils the trip before it starts."
+        },
+        {
+          "text": "Because you're walking into Nepal's biggest protected area — the fees help pay for trails and village projects up there. Worth it by day three.",
+          "grade": "best",
+          "why": "Explains the why, gives it scale, and ends on a promise."
+        },
+        {
+          "text": "The Annapurna Conservation Area is the largest protected area in Nepal.",
+          "grade": "okay",
+          "why": "True, but it doesn't answer why they're paying."
+        }
+      ],
+      "pattern": "Explain the why"
+    },
+    {
+      "id": "st-drop-02",
+      "fact": "In Nepal, traffic drives on the left side of the road.",
+      "source": "Department of Transport Management, Government of Nepal",
+      "prompt": "An American traveller nearly steps in front of a scooter because they looked the wrong way.",
+      "options": [
+        {
+          "text": "Look right first! We drive on the left here. Your instincts are on holiday too.",
+          "grade": "best",
+          "why": "Urgent and clear first, then a joke to calm the shock."
+        },
+        {
+          "text": "Watch out, idiot!",
+          "grade": "miss",
+          "why": "Loud and insulting. Now they're scared and embarrassed."
+        },
+        {
+          "text": "In Nepal, traffic drives on the left side of the road, so you have to look to the right first when you cross.",
+          "grade": "okay",
+          "why": "Correct, but way too slow for a moment like this."
+        }
+      ],
+      "pattern": "Clear first, joke second"
+    },
+    {
+      "id": "st-drop-03",
+      "fact": "The Nepali rupee is pegged to the Indian rupee: 1 Indian rupee is always worth 1.6 Nepali rupees.",
+      "source": "Nepal Rastra Bank (central bank of Nepal), exchange rates",
+      "prompt": "A traveller at the money exchange asks, \"Why is the Indian rupee always 1.6 on this board?\"",
+      "options": [
+        {
+          "text": "I don't know, ask the bank.",
+          "grade": "miss",
+          "why": "You do know. Here's your chance to sound smart."
+        },
+        {
+          "text": "The Nepali rupee is pegged to the Indian rupee at 1.6.",
+          "grade": "okay",
+          "why": "Right, but \"pegged\" might need explaining."
+        },
+        {
+          "text": "Our rupee is tied to India's — one Indian rupee is always 1.6 of ours. The most boring number in Nepal, and the most reliable.",
+          "grade": "best",
+          "why": "Simple explanation, then a line that makes it stick."
+        }
+      ],
+      "pattern": "Explain simply + make it stick"
+    },
+    {
+      "id": "st-drop-04",
+      "fact": "In Nepal, Saturday is the main weekly day off. Most offices and schools are open on Sunday.",
+      "source": "Government of Nepal, public holiday rules",
+      "prompt": "A traveller is surprised: \"Why is the bank closed on Saturday but open on Sunday?\"",
+      "options": [
+        {
+          "text": "Saturday is our day off, so Sunday is our Monday. You're not lost, just one day out of sync.",
+          "grade": "best",
+          "why": "Explains it with a comparison they can feel."
+        },
+        {
+          "text": "Everyone knows that.",
+          "grade": "miss",
+          "why": "Clearly not everyone. Now they feel silly."
+        },
+        {
+          "text": "In Nepal, the weekend is only Saturday, so most offices work on Sunday.",
+          "grade": "okay",
+          "why": "Clear, a bit flat."
+        }
+      ],
+      "pattern": "Explain with a comparison"
+    },
+    {
+      "id": "st-drop-05",
+      "fact": "Tal Barahi is a Hindu temple on a small island in the middle of Phewa Lake.",
+      "source": "Nepal Tourism Board",
+      "prompt": "On a rowing boat, a tourist points: \"What's that little building on the island?\"",
+      "options": [
+        {
+          "text": "Just some temple.",
+          "grade": "miss",
+          "why": "\"Just\" throws away a lovely story."
+        },
+        {
+          "text": "It's the Tal Barahi temple. It's a Hindu temple on a small island in the middle of Phewa Lake, and you can get there by boat from the Lakeside boat station.",
+          "grade": "okay",
+          "why": "Accurate, but it reads like a guidebook. No warmth, no picture."
+        },
+        {
+          "text": "That's Tal Barahi, a temple right in the middle of the lake. People row out to pray — some come for the boat ride and leave a little blessed.",
+          "grade": "best",
+          "why": "Name, picture and a gentle joke. They'll want to go."
+        }
+      ],
+      "pattern": "Name + picture"
+    },
+    {
+      "id": "st-drop-06",
+      "fact": "By area, Pokhara is the largest metropolitan city in Nepal.",
+      "source": "Pokhara Metropolitan City, official profile",
+      "prompt": "A traveller says, \"Pokhara is such a small town.\"",
+      "options": [
+        {
+          "text": "It's not small. You just haven't seen it yet.",
+          "grade": "miss",
+          "why": "A correction with an attitude."
+        },
+        {
+          "text": "Small? On paper we're the biggest city in Nepal by area. We just hide it well behind the lake.",
+          "grade": "best",
+          "why": "A surprising fact, delivered with pride and a smile."
+        },
+        {
+          "text": "By area, Pokhara is actually the largest metropolitan city in Nepal, even bigger than Kathmandu, because the city borders are very wide.",
+          "grade": "okay",
+          "why": "True, but the explanation takes the fun out of the surprise."
+        }
+      ],
+      "pattern": "Surprise them, kindly"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "st-word-01",
+      "sentence": "The road to Ghandruk is very dangerous.",
+      "target": "very dangerous",
+      "options": [
+        {
+          "text": "fine",
+          "grade": "miss",
+          "why": "The opposite of what you mean."
+        },
+        {
+          "text": "scary",
+          "grade": "best",
+          "why": "Simple, honest, and everyone understands it."
+        },
+        {
+          "text": "perilous",
+          "grade": "okay",
+          "why": "Correct, but it sounds like an adventure novel."
+        }
+      ],
+      "meaning": "Makes you feel afraid.",
+      "example": "The last part of the jeep road is scary but beautiful."
+    },
+    {
+      "id": "st-word-02",
+      "sentence": "The mountains look very big from here.",
+      "target": "very big",
+      "options": [
+        {
+          "text": "massive",
+          "grade": "best",
+          "why": "Strong and common. It sounds like you're impressed."
+        },
+        {
+          "text": "tall",
+          "grade": "miss",
+          "why": "Weaker than \"very big\"."
+        },
+        {
+          "text": "colossal",
+          "grade": "okay",
+          "why": "Good word, a bit dramatic for everyday chat."
+        }
+      ],
+      "meaning": "Very, very big.",
+      "example": "From the lake, Machhapuchhre looks massive."
+    },
+    {
+      "id": "st-word-03",
+      "sentence": "The market is full of many colours.",
+      "target": "full of many colours",
+      "options": [
+        {
+          "text": "coloured",
+          "grade": "miss",
+          "why": "Flat, and it can sound odd."
+        },
+        {
+          "text": "polychromatic",
+          "grade": "okay",
+          "why": "Technically correct. Nobody says this in a market."
+        },
+        {
+          "text": "bursting with colour",
+          "grade": "best",
+          "why": "You can see it. Simple words, strong picture."
+        }
+      ],
+      "meaning": "Very full of bright colours.",
+      "example": "During Tihar, every street is bursting with colour."
+    },
+    {
+      "id": "st-word-04",
+      "sentence": "The hostel room was very small.",
+      "target": "very small",
+      "options": [
+        {
+          "text": "tiny",
+          "grade": "best",
+          "why": "Honest and clear."
+        },
+        {
+          "text": "cosy",
+          "grade": "okay",
+          "why": "A kind way to say small. Useful when the owner is listening."
+        },
+        {
+          "text": "minuscule",
+          "grade": "miss",
+          "why": "Too fancy, and it sounds like you're complaining."
+        }
+      ],
+      "meaning": "Very, very small.",
+      "example": "The bathroom was tiny, but the view was huge."
+    },
+    {
+      "id": "st-word-05",
+      "sentence": "The trek to the base camp was very difficult.",
+      "target": "very difficult",
+      "options": [
+        {
+          "text": "arduous",
+          "grade": "okay",
+          "why": "Correct, but formal."
+        },
+        {
+          "text": "boring",
+          "grade": "miss",
+          "why": "A different meaning completely."
+        },
+        {
+          "text": "tough",
+          "grade": "best",
+          "why": "Short, strong, and natural in conversation."
+        }
+      ],
+      "meaning": "Hard, and needing a lot of effort.",
+      "example": "The first day is tough, but it gets easier."
+    },
+    {
+      "id": "st-word-06",
+      "sentence": "We walked very slowly up the last hill.",
+      "target": "walked very slowly",
+      "options": [
+        {
+          "text": "crawled",
+          "grade": "best",
+          "why": "Funny and vivid. You can feel the tired legs."
+        },
+        {
+          "text": "ran",
+          "grade": "miss",
+          "why": "The opposite."
+        },
+        {
+          "text": "ambled",
+          "grade": "okay",
+          "why": "Means a relaxed walk, not a tired one."
+        }
+      ],
+      "meaning": "(Casual) moved very, very slowly.",
+      "example": "We crawled into the teahouse just before dark."
+    },
+    {
+      "id": "st-word-07",
+      "sentence": "The river was moving very fast after the rain.",
+      "target": "moving very fast",
+      "options": [
+        {
+          "text": "flowing",
+          "grade": "miss",
+          "why": "Rivers always flow. It doesn't say fast."
+        },
+        {
+          "text": "rushing",
+          "grade": "best",
+          "why": "You can hear it. Simple and powerful."
+        },
+        {
+          "text": "torrential",
+          "grade": "okay",
+          "why": "Usually used for rain, and it's a bit formal."
+        }
+      ],
+      "meaning": "Moving very fast and strongly.",
+      "example": "The Seti River was rushing under the bridge."
+    },
+    {
+      "id": "st-word-08",
+      "sentence": "The guesthouse owner was very helpful when my bag got lost.",
+      "target": "very helpful",
+      "options": [
+        {
+          "text": "accommodating",
+          "grade": "okay",
+          "why": "Correct, but it sounds like a hotel review."
+        },
+        {
+          "text": "a lifesaver",
+          "grade": "best",
+          "why": "Warm and vivid. It says how much the help meant."
+        },
+        {
+          "text": "polite",
+          "grade": "miss",
+          "why": "Polite is not the same as helpful."
+        }
+      ],
+      "meaning": "(Casual) someone who helped you a lot when you really needed it.",
+      "example": "The bus driver was a lifesaver — he waited for me."
+    },
+    {
+      "id": "st-word-09",
+      "sentence": "The sunrise over the Annapurnas was very beautiful.",
+      "target": "very beautiful",
+      "options": [
+        {
+          "text": "breathtaking",
+          "grade": "best",
+          "why": "Everyone knows it, and it sounds like you mean it."
+        },
+        {
+          "text": "pretty",
+          "grade": "miss",
+          "why": "Too small a word for a Himalayan sunrise."
+        },
+        {
+          "text": "picturesque",
+          "grade": "okay",
+          "why": "Fine, but it sounds like a postcard."
+        }
+      ],
+      "meaning": "So beautiful it stops you for a moment.",
+      "example": "The first view of the mountains from the plane is breathtaking."
+    },
+    {
+      "id": "st-word-10",
+      "sentence": "Thamel is very noisy at night.",
+      "target": "very noisy",
+      "options": [
+        {
+          "text": "cacophonous",
+          "grade": "okay",
+          "why": "Correct but rare. People may not know it."
+        },
+        {
+          "text": "loud",
+          "grade": "miss",
+          "why": "Almost the same as \"noisy\". No upgrade."
+        },
+        {
+          "text": "buzzing",
+          "grade": "best",
+          "why": "Noisy in a fun, lively way. It makes Thamel sound exciting."
+        }
+      ],
+      "meaning": "Full of lively noise and activity.",
+      "example": "Lakeside is buzzing on Friday nights."
+    }
+  ]
+}

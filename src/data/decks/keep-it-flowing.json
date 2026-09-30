@@ -1,0 +1,905 @@
+{
+  "id": "keep-it-flowing",
+  "section": "craft",
+  "icon": "flow",
+  "title": "Keep It Flowing",
+  "tagline": "Follow-ups, callbacks, and no dead ends.",
+  "description": "How to lead a conversation without taking it over: follow the most interesting thread, ask open questions, share a little to get a little, bring back earlier jokes, and handle silence calmly.",
+  "vibe": [
+    {
+      "id": "kf-vibe-01",
+      "setting": "Cafe",
+      "scenario": "They say: \"I just got back from Annapurna Base Camp. My legs are dead, and I met the strangest guy at the top.\"",
+      "options": [
+        {
+          "text": "I've done ABC four times. The first time, I went in the snow, and my guide got lost, and…",
+          "grade": "miss",
+          "tone": "Hijacking"
+        },
+        {
+          "text": "How many days did it take?",
+          "grade": "okay",
+          "tone": "Safe"
+        },
+        {
+          "text": "Okay, forget your legs. Tell me about the strange guy.",
+          "grade": "best",
+          "tone": "Curious"
+        }
+      ],
+      "pattern": "Follow the juiciest thread",
+      "why": "People often hide the best story in the second half of a sentence. Pick that thread and they'll light up."
+    },
+    {
+      "id": "kf-vibe-02",
+      "setting": "Rooftop",
+      "scenario": "You've asked five questions in a row. Their answers are getting shorter. It feels like an interview.",
+      "options": [
+        {
+          "text": "Okay, my turn to confess: I've lived here all my life and I'm still scared of paragliding. What's something nobody would guess about you?",
+          "grade": "best",
+          "tone": "Sharing"
+        },
+        {
+          "text": "Next question: what's your favourite food?",
+          "grade": "okay",
+          "tone": "More interview"
+        },
+        {
+          "text": "(Go quiet and look at your phone.)",
+          "grade": "miss",
+          "tone": "Giving up"
+        }
+      ],
+      "pattern": "Share to get",
+      "why": "A small confession about yourself makes it fair. Now they feel safe to share something back."
+    },
+    {
+      "id": "kf-vibe-03",
+      "setting": "Cafe terrace",
+      "scenario": "After a big laugh, there's a silence. Nobody speaks for a few seconds.",
+      "options": [
+        {
+          "text": "Sorry, I'm really bad at conversations, I never know what to say, this is so awkward, right? Sorry.",
+          "grade": "miss",
+          "tone": "Panicking"
+        },
+        {
+          "text": "(Smile, sip your tea, let it breathe. Then:) What's been the best part of your trip so far?",
+          "grade": "best",
+          "tone": "Relaxed"
+        },
+        {
+          "text": "So… yeah.",
+          "grade": "okay",
+          "tone": "Filler"
+        }
+      ],
+      "pattern": "Silence is okay",
+      "why": "A few quiet seconds after a laugh are comfortable, not awkward. Calm people let silence breathe, then open a new door."
+    },
+    {
+      "id": "kf-vibe-04",
+      "setting": "Hostel common room",
+      "scenario": "A traveller mentions, \"I quit my job to travel.\"",
+      "options": [
+        {
+          "text": "What was your job?",
+          "grade": "okay",
+          "tone": "Factual"
+        },
+        {
+          "text": "Wait — that's a big move. What was the moment you knew?",
+          "grade": "best",
+          "tone": "Curious"
+        },
+        {
+          "text": "Wasn't that risky? What about money? Your parents must be worried, no?",
+          "grade": "miss",
+          "tone": "Judging"
+        }
+      ],
+      "pattern": "Ask about the moment, not the facts",
+      "why": "\"What was the moment\" questions invite stories and feelings. Those are the conversations people remember."
+    },
+    {
+      "id": "kf-vibe-05",
+      "setting": "Bus ride",
+      "scenario": "You want to hear about the traveller's home.",
+      "options": [
+        {
+          "text": "Is your country rich?",
+          "grade": "miss",
+          "tone": "Awkward"
+        },
+        {
+          "text": "Do you like your city?",
+          "grade": "okay",
+          "tone": "Yes/no question"
+        },
+        {
+          "text": "What's a normal Sunday like where you live?",
+          "grade": "best",
+          "tone": "Open"
+        }
+      ],
+      "pattern": "Open questions",
+      "why": "Yes/no questions get one-word answers. \"What's it like\" questions get pictures and stories."
+    },
+    {
+      "id": "kf-vibe-06",
+      "setting": "Cafe, an hour into the chat",
+      "scenario": "Earlier, they told you a monkey stole their sunglasses at the temple. Now they say they want to visit a jungle.",
+      "options": [
+        {
+          "text": "A jungle? After what that monkey did to you? Brave.",
+          "grade": "best",
+          "tone": "Callback"
+        },
+        {
+          "text": "You should go to Chitwan, it's five hours by bus, there are rhinos and elephants, and the park fee is…",
+          "grade": "miss",
+          "tone": "Info dump"
+        },
+        {
+          "text": "Chitwan is nice.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Callback",
+      "why": "Bringing back an earlier joke shows you were listening and turns the chat into a shared story."
+    },
+    {
+      "id": "kf-vibe-07",
+      "setting": "Dinner with three travellers",
+      "scenario": "Two people are talking a lot. The third, Anna, hasn't said anything for a while.",
+      "options": [
+        {
+          "text": "Anna, why are you so quiet?",
+          "grade": "miss",
+          "tone": "Spotlight"
+        },
+        {
+          "text": "Anna — you've been to India, right? Settle this for us.",
+          "grade": "best",
+          "tone": "Including"
+        },
+        {
+          "text": "(Keep talking to the other two.)",
+          "grade": "okay",
+          "tone": "Ignoring"
+        }
+      ],
+      "pattern": "Bring in the quiet one",
+      "why": "Invite them with an easy question they're the expert on. Never point at their silence."
+    },
+    {
+      "id": "kf-vibe-08",
+      "setting": "Cafe",
+      "scenario": "A traveller says, half-laughing, \"My flight home just got cancelled.\"",
+      "options": [
+        {
+          "text": "Oh no — is that \"disaster\" cancelled, or \"three more days in Nepal\" cancelled?",
+          "grade": "best",
+          "tone": "Reframing"
+        },
+        {
+          "text": "That happened to me once too, and it was a nightmare, I had to sleep at the airport for two nights and…",
+          "grade": "miss",
+          "tone": "Hijacking"
+        },
+        {
+          "text": "Oh no, that's bad.",
+          "grade": "okay",
+          "tone": "Sympathetic"
+        }
+      ],
+      "pattern": "Let them choose the mood",
+      "why": "The question lets them decide if it's a problem or a gift. They're half-laughing, so offering the fun version fits."
+    },
+    {
+      "id": "kf-vibe-09",
+      "setting": "Lakeside bench",
+      "scenario": "You've been talking about the weather for five minutes. It's getting slow.",
+      "options": [
+        {
+          "text": "Yes, the weather is really nice.",
+          "grade": "okay",
+          "tone": "Circling"
+        },
+        {
+          "text": "(Keep talking about clouds.)",
+          "grade": "miss",
+          "tone": "Stuck"
+        },
+        {
+          "text": "Okay, enough weather. Big question: if you could live anywhere for a year, where?",
+          "grade": "best",
+          "tone": "Leading"
+        }
+      ],
+      "pattern": "Change the topic on purpose",
+      "why": "Leading a conversation means noticing when a topic is dead and opening a better one. Saying it out loud makes it fun."
+    },
+    {
+      "id": "kf-vibe-10",
+      "setting": "Viewpoint at sunrise",
+      "scenario": "A traveller quietly says their grandmother always dreamed of seeing the Himalayas but never could.",
+      "options": [
+        {
+          "text": "Haha, my grandmother only dreams about her TV shows.",
+          "grade": "miss",
+          "tone": "Joke at the wrong time"
+        },
+        {
+          "text": "Nice.",
+          "grade": "okay",
+          "tone": "Flat"
+        },
+        {
+          "text": "That's beautiful. What do you think she'd say if she could see this?",
+          "grade": "best",
+          "tone": "Gentle"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "Some moments want warmth, not wit. A gentle question lets them share as much as they want."
+    },
+    {
+      "id": "kf-vibe-11",
+      "setting": "Cafe",
+      "scenario": "Someone says, \"I'm an accountant. Boring, I know.\"",
+      "options": [
+        {
+          "text": "I refuse to believe that. What's the one part of the job you secretly love?",
+          "grade": "best",
+          "tone": "Curious"
+        },
+        {
+          "text": "No, it's not boring.",
+          "grade": "okay",
+          "tone": "Polite"
+        },
+        {
+          "text": "Yeah, that does sound pretty boring, to be honest. I could never sit in an office all day.",
+          "grade": "miss",
+          "tone": "Agreeing"
+        }
+      ],
+      "pattern": "Dig for the interesting part",
+      "why": "Everyone has something they love about their life. Asking for it makes them feel interesting."
+    },
+    {
+      "id": "kf-vibe-12",
+      "setting": "Rooftop, late",
+      "scenario": "You've been talking for forty minutes. The energy is still great, but you need to leave.",
+      "options": [
+        {
+          "text": "One more story… okay, one more… wait, have I told you about the time…",
+          "grade": "miss",
+          "tone": "Overstaying"
+        },
+        {
+          "text": "I have to go, but this was too good to end — are you around tomorrow evening?",
+          "grade": "best",
+          "tone": "Leaving on a high"
+        },
+        {
+          "text": "Okay, bye.",
+          "grade": "okay",
+          "tone": "Abrupt"
+        }
+      ],
+      "pattern": "Leave on a high",
+      "why": "Ending while it's still good makes people want more. It's the best way to get a second conversation."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "kf-yes-01",
+      "prompt": "I'm from a small town in Germany you've never heard of.",
+      "cards": [
+        {
+          "text": "Try me. And tell me the one thing it's famous for, even if it's only famous to you.",
+          "keepsGoing": true,
+          "why": "A playful challenge and an invitation to brag a little."
+        },
+        {
+          "text": "Then I won't know it.",
+          "keepsGoing": false,
+          "why": "Agrees with them and ends it."
+        }
+      ],
+      "pattern": "Playful challenge"
+    },
+    {
+      "id": "kf-yes-02",
+      "prompt": "I love cooking.",
+      "cards": [
+        {
+          "text": "Me too.",
+          "keepsGoing": false,
+          "why": "\"Me too\" with nothing after it is a dead end."
+        },
+        {
+          "text": "What's the dish you make when you want to impress someone?",
+          "keepsGoing": true,
+          "why": "Specific, fun, and it invites a story."
+        }
+      ],
+      "pattern": "Specific follow-up"
+    },
+    {
+      "id": "kf-yes-03",
+      "prompt": "Work has been crazy lately.",
+      "cards": [
+        {
+          "text": "Good crazy or bad crazy?",
+          "keepsGoing": true,
+          "why": "Short, open, and they choose how much to share."
+        },
+        {
+          "text": "Mine too.",
+          "keepsGoing": false,
+          "why": "Takes the topic away from them."
+        }
+      ],
+      "pattern": "Let them choose"
+    },
+    {
+      "id": "kf-yes-04",
+      "prompt": "I've been learning guitar.",
+      "cards": [
+        {
+          "text": "Guitar is hard.",
+          "keepsGoing": false,
+          "why": "True, and a little discouraging."
+        },
+        {
+          "text": "Nice — what's the first song you're brave enough to play for people?",
+          "keepsGoing": true,
+          "why": "Encouraging and specific."
+        }
+      ],
+      "pattern": "Specific follow-up"
+    },
+    {
+      "id": "kf-yes-05",
+      "prompt": "I almost didn't come on this trip.",
+      "cards": [
+        {
+          "text": "Now I need to know — what almost stopped you, and what changed your mind?",
+          "keepsGoing": true,
+          "why": "Two linked questions that invite the full story."
+        },
+        {
+          "text": "Good thing you came.",
+          "keepsGoing": false,
+          "why": "Nice, but they wanted to tell you why."
+        }
+      ],
+      "pattern": "Chase the story"
+    },
+    {
+      "id": "kf-yes-06",
+      "prompt": "My friends think I'm crazy for coming here alone.",
+      "cards": [
+        {
+          "text": "Your friends are wrong.",
+          "keepsGoing": false,
+          "why": "Supportive, but it closes the topic."
+        },
+        {
+          "text": "What would you tell them now, after being here?",
+          "keepsGoing": true,
+          "why": "Lets them tell their own brave story."
+        }
+      ],
+      "pattern": "Let them tell it"
+    },
+    {
+      "id": "kf-yes-07",
+      "prompt": "I don't really have any hobbies.",
+      "cards": [
+        {
+          "text": "Everyone has hobbies.",
+          "keepsGoing": false,
+          "why": "Argues with them. Now they feel boring."
+        },
+        {
+          "text": "Then tell me what you do on a free Sunday. That's your hobby — you just haven't named it yet.",
+          "keepsGoing": true,
+          "why": "Kind reframe and an easy question."
+        }
+      ],
+      "pattern": "Reframe + easy question"
+    },
+    {
+      "id": "kf-yes-08",
+      "prompt": "I had the worst day yesterday.",
+      "cards": [
+        {
+          "text": "Do you want to tell me about it, or do you want me to distract you?",
+          "keepsGoing": true,
+          "why": "Gives them control. Some people want to talk, some want to forget."
+        },
+        {
+          "text": "Today will be better.",
+          "keepsGoing": false,
+          "why": "Kind, but it skips over them."
+        }
+      ],
+      "pattern": "Offer a choice"
+    },
+    {
+      "id": "kf-yes-09",
+      "prompt": "I love this song!",
+      "cards": [
+        {
+          "text": "Where were you the first time you heard it?",
+          "keepsGoing": true,
+          "why": "Songs carry memories. This question opens one."
+        },
+        {
+          "text": "It's pretty old.",
+          "keepsGoing": false,
+          "why": "Deflates their joy."
+        }
+      ],
+      "pattern": "Ask for the memory"
+    },
+    {
+      "id": "kf-yes-10",
+      "prompt": "We should go to that festival next week.",
+      "cards": [
+        {
+          "text": "Maybe.",
+          "keepsGoing": false,
+          "why": "Kills a plan before it starts."
+        },
+        {
+          "text": "Yes — let's. Who's in charge of snacks, and who's in charge of getting us lost?",
+          "keepsGoing": true,
+          "why": "Says yes and starts building the plan together."
+        },
+        {
+          "text": "I'm not sure I'll be free, I have a lot of work.",
+          "keepsGoing": false,
+          "why": "Maybe true, but it closes the door for now."
+        }
+      ],
+      "pattern": "Yes, and build the plan"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "kf-up-01",
+      "clunky": "Did you like the trek? Was it good?",
+      "tiles": [
+        "What was",
+        "the best moment",
+        "of the trek?"
+      ],
+      "distractors": [
+        "did you like",
+        "was it good",
+        "yes or no"
+      ],
+      "answers": [
+        [
+          "What was",
+          "the best moment",
+          "of the trek?"
+        ]
+      ],
+      "why": "A yes/no question gets \"yes\". A \"best moment\" question gets a story."
+    },
+    {
+      "id": "kf-up-02",
+      "clunky": "Is your job, like, nice? Do you like it?",
+      "tiles": [
+        "What do you",
+        "love most",
+        "about your job?"
+      ],
+      "distractors": [
+        "like",
+        "is your job nice",
+        "do you like it"
+      ],
+      "answers": [
+        [
+          "What do you",
+          "love most",
+          "about your job?"
+        ]
+      ],
+      "why": "Ask for the good part directly. People enjoy answering it."
+    },
+    {
+      "id": "kf-up-03",
+      "clunky": "And then? And then? What happened then?",
+      "tiles": [
+        "Wait —",
+        "what did you do",
+        "after that?"
+      ],
+      "distractors": [
+        "and then? and then?",
+        "what happened then",
+        "so"
+      ],
+      "answers": [
+        [
+          "Wait —",
+          "what did you do",
+          "after that?"
+        ]
+      ],
+      "why": "\"What did you do\" puts them in the story as the hero. \"Wait —\" shows you're hooked."
+    },
+    {
+      "id": "kf-up-04",
+      "clunky": "Me too, me too, same thing happened to me also.",
+      "tiles": [
+        "No way —",
+        "something similar",
+        "happened to me,",
+        "but you first."
+      ],
+      "distractors": [
+        "me too, me too",
+        "same thing",
+        "also"
+      ],
+      "answers": [
+        [
+          "No way —",
+          "something similar",
+          "happened to me,",
+          "but you first."
+        ]
+      ],
+      "why": "Share the connection, then give the stage back. \"But you first\" stops you hijacking their story."
+    },
+    {
+      "id": "kf-up-05",
+      "clunky": "So, um, yes, okay, so, what else, anything else?",
+      "tiles": [
+        "Okay,",
+        "new question:",
+        "what's your",
+        "perfect day?"
+      ],
+      "distractors": [
+        "um",
+        "what else",
+        "anything else?"
+      ],
+      "answers": [
+        [
+          "Okay,",
+          "new question:",
+          "what's your",
+          "perfect day?"
+        ]
+      ],
+      "why": "When a topic ends, announce the next one. It sounds like leading, not panicking."
+    },
+    {
+      "id": "kf-up-06",
+      "clunky": "You said before something about the monkey, what was it, the monkey thing?",
+      "tiles": [
+        "Wait,",
+        "go back —",
+        "what happened",
+        "with the monkey?"
+      ],
+      "distractors": [
+        "you said before",
+        "the monkey thing",
+        "what was it"
+      ],
+      "answers": [
+        [
+          "Wait,",
+          "go back —",
+          "what happened",
+          "with the monkey?"
+        ]
+      ],
+      "why": "\"Go back\" shows you caught the interesting bit. People love being listened to that closely."
+    },
+    {
+      "id": "kf-up-07",
+      "clunky": "Sorry, I talked too much, sorry, you talk now.",
+      "tiles": [
+        "Okay,",
+        "I've been talking forever —",
+        "your turn:",
+        "what's your story?"
+      ],
+      "distractors": [
+        "sorry",
+        "you talk now",
+        "I talked too much"
+      ],
+      "answers": [
+        [
+          "Okay,",
+          "I've been talking forever —",
+          "your turn:",
+          "what's your story?"
+        ]
+      ],
+      "why": "Hand over the conversation with a smile and a real question, not an apology."
+    },
+    {
+      "id": "kf-up-08",
+      "clunky": "Your country is, I think, very cold, yes? Cold?",
+      "tiles": [
+        "What's winter",
+        "really like",
+        "where you live?"
+      ],
+      "distractors": [
+        "I think",
+        "very cold, yes?",
+        "cold?"
+      ],
+      "answers": [
+        [
+          "What's winter",
+          "really like",
+          "where you live?"
+        ]
+      ],
+      "why": "Swap a guess for an open question. Their answer will be better than your guess."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "kf-drop-01",
+      "fact": "In a famous 1997 study, psychologist Arthur Aron gave pairs of strangers 36 questions that slowly got more personal. The first is: \"Given the choice of anyone in the world, whom would you want as a dinner guest?\"",
+      "source": "Aron et al., \"The experimental generation of interpersonal closeness\", Personality and Social Psychology Bulletin (1997)",
+      "prompt": "At a group dinner, the conversation is stuck on \"Where are you from?\" for the fifth time.",
+      "options": [
+        {
+          "text": "This is boring. Let's go somewhere else.",
+          "grade": "miss",
+          "why": "Blames the group instead of leading it."
+        },
+        {
+          "text": "New game: there's a psychology study with 36 questions that make strangers close. Question one — if you could have dinner with anyone in the world, who?",
+          "grade": "best",
+          "why": "Uses the fact to lead the table somewhere more fun."
+        },
+        {
+          "text": "There's a study with 36 questions that make strangers feel close.",
+          "grade": "okay",
+          "why": "Interesting, but you didn't actually ask one."
+        }
+      ],
+      "pattern": "Use a fact to lead"
+    },
+    {
+      "id": "kf-drop-02",
+      "fact": "Anthropologist Robin Dunbar found that around two-thirds of everyday conversation is about social topics — people, relationships and what others are doing.",
+      "source": "Dunbar, Marriott & Duncan, \"Human conversational behavior\", Human Nature (1997)",
+      "prompt": "Two friends laugh and say, \"Sorry, we're just gossiping.\"",
+      "options": [
+        {
+          "text": "Don't apologise — Robin Dunbar found about two-thirds of conversation is about other people. You're just being very human.",
+          "grade": "best",
+          "why": "Makes them feel normal and invites you into the fun."
+        },
+        {
+          "text": "Yes, gossip is bad.",
+          "grade": "miss",
+          "why": "Judgemental. The chat ends there."
+        },
+        {
+          "text": "Most conversations are about other people, apparently.",
+          "grade": "okay",
+          "why": "Close, but it lacks the warmth."
+        }
+      ],
+      "pattern": "Fact that makes people feel normal"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "kf-word-01",
+      "sentence": "Your story is very interesting — tell me more.",
+      "target": "very interesting",
+      "options": [
+        {
+          "text": "wild",
+          "grade": "best",
+          "why": "Casual and excited. It pulls the next part of the story out."
+        },
+        {
+          "text": "remarkable",
+          "grade": "okay",
+          "why": "Correct, but a bit formal."
+        },
+        {
+          "text": "fine",
+          "grade": "miss",
+          "why": "Sounds like you aren't listening."
+        }
+      ],
+      "meaning": "(Casual) surprising and exciting.",
+      "example": "Wait, you slept in a cave? That's wild."
+    },
+    {
+      "id": "kf-word-02",
+      "sentence": "I really agree with you.",
+      "target": "really agree with you",
+      "options": [
+        {
+          "text": "maybe agree",
+          "grade": "miss",
+          "why": "Weaker, and it sounds unsure."
+        },
+        {
+          "text": "couldn't agree more",
+          "grade": "best",
+          "why": "A common, strong and friendly way to agree."
+        },
+        {
+          "text": "concur wholeheartedly",
+          "grade": "okay",
+          "why": "Correct, but it sounds like a meeting."
+        }
+      ],
+      "meaning": "Agree completely.",
+      "example": "Sunrise is better than sunset? I couldn't agree more."
+    },
+    {
+      "id": "kf-word-03",
+      "sentence": "That's a very good question.",
+      "target": "very good",
+      "options": [
+        {
+          "text": "great",
+          "grade": "best",
+          "why": "Simple and warm. It makes the asker feel smart."
+        },
+        {
+          "text": "pertinent",
+          "grade": "okay",
+          "why": "Means relevant. Too formal for a chat."
+        },
+        {
+          "text": "strange",
+          "grade": "miss",
+          "why": "Makes them feel silly for asking."
+        }
+      ],
+      "meaning": "Very good.",
+      "example": "Great question — let me think about that."
+    },
+    {
+      "id": "kf-word-04",
+      "sentence": "What happened to your dog is very sad.",
+      "target": "very sad",
+      "options": [
+        {
+          "text": "lamentable",
+          "grade": "okay",
+          "why": "Formal, and it can sound cold."
+        },
+        {
+          "text": "heartbreaking",
+          "grade": "best",
+          "why": "Shows you really feel it with them."
+        },
+        {
+          "text": "funny",
+          "grade": "miss",
+          "why": "Very much the wrong word."
+        }
+      ],
+      "meaning": "Makes you feel very sad.",
+      "example": "The story of the lost trekker was heartbreaking."
+    },
+    {
+      "id": "kf-word-05",
+      "sentence": "I want to know more about your village.",
+      "target": "want to know more about",
+      "options": [
+        {
+          "text": "have to hear more about",
+          "grade": "best",
+          "why": "Sounds like real curiosity. People love it."
+        },
+        {
+          "text": "don't care about",
+          "grade": "miss",
+          "why": "The opposite."
+        },
+        {
+          "text": "desire elaboration on",
+          "grade": "okay",
+          "why": "Sounds like a robot."
+        }
+      ],
+      "meaning": "Really want to hear more about.",
+      "example": "I have to hear more about this festival."
+    },
+    {
+      "id": "kf-word-06",
+      "sentence": "We talked for a very long time.",
+      "target": "a very long time",
+      "options": [
+        {
+          "text": "a minute",
+          "grade": "miss",
+          "why": "The opposite."
+        },
+        {
+          "text": "an eternity",
+          "grade": "okay",
+          "why": "Can sound like it was too long."
+        },
+        {
+          "text": "hours",
+          "grade": "best",
+          "why": "Simple, clear, and it sounds like it was fun."
+        }
+      ],
+      "meaning": "A long time — often more than you noticed.",
+      "example": "We sat by the lake and talked for hours."
+    },
+    {
+      "id": "kf-word-07",
+      "sentence": "The look on his face was very funny.",
+      "target": "very funny",
+      "options": [
+        {
+          "text": "priceless",
+          "grade": "best",
+          "why": "Casual and vivid: a moment worth remembering."
+        },
+        {
+          "text": "comical",
+          "grade": "okay",
+          "why": "Fine, a bit flat."
+        },
+        {
+          "text": "strange",
+          "grade": "miss",
+          "why": "Doesn't say it was funny."
+        }
+      ],
+      "meaning": "(Casual) so funny or surprising it's worth remembering.",
+      "example": "Her face when the monkey took her banana was priceless."
+    },
+    {
+      "id": "kf-word-08",
+      "sentence": "Talking to her felt very natural.",
+      "target": "very natural",
+      "options": [
+        {
+          "text": "comfortable",
+          "grade": "okay",
+          "why": "Good, but a little weaker."
+        },
+        {
+          "text": "facile",
+          "grade": "miss",
+          "why": "Means too simple or shallow. Not a compliment."
+        },
+        {
+          "text": "effortless",
+          "grade": "best",
+          "why": "Says it was easy and lovely at the same time."
+        }
+      ],
+      "meaning": "Easy, without any struggle.",
+      "example": "With some people, conversation is effortless."
+    }
+  ]
+}

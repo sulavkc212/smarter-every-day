@@ -1,5 +1,7 @@
 {
   "id": "cheeky-flirty",
+  "section": "charm",
+  "icon": "heart",
   "title": "Cheeky & Flirty",
   "tagline": "Tease warmly. Know when to stop.",
   "description": "Playful banter, harmless teasing and sarcasm with a smile. You'll also learn the difference between a joke and a jab, and when the charming move is not to flirt at all.",
@@ -915,6 +917,200 @@
         }
       ],
       "pattern": "Double down with a fact"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "flirt-word-01",
+      "sentence": "You have a very nice smile.",
+      "target": "very nice",
+      "options": [
+        {
+          "text": "killer",
+          "grade": "best",
+          "why": "Casual, confident and playful."
+        },
+        {
+          "text": "radiant",
+          "grade": "okay",
+          "why": "Beautiful but a little poetic for a first chat."
+        },
+        {
+          "text": "normal",
+          "grade": "miss",
+          "why": "Not a compliment at all."
+        }
+      ],
+      "meaning": "(Casual) extremely good or attractive.",
+      "example": "That's a killer view from your balcony."
+    },
+    {
+      "id": "flirt-word-02",
+      "sentence": "You look very good tonight.",
+      "target": "very good",
+      "options": [
+        {
+          "text": "fine",
+          "grade": "miss",
+          "why": "Sounds like you don't care."
+        },
+        {
+          "text": "ravishing",
+          "grade": "okay",
+          "why": "Over the top. It can sound like a joke."
+        },
+        {
+          "text": "amazing",
+          "grade": "best",
+          "why": "Warm, clear and easy to say naturally."
+        }
+      ],
+      "meaning": "Extremely good.",
+      "example": "You look amazing in that colour."
+    },
+    {
+      "id": "flirt-word-03",
+      "sentence": "I'm very nervous around you.",
+      "target": "very nervous",
+      "options": [
+        {
+          "text": "a little starstruck",
+          "grade": "best",
+          "why": "Admits the nerves as a compliment. Cute and confident."
+        },
+        {
+          "text": "discombobulated",
+          "grade": "okay",
+          "why": "Funny word, but hard to say when nervous."
+        },
+        {
+          "text": "bored",
+          "grade": "miss",
+          "why": "The worst possible word here."
+        }
+      ],
+      "meaning": "Nervous because someone impresses you.",
+      "example": "I was a little starstruck when the climber sat next to me."
+    },
+    {
+      "id": "flirt-word-04",
+      "sentence": "You're a very funny person.",
+      "target": "very funny",
+      "options": [
+        {
+          "text": "droll",
+          "grade": "okay",
+          "why": "Means quietly funny. Few people use it."
+        },
+        {
+          "text": "seriously funny",
+          "grade": "best",
+          "why": "Playful contrast in two simple words."
+        },
+        {
+          "text": "strange",
+          "grade": "miss",
+          "why": "Not a compliment."
+        }
+      ],
+      "meaning": "(Casual) really funny.",
+      "example": "Your stories are seriously funny."
+    },
+    {
+      "id": "flirt-word-05",
+      "sentence": "I like talking to you very much.",
+      "target": "like talking to you very much",
+      "options": [
+        {
+          "text": "could talk to you for hours",
+          "grade": "best",
+          "why": "Warm and specific. It says the time flies."
+        },
+        {
+          "text": "derive pleasure from our discourse",
+          "grade": "okay",
+          "why": "Sounds like a robot trying to flirt."
+        },
+        {
+          "text": "don't mind talking to you",
+          "grade": "miss",
+          "why": "Sounds like you're only tolerating them."
+        }
+      ],
+      "meaning": "Enjoy talking to someone a lot.",
+      "example": "I could talk to you for hours about music."
+    },
+    {
+      "id": "flirt-word-06",
+      "sentence": "You're very charming, you know that?",
+      "target": "very charming",
+      "options": [
+        {
+          "text": "polite",
+          "grade": "miss",
+          "why": "Much weaker and less personal."
+        },
+        {
+          "text": "dangerously charming",
+          "grade": "best",
+          "why": "A playful warning that's really a compliment."
+        },
+        {
+          "text": "beguiling",
+          "grade": "okay",
+          "why": "Right idea, but rare."
+        }
+      ],
+      "meaning": "(Playful) so charming it's almost a problem.",
+      "example": "Careful, that smile is dangerously charming."
+    },
+    {
+      "id": "flirt-word-07",
+      "sentence": "That was a very nice evening.",
+      "target": "very nice",
+      "options": [
+        {
+          "text": "sublime",
+          "grade": "okay",
+          "why": "Beautiful, but it can sound too serious."
+        },
+        {
+          "text": "okay",
+          "grade": "miss",
+          "why": "Sounds disappointed."
+        },
+        {
+          "text": "perfect",
+          "grade": "best",
+          "why": "Simple, warm, and it says you'd want another one."
+        }
+      ],
+      "meaning": "Exactly right in every way.",
+      "example": "The sunset, the tea, the company — perfect."
+    },
+    {
+      "id": "flirt-word-08",
+      "sentence": "You are very clever.",
+      "target": "very clever",
+      "options": [
+        {
+          "text": "sharp",
+          "grade": "best",
+          "why": "Short, cool and admiring."
+        },
+        {
+          "text": "perspicacious",
+          "grade": "okay",
+          "why": "Means clever, but almost nobody says it."
+        },
+        {
+          "text": "loud",
+          "grade": "miss",
+          "why": "A different quality entirely."
+        }
+      ],
+      "meaning": "Quick and clever.",
+      "example": "She's sharp — she caught my joke before I finished it."
     }
   ]
 }

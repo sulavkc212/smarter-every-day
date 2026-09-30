@@ -1,7 +1,8 @@
+import { useEffect } from 'react'
 import { Navigate, useParams, useSearchParams } from 'react-router'
 import { decks, deckItems, getDeck } from '../data'
 import { drillKinds, type DrillKind } from '../data/schema'
-import { buildSession, reviewPool, unlockedDeckIds } from '../lib/session'
+import { buildSession, dailyPool, reviewPool, unlockedDeckIds } from '../lib/session'
 import { today } from '../lib/dates'
 import { useProgress } from '../store/progress'
 import { Session } from './Session'
@@ -12,10 +13,14 @@ export function Play() {
   const deck = getDeck(deckId)
   const raw = params.get('drill')
   const drill = drillKinds.includes(raw as DrillKind) ? (raw as DrillKind) : undefined
+  const open = !!deck && unlockedDeckIds(decks, useProgress.getState().progress).has(deck.id)
+  const setLastDeck = useProgress((s) => s.setLastDeck)
 
-  if (!deck || !unlockedDeckIds(decks, useProgress.getState().progress).has(deck.id)) {
-    return <Navigate to="/" replace />
-  }
+  useEffect(() => {
+    if (deck && open) setLastDeck(deck.id)
+  }, [deck, open, setLastDeck])
+
+  if (!deck || !open) return <Navigate to="/explore" replace />
 
   return (
     <Session
@@ -27,11 +32,24 @@ export function Play() {
   )
 }
 
+export function Daily() {
+  return (
+    <Session
+      title="Daily 10"
+      exitTo="/"
+      build={() => {
+        const { progress } = useProgress.getState()
+        return buildSession(dailyPool(decks, progress), progress, today())
+      }}
+    />
+  )
+}
+
 export function Review() {
   return (
     <Session
       title="Review"
-      exitTo="/"
+      exitTo="/review"
       build={() => {
         const { progress } = useProgress.getState()
         const open = decks.filter((d) => unlockedDeckIds(decks, progress).has(d.id))

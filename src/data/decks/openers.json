@@ -1,0 +1,978 @@
+{
+  "id": "openers",
+  "section": "craft",
+  "icon": "wave",
+  "title": "Openers",
+  "tagline": "The first line, without the fear.",
+  "description": "How to start a chat with a stranger naturally: use the moment you're both in, ask their opinion, offer a small help, and know when someone would rather be left alone.",
+  "vibe": [
+    {
+      "id": "op-vibe-01",
+      "setting": "Cafe",
+      "scenario": "A traveller at the next table is frowning at a map in a guidebook.",
+      "options": [
+        {
+          "text": "Hello. Where are you from?",
+          "grade": "okay",
+          "tone": "Generic"
+        },
+        {
+          "text": "Want a local's opinion, or do you trust the book more than me?",
+          "grade": "best",
+          "tone": "Playful + helpful"
+        },
+        {
+          "text": "(Stare at them until they notice you.)",
+          "grade": "miss",
+          "tone": "Creepy"
+        }
+      ],
+      "pattern": "Open with the moment",
+      "why": "The best opener is about what's happening right now. It gives them an easy reason to answer."
+    },
+    {
+      "id": "op-vibe-02",
+      "setting": "Lakeside street",
+      "scenario": "A traveller walks past in a Liverpool football shirt.",
+      "options": [
+        {
+          "text": "Brave shirt to wear in a country full of Manchester United fans.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "Liverpool is a terrible team, honestly. They were lucky last season and everyone knows it.",
+          "grade": "miss",
+          "tone": "Insulting"
+        },
+        {
+          "text": "Nice shirt.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Comment on their choice",
+      "why": "A shirt, a book, a camera — things people chose — are safe, friendly openers. Tease the choice, never the person."
+    },
+    {
+      "id": "op-vibe-03",
+      "setting": "Quiet cafe",
+      "scenario": "Someone is wearing big headphones and typing fast on a laptop, clearly focused.",
+      "options": [
+        {
+          "text": "Sorry to bother you, but what are you working on?",
+          "grade": "okay",
+          "tone": "Interrupting"
+        },
+        {
+          "text": "(Tap their shoulder.) Hey! Hey! Where are you from?",
+          "grade": "miss",
+          "tone": "Intrusive"
+        },
+        {
+          "text": "(Leave them alone. If they take a break and look up, smile.)",
+          "grade": "best",
+          "tone": "Patient"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "Headphones and fast typing mean \"busy\". Good openers wait for an open moment. A smile later is an invitation they can accept."
+    },
+    {
+      "id": "op-vibe-04",
+      "setting": "Paragliding meeting point",
+      "scenario": "The person next to you in the line looks very nervous.",
+      "options": [
+        {
+          "text": "Are you nervous?",
+          "grade": "okay",
+          "tone": "Direct"
+        },
+        {
+          "text": "Did you hear about the accident here last year? Scary, right? I read about it online.",
+          "grade": "miss",
+          "tone": "Scary"
+        },
+        {
+          "text": "First time? Me too. If I scream, please pretend it was you.",
+          "grade": "best",
+          "tone": "Shared nerves"
+        }
+      ],
+      "pattern": "Share the feeling",
+      "why": "Admitting your own nerves makes theirs normal. Now you're in it together."
+    },
+    {
+      "id": "op-vibe-05",
+      "setting": "Phewa lakeshore, sunset",
+      "scenario": "A traveller alone is taking photos of the sky, trying to get themselves in the shot.",
+      "options": [
+        {
+          "text": "Want one with you in it? I'm much better at photos than at directions.",
+          "grade": "best",
+          "tone": "Helpful + funny"
+        },
+        {
+          "text": "Your photos won't look as good as the real thing.",
+          "grade": "miss",
+          "tone": "Negative"
+        },
+        {
+          "text": "Beautiful sunset.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Offer a small help",
+      "why": "Offering a photo is the classic traveller opener: useful, safe, and it naturally leads to \"where are you from?\"."
+    },
+    {
+      "id": "op-vibe-06",
+      "setting": "Rooftop party",
+      "scenario": "You know almost no one. Someone else is standing alone at the edge of the roof.",
+      "options": [
+        {
+          "text": "Why are you standing alone? Don't you have any friends here?",
+          "grade": "miss",
+          "tone": "Awkward"
+        },
+        {
+          "text": "I know exactly one person here, and she's disappeared. Mind if I stand with you?",
+          "grade": "best",
+          "tone": "Honest"
+        },
+        {
+          "text": "Hi. Nice party.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Honest and a little vulnerable",
+      "why": "Saying the true, slightly awkward thing is charming. It also tells them it's okay to feel the same."
+    },
+    {
+      "id": "op-vibe-07",
+      "setting": "Bookshop in Lakeside",
+      "scenario": "Someone picks up a book you've read and loved.",
+      "options": [
+        {
+          "text": "I've read that one.",
+          "grade": "okay",
+          "tone": "Plain"
+        },
+        {
+          "text": "That book is overrated, honestly. Everyone reads it, but it's really not that good.",
+          "grade": "miss",
+          "tone": "Negative"
+        },
+        {
+          "text": "Good choice — but the ending will ruin your whole week. In a good way.",
+          "grade": "best",
+          "tone": "Intriguing"
+        }
+      ],
+      "pattern": "Tease the story",
+      "why": "A small mystery (\"the ending will ruin your week\") makes them want to ask more."
+    },
+    {
+      "id": "op-vibe-08",
+      "setting": "Local restaurant",
+      "scenario": "A traveller is trying to order in Nepali. The waiter looks confused.",
+      "options": [
+        {
+          "text": "(Laugh loudly.)",
+          "grade": "miss",
+          "tone": "Mocking"
+        },
+        {
+          "text": "Your Nepali is better than my French. Want a little help with the last word?",
+          "grade": "best",
+          "tone": "Warm help"
+        },
+        {
+          "text": "(To the waiter:) She wants chicken momo.",
+          "grade": "okay",
+          "tone": "Taking over"
+        }
+      ],
+      "pattern": "Praise the effort, offer help",
+      "why": "You respected their effort first, then offered help. They keep their dignity and gain a friend."
+    },
+    {
+      "id": "op-vibe-09",
+      "setting": "Bus stop",
+      "scenario": "The bus is an hour late. Another traveller sighs at the empty road.",
+      "options": [
+        {
+          "text": "The bus is late.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "I've decided this bus is a myth. Want to share a tea while we wait for the legend?",
+          "grade": "best",
+          "tone": "Playful invite"
+        },
+        {
+          "text": "(Complain loudly about Nepal to nobody in particular.)",
+          "grade": "miss",
+          "tone": "Negative"
+        }
+      ],
+      "pattern": "Shared problem, shared joke",
+      "why": "A shared annoyance is a natural bond. Add a joke and a small plan, and it becomes a chat."
+    },
+    {
+      "id": "op-vibe-10",
+      "setting": "Viewpoint",
+      "scenario": "A traveller is using an old film camera.",
+      "options": [
+        {
+          "text": "Is that film? Okay, I have to ask — what are you saving the last photo for?",
+          "grade": "best",
+          "tone": "Curious"
+        },
+        {
+          "text": "Why not just use your phone? It's much easier and the photos are better anyway.",
+          "grade": "miss",
+          "tone": "Dismissive"
+        },
+        {
+          "text": "Nice camera.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Ask a question only they can answer",
+      "why": "A specific, curious question tells them you actually noticed. It's much more fun to answer than \"nice camera\"."
+    },
+    {
+      "id": "op-vibe-11",
+      "setting": "Yoga class, Lakeside",
+      "scenario": "The person next to you fell over during a pose and is laughing at themselves.",
+      "options": [
+        {
+          "text": "You fell over, ha ha.",
+          "grade": "miss",
+          "tone": "Pointing"
+        },
+        {
+          "text": "Are you okay?",
+          "grade": "okay",
+          "tone": "Kind"
+        },
+        {
+          "text": "That was the most honest pose in the room. I was falling on the inside.",
+          "grade": "best",
+          "tone": "Warm joke"
+        }
+      ],
+      "pattern": "Laugh with, not at",
+      "why": "They're already laughing. Join them by admitting your own struggle, and the moment becomes a connection."
+    },
+    {
+      "id": "op-vibe-12",
+      "setting": "Teahouse on the trail",
+      "scenario": "A trekker has been writing in a journal. They put the pen down and stretch.",
+      "options": [
+        {
+          "text": "Can I read it?",
+          "grade": "miss",
+          "tone": "Too personal"
+        },
+        {
+          "text": "Okay, I need to know — what made it into the diary today?",
+          "grade": "best",
+          "tone": "Curious"
+        },
+        {
+          "text": "What are you writing?",
+          "grade": "okay",
+          "tone": "Direct"
+        }
+      ],
+      "pattern": "Wait for the pause",
+      "why": "You waited for a natural break, then asked about their day, not their private words."
+    },
+    {
+      "id": "op-vibe-13",
+      "setting": "Cafe",
+      "scenario": "You open with a joke. They give a polite, short reply and look back at their phone.",
+      "options": [
+        {
+          "text": "Okay, okay, here's another one, you'll love this one. So there's a yak, and the yak walks into a teahouse…",
+          "grade": "miss",
+          "tone": "Ignoring signals"
+        },
+        {
+          "text": "Anyway — enjoy the view. I'll leave you to it.",
+          "grade": "best",
+          "tone": "Graceful"
+        },
+        {
+          "text": "So… where are you from?",
+          "grade": "okay",
+          "tone": "Pushing on"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "A short reply plus looking away means \"not now\". A light, friendly exit leaves a good memory — and a door open."
+    },
+    {
+      "id": "op-vibe-14",
+      "setting": "Lakeside road",
+      "scenario": "A traveller asks you the way to the boat station. The chat could end right there.",
+      "options": [
+        {
+          "text": "Two minutes that way. If you pass the blue cafe, try the lemon cake. Where are you off to after?",
+          "grade": "best",
+          "tone": "Helpful + curious"
+        },
+        {
+          "text": "That way.",
+          "grade": "okay",
+          "tone": "Minimal"
+        },
+        {
+          "text": "I'm going there too, actually. I'll just come with you, it's no problem, let's go together, come.",
+          "grade": "miss",
+          "tone": "Pushy"
+        }
+      ],
+      "pattern": "Turn a question into a chat",
+      "why": "Answer, add one tip, ask one question. If they want to talk, they will. If not, you were still helpful."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "op-yes-01",
+      "prompt": "Yeah, I'm from Spain.",
+      "cards": [
+        {
+          "text": "Oh, nice.",
+          "keepsGoing": false,
+          "why": "Polite, and the conversation stops."
+        },
+        {
+          "text": "Spain! Then our dinner time must feel like lunch to you. Which part of Spain?",
+          "keepsGoing": true,
+          "why": "A friendly cultural joke, then an easy question."
+        }
+      ],
+      "pattern": "Friendly joke + follow-up"
+    },
+    {
+      "id": "op-yes-02",
+      "prompt": "I just got here this morning.",
+      "cards": [
+        {
+          "text": "Welcome.",
+          "keepsGoing": false,
+          "why": "Kind, and finished."
+        },
+        {
+          "text": "Fresh! You still have the first-day face. What's surprised you so far?",
+          "keepsGoing": true,
+          "why": "Playful observation, then a question they'll enjoy."
+        }
+      ],
+      "pattern": "Observe + ask"
+    },
+    {
+      "id": "op-yes-03",
+      "prompt": "I'm a nurse.",
+      "cards": [
+        {
+          "text": "Okay.",
+          "keepsGoing": false,
+          "why": "Nothing to continue."
+        },
+        {
+          "text": "So you're the one we call when the trek goes wrong. What made you choose nursing?",
+          "keepsGoing": true,
+          "why": "A warm joke, then a real question about their life."
+        },
+        {
+          "text": "That's a hard job.",
+          "keepsGoing": false,
+          "why": "True, but it doesn't invite them to say more."
+        }
+      ],
+      "pattern": "Joke + the why question"
+    },
+    {
+      "id": "op-yes-04",
+      "prompt": "I'm travelling with my sister.",
+      "cards": [
+        {
+          "text": "Big sister or little sister? I need to know who's in charge.",
+          "keepsGoing": true,
+          "why": "A playful question about their story."
+        },
+        {
+          "text": "Nice.",
+          "keepsGoing": false,
+          "why": "One word, and they have to start again."
+        }
+      ],
+      "pattern": "Playful question"
+    },
+    {
+      "id": "op-yes-05",
+      "prompt": "Honestly, I don't really like hiking.",
+      "cards": [
+        {
+          "text": "Then why did you come to Nepal?",
+          "keepsGoing": false,
+          "why": "Sounds like a judgement, even as a question."
+        },
+        {
+          "text": "A person after my own heart. Then Pokhara is perfect — lakes, cafes, and hills you can admire from a chair.",
+          "keepsGoing": true,
+          "why": "Agrees with them and gives them a great plan."
+        }
+      ],
+      "pattern": "Agree + reframe"
+    },
+    {
+      "id": "op-yes-06",
+      "prompt": "This is my third time in Nepal.",
+      "cards": [
+        {
+          "text": "Third time? Okay, now you have to tell me what keeps pulling you back.",
+          "keepsGoing": true,
+          "why": "Shows interest and invites their best story."
+        },
+        {
+          "text": "Wow.",
+          "keepsGoing": false,
+          "why": "A reaction, not a reply."
+        }
+      ],
+      "pattern": "Invite their story"
+    },
+    {
+      "id": "op-yes-07",
+      "prompt": "Sorry, my English is not great.",
+      "cards": [
+        {
+          "text": "It's okay.",
+          "keepsGoing": false,
+          "why": "Kind but empty."
+        },
+        {
+          "text": "I understood every word — you're doing great. What language do you dream in?",
+          "keepsGoing": true,
+          "why": "Reassures, then asks a lovely, unusual question."
+        }
+      ],
+      "pattern": "Reassure + unusual question"
+    },
+    {
+      "id": "op-yes-08",
+      "prompt": "I'm a bit tired — really long bus ride.",
+      "cards": [
+        {
+          "text": "Then I won't keep you long. Quick verdict before you crash: worth it?",
+          "keepsGoing": true,
+          "why": "Respects their energy and still gives an easy, fun question."
+        },
+        {
+          "text": "Me too.",
+          "keepsGoing": false,
+          "why": "Now you're both tired and silent."
+        },
+        {
+          "text": "You should go and sleep.",
+          "keepsGoing": false,
+          "why": "Kind, but it sounds like you want them to leave."
+        }
+      ],
+      "pattern": "Respect their energy"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "op-up-01",
+      "clunky": "Um, hi, sorry, can I ask, maybe, where are you from?",
+      "tiles": [
+        "Hi —",
+        "I'm guessing",
+        "this isn't",
+        "your first trip to Asia?"
+      ],
+      "distractors": [
+        "um",
+        "sorry, can I ask",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "Hi —",
+          "I'm guessing",
+          "this isn't",
+          "your first trip to Asia?"
+        ]
+      ],
+      "why": "A guess is more fun than a question. Even if you're wrong, they'll want to correct you."
+    },
+    {
+      "id": "op-up-02",
+      "clunky": "Hello, your camera is nice, very nice camera, I like.",
+      "tiles": [
+        "That camera",
+        "looks like",
+        "it has stories —",
+        "what's the best shot so far?"
+      ],
+      "distractors": [
+        "very nice camera",
+        "I like",
+        "hello"
+      ],
+      "answers": [
+        [
+          "That camera",
+          "looks like",
+          "it has stories —",
+          "what's the best shot so far?"
+        ]
+      ],
+      "why": "Compliment, then a question that lets them show off. That's an opener that works."
+    },
+    {
+      "id": "op-up-03",
+      "clunky": "Sorry, is this seat, like, free, can I sit, if okay?",
+      "tiles": [
+        "Is this seat free?",
+        "I promise",
+        "I'm quiet",
+        "after my second tea."
+      ],
+      "distractors": [
+        "sorry",
+        "like",
+        "if okay"
+      ],
+      "answers": [
+        [
+          "Is this seat free?",
+          "I promise",
+          "I'm quiet",
+          "after my second tea."
+        ]
+      ],
+      "why": "Ask once, clearly, then add a tiny joke. It makes sharing a table feel friendly."
+    },
+    {
+      "id": "op-up-04",
+      "clunky": "Excuse me, I am local, if you want help, maybe I can help.",
+      "tiles": [
+        "You look like",
+        "you're hunting for something —",
+        "can a local",
+        "save you some time?"
+      ],
+      "distractors": [
+        "if you want help",
+        "maybe I can help",
+        "I am local"
+      ],
+      "answers": [
+        [
+          "You look like",
+          "you're hunting for something —",
+          "can a local",
+          "save you some time?"
+        ]
+      ],
+      "why": "Name what you see, then offer something specific. It sounds helpful, not pushy."
+    },
+    {
+      "id": "op-up-05",
+      "clunky": "The weather is nice, yes? Nice weather today.",
+      "tiles": [
+        "Days like this",
+        "are why",
+        "people never leave",
+        "Pokhara."
+      ],
+      "distractors": [
+        "yes?",
+        "nice weather today",
+        "the weather is nice"
+      ],
+      "answers": [
+        [
+          "Days like this",
+          "are why",
+          "people never leave",
+          "Pokhara."
+        ]
+      ],
+      "why": "Weather openers work when they say something bigger. This one invites \"Is that what happened to you?\""
+    },
+    {
+      "id": "op-up-06",
+      "clunky": "Hi, I'm, um, Ram, and you are, what is your name?",
+      "tiles": [
+        "I'm Ram,",
+        "by the way —",
+        "and you are…?"
+      ],
+      "distractors": [
+        "um",
+        "what is your name",
+        "hi, I'm"
+      ],
+      "answers": [
+        [
+          "I'm Ram,",
+          "by the way —",
+          "and you are…?"
+        ]
+      ],
+      "why": "\"By the way\" makes the name exchange feel natural, not like a form. (Use your own name, of course.)"
+    },
+    {
+      "id": "op-up-07",
+      "clunky": "Are you, like, maybe going to Sarangkot also, tomorrow, maybe?",
+      "tiles": [
+        "Heading up",
+        "to Sarangkot",
+        "for sunrise",
+        "tomorrow?"
+      ],
+      "distractors": [
+        "like",
+        "maybe",
+        "also"
+      ],
+      "answers": [
+        [
+          "Heading up",
+          "to Sarangkot",
+          "for sunrise",
+          "tomorrow?"
+        ]
+      ],
+      "why": "Short and natural. Dropping \"Are you\" at the start sounds relaxed, like a native speaker."
+    },
+    {
+      "id": "op-up-08",
+      "clunky": "I saw you are reading a book, what book is that, it looks interesting maybe.",
+      "tiles": [
+        "Okay,",
+        "I have to ask —",
+        "is that book",
+        "as good as it looks?"
+      ],
+      "distractors": [
+        "I saw you are reading",
+        "what book is that",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "Okay,",
+          "I have to ask —",
+          "is that book",
+          "as good as it looks?"
+        ]
+      ],
+      "why": "\"I have to ask\" shows real curiosity, and the question is easy to answer with an opinion."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "op-drop-01",
+      "fact": "Psychologists call it the \"liking gap\": after talking with a stranger, people usually underestimate how much the other person liked them.",
+      "source": "Boothby, Cooney, Sandstrom & Clark, \"The liking gap in conversations\", Psychological Science (2018)",
+      "prompt": "At a cafe, your friend says, \"Don't go and talk to them. They'll think you're weird.\"",
+      "options": [
+        {
+          "text": "Yeah, you're right. I'll leave it.",
+          "grade": "miss",
+          "why": "Lets fear win, again."
+        },
+        {
+          "text": "There's research on this — people like us more than we think after a chat. It's called the liking gap. So I'm less weird than I feel.",
+          "grade": "best",
+          "why": "Uses the fact to beat your own nerves, with a joke."
+        },
+        {
+          "text": "Research shows that people usually underestimate how much strangers like them after a conversation. It's called the liking gap, from a 2018 study.",
+          "grade": "okay",
+          "why": "True, but it sounds like a lecture to your friend, and you still haven't moved."
+        }
+      ],
+      "pattern": "Fact that gives courage"
+    },
+    {
+      "id": "op-drop-02",
+      "fact": "In a study, train commuters who were asked to talk to a stranger enjoyed their ride more than those who sat in silence — the opposite of what they expected.",
+      "source": "Epley & Schroeder, \"Mistakenly seeking solitude\", Journal of Experimental Psychology: General (2014)",
+      "prompt": "On a seven-hour bus, the traveller next to you says, \"I usually just listen to music on buses.\"",
+      "options": [
+        {
+          "text": "Okay.",
+          "grade": "okay",
+          "why": "Respectful, but you gave up quickly."
+        },
+        {
+          "text": "Fair! There's a study where people who talked to strangers on trains enjoyed the ride more than they expected. Test it with me for the first hour?",
+          "grade": "best",
+          "why": "Light, playful, and it gives them an easy exit if they still want music."
+        },
+        {
+          "text": "You should talk to people, it's better. Music is boring, and it's rude to ignore the person next to you.",
+          "grade": "miss",
+          "why": "Pushy and judgemental."
+        }
+      ],
+      "pattern": "Playful invitation with an exit"
+    },
+    {
+      "id": "op-drop-03",
+      "fact": "Research found that people who ask more follow-up questions in conversation are liked more by their partners.",
+      "source": "Huang, Yeomans, Brooks, Minson & Gino, \"It doesn't hurt to ask\", Journal of Personality and Social Psychology (2017)",
+      "prompt": "A friend asks you, \"What's the secret to being good at small talk?\"",
+      "options": [
+        {
+          "text": "Ask one more question than feels normal. Research found people who ask follow-up questions are liked more — even on first dates.",
+          "grade": "best",
+          "why": "A simple rule, backed by the fact, easy to remember."
+        },
+        {
+          "text": "Just talk about yourself. People love confident people.",
+          "grade": "miss",
+          "why": "The opposite of what the research found."
+        },
+        {
+          "text": "Studies say asking follow-up questions makes people like you more.",
+          "grade": "okay",
+          "why": "Right, but it's not yet advice."
+        }
+      ],
+      "pattern": "Turn a fact into a rule"
+    },
+    {
+      "id": "op-drop-04",
+      "fact": "In \"How to Win Friends and Influence People\" (1936), Dale Carnegie wrote that a person's name is, to them, the sweetest sound in any language.",
+      "source": "Dale Carnegie, \"How to Win Friends and Influence People\" (1936)",
+      "prompt": "A traveller says, \"I'm Ingrid, by the way. I'm terrible with names.\"",
+      "options": [
+        {
+          "text": "Me too, so I'll probably forget yours.",
+          "grade": "miss",
+          "why": "Honest, but it tells them they don't matter."
+        },
+        {
+          "text": "Dale Carnegie said a person's name is the sweetest and most important sound to them, in any language. It's from his famous book from 1936, and people still quote it.",
+          "grade": "okay",
+          "why": "Interesting, but you forgot to actually use her name."
+        },
+        {
+          "text": "Then let's make it easy: Ingrid, I'm Ram. Old trick — say the name back and it sticks. Apparently it's the sweetest sound there is.",
+          "grade": "best",
+          "why": "Uses the idea immediately, lightly. (Use your own name.)"
+        }
+      ],
+      "pattern": "Use it, don't explain it"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "op-word-01",
+      "sentence": "Your jacket is very nice.",
+      "target": "very nice",
+      "options": [
+        {
+          "text": "fine",
+          "grade": "miss",
+          "why": "Sounds like you don't like it."
+        },
+        {
+          "text": "exquisite",
+          "grade": "okay",
+          "why": "Too much for a jacket. It sounds strange."
+        },
+        {
+          "text": "so cool",
+          "grade": "best",
+          "why": "Casual, warm, and exactly how friends talk."
+        }
+      ],
+      "meaning": "(Casual) really great and stylish.",
+      "example": "That old camera is so cool."
+    },
+    {
+      "id": "op-word-02",
+      "sentence": "I am very curious about your country.",
+      "target": "very curious about",
+      "options": [
+        {
+          "text": "dying to hear about",
+          "grade": "best",
+          "why": "Friendly and enthusiastic. People love to be asked."
+        },
+        {
+          "text": "intrigued by",
+          "grade": "okay",
+          "why": "Correct, a bit formal."
+        },
+        {
+          "text": "worried about",
+          "grade": "miss",
+          "why": "A very different meaning."
+        }
+      ],
+      "meaning": "(Casual) very eager to hear about.",
+      "example": "I'm dying to hear how the trek went."
+    },
+    {
+      "id": "op-word-03",
+      "sentence": "Your trip plan sounds very exciting.",
+      "target": "very exciting",
+      "options": [
+        {
+          "text": "tiring",
+          "grade": "miss",
+          "why": "Not a compliment."
+        },
+        {
+          "text": "amazing",
+          "grade": "best",
+          "why": "Simple, warm and universally understood."
+        },
+        {
+          "text": "exhilarating",
+          "grade": "okay",
+          "why": "Good word, but longer and less common."
+        }
+      ],
+      "meaning": "Extremely good or exciting.",
+      "example": "Paragliding over the lake was amazing."
+    },
+    {
+      "id": "op-word-04",
+      "sentence": "It was very nice to meet you.",
+      "target": "very nice",
+      "options": [
+        {
+          "text": "fine",
+          "grade": "miss",
+          "why": "Sounds cold at a goodbye."
+        },
+        {
+          "text": "delightful",
+          "grade": "okay",
+          "why": "Polite, a little old-fashioned."
+        },
+        {
+          "text": "a real pleasure",
+          "grade": "best",
+          "why": "Warm, sincere and easy to understand."
+        }
+      ],
+      "meaning": "Something you truly enjoyed.",
+      "example": "It was a real pleasure showing you around."
+    },
+    {
+      "id": "op-word-05",
+      "sentence": "This place is very popular with travellers.",
+      "target": "very popular",
+      "options": [
+        {
+          "text": "a favourite",
+          "grade": "best",
+          "why": "Warm and simple. It sounds like people love it."
+        },
+        {
+          "text": "much frequented",
+          "grade": "okay",
+          "why": "Correct but stiff."
+        },
+        {
+          "text": "unknown",
+          "grade": "miss",
+          "why": "The opposite."
+        }
+      ],
+      "meaning": "Liked more than others.",
+      "example": "This cafe is a favourite with climbers."
+    },
+    {
+      "id": "op-word-06",
+      "sentence": "I'm very happy you came tonight.",
+      "target": "very happy",
+      "options": [
+        {
+          "text": "elated",
+          "grade": "okay",
+          "why": "Too strong for this moment."
+        },
+        {
+          "text": "okay",
+          "grade": "miss",
+          "why": "Sounds like you don't care."
+        },
+        {
+          "text": "so glad",
+          "grade": "best",
+          "why": "Warm and natural."
+        }
+      ],
+      "meaning": "Very pleased.",
+      "example": "I'm so glad the rain stopped for your boat trip."
+    },
+    {
+      "id": "op-word-07",
+      "sentence": "Your idea is very good.",
+      "target": "very good",
+      "options": [
+        {
+          "text": "brilliant",
+          "grade": "best",
+          "why": "Strong and friendly praise."
+        },
+        {
+          "text": "ingenious",
+          "grade": "okay",
+          "why": "Means very clever. A bit much for most ideas."
+        },
+        {
+          "text": "fine",
+          "grade": "miss",
+          "why": "Sounds unimpressed."
+        }
+      ],
+      "meaning": "Very clever or excellent.",
+      "example": "Taking the early boat was a brilliant idea."
+    },
+    {
+      "id": "op-word-08",
+      "sentence": "The party last night was very boring.",
+      "target": "very boring",
+      "options": [
+        {
+          "text": "calm",
+          "grade": "miss",
+          "why": "Calm can be nice. It's not the same as boring."
+        },
+        {
+          "text": "dead",
+          "grade": "best",
+          "why": "Casual, vivid, and everyone uses it."
+        },
+        {
+          "text": "tedious",
+          "grade": "okay",
+          "why": "Correct, but formal."
+        }
+      ],
+      "meaning": "(Casual) with no energy or fun at all.",
+      "example": "Lakeside is dead on Monday nights."
+    }
+  ]
+}

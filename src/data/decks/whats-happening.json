@@ -1,0 +1,633 @@
+{
+  "id": "whats-happening",
+  "section": "culture",
+  "icon": "news",
+  "title": "What's Happening",
+  "tagline": "This season's news, talked about lightly.",
+  "description": "Recent sport, space, music and Nepal news to bring up with travellers — plus how to talk about the news without lecturing, arguing or pretending. Dated cards hide themselves when they go stale.",
+  "vibe": [
+    {
+      "id": "wh-vibe-01",
+      "setting": "Cafe",
+      "scenario": "A traveller brings up a heavy political story from their home country.",
+      "options": [
+        {
+          "text": "I don't know much about that. I don't really follow the news from other countries, only a little bit sometimes.",
+          "grade": "okay",
+          "tone": "Closed"
+        },
+        {
+          "text": "That sounds complicated. How are people there actually feeling about it, day to day?",
+          "grade": "best",
+          "tone": "Curious"
+        },
+        {
+          "text": "Your government is stupid, everyone knows that.",
+          "grade": "miss",
+          "tone": "Hot take"
+        }
+      ],
+      "pattern": "Ask about people, not positions",
+      "why": "You don't need an opinion on their politics. Asking how people feel is kind, safe and interesting."
+    },
+    {
+      "id": "wh-vibe-02",
+      "setting": "Rooftop",
+      "scenario": "A traveller asks, \"What do you think about politics in Nepal?\"",
+      "options": [
+        {
+          "text": "Honestly, all our politicians are thieves, every single one. Nothing ever changes, nobody does anything, it's hopeless.",
+          "grade": "miss",
+          "tone": "Rant"
+        },
+        {
+          "text": "Ask five Nepalis and you'll get six opinions. Mine: I want good jobs here for young people. What do people argue about at home?",
+          "grade": "best",
+          "tone": "Light + honest"
+        },
+        {
+          "text": "It's complicated.",
+          "grade": "okay",
+          "tone": "Avoiding"
+        }
+      ],
+      "pattern": "Light, honest, then turn it around",
+      "why": "One sincere sentence about what you want, then a question back. You stay honest without starting a rant."
+    },
+    {
+      "id": "wh-vibe-03",
+      "setting": "Cafe",
+      "scenario": "A traveller mentions a big news story you've never heard of.",
+      "options": [
+        {
+          "text": "Oh yes, I read about it. Crazy, right?",
+          "grade": "miss",
+          "tone": "Pretending"
+        },
+        {
+          "text": "Hmm. I'm not sure. I don't really follow the news much, I'm always busy with work and everything.",
+          "grade": "okay",
+          "tone": "Blank"
+        },
+        {
+          "text": "I missed that one — give me the short version?",
+          "grade": "best",
+          "tone": "Honest"
+        }
+      ],
+      "pattern": "Honest curiosity",
+      "why": "Pretending gets caught fast. Asking for the short version is honest, and people like explaining."
+    },
+    {
+      "id": "wh-vibe-04",
+      "setting": "Bar, big match on TV",
+      "scenario": "Everyone is watching a football final. You don't care about football at all.",
+      "options": [
+        {
+          "text": "I know nothing about football, so I'm supporting whoever you support. Explain the rules at half-time?",
+          "grade": "best",
+          "tone": "Joining in"
+        },
+        {
+          "text": "Football is so boring. I don't understand why people care so much about men running after a ball.",
+          "grade": "miss",
+          "tone": "Dismissive"
+        },
+        {
+          "text": "I don't watch football.",
+          "grade": "okay",
+          "tone": "Honest"
+        }
+      ],
+      "pattern": "Join the joy",
+      "why": "You don't have to love the sport to enjoy the moment. Borrowing their team makes you part of it."
+    },
+    {
+      "id": "wh-vibe-05",
+      "setting": "Hostel",
+      "scenario": "A traveller tells you their home region was hit by a disaster this week.",
+      "options": [
+        {
+          "text": "I'm so sorry. Is your family okay?",
+          "grade": "best",
+          "tone": "Caring"
+        },
+        {
+          "text": "That's really bad. I think I saw something about it on the news this morning, but I didn't read it all.",
+          "grade": "okay",
+          "tone": "Flat"
+        },
+        {
+          "text": "We had a big flood here too, and honestly it was much worse. Let me tell you what happened.",
+          "grade": "miss",
+          "tone": "Competing"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "The first question is about the people they love. Never compare tragedies."
+    },
+    {
+      "id": "wh-vibe-06",
+      "setting": "Group dinner",
+      "scenario": "Two travellers are getting heated about a news story. The table has gone quiet.",
+      "options": [
+        {
+          "text": "Guys, calm down.",
+          "grade": "okay",
+          "tone": "Scolding"
+        },
+        {
+          "text": "(Take a side loudly.)",
+          "grade": "miss",
+          "tone": "Fuel on the fire"
+        },
+        {
+          "text": "Okay, ceasefire. There's one thing this whole table agrees on — look at that sunset.",
+          "grade": "best",
+          "tone": "Redirect"
+        }
+      ],
+      "pattern": "Redirect the heat",
+      "why": "A playful ceasefire and something beautiful to look at gives everyone a way out without losing face."
+    },
+    {
+      "id": "wh-vibe-07",
+      "setting": "Cafe",
+      "scenario": "A traveller laughs about a viral video you haven't seen.",
+      "options": [
+        {
+          "text": "I don't watch that kind of stuff. Social media is a waste of time, honestly.",
+          "grade": "miss",
+          "tone": "Superior"
+        },
+        {
+          "text": "I haven't seen it — show me. If there's a cat in it, I'm already in.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "I didn't see it. I don't really use TikTok or Instagram much, so I usually miss all those videos.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Invite them to share",
+      "why": "\"Show me\" turns their laugh into a shared moment. Judging it just makes you the boring one."
+    },
+    {
+      "id": "wh-vibe-08",
+      "setting": "Cafe",
+      "scenario": "A traveller asks kindly, \"I saw there was a flood in Nepal. Is everyone okay?\"",
+      "options": [
+        {
+          "text": "Some areas were hit hard, and it's been really tough for families there. Here in Pokhara everything's running normally. Thank you for asking.",
+          "grade": "best",
+          "tone": "Honest + grateful"
+        },
+        {
+          "text": "Yes, yes, no problem, everything is totally fine everywhere, don't worry at all, come and trek!",
+          "grade": "miss",
+          "tone": "Brushing it off"
+        },
+        {
+          "text": "Yes, everything is okay.",
+          "grade": "okay",
+          "tone": "Brief"
+        }
+      ],
+      "pattern": "Honest and grateful",
+      "why": "Respect the people who suffered, reassure where it's true, and thank them for caring."
+    },
+    {
+      "id": "wh-vibe-09",
+      "setting": "Lakeside",
+      "scenario": "A traveller sighs, \"The news is so depressing these days.\"",
+      "options": [
+        {
+          "text": "It is. So here's my rule: one good-news story for every bad one. Your turn — what good thing happened this week?",
+          "grade": "best",
+          "tone": "Lifting"
+        },
+        {
+          "text": "Yes, the world is ending, honestly. Everything is going to get worse and worse.",
+          "grade": "miss",
+          "tone": "Doom"
+        },
+        {
+          "text": "Yes, it's bad.",
+          "grade": "okay",
+          "tone": "Agreeing"
+        }
+      ],
+      "pattern": "Agree, then lift",
+      "why": "Agree first so they feel heard, then offer a small game that lifts the mood."
+    },
+    {
+      "id": "wh-vibe-10",
+      "setting": "Bus",
+      "scenario": "A traveller whose country has an election soon asks, \"Who would you vote for?\"",
+      "options": [
+        {
+          "text": "Definitely not the one you like.",
+          "grade": "miss",
+          "tone": "Provoking"
+        },
+        {
+          "text": "I don't know. I don't know much about your country's politics or who the candidates are, sorry.",
+          "grade": "okay",
+          "tone": "Blank"
+        },
+        {
+          "text": "I'd need a passport first. Who's winning the argument at your family's dinner table?",
+          "grade": "best",
+          "tone": "Light dodge"
+        }
+      ],
+      "pattern": "Dodge with a smile",
+      "why": "A joke gets you out of someone else's election, and the question gives them the stage."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "wh-yes-01",
+      "prompt": "Did you watch the match last night?",
+      "cards": [
+        {
+          "text": "No.",
+          "keepsGoing": false,
+          "why": "End of topic."
+        },
+        {
+          "text": "Only the last ten minutes, which I've decided were the important ones. Who were you supporting?",
+          "keepsGoing": true,
+          "why": "Honest, funny and it hands them the story."
+        }
+      ],
+      "pattern": "Honest + hand it over"
+    },
+    {
+      "id": "wh-yes-02",
+      "prompt": "Everyone at home is talking about the election.",
+      "cards": [
+        {
+          "text": "Politics is boring.",
+          "keepsGoing": false,
+          "why": "Dismisses what matters to them."
+        },
+        {
+          "text": "What's the one thing everyone's arguing about at dinner?",
+          "keepsGoing": true,
+          "why": "A human-sized question, not a political one."
+        }
+      ],
+      "pattern": "Ask the human-sized question"
+    },
+    {
+      "id": "wh-yes-03",
+      "prompt": "Did you hear they found signs of water on another planet?",
+      "cards": [
+        {
+          "text": "No! Tell me — can we move there, and does it have momos?",
+          "keepsGoing": true,
+          "why": "Excited, silly and a question."
+        },
+        {
+          "text": "No.",
+          "keepsGoing": false,
+          "why": "Nothing to build on."
+        }
+      ],
+      "pattern": "Excited + silly question"
+    },
+    {
+      "id": "wh-yes-04",
+      "prompt": "I've stopped reading the news completely.",
+      "cards": [
+        {
+          "text": "You should stay informed.",
+          "keepsGoing": false,
+          "why": "A lecture."
+        },
+        {
+          "text": "Honestly, respect. What do you do with all that free time now?",
+          "keepsGoing": true,
+          "why": "Accepts their choice and asks about their life."
+        }
+      ],
+      "pattern": "Accept + ask about their life"
+    },
+    {
+      "id": "wh-yes-05",
+      "prompt": "Prices have gone up everywhere.",
+      "cards": [
+        {
+          "text": "Even momos aren't safe. What's the one thing you refuse to pay more for?",
+          "keepsGoing": true,
+          "why": "Agrees with a joke, then a fun question."
+        },
+        {
+          "text": "Yes.",
+          "keepsGoing": false,
+          "why": "Agreement, full stop."
+        }
+      ],
+      "pattern": "Joke + fun question"
+    },
+    {
+      "id": "wh-yes-06",
+      "prompt": "Have you seen that video of the dancing goat?",
+      "cards": [
+        {
+          "text": "No.",
+          "keepsGoing": false,
+          "why": "You missed a guaranteed laugh."
+        },
+        {
+          "text": "No, and now I need it in my life immediately. Show me.",
+          "keepsGoing": true,
+          "why": "Enthusiasm makes it a shared moment."
+        }
+      ],
+      "pattern": "Enthusiasm"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "wh-up-01",
+      "clunky": "I don't know about that news, sorry, I didn't read, sorry.",
+      "tiles": [
+        "I missed that one —",
+        "give me",
+        "the short version?"
+      ],
+      "distractors": [
+        "sorry",
+        "I didn't read",
+        "I don't know about that news"
+      ],
+      "answers": [
+        [
+          "I missed that one —",
+          "give me",
+          "the short version?"
+        ]
+      ],
+      "why": "No apology needed. Admit it lightly and ask."
+    },
+    {
+      "id": "wh-up-02",
+      "clunky": "The politics is, like, very bad, very complicated, everything bad.",
+      "tiles": [
+        "It's complicated —",
+        "ask five people,",
+        "get six opinions."
+      ],
+      "distractors": [
+        "like",
+        "very bad",
+        "everything bad"
+      ],
+      "answers": [
+        [
+          "It's complicated —",
+          "ask five people,",
+          "get six opinions."
+        ]
+      ],
+      "why": "A light, true line that avoids a rant and makes people smile."
+    },
+    {
+      "id": "wh-up-03",
+      "clunky": "Your country, the news, it is very sad, very sad news, sorry.",
+      "tiles": [
+        "I saw the news",
+        "from your country —",
+        "is your family",
+        "okay?"
+      ],
+      "distractors": [
+        "very sad",
+        "sorry",
+        "it is very sad"
+      ],
+      "answers": [
+        [
+          "I saw the news",
+          "from your country —",
+          "is your family",
+          "okay?"
+        ]
+      ],
+      "why": "Show you noticed, then ask about the people they love."
+    },
+    {
+      "id": "wh-up-04",
+      "clunky": "I don't like football but, um, I will watch, maybe, with you.",
+      "tiles": [
+        "I know nothing",
+        "about football,",
+        "so",
+        "teach me as we watch."
+      ],
+      "distractors": [
+        "um",
+        "maybe",
+        "I don't like football"
+      ],
+      "answers": [
+        [
+          "I know nothing",
+          "about football,",
+          "so",
+          "teach me as we watch."
+        ]
+      ],
+      "why": "Turn \"I don't like it\" into \"teach me\". Same honesty, much more fun."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "wh-drop-01",
+      "fact": "Spain won the 2026 FIFA World Cup, beating Argentina 1–0 in extra time in the final on 19 July 2026. Ferran Torres scored the goal. It was Spain's second World Cup title.",
+      "source": "NPR, \"Spain is the 2026 World Cup champion\" (19 July 2026)",
+      "date": "2026-07",
+      "expires": "2027-01-31",
+      "prompt": "A traveller at the cafe tells you she's from Spain.",
+      "options": [
+        {
+          "text": "Spain won the World Cup this year, 1–0 against Argentina in extra time.",
+          "grade": "okay",
+          "why": "Right, but it sounds like a sports report."
+        },
+        {
+          "text": "Spain! World champions! Were you awake for Ferran Torres in extra time, or did your heart give up first?",
+          "grade": "best",
+          "why": "Celebrates with her and asks about her moment."
+        },
+        {
+          "text": "Football is boring.",
+          "grade": "miss",
+          "why": "Throws away the easiest opener of the year."
+        }
+      ],
+      "pattern": "Celebrate with them"
+    },
+    {
+      "id": "wh-drop-02",
+      "fact": "Argentina reached the 2026 World Cup final after winning in 2022, but lost 1–0 to Spain in extra time.",
+      "source": "CBS News, \"Spain wins 2026 FIFA World Cup\" (July 2026)",
+      "date": "2026-07",
+      "expires": "2027-01-31",
+      "prompt": "A traveller from Argentina mentions the World Cup, a little sadly.",
+      "options": [
+        {
+          "text": "Haha, Spain destroyed you!",
+          "grade": "miss",
+          "why": "Rubbing salt in a fresh wound."
+        },
+        {
+          "text": "Tough final — 1–0 in extra time. But two World Cup finals in a row? Most countries only dream of that.",
+          "grade": "best",
+          "why": "Sympathy first, then real perspective."
+        },
+        {
+          "text": "Argentina lost the final to Spain.",
+          "grade": "okay",
+          "why": "They know. Thanks."
+        }
+      ],
+      "pattern": "Read the room"
+    },
+    {
+      "id": "wh-drop-03",
+      "fact": "In April 2026, NASA's Artemis II mission flew four astronauts around the Moon and back — the first crewed trip to the Moon since 1972. The crew included Canadian astronaut Jeremy Hansen.",
+      "source": "NASA, Artemis II mission updates (April 2026)",
+      "date": "2026-04",
+      "expires": "2027-04-30",
+      "prompt": "A traveller tells you he's from Canada.",
+      "options": [
+        {
+          "text": "Space is a waste of money.",
+          "grade": "miss",
+          "why": "Kills a moment of national pride."
+        },
+        {
+          "text": "Canada! You had an astronaut fly around the Moon this year — Jeremy Hansen on Artemis II. Did the whole country stop to watch?",
+          "grade": "best",
+          "why": "Links his country to a huge moment and asks about it."
+        },
+        {
+          "text": "Artemis II went around the Moon in April 2026 with a Canadian on board, which was the first crewed Moon mission since 1972.",
+          "grade": "okay",
+          "why": "Accurate, but a speech, not a chat."
+        }
+      ],
+      "pattern": "Link their country to big news"
+    },
+    {
+      "id": "wh-drop-04",
+      "fact": "On 26 August 2026 a flash flood on the Bhote Koshi river hit Rasuwa district, damaging roads and bridges to Langtang. Pokhara and the Annapurna region were not affected and stayed open.",
+      "source": "Nepal Now travel updates; Kathmandu Post (September 2026)",
+      "date": "2026-09",
+      "expires": "2027-03-31",
+      "prompt": "A nervous traveller asks, \"I saw the flood news. Is it safe to trek around here?\"",
+      "options": [
+        {
+          "text": "Good question. The flood hit the Rasuwa and Langtang side — terrible for people there. Pokhara and the Annapurna trails weren't affected and are open. Want me to show you the latest updates?",
+          "grade": "best",
+          "why": "Honest about the tragedy, clear about the facts, and helpful."
+        },
+        {
+          "text": "Don't worry, it was nothing, just a small flood.",
+          "grade": "miss",
+          "why": "It wasn't nothing. Minimising a disaster is disrespectful and untrustworthy."
+        },
+        {
+          "text": "Yes, it's fine here.",
+          "grade": "okay",
+          "why": "True, but without the facts it sounds like a sales line."
+        }
+      ],
+      "pattern": "Read the room"
+    },
+    {
+      "id": "wh-drop-05",
+      "fact": "Norway topped the medal table at the 2026 Winter Olympics in Milan–Cortina, with 18 gold medals.",
+      "source": "NBC Olympics, \"Milan Cortina 2026 medal count\"",
+      "date": "2026-02",
+      "expires": "2027-02-28",
+      "prompt": "A traveller tells you she's from Norway.",
+      "options": [
+        {
+          "text": "Norway! Top of the Winter Olympics again — eighteen golds. Is it true you're born with skis on?",
+          "grade": "best",
+          "why": "Admiration plus a friendly stereotype she'll laugh at."
+        },
+        {
+          "text": "Winter sports are boring.",
+          "grade": "miss",
+          "why": "Dismisses her country's pride."
+        },
+        {
+          "text": "Norway won the most gold medals at the 2026 Winter Olympics in Milan and Cortina, in Italy — eighteen of them, which is a lot.",
+          "grade": "okay",
+          "why": "Correct, no spark."
+        }
+      ],
+      "pattern": "Admire + friendly stereotype"
+    },
+    {
+      "id": "wh-drop-06",
+      "fact": "At the 2026 T20 Cricket World Cup, Nepal lost to England by just four runs in their opening match, and later beat Scotland.",
+      "source": "The Week, \"T20 World Cup 2026: Nepal players win hearts\" (February 2026)",
+      "date": "2026-02",
+      "expires": "2027-02-28",
+      "prompt": "An English traveller says he loves cricket.",
+      "options": [
+        {
+          "text": "Cricket is too slow for me.",
+          "grade": "miss",
+          "why": "Closes his favourite topic."
+        },
+        {
+          "text": "Nepal lost to England by four runs at the T20 World Cup this year.",
+          "grade": "okay",
+          "why": "Correct, but no feeling."
+        },
+        {
+          "text": "Then you nearly had a scare this year — Nepal lost to England by just four runs at the T20 World Cup. We're still not over it. Were you watching?",
+          "grade": "best",
+          "why": "Playful national pride and a question."
+        }
+      ],
+      "pattern": "Playful national pride"
+    },
+    {
+      "id": "wh-drop-07",
+      "fact": "NASA launched the Nancy Grace Roman Space Telescope on 30 August 2026. Its field of view is about 100 times larger than Hubble's.",
+      "source": "NASA, Roman Space Telescope launch (30 August 2026)",
+      "date": "2026-08",
+      "expires": "2027-02-28",
+      "prompt": "On a clear night by the lake, a traveller who loves astronomy is looking up at the stars.",
+      "options": [
+        {
+          "text": "Good timing — NASA just launched a new space telescope that sees a piece of sky about a hundred times bigger than Hubble. Soon it'll be looking at this same sky.",
+          "grade": "best",
+          "why": "Connects the news to the exact moment you're sharing."
+        },
+        {
+          "text": "I don't care about space.",
+          "grade": "miss",
+          "why": "Ruins a beautiful moment."
+        },
+        {
+          "text": "The Roman Space Telescope launched in August.",
+          "grade": "okay",
+          "why": "A headline, not a conversation."
+        }
+      ],
+      "pattern": "Connect news to the moment"
+    }
+  ],
+  "wordPower": []
+}

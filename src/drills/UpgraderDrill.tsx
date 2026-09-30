@@ -148,7 +148,7 @@ export function UpgraderDrill({ item, onResult, onNext }: DrillProps<UpgraderIte
       )}
 
       {graded && (
-        <Feedback result={graded.result} xp={graded.xp} why={item.why} onNext={onNext}>
+        <Feedback result={graded.result} xp={graded.xp} why={item.why} save={{ text: item.answers[0].join(' ') }} onNext={onNext}>
           {graded.result !== 'best' && (
             <div className="flex flex-col gap-2 rounded-2xl bg-surface p-4 text-sm">
               {graded.result === 'okay' && <p>Right words, filler gone — the order just reads less cleanly.</p>}

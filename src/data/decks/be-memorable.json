@@ -1,0 +1,894 @@
+{
+  "id": "be-memorable",
+  "section": "craft",
+  "icon": "star",
+  "title": "Be Memorable",
+  "tagline": "The person they talk about back home.",
+  "description": "Names, short stories, inside jokes, great goodbyes and the message the next morning. The small habits that make people remember you long after the trip.",
+  "vibe": [
+    {
+      "id": "bm-vibe-01",
+      "setting": "Rooftop, end of a great evening",
+      "scenario": "You want to stay in touch with the travellers you've spent the evening with.",
+      "options": [
+        {
+          "text": "So… maybe we see each other again sometime, maybe, if the universe wants it?",
+          "grade": "miss",
+          "tone": "Vague"
+        },
+        {
+          "text": "Do you have WhatsApp? Or Instagram, or Facebook, or Viber? Or email? Which one do you use most?",
+          "grade": "okay",
+          "tone": "Scattered"
+        },
+        {
+          "text": "Let's not lose this. What's your Instagram? I'll send the photo where we all look terrible.",
+          "grade": "best",
+          "tone": "Reason to connect"
+        }
+      ],
+      "pattern": "Swap contacts with a reason",
+      "why": "A specific, funny reason makes sharing contacts feel natural, not like a request."
+    },
+    {
+      "id": "bm-vibe-02",
+      "setting": "Market",
+      "scenario": "You've met Tom three times, but you've forgotten his name. He smiles: \"Hey, Ram!\"",
+      "options": [
+        {
+          "text": "Hey… buddy! My friend! How are you, man? So good to see you again! How's everything going with you?",
+          "grade": "okay",
+          "tone": "Dodging"
+        },
+        {
+          "text": "Hey! Okay, confession: your face is saved in my brain, but your name fell out. One more time?",
+          "grade": "best",
+          "tone": "Honest"
+        },
+        {
+          "text": "Hey, uh, Tim? Tony? Something with a T?",
+          "grade": "miss",
+          "tone": "Careless guess"
+        }
+      ],
+      "pattern": "Honest and warm",
+      "why": "Admitting it with a smile is charming and fixes the problem forever. Guessing wrong hurts more than asking."
+    },
+    {
+      "id": "bm-vibe-03",
+      "setting": "Hostel common room",
+      "scenario": "Someone asks, \"What's the craziest thing that's ever happened to you?\"",
+      "options": [
+        {
+          "text": "A cow once walked into my cafe, looked at the menu, and left. Honestly, fair review.",
+          "grade": "best",
+          "tone": "Short story"
+        },
+        {
+          "text": "Hmm, nothing really crazy.",
+          "grade": "okay",
+          "tone": "Blank"
+        },
+        {
+          "text": "Okay, so, it was 2019, no, 2018, and I was with my cousin, no, my friend, and we were going to…",
+          "grade": "miss",
+          "tone": "Rambling"
+        }
+      ],
+      "pattern": "Setup, twist, done",
+      "why": "Short stories win. A setup, a surprise, and a punchline — in three sentences. Keep a few real ones ready."
+    },
+    {
+      "id": "bm-vibe-04",
+      "setting": "Cafe",
+      "scenario": "A traveller mentions that tomorrow is their birthday.",
+      "options": [
+        {
+          "text": "Oh. How old will you be? Old!",
+          "grade": "miss",
+          "tone": "Clumsy"
+        },
+        {
+          "text": "Happy birthday for tomorrow! I hope you have a really nice day and a good time, wherever you go.",
+          "grade": "okay",
+          "tone": "Kind"
+        },
+        {
+          "text": "Then tomorrow the first tea is on me, and I'm making the whole cafe sing. Badly.",
+          "grade": "best",
+          "tone": "Generous"
+        }
+      ],
+      "pattern": "A small, specific gift",
+      "why": "A tiny gesture on someone's birthday far from home is the kind of thing people remember for years."
+    },
+    {
+      "id": "bm-vibe-05",
+      "setting": "Lakeside",
+      "scenario": "A traveller you're chatting with has slipped off the same wobbly bench twice. They're laughing.",
+      "options": [
+        {
+          "text": "You're so clumsy.",
+          "grade": "miss",
+          "tone": "Mocking"
+        },
+        {
+          "text": "Twice! The bench has chosen you. From now on, it's your bench.",
+          "grade": "best",
+          "tone": "Inside joke"
+        },
+        {
+          "text": "Be careful!",
+          "grade": "okay",
+          "tone": "Caring"
+        }
+      ],
+      "pattern": "Start an inside joke",
+      "why": "An inside joke is a tiny shared story. Next time you meet, \"your bench\" is an instant laugh."
+    },
+    {
+      "id": "bm-vibe-06",
+      "setting": "Market, the next day",
+      "scenario": "You see the traveller who told you yesterday about a monkey stealing their sunglasses.",
+      "options": [
+        {
+          "text": "Hi again! How are you? What have you been doing today? Did you go anywhere nice?",
+          "grade": "okay",
+          "tone": "Generic questions"
+        },
+        {
+          "text": "(Pretend you don't see them.)",
+          "grade": "miss",
+          "tone": "Avoiding"
+        },
+        {
+          "text": "The monkey survivor! Did you get new sunglasses, or are you still in hiding?",
+          "grade": "best",
+          "tone": "Callback"
+        }
+      ],
+      "pattern": "Remember their story",
+      "why": "Remembering someone's story makes them feel seen. It's the fastest way to go from stranger to friend."
+    },
+    {
+      "id": "bm-vibe-07",
+      "setting": "Guesthouse",
+      "scenario": "A traveller asks what to do on their last night in Pokhara.",
+      "options": [
+        {
+          "text": "Sunset on the lake, then the tiny momo place with no sign. Tell them I sent you and see what happens.",
+          "grade": "best",
+          "tone": "Insider"
+        },
+        {
+          "text": "There are many good restaurants.",
+          "grade": "okay",
+          "tone": "Generic"
+        },
+        {
+          "text": "Just go anywhere. It's all the same, honestly, the food is the same everywhere on Lakeside.",
+          "grade": "miss",
+          "tone": "Unhelpful"
+        }
+      ],
+      "pattern": "Give an insider plan",
+      "why": "A specific plan with a little mystery turns their last night into a story with you in it."
+    },
+    {
+      "id": "bm-vibe-08",
+      "setting": "Cafe",
+      "scenario": "You're telling a long story and notice the traveller glancing at their phone.",
+      "options": [
+        {
+          "text": "Wait, wait, it gets better, there's so much more, just listen, so then the goat…",
+          "grade": "miss",
+          "tone": "Pushing on"
+        },
+        {
+          "text": "(Continue at the same pace.)",
+          "grade": "okay",
+          "tone": "Unaware"
+        },
+        {
+          "text": "…long story short: I lost, the goat won. Anyway — do you have any animal enemies?",
+          "grade": "best",
+          "tone": "Cut + hand back"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "Cut to the punchline and hand them the stage. Knowing when to stop is part of being good company."
+    },
+    {
+      "id": "bm-vibe-09",
+      "setting": "Hostel",
+      "scenario": "A traveller mentions they've been to thirty countries. You've never left Nepal.",
+      "options": [
+        {
+          "text": "Travelling is overrated. Nepal has everything, you don't need other countries.",
+          "grade": "miss",
+          "tone": "Defensive"
+        },
+        {
+          "text": "Thirty! I'm on zero, so you're officially my window. Which one would you send me to first?",
+          "grade": "best",
+          "tone": "Curious + honest"
+        },
+        {
+          "text": "That's a lot of countries. I've never been out of Nepal, but maybe one day, if I can get a visa.",
+          "grade": "okay",
+          "tone": "Honest but flat"
+        }
+      ],
+      "pattern": "Turn envy into curiosity",
+      "why": "Honest about yourself, generous about them. Curiosity is more memorable than competition."
+    },
+    {
+      "id": "bm-vibe-10",
+      "setting": "Tourist bus park",
+      "scenario": "A traveller you've become friends with is leaving Pokhara for good.",
+      "options": [
+        {
+          "text": "Promise you'll come back? Promise? You have to promise. Say it!",
+          "grade": "miss",
+          "tone": "Clingy"
+        },
+        {
+          "text": "Go on, go. And when someone asks about Nepal, tell them about the guy with the terrible jokes.",
+          "grade": "best",
+          "tone": "Warm + light"
+        },
+        {
+          "text": "Bye, have a safe trip.",
+          "grade": "okay",
+          "tone": "Standard"
+        }
+      ],
+      "pattern": "End on a laugh",
+      "why": "A light goodbye with a joke about yourself leaves a warm last picture. That's what they'll remember."
+    },
+    {
+      "id": "bm-vibe-11",
+      "setting": "Message, the next morning",
+      "scenario": "Last night a traveller bet you they could eat twenty momos. You want to follow up.",
+      "options": [
+        {
+          "text": "Hi. Hi. Hello? Why no reply? Did you see my message?",
+          "grade": "miss",
+          "tone": "Impatient"
+        },
+        {
+          "text": "Morning! Did you survive the momo challenge, or should I call a doctor?",
+          "grade": "best",
+          "tone": "Callback"
+        },
+        {
+          "text": "Hi, how are you? Hope you are well. How was your night? Did you sleep well?",
+          "grade": "okay",
+          "tone": "Generic"
+        }
+      ],
+      "pattern": "Follow up with a callback",
+      "why": "A message that points to a shared moment feels personal and gives them something fun to reply to."
+    },
+    {
+      "id": "bm-vibe-12",
+      "setting": "Teahouse",
+      "scenario": "You both have great travel stories. The traveller starts telling theirs.",
+      "options": [
+        {
+          "text": "That reminds me of MY story, which is much crazier, so listen to this…",
+          "grade": "miss",
+          "tone": "Competing"
+        },
+        {
+          "text": "Nice story.",
+          "grade": "okay",
+          "tone": "Flat"
+        },
+        {
+          "text": "(Let them finish. Ask one good question about it. Tell yours later, if they ask.)",
+          "grade": "best",
+          "tone": "Generous"
+        }
+      ],
+      "pattern": "Make them the star",
+      "why": "People remember how you made them feel. Letting them shine is more memorable than any story you tell."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "bm-yes-01",
+      "prompt": "I'll never forget this place.",
+      "cards": [
+        {
+          "text": "Everyone says that.",
+          "keepsGoing": false,
+          "why": "Cynical. It shrinks their feeling."
+        },
+        {
+          "text": "Then let's make sure. One last photo, and you promise to send me your first photo from home.",
+          "keepsGoing": true,
+          "why": "Turns a feeling into a small ritual and a reason to stay in touch."
+        }
+      ],
+      "pattern": "Turn a feeling into a ritual"
+    },
+    {
+      "id": "bm-yes-02",
+      "prompt": "Sorry, what's your name again?",
+      "cards": [
+        {
+          "text": "Ram — like the animal, but less hairy. And you're…?",
+          "keepsGoing": true,
+          "why": "A tiny joke makes your name stick. Use your own name and your own hook."
+        },
+        {
+          "text": "Ram.",
+          "keepsGoing": false,
+          "why": "Correct, and easy to forget again."
+        }
+      ],
+      "pattern": "Give your name a hook"
+    },
+    {
+      "id": "bm-yes-03",
+      "prompt": "You're so funny.",
+      "cards": [
+        {
+          "text": "Wait until you hear my serious side. It's even funnier.",
+          "keepsGoing": true,
+          "why": "Accepts the compliment with another joke."
+        },
+        {
+          "text": "No, I'm not.",
+          "keepsGoing": false,
+          "why": "Arguing with a compliment makes the giver feel wrong."
+        }
+      ],
+      "pattern": "Accept with a joke"
+    },
+    {
+      "id": "bm-yes-04",
+      "prompt": "I'll send you a postcard!",
+      "cards": [
+        {
+          "text": "Okay.",
+          "keepsGoing": false,
+          "why": "Sounds like you don't believe them."
+        },
+        {
+          "text": "Deal — it's going on the cafe wall so everyone knows I have international fans.",
+          "keepsGoing": true,
+          "why": "Makes their promise feel special and fun."
+        }
+      ],
+      "pattern": "Make their gesture special"
+    },
+    {
+      "id": "bm-yes-05",
+      "prompt": "Can I buy you a drink to say thank you?",
+      "cards": [
+        {
+          "text": "Only if you tell me the full story of that bus driver while we drink it.",
+          "keepsGoing": true,
+          "why": "Accepts graciously and asks for a story in return."
+        },
+        {
+          "text": "No, no, it's fine.",
+          "keepsGoing": false,
+          "why": "Refusing a thank-you can feel like rejecting them."
+        }
+      ],
+      "pattern": "Accept + ask for a story"
+    },
+    {
+      "id": "bm-yes-06",
+      "prompt": "We should definitely keep in touch.",
+      "cards": [
+        {
+          "text": "Sure.",
+          "keepsGoing": false,
+          "why": "Sounds like it will never happen."
+        },
+        {
+          "text": "Yes — give me your number and I'll send you the best sunset photo from today. Promise.",
+          "keepsGoing": true,
+          "why": "Makes it real right now, with a specific reason."
+        }
+      ],
+      "pattern": "Make it real now"
+    },
+    {
+      "id": "bm-yes-07",
+      "prompt": "I've told all my friends about you!",
+      "cards": [
+        {
+          "text": "Only good things, I hope. Did the monkey story make it in?",
+          "keepsGoing": true,
+          "why": "Playful, and it brings back a shared memory."
+        },
+        {
+          "text": "Really?",
+          "keepsGoing": false,
+          "why": "Surprised, but no warmth to reply to."
+        }
+      ],
+      "pattern": "Callback"
+    },
+    {
+      "id": "bm-yes-08",
+      "prompt": "This was the best day of my whole trip.",
+      "cards": [
+        {
+          "text": "Then we have to give it a name. What do we call today?",
+          "keepsGoing": true,
+          "why": "A naming game makes the day an inside joke you share."
+        },
+        {
+          "text": "Thanks.",
+          "keepsGoing": false,
+          "why": "Polite, but it lets the moment pass."
+        }
+      ],
+      "pattern": "Name the moment"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "bm-up-01",
+      "clunky": "Okay, bye, nice to meet, okay, bye bye.",
+      "tiles": [
+        "This was",
+        "the best part",
+        "of my week —",
+        "go have a great trip."
+      ],
+      "distractors": [
+        "okay, bye",
+        "bye bye",
+        "nice to meet"
+      ],
+      "answers": [
+        [
+          "This was",
+          "the best part",
+          "of my week —",
+          "go have a great trip."
+        ]
+      ],
+      "why": "A goodbye that says what the meeting meant to you is one they'll remember."
+    },
+    {
+      "id": "bm-up-02",
+      "clunky": "Can I, um, have your number, maybe, if you want to give?",
+      "tiles": [
+        "Let's stay in touch —",
+        "what's your",
+        "Instagram?"
+      ],
+      "distractors": [
+        "um",
+        "maybe",
+        "if you want to give"
+      ],
+      "answers": [
+        [
+          "Let's stay in touch —",
+          "what's your",
+          "Instagram?"
+        ]
+      ],
+      "why": "State the goal (\"let's stay in touch\"), then ask. Confident and easy to answer."
+    },
+    {
+      "id": "bm-up-03",
+      "clunky": "It was a very funny, very crazy story, the story about the goat.",
+      "tiles": [
+        "Short version:",
+        "I chased a goat,",
+        "the goat won,",
+        "and I still don't know why."
+      ],
+      "distractors": [
+        "very funny",
+        "very crazy",
+        "the story about the goat"
+      ],
+      "answers": [
+        [
+          "Short version:",
+          "I chased a goat,",
+          "the goat won,",
+          "and I still don't know why."
+        ]
+      ],
+      "why": "Don't tell people a story is funny. Tell it short, and let them laugh."
+    },
+    {
+      "id": "bm-up-04",
+      "clunky": "Sorry, I forgot your name, sorry, very bad memory, sorry.",
+      "tiles": [
+        "Tell me",
+        "your name",
+        "one more time —",
+        "I want to get it right."
+      ],
+      "distractors": [
+        "sorry",
+        "very bad memory",
+        "I forgot"
+      ],
+      "answers": [
+        [
+          "Tell me",
+          "your name",
+          "one more time —",
+          "I want to get it right."
+        ]
+      ],
+      "why": "\"I want to get it right\" turns forgetting into a compliment."
+    },
+    {
+      "id": "bm-up-05",
+      "clunky": "When you come back to Nepal maybe you can tell me, message me, maybe.",
+      "tiles": [
+        "When you're back",
+        "in Nepal,",
+        "the first momo",
+        "is on me."
+      ],
+      "distractors": [
+        "maybe",
+        "message me",
+        "you can tell me"
+      ],
+      "answers": [
+        [
+          "When you're back",
+          "in Nepal,",
+          "the first momo",
+          "is on me."
+        ]
+      ],
+      "why": "A specific promise is more memorable than \"message me\"."
+    },
+    {
+      "id": "bm-up-06",
+      "clunky": "My story is not so interesting but, um, okay, I will tell.",
+      "tiles": [
+        "Okay,",
+        "quick story —",
+        "and it ends",
+        "with a goat."
+      ],
+      "distractors": [
+        "not so interesting",
+        "um",
+        "I will tell"
+      ],
+      "answers": [
+        [
+          "Okay,",
+          "quick story —",
+          "and it ends",
+          "with a goat."
+        ]
+      ],
+      "why": "Never apologise before a story. A teaser makes people want to hear it."
+    },
+    {
+      "id": "bm-up-07",
+      "clunky": "Thank you for, like, everything, you are very very nice person.",
+      "tiles": [
+        "Thank you",
+        "for making",
+        "a stranger",
+        "feel at home."
+      ],
+      "distractors": [
+        "like",
+        "everything",
+        "very very nice person"
+      ],
+      "answers": [
+        [
+          "Thank you",
+          "for making",
+          "a stranger",
+          "feel at home."
+        ]
+      ],
+      "why": "Thank people for something specific. It shows you noticed what they did."
+    },
+    {
+      "id": "bm-up-08",
+      "clunky": "I think, maybe, we can meet again tomorrow, maybe same place?",
+      "tiles": [
+        "Same place,",
+        "same time,",
+        "tomorrow?"
+      ],
+      "distractors": [
+        "I think",
+        "maybe",
+        "we can meet again"
+      ],
+      "answers": [
+        [
+          "Same place,",
+          "same time,",
+          "tomorrow?"
+        ]
+      ],
+      "why": "Short and confident. It sounds like a plan, not a hope."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "bm-drop-01",
+      "fact": "The line \"people will never forget how you made them feel\" is often credited to Maya Angelou, though an earlier version is credited to Carl W. Buehner.",
+      "source": "Quote Investigator, \"They May Forget What You Said, But They Will Never Forget How You Made Them Feel\" (2014)",
+      "prompt": "Before a group dinner, a nervous friend asks, \"What if I say something stupid?\"",
+      "options": [
+        {
+          "text": "Then don't say anything.",
+          "grade": "miss",
+          "why": "Makes the fear bigger."
+        },
+        {
+          "text": "There's a famous line, usually credited to Maya Angelou: people forget what you said, but never how you made them feel. So just make them feel good.",
+          "grade": "best",
+          "why": "Takes the pressure off words and puts it on warmth."
+        },
+        {
+          "text": "Maya Angelou said people forget what you say but remember how you made them feel.",
+          "grade": "okay",
+          "why": "Close, but it doesn't turn into advice."
+        }
+      ],
+      "pattern": "Quote as comfort"
+    },
+    {
+      "id": "bm-drop-02",
+      "fact": "The serial position effect: people tend to remember the first and last items in a list better than the middle ones.",
+      "source": "Murdock, \"The serial position effect of free recall\", Journal of Experimental Psychology (1962)",
+      "prompt": "A friend asks, \"Why do you always end conversations with a joke?\"",
+      "options": [
+        {
+          "text": "Memory science — people remember the start and the end best. So I open warm and leave on a laugh.",
+          "grade": "best",
+          "why": "Explains your habit with a fact, simply."
+        },
+        {
+          "text": "No reason.",
+          "grade": "miss",
+          "why": "There's a good reason, and it's interesting."
+        },
+        {
+          "text": "It's called the serial position effect. It means the first and last items in a list are remembered better than the ones in the middle.",
+          "grade": "okay",
+          "why": "Correct, but it's a lecture, and you never connected it to your habit."
+        }
+      ],
+      "pattern": "Explain a habit with a fact"
+    },
+    {
+      "id": "bm-drop-03",
+      "fact": "In memory experiments, people remembered funny sentences better than serious versions of the same idea.",
+      "source": "Schmidt, \"Effects of humor on sentence memory\", Journal of Experimental Psychology: Learning, Memory, and Cognition (1994)",
+      "prompt": "A traveller asks why you teach them Nepali words with silly jokes.",
+      "options": [
+        {
+          "text": "Jokes aren't serious, but they help.",
+          "grade": "okay",
+          "why": "Close, but no reason given."
+        },
+        {
+          "text": "Because funny sticks — there's research showing people remember humorous sentences better. So \"mitho\" comes with a dancing cook.",
+          "grade": "best",
+          "why": "Fact plus a live example."
+        },
+        {
+          "text": "Sorry, I'll stop joking and be serious.",
+          "grade": "miss",
+          "why": "Drops a method that works."
+        }
+      ],
+      "pattern": "Fact + live example"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "bm-word-01",
+      "sentence": "It was a very good evening.",
+      "target": "very good",
+      "options": [
+        {
+          "text": "normal",
+          "grade": "miss",
+          "why": "Not a compliment."
+        },
+        {
+          "text": "unforgettable",
+          "grade": "best",
+          "why": "Strong, warm and easy to understand."
+        },
+        {
+          "text": "pleasant",
+          "grade": "okay",
+          "why": "Polite but lukewarm."
+        }
+      ],
+      "meaning": "So good you'll always remember it.",
+      "example": "The sunrise at Poon Hill was unforgettable."
+    },
+    {
+      "id": "bm-word-02",
+      "sentence": "You are a very good storyteller.",
+      "target": "very good",
+      "options": [
+        {
+          "text": "natural",
+          "grade": "best",
+          "why": "Says it comes easily to them — a lovely compliment."
+        },
+        {
+          "text": "consummate",
+          "grade": "okay",
+          "why": "Correct, but very formal."
+        },
+        {
+          "text": "fine",
+          "grade": "miss",
+          "why": "Sounds unimpressed."
+        }
+      ],
+      "meaning": "(Before a noun) someone who is good at something without trying.",
+      "example": "She's a natural with kids."
+    },
+    {
+      "id": "bm-word-03",
+      "sentence": "I will remember this day for a long time.",
+      "target": "remember this day for a long time",
+      "options": [
+        {
+          "text": "commit this day to memory",
+          "grade": "okay",
+          "why": "Sounds like studying for an exam."
+        },
+        {
+          "text": "forget this day",
+          "grade": "miss",
+          "why": "The opposite."
+        },
+        {
+          "text": "never forget this day",
+          "grade": "best",
+          "why": "Simple and full of feeling."
+        }
+      ],
+      "meaning": "Remember something always.",
+      "example": "I'll never forget the day we got lost in Ghandruk."
+    },
+    {
+      "id": "bm-word-04",
+      "sentence": "Your message this morning made me very happy.",
+      "target": "made me very happy",
+      "options": [
+        {
+          "text": "made my day",
+          "grade": "best",
+          "why": "A warm, very common phrase everyone knows."
+        },
+        {
+          "text": "gladdened me",
+          "grade": "okay",
+          "why": "Old-fashioned."
+        },
+        {
+          "text": "confused me",
+          "grade": "miss",
+          "why": "A different meaning."
+        }
+      ],
+      "meaning": "Made me very happy for the whole day.",
+      "example": "Your postcard made my day."
+    },
+    {
+      "id": "bm-word-05",
+      "sentence": "My grandfather is a very special person.",
+      "target": "very special",
+      "options": [
+        {
+          "text": "idiosyncratic",
+          "grade": "miss",
+          "why": "Means strange in a personal way, and few people know it."
+        },
+        {
+          "text": "singularly exceptional",
+          "grade": "okay",
+          "why": "Sounds like a speech, not a chat."
+        },
+        {
+          "text": "one of a kind",
+          "grade": "best",
+          "why": "Warm and vivid: nobody else is like him."
+        }
+      ],
+      "meaning": "The only one like this. Nobody else is the same.",
+      "example": "The old lady at the tea shop is one of a kind."
+    },
+    {
+      "id": "bm-word-06",
+      "sentence": "Our goodbye at the bus park was very sad.",
+      "target": "very sad",
+      "options": [
+        {
+          "text": "quick",
+          "grade": "miss",
+          "why": "A different point."
+        },
+        {
+          "text": "melancholic",
+          "grade": "okay",
+          "why": "Correct but heavy and formal."
+        },
+        {
+          "text": "bittersweet",
+          "grade": "best",
+          "why": "Sad and happy together — exactly what a good goodbye feels like."
+        }
+      ],
+      "meaning": "Happy and sad at the same time.",
+      "example": "The last night of a great trip is always bittersweet."
+    },
+    {
+      "id": "bm-word-07",
+      "sentence": "We laughed very much at dinner.",
+      "target": "laughed very much",
+      "options": [
+        {
+          "text": "couldn't stop laughing",
+          "grade": "best",
+          "why": "Natural English that paints the scene."
+        },
+        {
+          "text": "guffawed uproariously together",
+          "grade": "okay",
+          "why": "Very rare words. People will stop listening to work out what you mean."
+        },
+        {
+          "text": "smiled",
+          "grade": "miss",
+          "why": "Much weaker."
+        }
+      ],
+      "meaning": "Laughed a lot, for a long time.",
+      "example": "When the goat walked in, we couldn't stop laughing."
+    },
+    {
+      "id": "bm-word-08",
+      "sentence": "Your hometown sounds very nice.",
+      "target": "very nice",
+      "options": [
+        {
+          "text": "incredible",
+          "grade": "best",
+          "why": "Enthusiastic and simple."
+        },
+        {
+          "text": "average",
+          "grade": "miss",
+          "why": "An insult, really."
+        },
+        {
+          "text": "idyllic",
+          "grade": "okay",
+          "why": "Beautiful word, but not everyone knows it."
+        }
+      ],
+      "meaning": "Extremely good; hard to believe.",
+      "example": "The view from your village sounds incredible."
+    }
+  ]
+}

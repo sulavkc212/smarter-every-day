@@ -1,0 +1,385 @@
+{
+  "id": "music-bands",
+  "section": "culture",
+  "icon": "music",
+  "title": "Music & Bands",
+  "tagline": "The songs everyone knows, and the stories behind them.",
+  "description": "Music is the easiest bridge between strangers. Learn a few great stories about famous bands, share Nepali music with pride, and handle karaoke, bad guitar and 'what music do you like?' with style.",
+  "vibe": [
+    {
+      "id": "mb-vibe-01",
+      "setting": "Bar with live music",
+      "scenario": "The band plays a song you don't know. A traveller shouts, \"Do you know this one?\"",
+      "options": [
+        { "text": "No idea, but I've already decided it's my favourite. Who is it?", "grade": "best", "tone": "Playful + curious" },
+        { "text": "Yes, of course, everyone knows this one, it's very famous, I love it, it's a classic song.", "grade": "miss", "tone": "Bluffing" },
+        { "text": "No.", "grade": "okay", "tone": "Short" }
+      ],
+      "pattern": "Honest + curious",
+      "why": "Not knowing is fine. Turning it into curiosity gives them the fun of telling you."
+    },
+    {
+      "id": "mb-vibe-02",
+      "setting": "Cafe",
+      "scenario": "A traveller asks, \"What kind of music do you like?\"",
+      "options": [
+        { "text": "Everything.", "grade": "okay", "tone": "Vague" },
+        { "text": "Depends on the bus ride. Nepali folk for the mountains, old rock for the traffic, and Bollywood when nobody's watching.", "grade": "best", "tone": "Specific + funny" },
+        { "text": "Only good music, not the stuff you probably listen to.", "grade": "miss", "tone": "Snobby" }
+      ],
+      "pattern": "Specific beats \"everything\"",
+      "why": "\"Everything\" says nothing. A few specific, funny details give them five things to ask about."
+    },
+    {
+      "id": "mb-vibe-03",
+      "setting": "Hostel common room",
+      "scenario": "A traveller is playing guitar — enthusiastically, and a little out of tune.",
+      "options": [
+        { "text": "You're a bit out of tune, you know. The G string is flat — I can hear it from here.", "grade": "miss", "tone": "Critical" },
+        { "text": "Nice guitar.", "grade": "okay", "tone": "Plain" },
+        { "text": "Don't stop — everyone's pretending not to listen, which means they love it. Know any Nepali songs?", "grade": "best", "tone": "Encouraging" }
+      ],
+      "pattern": "Encourage, then join in",
+      "why": "Music in a hostel is about the mood, not perfection. Encouragement plus a request makes you part of it."
+    },
+    {
+      "id": "mb-vibe-04",
+      "setting": "Friend's rooftop",
+      "scenario": "A friend grabs your phone: \"Your music taste is terrible.\"",
+      "options": [
+        { "text": "It's not terrible.", "grade": "okay", "tone": "Defensive" },
+        { "text": "It's not terrible, it's ahead of its time. Give it twenty years.", "grade": "best", "tone": "Cheeky" },
+        { "text": "Your taste is worse.", "grade": "miss", "tone": "Childish" }
+      ],
+      "pattern": "Confident reframe",
+      "why": "A confident, silly defence keeps the banter going. Hitting back just makes it a contest."
+    },
+    {
+      "id": "mb-vibe-05",
+      "setting": "Village homestay, evening",
+      "scenario": "The travellers ask you to sing a Nepali song. You're shy.",
+      "options": [
+        { "text": "Why do you want to hear it? You won't understand the words anyway.", "grade": "miss", "tone": "Dismissive" },
+        { "text": "Only if you sing one from your country after. Deal? (Then sing the first line of \"Resham Firiri\".)", "grade": "best", "tone": "Brave trade" },
+        { "text": "No, no, I can't sing.", "grade": "okay", "tone": "Shy" }
+      ],
+      "pattern": "Make it a trade",
+      "why": "A trade makes it fair and fun. Everyone is a little embarrassed together, and that's how friendships start."
+    },
+    {
+      "id": "mb-vibe-06",
+      "setting": "Karaoke night",
+      "scenario": "You just sang very badly. Everyone is laughing.",
+      "options": [
+        { "text": "Thank you, thank you. I'm here all week. Please don't come back.", "grade": "best", "tone": "Self-deprecating" },
+        { "text": "Stop laughing! It's not funny!", "grade": "miss", "tone": "Hurt" },
+        { "text": "Sorry, I'm really bad at singing, I don't know why I did that, sorry everyone.", "grade": "okay", "tone": "Apologetic" }
+      ],
+      "pattern": "Play the star",
+      "why": "Acting like a proud star after a terrible song is the funniest possible ending."
+    },
+    {
+      "id": "mb-vibe-07",
+      "setting": "Cafe",
+      "scenario": "A traveller says their favourite band is one you've never heard of.",
+      "options": [
+        { "text": "They can't be that good if I've never heard of them.", "grade": "miss", "tone": "Dismissive" },
+        { "text": "I don't know them.", "grade": "okay", "tone": "Plain" },
+        { "text": "Never heard of them — so you're my music teacher now. Play me the one song I have to know.", "grade": "best", "tone": "Curious" }
+      ],
+      "pattern": "Make them the expert",
+      "why": "People love sharing music they love. Asking for \"the one song\" gives them a lovely moment to share."
+    },
+    {
+      "id": "mb-vibe-08",
+      "setting": "Evening, by the lake",
+      "scenario": "A traveller plays a song on their phone. They go quiet. It clearly means something to them.",
+      "options": [
+        { "text": "(Let the song finish. Then, softly:) That one means something to you, doesn't it?", "grade": "best", "tone": "Gentle" },
+        { "text": "Ugh, this is so sad. Can we change it to something happy? This is making me sleepy.", "grade": "miss", "tone": "Tone-deaf" },
+        { "text": "Nice song.", "grade": "okay", "tone": "Polite" }
+      ],
+      "pattern": "Read the room",
+      "why": "Some songs carry memories. Waiting and asking gently can open the best conversation of the trip."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "mb-yes-01",
+      "prompt": "I'm going to a concert in Kathmandu next week.",
+      "cards": [
+        { "text": "Nice.", "keepsGoing": false, "why": "One word, no door." },
+        { "text": "Who's playing? And will I fit in your suitcase?", "keepsGoing": true, "why": "A real question and a joke." }
+      ],
+      "pattern": "Question + joke"
+    },
+    {
+      "id": "mb-yes-02",
+      "prompt": "I play the drums.",
+      "cards": [
+        { "text": "Then you're dangerous in a hostel at 6 a.m. What got you started?", "keepsGoing": true, "why": "A tease and a question about their story." },
+        { "text": "Drums are loud.", "keepsGoing": false, "why": "Sounds like a complaint." }
+      ],
+      "pattern": "Tease + origin question"
+    },
+    {
+      "id": "mb-yes-03",
+      "prompt": "Oh, this is my song!",
+      "cards": [
+        { "text": "Okay.", "keepsGoing": false, "why": "Kills their excitement." },
+        { "text": "Then the floor is yours. I'll be your backing dancer.", "keepsGoing": true, "why": "Joins their joy and makes it a moment." }
+      ],
+      "pattern": "Join the joy"
+    },
+    {
+      "id": "mb-yes-04",
+      "prompt": "I've never heard any Nepali music.",
+      "cards": [
+        { "text": "It's very different.", "keepsGoing": false, "why": "Vague, and it sounds like a warning." },
+        { "text": "Then I'm your DJ tonight. Three songs, and you tell me which one wins.", "keepsGoing": true, "why": "Turns it into a game you play together." }
+      ],
+      "pattern": "Make it a game"
+    },
+    {
+      "id": "mb-yes-05",
+      "prompt": "I only listen to old music.",
+      "cards": [
+        { "text": "Old like the Beatles, or old like your dad's car stereo? Give me your top three.", "keepsGoing": true, "why": "A funny choice and an easy request." },
+        { "text": "Me too.", "keepsGoing": false, "why": "Agreement without a follow-up." }
+      ],
+      "pattern": "Funny choice + request"
+    },
+    {
+      "id": "mb-yes-06",
+      "prompt": "Music festivals are my favourite thing.",
+      "cards": [
+        { "text": "Best festival you've ever been to, and your worst moment there. Go.", "keepsGoing": true, "why": "Best and worst questions always get stories." },
+        { "text": "They're too crowded for me.", "keepsGoing": false, "why": "Disagrees with their favourite thing." }
+      ],
+      "pattern": "Best and worst"
+    }
+  ],
+  "upgrader": [],
+  "dropIn": [
+    {
+      "id": "mb-drop-01",
+      "fact": "Queen's \"Bohemian Rhapsody\" (1975) is almost six minutes long and has no repeating chorus — yet it became one of the most famous songs ever.",
+      "source": "Encyclopaedia Britannica, \"Queen\"",
+      "prompt": "At karaoke, a British traveller starts singing \"Is this the real life?\" and the whole bar joins in.",
+      "options": [
+        { "text": "Six minutes, no chorus, and the whole bar still knows every word. That's Queen.", "grade": "best", "why": "The fact arrives as admiration, in the middle of the fun." },
+        { "text": "\"Bohemian Rhapsody\" is almost six minutes long and has no repeating chorus, which was very unusual for a hit single in 1975.", "grade": "okay", "why": "Interesting, but you're lecturing during karaoke." },
+        { "text": "This song is too long.", "grade": "miss", "why": "Spoils everyone's favourite moment." }
+      ],
+      "pattern": "Fact as admiration"
+    },
+    {
+      "id": "mb-drop-02",
+      "fact": "Freddie Mercury was born Farrokh Bulsara in Zanzibar and went to school in India.",
+      "source": "Encyclopaedia Britannica, \"Freddie Mercury\"",
+      "prompt": "A traveller is wearing a Queen T-shirt.",
+      "options": [
+        { "text": "Queen is old music.", "grade": "miss", "why": "Dismisses something they love." },
+        { "text": "Great shirt. Did you know Freddie Mercury went to school in India? So he's basically our neighbour.", "grade": "best", "why": "A compliment plus a surprising local connection." },
+        { "text": "Freddie Mercury was born in Zanzibar and went to school in India, and his real name was Farrokh Bulsara.", "grade": "okay", "why": "Three facts in a row, no conversation." }
+      ],
+      "pattern": "Compliment + local connection"
+    },
+    {
+      "id": "mb-drop-03",
+      "fact": "In 1968 the Beatles travelled to Rishikesh, India, to study meditation, and wrote many songs there, lots of which ended up on the \"White Album\".",
+      "source": "Encyclopaedia Britannica, \"The Beatles\"",
+      "prompt": "A traveller doing a yoga course says, \"I came to Asia to find myself.\"",
+      "options": [
+        { "text": "Everyone says that.", "grade": "miss", "why": "Cynical, and it shuts them down." },
+        { "text": "The Beatles went to Rishikesh in 1968 to study meditation.", "grade": "okay", "why": "Related, but it misses them." },
+        { "text": "You're in good company — the Beatles came to India in 1968 to find themselves too, and went home with a pile of songs. What will you take home?", "grade": "best", "why": "Links their journey to a legend and asks about them." }
+      ],
+      "pattern": "Link them to a legend"
+    },
+    {
+      "id": "mb-drop-04",
+      "fact": "Bob Marley, from Jamaica, died in 1981 at just 36, but his songs are still played all over the world.",
+      "source": "Encyclopaedia Britannica, \"Bob Marley\"",
+      "prompt": "The hostel has played \"Three Little Birds\" four times today. A traveller laughs about it.",
+      "options": [
+        { "text": "Every hostel on Earth plays Bob Marley. He only lived to 36, and he's still the soundtrack of every backpacker alive.", "grade": "best", "why": "Shared joke, then a fact that adds a little wonder." },
+        { "text": "Reggae is boring.", "grade": "miss", "why": "An opinion that kills the laugh." },
+        { "text": "Bob Marley died in 1981 when he was only 36 years old, but his music is still very popular around the world today.", "grade": "okay", "why": "Accurate, but it drops the joke they started." }
+      ],
+      "pattern": "Joke + wonder"
+    },
+    {
+      "id": "mb-drop-05",
+      "fact": "ABBA won the Eurovision Song Contest in 1974 with \"Waterloo\", and went on to become one of the best-selling bands in history.",
+      "source": "Encyclopaedia Britannica, \"ABBA\"",
+      "prompt": "A traveller tells you she's from Sweden.",
+      "options": [
+        { "text": "Sweden won Eurovision in 1974 with ABBA.", "grade": "okay", "why": "Correct, a bit quiz-show." },
+        { "text": "Sweden! The country that won Eurovision with \"Waterloo\" and gave the world ABBA. Be honest — do you know every word of \"Dancing Queen\"?", "grade": "best", "why": "Proud-of-you energy, then a question she'll laugh at." },
+        { "text": "ABBA is for old people.", "grade": "miss", "why": "Insults her country's pride and joy." }
+      ],
+      "pattern": "Celebrate their country"
+    },
+    {
+      "id": "mb-drop-06",
+      "fact": "In 2016 Bob Dylan won the Nobel Prize in Literature for his song lyrics.",
+      "source": "The Nobel Prize, \"Bob Dylan — Facts\"",
+      "prompt": "A traveller says, \"Song lyrics aren't real poetry.\"",
+      "options": [
+        { "text": "Tell that to the Nobel committee — they gave Bob Dylan the Literature prize in 2016. What's the last lyric that really hit you?", "grade": "best", "why": "Playful disagreement with proof, then a personal question." },
+        { "text": "Yes, you're right.", "grade": "miss", "why": "Gives up a great argument." },
+        { "text": "Bob Dylan won the Nobel Prize in Literature in 2016, so some people think lyrics are poetry.", "grade": "okay", "why": "The point is there, but the fun isn't." }
+      ],
+      "pattern": "Disagree with proof"
+    },
+    {
+      "id": "mb-drop-07",
+      "fact": "Taylor Swift's Eras Tour (2023–2024) became the highest-grossing concert tour in history, earning over two billion dollars.",
+      "source": "Guinness World Records, \"Highest-grossing music tour\"",
+      "prompt": "An American traveller admits, \"I spent a crazy amount on Eras Tour tickets.\"",
+      "options": [
+        { "text": "That's a waste of money.", "grade": "miss", "why": "Judging their joy." },
+        { "text": "Then you helped make history — it was the first tour to earn over two billion dollars. Worth it? Which era are you?", "grade": "best", "why": "Makes their spending part of history, then a fan question." },
+        { "text": "The Eras Tour made over two billion dollars.", "grade": "okay", "why": "A number, not a conversation." }
+      ],
+      "pattern": "Make them part of history"
+    },
+    {
+      "id": "mb-drop-08",
+      "fact": "Michael Jackson's \"Thriller\" (1982) is the best-selling album of all time.",
+      "source": "Guinness World Records, \"Best-selling album\"",
+      "prompt": "At a party, someone starts doing the Thriller zombie dance.",
+      "options": [
+        { "text": "Respect — best-selling album in history, and you still have the moves. Teach me the zombie part?", "grade": "best", "why": "Praise, the fact, and an invitation to join." },
+        { "text": "\"Thriller\" is the best-selling album of all time, according to Guinness World Records.", "grade": "okay", "why": "True, but you're standing still while they dance." },
+        { "text": "That's so old.", "grade": "miss", "why": "A buzzkill." }
+      ],
+      "pattern": "Praise + join in"
+    },
+    {
+      "id": "mb-drop-09",
+      "fact": "Oasis reunited in 2025 for their first concerts since splitting up in 2009. The Live '25 tour sold nearly three million tickets across 41 shows.",
+      "source": "Wikipedia, \"Oasis Live '25 Tour\" (citing Billboard Boxscore)",
+      "prompt": "A traveller from Manchester says, \"I saw the Oasis reunion!\"",
+      "options": [
+        { "text": "Who?", "grade": "miss", "why": "Even if you don't know them, you just ended it." },
+        { "text": "The reunion! Sixteen years apart, and then almost three million people came. Did the brothers behave?", "grade": "best", "why": "Shows you know, adds the scale, and asks the question every fan loves." },
+        { "text": "Oasis sold almost three million tickets on the reunion tour, and it was their first tour since 2009.", "grade": "okay", "why": "Accurate, but it's your fact, not their story." }
+      ],
+      "pattern": "Know it + ask the fan question"
+    },
+    {
+      "id": "mb-drop-10",
+      "fact": "In March 2026 BTS released \"Arirang\", their first album since 2020, named after a famous Korean folk song. Their world tour began in April 2026.",
+      "source": "Wikipedia, \"Arirang World Tour\"; Stereogum (2026)",
+      "date": "2026-04",
+      "expires": "2027-03-31",
+      "prompt": "A Korean traveller at the hostel mentions she's a BTS fan.",
+      "options": [
+        { "text": "I don't really like K-pop.", "grade": "miss", "why": "Nobody asked for your verdict." },
+        { "text": "BTS released an album called \"Arirang\" in 2026.", "grade": "okay", "why": "Right fact, no warmth." },
+        { "text": "Then this is your year — first BTS album since 2020, and they named it after \"Arirang\". Are you going to the tour?", "grade": "best", "why": "Shares her excitement with a fact she'll love." }
+      ],
+      "pattern": "Share their excitement"
+    },
+    {
+      "id": "mb-drop-11",
+      "fact": "Nepathya is a folk-rock band from Pokhara, formed in 1990 and led by Amrit Gurung. They mix Nepali folk tunes with rock.",
+      "source": "Nepathya official website, \"Band profile\"",
+      "prompt": "A traveller asks, \"What Nepali music should I listen to?\"",
+      "options": [
+        { "text": "Start with Nepathya — a folk-rock band from right here in Pokhara, playing since 1990. Put them on during a bus ride and count how many people sing along.", "grade": "best", "why": "Local pride, a clear pick, and a fun test." },
+        { "text": "Nepali music is only for Nepali people.", "grade": "miss", "why": "Closes a door they wanted to open." },
+        { "text": "Nepathya is a band from Pokhara.", "grade": "okay", "why": "Correct, but it doesn't sell it." }
+      ],
+      "pattern": "Local pride + a test"
+    },
+    {
+      "id": "mb-drop-12",
+      "fact": "Kutumba is a Nepali instrumental band, formed in 2004, that plays folk music on traditional instruments like the sarangi and the madal.",
+      "source": "Nepali Times, \"New age folk\"",
+      "prompt": "A traveller who plays violin asks about traditional Nepali instruments.",
+      "options": [
+        { "text": "We just use guitars now.", "grade": "miss", "why": "Not true, and a missed chance." },
+        { "text": "Look up Kutumba — an instrumental band that plays old Nepali instruments like the sarangi, which is a bit like your violin's village cousin.", "grade": "best", "why": "A tip, a comparison to their own instrument, and a smile." },
+        { "text": "Kutumba plays traditional Nepali instruments.", "grade": "okay", "why": "Useful but flat." }
+      ],
+      "pattern": "Connect to their world"
+    },
+    {
+      "id": "mb-drop-13",
+      "fact": "George Harrison of the Beatles learned the sitar from Indian master Ravi Shankar, and it changed the sound of Beatles songs.",
+      "source": "Encyclopaedia Britannica, \"George Harrison\"",
+      "prompt": "In a Thamel shop, a traveller is holding a sitar, wondering if they should buy it.",
+      "options": [
+        { "text": "You'll never learn it.", "grade": "miss", "why": "Discouraging and rude." },
+        { "text": "George Harrison learned the sitar from Ravi Shankar and it changed the Beatles' sound, so you never know where it could take you.", "grade": "okay", "why": "Encouraging, but a bit long and formal." },
+        { "text": "Careful — George Harrison picked one up and it changed the Beatles. This could be your start.", "grade": "best", "why": "Short, inspiring and a little dramatic." }
+      ],
+      "pattern": "Inspire with a legend"
+    },
+    {
+      "id": "mb-drop-14",
+      "fact": "Coldplay formed in London in the 1990s, when the members were students at University College London.",
+      "source": "Encyclopaedia Britannica, \"Coldplay\"",
+      "prompt": "A traveller jokes, \"Coldplay is just music for sad students.\"",
+      "options": [
+        { "text": "Coldplay is terrible anyway.", "grade": "miss", "why": "Joins in by insulting — no fun, no wit." },
+        { "text": "Well, they did start as students in London. So you're not wrong — you're just early.", "grade": "best", "why": "Agrees with a twist, using the fact." },
+        { "text": "Actually, Coldplay formed when the members were students at University College London in the 1990s.", "grade": "okay", "why": "The \"actually\" turns a joke into a correction." }
+      ],
+      "pattern": "Agree with a twist"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "mb-word-01",
+      "sentence": "The concert last night was very good.",
+      "target": "very good",
+      "options": [
+        { "text": "loud", "grade": "miss", "why": "Maybe true, but not what you mean." },
+        { "text": "transcendent", "grade": "okay", "why": "Big word, a bit much for a bar gig." },
+        { "text": "electric", "grade": "best", "why": "You can feel the energy. Common and vivid." }
+      ],
+      "meaning": "Full of excitement and energy.",
+      "example": "The crowd was electric when the band came on."
+    },
+    {
+      "id": "mb-word-02",
+      "sentence": "Her voice is very beautiful.",
+      "target": "very beautiful",
+      "options": [
+        { "text": "gorgeous", "grade": "best", "why": "Warm and simple. Everyone understands it." },
+        { "text": "mellifluous", "grade": "okay", "why": "Means sweet-sounding, but it's rare." },
+        { "text": "high", "grade": "miss", "why": "A description, not a compliment." }
+      ],
+      "meaning": "Extremely beautiful.",
+      "example": "That old folk song is gorgeous."
+    },
+    {
+      "id": "mb-word-03",
+      "sentence": "This song is very popular right now.",
+      "target": "very popular",
+      "options": [
+        { "text": "ubiquitous", "grade": "okay", "why": "Correct, but formal." },
+        { "text": "everywhere", "grade": "best", "why": "Simple and vivid: you hear it in every cafe." },
+        { "text": "old", "grade": "miss", "why": "A different meaning." }
+      ],
+      "meaning": "(Casual) you hear or see it all the time.",
+      "example": "That song was everywhere this summer."
+    },
+    {
+      "id": "mb-word-04",
+      "sentence": "When the band started, the crowd was very excited.",
+      "target": "was very excited",
+      "options": [
+        { "text": "was going wild", "grade": "best", "why": "Casual and full of energy." },
+        { "text": "was in a state of euphoria", "grade": "okay", "why": "Sounds like a science report." },
+        { "text": "was sitting down", "grade": "miss", "why": "The opposite of the scene." }
+      ],
+      "meaning": "(Casual) being extremely excited and loud.",
+      "example": "When they played the famous song, everyone was going wild."
+    }
+  ]
+}

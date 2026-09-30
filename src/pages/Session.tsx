@@ -12,6 +12,7 @@ import { VibeDrill } from '../drills/VibeDrill'
 import { YesAndDrill } from '../drills/YesAndDrill'
 import { UpgraderDrill } from '../drills/UpgraderDrill'
 import { DropInDrill } from '../drills/DropInDrill'
+import { WordPowerDrill } from '../drills/WordPowerDrill'
 
 interface Played {
   entry: SessionItem
@@ -109,6 +110,8 @@ function Drill({
       return <UpgraderDrill item={entry.item} onResult={onResult} onNext={onNext} />
     case 'dropIn':
       return <DropInDrill item={entry.item} onResult={onResult} onNext={onNext} />
+    case 'wordPower':
+      return <WordPowerDrill item={entry.item} onResult={onResult} onNext={onNext} />
   }
 }
 
@@ -183,5 +186,7 @@ function summary(e: SessionItem): string {
       return e.item.clunky
     case 'dropIn':
       return e.item.fact
+    case 'wordPower':
+      return e.item.sentence
   }
 }

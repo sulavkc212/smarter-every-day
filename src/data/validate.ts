@@ -72,6 +72,10 @@ export const dropInItem = z.object({
   fact: text,
   /** Where the fact can be checked. Required — no unsourced facts ship. */
   source: text,
+  /** Month the fact was true as of (YYYY-MM). Set on news items. */
+  date: z.string().regex(/^\d{4}-\d{2}$/).optional(),
+  /** Day after which the item is hidden because it has gone stale (YYYY-MM-DD). */
+  expires: z.string().regex(/^\d{4}-\d{2}-\d{2}$/).optional(),
   prompt: text,
   options: z
     .array(z.object({ text, grade, why: text }))
@@ -80,19 +84,49 @@ export const dropInItem = z.object({
   pattern: text,
 })
 
-export const deck = z.object({
-  id: text,
-  title: text,
-  tagline: text,
-  description: text,
-  vibe: z.array(vibeItem).min(1),
-  yesAnd: z.array(yesAndItem).min(1),
-  upgrader: z.array(upgraderItem).min(1),
-  dropIn: z.array(dropInItem).min(1),
-})
+export const wordPowerItem = z
+  .object({
+    id: text,
+    /** A plain sentence containing `target`, the bland word or phrase to replace. */
+    sentence: text,
+    target: text,
+    options: z
+      .array(z.object({ text, grade, why: text }))
+      .length(3)
+      .refine(oneBest, 'exactly one option must be "best"'),
+    /** Short meaning of the best word, in plain English. */
+    meaning: text,
+    /** A second sentence using the best word. */
+    example: text,
+  })
+  .refine((item) => item.sentence.includes(item.target), { message: 'target must appear in sentence' })
 
+export const sectionId = z.enum(['everyday', 'craft', 'charm', 'culture', 'leadership'])
+
+export const deck = z
+  .object({
+    id: text,
+    section: sectionId,
+    /** A key into the app's small icon set. */
+    icon: text,
+    title: text,
+    tagline: text,
+    description: text,
+    vibe: z.array(vibeItem),
+    yesAnd: z.array(yesAndItem),
+    upgrader: z.array(upgraderItem),
+    dropIn: z.array(dropInItem),
+    wordPower: z.array(wordPowerItem),
+  })
+  .refine(
+    (d) => d.vibe.length + d.yesAnd.length + d.upgrader.length + d.dropIn.length + d.wordPower.length >= 25,
+    { message: 'a deck needs at least 25 items' },
+  )
+
+export type SectionId = z.infer<typeof sectionId>
 export type VibeItem = z.infer<typeof vibeItem>
 export type YesAndItem = z.infer<typeof yesAndItem>
 export type UpgraderItem = z.infer<typeof upgraderItem>
 export type DropInItem = z.infer<typeof dropInItem>
+export type WordPowerItem = z.infer<typeof wordPowerItem>
 export type Deck = z.infer<typeof deck>

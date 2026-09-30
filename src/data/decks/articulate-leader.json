@@ -1,5 +1,7 @@
 {
   "id": "articulate-leader",
+  "section": "leadership",
+  "icon": "flag",
   "title": "The Articulate Leader",
   "tagline": "Professional, warm, and in charge.",
   "description": "Command a room of tired trekkers, give clear instructions to staff, handle complaints gracefully and disagree without making enemies.",
@@ -924,6 +926,152 @@
         }
       ],
       "pattern": "Credit, then update"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "lead-word-01",
+      "sentence": "Please be very careful on this part of the path.",
+      "target": "very careful",
+      "options": [
+        {
+          "text": "extra careful",
+          "grade": "best",
+          "why": "Clear, calm and easy for every nationality to understand."
+        },
+        {
+          "text": "circumspect",
+          "grade": "okay",
+          "why": "Correct, but half the group won't know it."
+        },
+        {
+          "text": "quick",
+          "grade": "miss",
+          "why": "The opposite of what you want on a dangerous path."
+        }
+      ],
+      "meaning": "More careful than usual.",
+      "example": "Be extra careful on the wet stones after the bridge."
+    },
+    {
+      "id": "lead-word-02",
+      "sentence": "The whole group did a very good job today.",
+      "target": "very good",
+      "options": [
+        {
+          "text": "commendable",
+          "grade": "okay",
+          "why": "Sounds like a school report."
+        },
+        {
+          "text": "brilliant",
+          "grade": "best",
+          "why": "Warm, strong praise that people remember."
+        },
+        {
+          "text": "okay",
+          "grade": "miss",
+          "why": "Faint praise feels like criticism."
+        }
+      ],
+      "meaning": "Excellent.",
+      "example": "You were brilliant on that climb — nobody complained once."
+    },
+    {
+      "id": "lead-word-03",
+      "sentence": "Staying with the group is a very important rule.",
+      "target": "very important",
+      "options": [
+        {
+          "text": "small",
+          "grade": "miss",
+          "why": "Makes a safety rule sound optional."
+        },
+        {
+          "text": "paramount",
+          "grade": "okay",
+          "why": "Correct, but formal and less clear."
+        },
+        {
+          "text": "non-negotiable",
+          "grade": "best",
+          "why": "Firm and clear: this rule cannot change."
+        }
+      ],
+      "meaning": "Cannot be changed or argued about.",
+      "example": "Helmets on the jeep road are non-negotiable."
+    },
+    {
+      "id": "lead-word-04",
+      "sentence": "We have a very big problem with the bus.",
+      "target": "very big",
+      "options": [
+        {
+          "text": "serious",
+          "grade": "best",
+          "why": "Clear and calm. It says \"important\" without panic."
+        },
+        {
+          "text": "catastrophic",
+          "grade": "okay",
+          "why": "Probably too dramatic — it will scare people."
+        },
+        {
+          "text": "small",
+          "grade": "miss",
+          "why": "Not honest if it's big."
+        }
+      ],
+      "meaning": "Important and needing attention.",
+      "example": "It's a serious delay, so here's the new plan."
+    },
+    {
+      "id": "lead-word-05",
+      "sentence": "I am very sorry for the delay this morning.",
+      "target": "very sorry",
+      "options": [
+        {
+          "text": "a bit sorry",
+          "grade": "miss",
+          "why": "Sounds like you don't mean it."
+        },
+        {
+          "text": "truly sorry",
+          "grade": "best",
+          "why": "Sincere and simple."
+        },
+        {
+          "text": "profoundly remorseful",
+          "grade": "okay",
+          "why": "Too heavy for a delay. It sounds strange."
+        }
+      ],
+      "meaning": "Really and sincerely sorry.",
+      "example": "I'm truly sorry — that mistake was mine."
+    },
+    {
+      "id": "lead-word-06",
+      "sentence": "Tomorrow will be very hard for everyone.",
+      "target": "very hard for everyone",
+      "options": [
+        {
+          "text": "a big day for all of us",
+          "grade": "best",
+          "why": "Honest about the challenge, but it sounds exciting, not scary."
+        },
+        {
+          "text": "arduous for everyone",
+          "grade": "okay",
+          "why": "Correct but formal and gloomy."
+        },
+        {
+          "text": "easy for everyone",
+          "grade": "miss",
+          "why": "Not true, and they'll stop trusting you."
+        }
+      ],
+      "meaning": "An important day that needs energy.",
+      "example": "Sleep early — tomorrow is a big day."
     }
   ]
 }

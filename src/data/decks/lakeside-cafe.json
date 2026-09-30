@@ -1,5 +1,7 @@
 {
   "id": "lakeside-cafe",
+  "section": "everyday",
+  "icon": "cup",
   "title": "Lakeside Cafe Casual",
   "tagline": "Small talk that doesn't feel small.",
   "description": "Ordering, weather, compliments and the everyday chat of a Lakeside cafe. Keep it light, keep it warm, keep it going.",
@@ -243,6 +245,246 @@
       ],
       "pattern": "Read the room",
       "why": "Charm isn't always a joke. When someone is hurting, the most charming move is to offer a choice and let them lead."
+    },
+    {
+      "id": "cafe-vibe-11",
+      "setting": "Lakeside cafe",
+      "scenario": "A traveller with a laptop asks you, \"Is the wifi here any good?\"",
+      "options": [
+        {
+          "text": "Good enough for one photo of the lake. Two if you believe in yourself.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "Yes, it works. The password is on the wall behind the counter, next to the menu.",
+          "grade": "okay",
+          "tone": "Helpful"
+        },
+        {
+          "text": "It's Nepal. Don't expect too much.",
+          "grade": "miss",
+          "tone": "Negative"
+        }
+      ],
+      "pattern": "Honest + playful",
+      "why": "You answered the real question and turned the slow wifi into a small shared joke instead of an apology."
+    },
+    {
+      "id": "cafe-vibe-12",
+      "setting": "Momo shop",
+      "scenario": "The stranger at the next table gets the exact same order as you: buff momo and hot lemon.",
+      "options": [
+        {
+          "text": "Great minds. Or we're both very predictable.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "Oh, we ordered the same food.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "(Look at your phone and say nothing.)",
+          "grade": "miss",
+          "tone": "Missed chance"
+        }
+      ],
+      "pattern": "Point at the coincidence",
+      "why": "A small coincidence is the easiest opener there is. Name it with a smile and let them decide whether to talk."
+    },
+    {
+      "id": "cafe-vibe-13",
+      "setting": "Cafe terrace",
+      "scenario": "A traveller asks, \"What should I do in Pokhara tomorrow?\"",
+      "options": [
+        {
+          "text": "There are many things: paragliding, boating, Sarangkot, the Peace Pagoda, the caves, Davis Falls, the museums…",
+          "grade": "okay",
+          "tone": "Tour brochure"
+        },
+        {
+          "text": "Depends. Do you want to fly, float or eat? I can make a strong case for all three.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "Just Google it. Everything is online.",
+          "grade": "miss",
+          "tone": "Dismissive"
+        }
+      ],
+      "pattern": "Turn advice into a question",
+      "why": "A list is information. A question about what they want is a conversation, and it makes your advice fit them."
+    },
+    {
+      "id": "cafe-vibe-14",
+      "setting": "Coffee counter",
+      "scenario": "You're having a bad day. The friendly barista asks, \"How's your day going?\"",
+      "options": [
+        {
+          "text": "Terrible. Everything is going wrong, my phone broke, my boss is angry, and now it's raining…",
+          "grade": "miss",
+          "tone": "Oversharing"
+        },
+        {
+          "text": "Honestly? A bit rough. This coffee is the best part so far — no pressure.",
+          "grade": "best",
+          "tone": "Honest + light"
+        },
+        {
+          "text": "Good, thanks.",
+          "grade": "okay",
+          "tone": "Autopilot"
+        }
+      ],
+      "pattern": "Honest, but light",
+      "why": "You told the truth without dumping it on them, and you gave them a compliment to smile at."
+    },
+    {
+      "id": "cafe-vibe-15",
+      "setting": "Open-air terrace",
+      "scenario": "Rain starts suddenly. A traveller at the edge of the terrace hasn't noticed their laptop is getting wet.",
+      "options": [
+        {
+          "text": "Excuse me, it's raining.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "Your laptop's about to go swimming — want to grab the table inside with me?",
+          "grade": "best",
+          "tone": "Helpful + inviting"
+        },
+        {
+          "text": "(Watch it get wet. Not your problem.)",
+          "grade": "miss",
+          "tone": "Cold"
+        }
+      ],
+      "pattern": "Help first, then invite",
+      "why": "Helping someone is the most natural opener in the world. The invite turns a warning into a conversation."
+    },
+    {
+      "id": "cafe-vibe-16",
+      "setting": "Cafe counter",
+      "scenario": "A worried traveller asks, \"Is it safe to drink the tap water here?\"",
+      "options": [
+        {
+          "text": "Not from the tap, no. Stick to filtered water — lots of cafes will refill your bottle for a few rupees.",
+          "grade": "best",
+          "tone": "Clear + useful"
+        },
+        {
+          "text": "Sure, if you want to spend tomorrow in the bathroom! Ha ha, just kidding… actually, I'm not kidding at all.",
+          "grade": "miss",
+          "tone": "Joke over clarity"
+        },
+        {
+          "text": "No.",
+          "grade": "okay",
+          "tone": "Blunt"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "For health and safety questions, the charming answer is the clear one. Save the jokes for after they have the facts."
+    },
+    {
+      "id": "cafe-vibe-17",
+      "setting": "Busy restaurant",
+      "scenario": "The waiter tells you the kitchen has run out of the dish you ordered.",
+      "options": [
+        {
+          "text": "Seriously? It's on the menu. Why is it on the menu if you don't even have it?",
+          "grade": "miss",
+          "tone": "Annoyed"
+        },
+        {
+          "text": "Oh, okay. Then I'll just have tea.",
+          "grade": "okay",
+          "tone": "Flat"
+        },
+        {
+          "text": "No problem. What would you eat if you were me?",
+          "grade": "best",
+          "tone": "Warm"
+        }
+      ],
+      "pattern": "Hand them the expert role",
+      "why": "Asking for their pick turns a small letdown into a compliment. People love being asked what they know."
+    },
+    {
+      "id": "cafe-vibe-18",
+      "setting": "Momo shop",
+      "scenario": "A tourist keeps dropping momos while trying to eat with a fork and spoon. They look embarrassed.",
+      "options": [
+        {
+          "text": "Pro tip: nobody here will judge you for using your hands. Half of Pokhara does.",
+          "grade": "best",
+          "tone": "Rescuing"
+        },
+        {
+          "text": "Do you want a different spoon?",
+          "grade": "okay",
+          "tone": "Helpful"
+        },
+        {
+          "text": "Ha, you're really bad at that.",
+          "grade": "miss",
+          "tone": "Mocking"
+        }
+      ],
+      "pattern": "Rescue with a tip",
+      "why": "You gave them permission to relax, and a local tip makes them feel like an insider instead of a clumsy tourist."
+    },
+    {
+      "id": "cafe-vibe-19",
+      "setting": "Lakeside cafe",
+      "scenario": "A traveller says, \"I love Nepali people. Everyone is so nice!\"",
+      "options": [
+        {
+          "text": "Thank you, that's nice to hear.",
+          "grade": "okay",
+          "tone": "Polite"
+        },
+        {
+          "text": "Careful, we'll adopt you. People come for one week and somehow stay for a year.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "Not everyone. Some people will cheat you, especially the taxi drivers near the lake.",
+          "grade": "miss",
+          "tone": "Negative"
+        }
+      ],
+      "pattern": "Accept + tease",
+      "why": "Take the compliment for everyone and give it back as a warm joke. Warnings can wait for when they ask."
+    },
+    {
+      "id": "cafe-vibe-20",
+      "setting": "Cafe, end of a long chat",
+      "scenario": "You've been talking with a traveller for an hour. You need to leave.",
+      "options": [
+        {
+          "text": "So… anyway… I should maybe go now… or not… I don't know… okay, bye? Or see you? Bye.",
+          "grade": "miss",
+          "tone": "Awkward trail-off"
+        },
+        {
+          "text": "This was the best hour of my week. If you're here tomorrow, the first tea is on me.",
+          "grade": "best",
+          "tone": "Warm close"
+        },
+        {
+          "text": "Okay, bye! Nice to meet you.",
+          "grade": "okay",
+          "tone": "Standard"
+        }
+      ],
+      "pattern": "End high",
+      "why": "People remember how a conversation ends. A clear, warm exit with a small invitation beats a slow fade."
     }
   ],
   "yesAnd": [
@@ -440,6 +682,118 @@
         }
       ],
       "pattern": "Accept + make it a game"
+    },
+    {
+      "id": "cafe-yes-11",
+      "prompt": "I'm so full.",
+      "cards": [
+        {
+          "text": "Me too.",
+          "keepsGoing": false,
+          "why": "Agrees and stops."
+        },
+        {
+          "text": "Then my work here is done. Dessert arrives in five minutes, whether you like it or not.",
+          "keepsGoing": true,
+          "why": "Plays along and adds a funny threat they can answer."
+        }
+      ],
+      "pattern": "Accept + escalate"
+    },
+    {
+      "id": "cafe-yes-12",
+      "prompt": "This is my last day in Pokhara.",
+      "cards": [
+        {
+          "text": "Oh, okay. Safe travels.",
+          "keepsGoing": false,
+          "why": "Kind, but it sounds like goodbye already."
+        },
+        {
+          "text": "Then we have to make it count. What's the one thing you haven't done yet?",
+          "keepsGoing": true,
+          "why": "Turns the ending into a small mission you can help with."
+        },
+        {
+          "text": "You should have stayed longer.",
+          "keepsGoing": false,
+          "why": "Too late to be useful, and it sounds like a complaint."
+        }
+      ],
+      "pattern": "Accept + create a mission"
+    },
+    {
+      "id": "cafe-yes-13",
+      "prompt": "I can't believe how cheap everything is here.",
+      "cards": [
+        {
+          "text": "Careful — that's how people end up extending their visa twice. What's the best deal you've found?",
+          "keepsGoing": true,
+          "why": "Light tease, then a question they'll enjoy answering."
+        },
+        {
+          "text": "It's not cheap for us.",
+          "keepsGoing": false,
+          "why": "A fair point, but said like this it lands as a correction and ends the chat."
+        }
+      ],
+      "pattern": "Tease + ask"
+    },
+    {
+      "id": "cafe-yes-14",
+      "prompt": "I got lost trying to find this place.",
+      "cards": [
+        {
+          "text": "It's easy, it's just behind the bank.",
+          "keepsGoing": false,
+          "why": "Useful for next time, useless for the conversation."
+        },
+        {
+          "text": "Everyone does. It's our secret test, and you passed. What did you find on the way?",
+          "keepsGoing": true,
+          "why": "Makes getting lost a win and invites their story."
+        }
+      ],
+      "pattern": "Reframe + invite a story"
+    },
+    {
+      "id": "cafe-yes-15",
+      "prompt": "Is it always this quiet here?",
+      "cards": [
+        {
+          "text": "Yes.",
+          "keepsGoing": false,
+          "why": "True, maybe. Finished, definitely."
+        },
+        {
+          "text": "Only until the tour buses arrive at noon. Enjoy the peace while it lasts.",
+          "keepsGoing": true,
+          "why": "Adds a little inside knowledge and a picture of what's coming."
+        }
+      ],
+      "pattern": "Answer + inside knowledge"
+    },
+    {
+      "id": "cafe-yes-16",
+      "prompt": "I've been travelling for six months.",
+      "cards": [
+        {
+          "text": "Six months! Which place still wins, and which one would you never go back to?",
+          "keepsGoing": true,
+          "why": "Two easy, fun questions. Everyone has a favourite and a horror story."
+        },
+        {
+          "text": "Wow, that's long.",
+          "keepsGoing": false,
+          "why": "A reaction, not a reply."
+        },
+        {
+          "text": "Don't you have a job?",
+          "keepsGoing": false,
+          "why": "Sounds like judging, even if you're curious."
+        }
+      ],
+      "pattern": "Ask for the best and the worst"
     }
   ],
   "upgrader": [
@@ -680,6 +1034,102 @@
         ]
       ],
       "why": "Lead with what you'll do, not what you can't. Confidence in the first three words sets the tone for everything after."
+    },
+    {
+      "id": "cafe-up-11",
+      "clunky": "Um, do you maybe want to, like, sit here? Only if you want.",
+      "tiles": [
+        "There's a free seat here",
+        "if you want it —",
+        "the view",
+        "is better from this side."
+      ],
+      "distractors": [
+        "um",
+        "like",
+        "only if you want"
+      ],
+      "answers": [
+        [
+          "There's a free seat here",
+          "if you want it —",
+          "the view",
+          "is better from this side."
+        ]
+      ],
+      "why": "Make the offer, then give a reason. A reason makes it easy to say yes."
+    },
+    {
+      "id": "cafe-up-12",
+      "clunky": "The weather is, you know, kind of good today, not too hot, nice.",
+      "tiles": [
+        "Perfect weather today —",
+        "warm enough for the lake,",
+        "cool enough",
+        "for tea."
+      ],
+      "distractors": [
+        "you know",
+        "kind of",
+        "nice"
+      ],
+      "answers": [
+        [
+          "Perfect weather today —",
+          "warm enough for the lake,",
+          "cool enough",
+          "for tea."
+        ]
+      ],
+      "why": "Weather talk is boring until you make it specific. Two small pictures make it feel like a real thought."
+    },
+    {
+      "id": "cafe-up-13",
+      "clunky": "I'm from here, Pokhara, I was born here, so I know here very well.",
+      "tiles": [
+        "I was born",
+        "in Pokhara,",
+        "so ask me anything —",
+        "I know every shortcut."
+      ],
+      "distractors": [
+        "very well",
+        "so I know here",
+        "I'm from here"
+      ],
+      "answers": [
+        [
+          "I was born",
+          "in Pokhara,",
+          "so ask me anything —",
+          "I know every shortcut."
+        ]
+      ],
+      "why": "Say it once, then turn it into an offer. \"Ask me anything\" invites the next question."
+    },
+    {
+      "id": "cafe-up-14",
+      "clunky": "Sorry, I think maybe I have seen you before somewhere, maybe?",
+      "tiles": [
+        "Have we",
+        "met before?",
+        "Your face",
+        "is very familiar."
+      ],
+      "distractors": [
+        "sorry",
+        "I think maybe",
+        "somewhere, maybe"
+      ],
+      "answers": [
+        [
+          "Have we",
+          "met before?",
+          "Your face",
+          "is very familiar."
+        ]
+      ],
+      "why": "A direct question is easier to answer than a nervous one. Two short sentences, no apology."
     }
   ],
   "dropIn": [
@@ -710,7 +1160,7 @@
     {
       "id": "cafe-drop-02",
       "fact": "Phewa Lake is the second-largest lake in Nepal, after Rara Lake in the far west.",
-      "source": "Nepal Tourism Board, \"Phewa Lake\"",
+      "source": "Nepal Tourism Board",
       "prompt": "Out on a rowing boat, a tourist spreads their arms: \"This lake is huge!\"",
       "options": [
         {
@@ -922,6 +1372,248 @@
         }
       ],
       "pattern": "Correct without heat"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "cafe-word-01",
+      "sentence": "The view from this cafe is very nice.",
+      "target": "very nice",
+      "options": [
+        {
+          "text": "stunning",
+          "grade": "best",
+          "why": "Strong, clear, and every traveller knows it."
+        },
+        {
+          "text": "resplendent",
+          "grade": "okay",
+          "why": "Correct, but many travellers won't know this word."
+        },
+        {
+          "text": "good",
+          "grade": "miss",
+          "why": "Even flatter than \"very nice\"."
+        }
+      ],
+      "meaning": "So beautiful it surprises you.",
+      "example": "The sunrise from Sarangkot was stunning."
+    },
+    {
+      "id": "cafe-word-02",
+      "sentence": "This lemon tea is really good.",
+      "target": "really good",
+      "options": [
+        {
+          "text": "okay",
+          "grade": "miss",
+          "why": "Sounds like a complaint."
+        },
+        {
+          "text": "delectable",
+          "grade": "okay",
+          "why": "Right meaning, but it sounds like a food critic."
+        },
+        {
+          "text": "perfect",
+          "grade": "best",
+          "why": "Short, warm and easy to understand anywhere."
+        }
+      ],
+      "meaning": "Exactly right. Nothing to change.",
+      "example": "The weather is perfect for the boat today."
+    },
+    {
+      "id": "cafe-word-03",
+      "sentence": "I am very tired after the trek.",
+      "target": "very tired",
+      "options": [
+        {
+          "text": "exhausted",
+          "grade": "best",
+          "why": "One word that says \"very, very tired\"."
+        },
+        {
+          "text": "enervated",
+          "grade": "okay",
+          "why": "Correct, but rare. People will look confused."
+        },
+        {
+          "text": "a bit sleepy",
+          "grade": "miss",
+          "why": "Much weaker than what you mean."
+        }
+      ],
+      "meaning": "Extremely tired, with no energy left.",
+      "example": "After eight hours of walking, everyone was exhausted."
+    },
+    {
+      "id": "cafe-word-04",
+      "sentence": "Lakeside was very busy last night.",
+      "target": "very busy",
+      "options": [
+        {
+          "text": "normal",
+          "grade": "miss",
+          "why": "The opposite of what you mean."
+        },
+        {
+          "text": "packed",
+          "grade": "best",
+          "why": "Vivid and simple. You can almost see the crowd."
+        },
+        {
+          "text": "thronged",
+          "grade": "okay",
+          "why": "Correct, but old-fashioned for a chat."
+        }
+      ],
+      "meaning": "So full of people there's hardly any space.",
+      "example": "The bus to Kathmandu was packed."
+    },
+    {
+      "id": "cafe-word-05",
+      "sentence": "Your story about the monkey was really funny.",
+      "target": "really funny",
+      "options": [
+        {
+          "text": "hilarious",
+          "grade": "best",
+          "why": "Says \"I really laughed\" in one word."
+        },
+        {
+          "text": "risible",
+          "grade": "miss",
+          "why": "Rare, and it usually means \"silly in a bad way\"."
+        },
+        {
+          "text": "amusing",
+          "grade": "okay",
+          "why": "Polite, but it sounds like you only smiled a little."
+        }
+      ],
+      "meaning": "So funny it makes you laugh out loud.",
+      "example": "The guide's stories on the bus were hilarious."
+    },
+    {
+      "id": "cafe-word-06",
+      "sentence": "It is very hot today.",
+      "target": "very hot",
+      "options": [
+        {
+          "text": "sweltering",
+          "grade": "okay",
+          "why": "A good word, but less common than the best one."
+        },
+        {
+          "text": "warm",
+          "grade": "miss",
+          "why": "Too weak. Warm is nice; you mean too much."
+        },
+        {
+          "text": "boiling",
+          "grade": "best",
+          "why": "Everyday, funny and very clear."
+        }
+      ],
+      "meaning": "(Casual) extremely hot.",
+      "example": "It's boiling in the bus park at noon."
+    },
+    {
+      "id": "cafe-word-07",
+      "sentence": "The bus ride from Kathmandu was very bad.",
+      "target": "very bad",
+      "options": [
+        {
+          "text": "a nightmare",
+          "grade": "best",
+          "why": "Everyone understands it, and it tells a story."
+        },
+        {
+          "text": "unpleasant",
+          "grade": "okay",
+          "why": "Correct, but polite and flat."
+        },
+        {
+          "text": "execrable",
+          "grade": "miss",
+          "why": "Too rare. Most people won't know it."
+        }
+      ],
+      "meaning": "(Casual) a really bad experience.",
+      "example": "Finding a taxi in the rain was a nightmare."
+    },
+    {
+      "id": "cafe-word-08",
+      "sentence": "My landlady is a very nice person.",
+      "target": "very nice",
+      "options": [
+        {
+          "text": "amiable",
+          "grade": "okay",
+          "why": "Right meaning, but a bit formal."
+        },
+        {
+          "text": "okay",
+          "grade": "miss",
+          "why": "Sounds like you don't really like her."
+        },
+        {
+          "text": "lovely",
+          "grade": "best",
+          "why": "Warm and very natural in spoken English."
+        }
+      ],
+      "meaning": "Very kind and pleasant.",
+      "example": "The family at the homestay were lovely."
+    },
+    {
+      "id": "cafe-word-09",
+      "sentence": "The lake is very quiet in the morning.",
+      "target": "very quiet",
+      "options": [
+        {
+          "text": "perfectly still",
+          "grade": "best",
+          "why": "Paints a picture: no wind, no waves, a mirror."
+        },
+        {
+          "text": "tranquil",
+          "grade": "okay",
+          "why": "Nice word, but a little like a hotel brochure."
+        },
+        {
+          "text": "empty",
+          "grade": "miss",
+          "why": "A different meaning, and a bit sad."
+        }
+      ],
+      "meaning": "Not moving at all. Calm like a mirror.",
+      "example": "At six in the morning, Phewa is perfectly still."
+    },
+    {
+      "id": "cafe-word-10",
+      "sentence": "I really like this little cafe.",
+      "target": "really like",
+      "options": [
+        {
+          "text": "don't mind",
+          "grade": "miss",
+          "why": "Means you're only okay with it."
+        },
+        {
+          "text": "love",
+          "grade": "best",
+          "why": "Short, warm and completely natural."
+        },
+        {
+          "text": "am enamoured of",
+          "grade": "okay",
+          "why": "Correct, but it sounds like poetry."
+        }
+      ],
+      "meaning": "Like very much.",
+      "example": "I love how quiet it is here after the rain."
     }
   ]
 }

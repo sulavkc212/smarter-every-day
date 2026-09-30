@@ -74,6 +74,7 @@ export function YesAndDrill({ item, onResult, onNext }: DrillProps<YesAndItem>) 
           xp={xp}
           pattern={item.pattern}
           why={`You sorted ${correct} of ${cards.length} correctly.`}
+          save={{ text: item.cards.find((c) => c.keepsGoing)!.text, pattern: item.pattern }}
           onNext={onNext}
         >
           <ul className="flex flex-col gap-3">

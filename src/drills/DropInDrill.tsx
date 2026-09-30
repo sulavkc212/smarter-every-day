@@ -96,6 +96,7 @@ export function DropInDrill({ item, onResult, onNext }: DrillProps<DropInItem>) 
           result={options[picked!].grade}
           xp={xp}
           pattern={item.pattern}
+          save={{ text: item.options.find((o) => o.grade === 'best')!.text, pattern: item.pattern }}
           onNext={onNext}
         />
       )}

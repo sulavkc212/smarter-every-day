@@ -1,0 +1,846 @@
+{
+  "id": "playful-banter",
+  "section": "charm",
+  "icon": "spark",
+  "title": "Playful Banter",
+  "tagline": "Tease like a friend, never like a bully.",
+  "description": "Friendly roasting, quick comebacks and laughing at yourself. How to trade jokes with friends and travellers, lose a round gracefully, and notice when the teasing should stop.",
+  "vibe": [
+    {
+      "id": "pb-vibe-01",
+      "setting": "Cafe with friends",
+      "scenario": "A friend grins: \"You're late again. Did you walk here from Kathmandu?\"",
+      "options": [
+        {
+          "text": "I took the scenic route. Through three momo shops.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "Sorry, traffic.",
+          "grade": "okay",
+          "tone": "Plain"
+        },
+        {
+          "text": "At least I'm not always broke like you, borrowing money from everyone every week.",
+          "grade": "miss",
+          "tone": "Real insult"
+        }
+      ],
+      "pattern": "Play along, exaggerate",
+      "why": "Accept the tease and make it bigger. Hitting back with something real turns a game into a fight."
+    },
+    {
+      "id": "pb-vibe-02",
+      "setting": "Carrom board at a hostel",
+      "scenario": "A traveller beats you and celebrates loudly.",
+      "options": [
+        {
+          "text": "Enjoy it. I let you win so you'd have a nice memory of Nepal.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "You only won because the board is bad. And you cheated twice, I saw it.",
+          "grade": "miss",
+          "tone": "Sore loser"
+        },
+        {
+          "text": "Good game.",
+          "grade": "okay",
+          "tone": "Polite"
+        }
+      ],
+      "pattern": "Lose with style",
+      "why": "A playful excuse shows you don't take it seriously. Being a good loser is very attractive."
+    },
+    {
+      "id": "pb-vibe-03",
+      "setting": "Rooftop",
+      "scenario": "A friend looks at your new haircut: \"Did your barber fall asleep?\"",
+      "options": [
+        {
+          "text": "Haha, maybe. I don't know, I just told him to cut it short, and this is what happened.",
+          "grade": "okay",
+          "tone": "Explaining"
+        },
+        {
+          "text": "At least I have hair.",
+          "grade": "miss",
+          "tone": "Personal jab"
+        },
+        {
+          "text": "He did. I'm calling it \"monsoon style\" — nobody knows what's coming.",
+          "grade": "best",
+          "tone": "Self-deprecating"
+        }
+      ],
+      "pattern": "Own it and name it",
+      "why": "Laughing at yourself first takes all the power out of the tease — and makes everyone like you more."
+    },
+    {
+      "id": "pb-vibe-04",
+      "setting": "Group dinner",
+      "scenario": "A friend makes a joke about a traveller's weight. The traveller goes quiet.",
+      "options": [
+        {
+          "text": "Haha, yeah!",
+          "grade": "miss",
+          "tone": "Joining in"
+        },
+        {
+          "text": "Okay, that one missed. Anyway — who wants the last momo? Not me, I'm being noble.",
+          "grade": "best",
+          "tone": "Protecting"
+        },
+        {
+          "text": "(Say nothing.)",
+          "grade": "okay",
+          "tone": "Silent"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "Name it lightly, then move the attention. You protect the traveller without starting a fight."
+    },
+    {
+      "id": "pb-vibe-05",
+      "setting": "Cafe",
+      "scenario": "A friend rolls their eyes: \"You think you're so charming.\"",
+      "options": [
+        {
+          "text": "Think? I have a certificate. It's from my mother, but still.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "Yes, and you're jealous.",
+          "grade": "miss",
+          "tone": "Arrogant"
+        },
+        {
+          "text": "No, I don't. I'm just a normal person, I'm just being friendly, that's all, really.",
+          "grade": "okay",
+          "tone": "Defensive"
+        }
+      ],
+      "pattern": "Confident, then undercut",
+      "why": "A big claim followed by a small, silly detail is the classic banter rhythm."
+    },
+    {
+      "id": "pb-vibe-06",
+      "setting": "Hostel common room",
+      "scenario": "A British traveller laughs: \"Where did you learn the word 'splendid'? From the Queen?\"",
+      "options": [
+        {
+          "text": "My English is better than yours.",
+          "grade": "miss",
+          "tone": "Competitive"
+        },
+        {
+          "text": "From old British trekkers. They tipped in words instead of money.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "From movies, mostly. And from my English teacher at school. She liked old British words.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Tease back, affectionately",
+      "why": "A gentle joke about their country, in their style. They'll laugh, because it's the kind of joke they make."
+    },
+    {
+      "id": "pb-vibe-07",
+      "setting": "Lakeside",
+      "scenario": "Your traveller friend got badly sunburnt on the boat.",
+      "options": [
+        {
+          "text": "Ha! You look terrible, you should see yourself — everyone is laughing at you.",
+          "grade": "miss",
+          "tone": "Cruel"
+        },
+        {
+          "text": "You're very red.",
+          "grade": "okay",
+          "tone": "Obvious"
+        },
+        {
+          "text": "You look like a very handsome tomato. The pharmacy has aloe vera — I'll walk you.",
+          "grade": "best",
+          "tone": "Tease + care"
+        }
+      ],
+      "pattern": "Tease, then care",
+      "why": "The tease is soft, and the offer shows you care. That combination is what real friends do."
+    },
+    {
+      "id": "pb-vibe-08",
+      "setting": "Bar with music",
+      "scenario": "A traveller announces, \"I'm the best dancer here.\"",
+      "options": [
+        {
+          "text": "Okay, show us, then. Let's see. Go on. Everybody's watching now, so you have to dance.",
+          "grade": "okay",
+          "tone": "Pressuring"
+        },
+        {
+          "text": "Bold claim. The floor is yours — we're the judges, and we're very harsh.",
+          "grade": "best",
+          "tone": "Playful challenge"
+        },
+        {
+          "text": "No, you're not.",
+          "grade": "miss",
+          "tone": "Flat denial"
+        }
+      ],
+      "pattern": "Accept the challenge",
+      "why": "Turn their brag into a show. Everyone gets to have fun, including them."
+    },
+    {
+      "id": "pb-vibe-09",
+      "setting": "Restaurant",
+      "scenario": "You ordered for the whole table and got it completely wrong. Your friends are laughing.",
+      "options": [
+        {
+          "text": "It's the waiter's fault. He didn't listen properly to what I said.",
+          "grade": "miss",
+          "tone": "Blaming"
+        },
+        {
+          "text": "In my defence, I was very confident. Confidence is half the job. The other half is being right.",
+          "grade": "best",
+          "tone": "Self-deprecating"
+        },
+        {
+          "text": "Sorry, my mistake.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Laugh at yourself first",
+      "why": "When you're the joke, join in. It shows confidence, and the moment passes with a laugh."
+    },
+    {
+      "id": "pb-vibe-10",
+      "setting": "Cafe",
+      "scenario": "A traveller hits you with a brilliant comeback. They clearly won that round.",
+      "options": [
+        {
+          "text": "Okay, that was good. I'm writing that down. You win this round.",
+          "grade": "best",
+          "tone": "Gracious"
+        },
+        {
+          "text": "That wasn't even funny.",
+          "grade": "miss",
+          "tone": "Sulky"
+        },
+        {
+          "text": "Haha. Okay. Yeah. That was a good one, I guess. Fine. You got me there.",
+          "grade": "okay",
+          "tone": "Reluctant"
+        }
+      ],
+      "pattern": "Lose a round gracefully",
+      "why": "Praising a good comeback makes the game fun for both of you. People love someone who can lose with a smile."
+    },
+    {
+      "id": "pb-vibe-11",
+      "setting": "Friends' dinner",
+      "scenario": "Your friend just went through a painful breakup. The group starts teasing him like usual.",
+      "options": [
+        {
+          "text": "Come on, cheer up! She wasn't that great anyway, ha!",
+          "grade": "miss",
+          "tone": "Tone-deaf"
+        },
+        {
+          "text": "Guys, maybe not today.",
+          "grade": "okay",
+          "tone": "Protective"
+        },
+        {
+          "text": "Let's pick on someone who can take it tonight — me. Go on, do my haircut again.",
+          "grade": "best",
+          "tone": "Taking the heat"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "You protected him without making it awkward, by offering yourself as the target."
+    },
+    {
+      "id": "pb-vibe-12",
+      "setting": "Bus stop",
+      "scenario": "A tourist jokes, \"Nothing in Nepal ever starts on time!\"",
+      "options": [
+        {
+          "text": "We're not late. We're on mountain time — more relaxed, better views.",
+          "grade": "best",
+          "tone": "Playful pride"
+        },
+        {
+          "text": "Your country has problems too, you know. Big ones.",
+          "grade": "miss",
+          "tone": "Defensive"
+        },
+        {
+          "text": "Yes, sometimes.",
+          "grade": "okay",
+          "tone": "Agreeing"
+        }
+      ],
+      "pattern": "Reframe with pride",
+      "why": "Agree with the fact, change the story. National pride works best with a smile."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "pb-yes-01",
+      "prompt": "You're so bad at cards.",
+      "cards": [
+        {
+          "text": "Yes, I know.",
+          "keepsGoing": false,
+          "why": "Surrenders the game."
+        },
+        {
+          "text": "I'm not bad, I'm generous. I'm letting you feel good about yourself.",
+          "keepsGoing": true,
+          "why": "Flips the tease with a smile."
+        }
+      ],
+      "pattern": "Flip it"
+    },
+    {
+      "id": "pb-yes-02",
+      "prompt": "Your cooking is dangerous.",
+      "cards": [
+        {
+          "text": "Dangerous is exciting. Second plate, or are you scared?",
+          "keepsGoing": true,
+          "why": "Accepts the label and dares them."
+        },
+        {
+          "text": "I'm sorry.",
+          "keepsGoing": false,
+          "why": "Takes a joke too seriously."
+        }
+      ],
+      "pattern": "Accept + dare"
+    },
+    {
+      "id": "pb-yes-03",
+      "prompt": "Are you ever serious?",
+      "cards": [
+        {
+          "text": "Once, last year. It was awful. Never again.",
+          "keepsGoing": true,
+          "why": "A short, silly answer that invites more play."
+        },
+        {
+          "text": "Sometimes.",
+          "keepsGoing": false,
+          "why": "Nothing to play with."
+        }
+      ],
+      "pattern": "Absurd answer"
+    },
+    {
+      "id": "pb-yes-04",
+      "prompt": "You talk too much.",
+      "cards": [
+        {
+          "text": "Sorry.",
+          "keepsGoing": false,
+          "why": "Now it feels like a real criticism."
+        },
+        {
+          "text": "Only because I finally found someone worth talking to. Also, I've had four teas.",
+          "keepsGoing": true,
+          "why": "A compliment and an excuse, both funny."
+        }
+      ],
+      "pattern": "Compliment + excuse"
+    },
+    {
+      "id": "pb-yes-05",
+      "prompt": "I'm way funnier than you.",
+      "cards": [
+        {
+          "text": "Great — tell me your best joke, and I'll pretend to laugh.",
+          "keepsGoing": true,
+          "why": "Accepts the challenge and hands them the stage."
+        },
+        {
+          "text": "No, you're not.",
+          "keepsGoing": false,
+          "why": "Just a denial. Game over."
+        }
+      ],
+      "pattern": "Hand them the stage"
+    },
+    {
+      "id": "pb-yes-06",
+      "prompt": "Your motorbike is older than me.",
+      "cards": [
+        {
+          "text": "And it's still faster than you up the hill. Respect your elders.",
+          "keepsGoing": true,
+          "why": "Defends the bike with a joke back at them."
+        },
+        {
+          "text": "It's not that old.",
+          "keepsGoing": false,
+          "why": "Defensive and boring."
+        }
+      ],
+      "pattern": "Defend with a joke"
+    },
+    {
+      "id": "pb-yes-07",
+      "prompt": "You're such a tour guide — always giving advice.",
+      "cards": [
+        {
+          "text": "Occupational hazard. Free advice: order the chocolate cake.",
+          "keepsGoing": true,
+          "why": "Owns it and immediately does it again, which is the joke."
+        },
+        {
+          "text": "Sorry, I'll stop.",
+          "keepsGoing": false,
+          "why": "Takes a friendly tease as a complaint."
+        }
+      ],
+      "pattern": "Own it and do it again"
+    },
+    {
+      "id": "pb-yes-08",
+      "prompt": "Nobody likes your music.",
+      "cards": [
+        {
+          "text": "Fine, you choose.",
+          "keepsGoing": false,
+          "why": "Gives up the game."
+        },
+        {
+          "text": "Then I'll sing it myself. Is that better or worse?",
+          "keepsGoing": true,
+          "why": "Makes the threat funnier and asks them to choose."
+        }
+      ],
+      "pattern": "Escalate playfully"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "pb-up-01",
+      "clunky": "Haha, you are very, very bad at this game, very bad.",
+      "tiles": [
+        "Don't worry —",
+        "losing",
+        "builds character.",
+        "You must have lots."
+      ],
+      "distractors": [
+        "very, very bad",
+        "very bad",
+        "haha"
+      ],
+      "answers": [
+        [
+          "Don't worry —",
+          "losing",
+          "builds character.",
+          "You must have lots."
+        ]
+      ],
+      "why": "A tease that pretends to comfort is funnier than a direct insult."
+    },
+    {
+      "id": "pb-up-02",
+      "clunky": "Sorry, sorry, I was joking, I didn't mean, sorry.",
+      "tiles": [
+        "That came out wrong —",
+        "I'm sorry.",
+        "You didn't deserve that."
+      ],
+      "distractors": [
+        "I was joking",
+        "I didn't mean",
+        "sorry, sorry"
+      ],
+      "answers": [
+        [
+          "That came out wrong —",
+          "I'm sorry.",
+          "You didn't deserve that."
+        ]
+      ],
+      "why": "When a joke hurts, own it cleanly. \"I was joking\" puts the blame on them for not laughing."
+    },
+    {
+      "id": "pb-up-03",
+      "clunky": "You are always late, always, every time late, always.",
+      "tiles": [
+        "You're late —",
+        "I've aged",
+        "three years",
+        "waiting for you."
+      ],
+      "distractors": [
+        "always",
+        "every time late",
+        "you are"
+      ],
+      "answers": [
+        [
+          "You're late —",
+          "I've aged",
+          "three years",
+          "waiting for you."
+        ]
+      ],
+      "why": "Exaggeration makes a complaint into a joke. Repetition just makes it a complaint."
+    },
+    {
+      "id": "pb-up-04",
+      "clunky": "I am not a good dancer, I am very bad, so bad.",
+      "tiles": [
+        "I dance",
+        "like nobody's watching —",
+        "and honestly,",
+        "that's for the best."
+      ],
+      "distractors": [
+        "very bad",
+        "so bad",
+        "I am not a good dancer"
+      ],
+      "answers": [
+        [
+          "I dance",
+          "like nobody's watching —",
+          "and honestly,",
+          "that's for the best."
+        ]
+      ],
+      "why": "Take a famous phrase and add a twist at the end. Self-deprecation with a punchline."
+    },
+    {
+      "id": "pb-up-05",
+      "clunky": "Your joke is not funny, I don't like, not funny.",
+      "tiles": [
+        "I'm going to",
+        "pretend I didn't",
+        "hear that one."
+      ],
+      "distractors": [
+        "not funny",
+        "I don't like",
+        "your joke is"
+      ],
+      "answers": [
+        [
+          "I'm going to",
+          "pretend I didn't",
+          "hear that one."
+        ]
+      ],
+      "why": "Playful mercy is funnier than a flat \"not funny\". It keeps the game going."
+    },
+    {
+      "id": "pb-up-06",
+      "clunky": "You won, okay, you are better, okay, fine, you won.",
+      "tiles": [
+        "Fine,",
+        "you win this round —",
+        "enjoy it",
+        "while it lasts."
+      ],
+      "distractors": [
+        "okay",
+        "you are better",
+        "fine, you won"
+      ],
+      "answers": [
+        [
+          "Fine,",
+          "you win this round —",
+          "enjoy it",
+          "while it lasts."
+        ]
+      ],
+      "why": "Admit defeat, then promise a rematch. That's losing with style."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "pb-drop-01",
+      "fact": "Psychologist Robert Provine found that people are about 30 times more likely to laugh when they're with others than when they're alone.",
+      "source": "Robert R. Provine, \"Laughter: A Scientific Investigation\" (2000)",
+      "prompt": "A friend asks, \"Why do we laugh so much more when we're together?\"",
+      "options": [
+        {
+          "text": "I don't know.",
+          "grade": "miss",
+          "why": "You do know, and it's a great fact."
+        },
+        {
+          "text": "Laughing is mostly social — one researcher found we laugh about thirty times more with other people. So really, you owe me for all this.",
+          "grade": "best",
+          "why": "The fact, plus a cheeky tag that proves the point."
+        },
+        {
+          "text": "Research says we laugh about 30 times more with other people.",
+          "grade": "okay",
+          "why": "Accurate, but no play."
+        }
+      ],
+      "pattern": "Fact + cheeky tag"
+    },
+    {
+      "id": "pb-drop-02",
+      "fact": "When Provine studied real conversations, he found most laughter came after ordinary comments — not after jokes.",
+      "source": "Robert R. Provine, \"Laughter: A Scientific Investigation\" (2000)",
+      "prompt": "A friend sighs, \"I'm just not funny. I don't know any jokes.\"",
+      "options": [
+        {
+          "text": "Then learn some jokes.",
+          "grade": "miss",
+          "why": "Misses the point of the research."
+        },
+        {
+          "text": "Most laughter in conversation isn't about jokes. It usually comes after normal things people say, like \"see you later\" or \"where are you going?\", and things like that.",
+          "grade": "okay",
+          "why": "True and detailed, but it never gets round to comforting your friend."
+        },
+        {
+          "text": "You don't need jokes. A researcher who listened to real conversations found most laughter comes after normal sentences. Just relax and play.",
+          "grade": "best",
+          "why": "Comforting, true, and useful."
+        }
+      ],
+      "pattern": "Fact as reassurance"
+    },
+    {
+      "id": "pb-drop-03",
+      "fact": "Psychologists describe different humour styles: \"affiliative\" humour brings people together, while \"aggressive\" humour puts others down. The first is linked with better relationships.",
+      "source": "Martin et al., \"Individual differences in uses of humor…\", Journal of Research in Personality (2003)",
+      "prompt": "A friend's teasing is getting mean. He shrugs: \"What's the problem? It's all jokes.\"",
+      "options": [
+        {
+          "text": "It's all fine. People are too sensitive these days.",
+          "grade": "miss",
+          "why": "Ignores the person getting hurt."
+        },
+        {
+          "text": "Not all jokes are the same — there's humour that brings people together and humour that puts people down. Tease the situation, not the person.",
+          "grade": "best",
+          "why": "A clear, friendly rule backed by research."
+        },
+        {
+          "text": "Psychologists say there are different humour styles. Some humour is affiliative and some is aggressive, and they have different effects on relationships over time.",
+          "grade": "okay",
+          "why": "Correct but full of jargon, and it never tells him what to do."
+        }
+      ],
+      "pattern": "Turn a fact into a rule"
+    }
+  ],
+  "wordPower": [
+    {
+      "id": "pb-word-01",
+      "sentence": "You're very good at avoiding work.",
+      "target": "very good at",
+      "options": [
+        {
+          "text": "a master at",
+          "grade": "best",
+          "why": "Fake praise for a bad habit — perfect banter."
+        },
+        {
+          "text": "exceptionally adept at",
+          "grade": "okay",
+          "why": "Correct but formal. The joke loses its punch."
+        },
+        {
+          "text": "bad at",
+          "grade": "miss",
+          "why": "The opposite."
+        }
+      ],
+      "meaning": "(Playful) extremely skilled at something.",
+      "example": "He's a master at arriving just after the bill is paid."
+    },
+    {
+      "id": "pb-word-02",
+      "sentence": "Stop saying stupid things!",
+      "target": "saying stupid things",
+      "options": [
+        {
+          "text": "spouting drivel",
+          "grade": "okay",
+          "why": "Very British and a bit strong."
+        },
+        {
+          "text": "talking",
+          "grade": "miss",
+          "why": "Loses the meaning."
+        },
+        {
+          "text": "talking nonsense",
+          "grade": "best",
+          "why": "Friendly, common, not too harsh."
+        }
+      ],
+      "meaning": "Saying silly things that aren't true or don't make sense.",
+      "example": "You're talking nonsense — the bus is never early."
+    },
+    {
+      "id": "pb-word-03",
+      "sentence": "After winning, he was very proud of himself.",
+      "target": "very proud of himself",
+      "options": [
+        {
+          "text": "happy",
+          "grade": "miss",
+          "why": "Loses the teasing meaning."
+        },
+        {
+          "text": "full of himself",
+          "grade": "best",
+          "why": "Everyday English, perfect for friendly teasing."
+        },
+        {
+          "text": "insufferably conceited",
+          "grade": "okay",
+          "why": "Too strong and formal; it sounds like a real insult."
+        }
+      ],
+      "meaning": "(Casual) thinking too highly of yourself.",
+      "example": "Don't get full of yourself — it was one lucky shot."
+    },
+    {
+      "id": "pb-word-04",
+      "sentence": "That joke was very bad.",
+      "target": "very bad",
+      "options": [
+        {
+          "text": "terrible",
+          "grade": "best",
+          "why": "Simple and funny when said with a smile."
+        },
+        {
+          "text": "okay",
+          "grade": "miss",
+          "why": "Not what you mean."
+        },
+        {
+          "text": "abysmal",
+          "grade": "okay",
+          "why": "Good word, but less common."
+        }
+      ],
+      "meaning": "Very bad.",
+      "example": "Your jokes are terrible, and I love them."
+    },
+    {
+      "id": "pb-word-05",
+      "sentence": "You're always so confident.",
+      "target": "so confident",
+      "options": [
+        {
+          "text": "self-assured",
+          "grade": "okay",
+          "why": "Formal. Sounds like a job review."
+        },
+        {
+          "text": "shy",
+          "grade": "miss",
+          "why": "The opposite."
+        },
+        {
+          "text": "so sure of yourself",
+          "grade": "best",
+          "why": "Natural, slightly teasing, easy to understand."
+        }
+      ],
+      "meaning": "Very confident, sometimes a little too much.",
+      "example": "For someone who got lost twice, you're very sure of yourself."
+    },
+    {
+      "id": "pb-word-06",
+      "sentence": "Don't be angry — I was joking.",
+      "target": "I was joking",
+      "options": [
+        {
+          "text": "I was only teasing",
+          "grade": "best",
+          "why": "Softer and warmer. \"Teasing\" sounds friendly."
+        },
+        {
+          "text": "I was engaging in jest",
+          "grade": "okay",
+          "why": "Sounds like Shakespeare."
+        },
+        {
+          "text": "I was serious",
+          "grade": "miss",
+          "why": "The opposite."
+        }
+      ],
+      "meaning": "Making fun of someone in a friendly way.",
+      "example": "I was only teasing — your Nepali is great."
+    },
+    {
+      "id": "pb-word-07",
+      "sentence": "You won because of luck.",
+      "target": "because of luck",
+      "options": [
+        {
+          "text": "entirely fortuitously",
+          "grade": "okay",
+          "why": "Correct but very formal. It kills the banter."
+        },
+        {
+          "text": "by pure luck",
+          "grade": "best",
+          "why": "Strong, casual, perfect for banter."
+        },
+        {
+          "text": "fairly",
+          "grade": "miss",
+          "why": "The opposite of the tease."
+        }
+      ],
+      "meaning": "Only because of luck, not skill.",
+      "example": "You found the café by pure luck and you know it."
+    },
+    {
+      "id": "pb-word-08",
+      "sentence": "You are very annoying today.",
+      "target": "very annoying",
+      "options": [
+        {
+          "text": "a real pain",
+          "grade": "best",
+          "why": "Casual and friendly between mates."
+        },
+        {
+          "text": "unbearably vexatious",
+          "grade": "okay",
+          "why": "Sounds like a lawyer, and it's too harsh for a friend."
+        },
+        {
+          "text": "kind",
+          "grade": "miss",
+          "why": "The opposite."
+        }
+      ],
+      "meaning": "(Casual, friendly) annoying.",
+      "example": "You're a real pain, but you're my favourite pain."
+    }
+  ]
+}

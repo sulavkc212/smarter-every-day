@@ -15,12 +15,23 @@ interface State {
   relaxedTimer: boolean
   /** Day the learner last said they used the line of the day in real life. */
   lineUsedOn: string | null
+  /** Lines the learner starred, newest first. A personal phrasebook. */
+  saved: SavedLine[]
+  /** Deck the learner last played, for "Continue". */
+  lastDeckId: string | null
 
   answer: (id: string, result: Result, xp: number, opts?: { vibe?: boolean }) => void
   completeSession: () => void
   markLineUsed: () => void
   setRelaxedTimer: (on: boolean) => void
+  toggleSaved: (line: SavedLine) => void
+  setLastDeck: (id: string) => void
   reset: () => void
+}
+
+export interface SavedLine {
+  text: string
+  pattern?: string
 }
 
 const initial = {
@@ -30,6 +41,8 @@ const initial = {
   recentVibe: [],
   relaxedTimer: false,
   lineUsedOn: null,
+  saved: [] as SavedLine[],
+  lastDeckId: null as string | null,
 }
 
 export const useProgress = create<State>()(
@@ -59,6 +72,15 @@ export const useProgress = create<State>()(
         set((s) => (s.lineUsedOn === today() ? {} : { lineUsedOn: today(), xp: s.xp + LINE_XP })),
 
       setRelaxedTimer: (on) => set({ relaxedTimer: on }),
+
+      toggleSaved: (line) =>
+        set((s) =>
+          s.saved.some((l) => l.text === line.text)
+            ? { saved: s.saved.filter((l) => l.text !== line.text) }
+            : { saved: [line, ...s.saved] },
+        ),
+
+      setLastDeck: (id) => set({ lastDeckId: id }),
 
       reset: () => set(initial),
     }),
