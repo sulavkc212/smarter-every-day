@@ -1,0 +1,920 @@
+{
+  "id": "cheeky-flirty",
+  "title": "Cheeky & Flirty",
+  "tagline": "Tease warmly. Know when to stop.",
+  "description": "Playful banter, harmless teasing and sarcasm with a smile. You'll also learn the difference between a joke and a jab, and when the charming move is not to flirt at all.",
+  "vibe": [
+    {
+      "id": "flirt-vibe-01",
+      "setting": "Rooftop bar, Lakeside",
+      "scenario": "Someone you've been chatting with narrows their eyes: \"You're trouble, aren't you?\"",
+      "options": [
+        {
+          "text": "No, no, I'm actually a very good person — ask anyone. I help my mum, I tip well, I've never been in any trouble.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "Only on weekdays. At weekends I'm a menace.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "What's that supposed to mean?",
+          "grade": "miss",
+          "tone": "Defensive"
+        }
+      ],
+      "pattern": "Accept the label, inflate it",
+      "why": "They handed you a playful label. Taking it and making it bigger shows you can play, and that nothing rattles you."
+    },
+    {
+      "id": "flirt-vibe-02",
+      "setting": "Cafe, an hour into a good conversation",
+      "scenario": "They smirk: \"I bet you say that to all the tourists.\"",
+      "options": [
+        {
+          "text": "Only the ones who laugh at my jokes. So far that's just you.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "No, I don't, honestly.",
+          "grade": "okay",
+          "tone": "Earnest"
+        },
+        {
+          "text": "Well, don't think you're that special.",
+          "grade": "miss",
+          "tone": "Cutting"
+        }
+      ],
+      "pattern": "Compliment inside the tease",
+      "why": "You don't deny anything, and the compliment is tucked into \"so far that's just you\". The cutting option is an insult dressed as a joke."
+    },
+    {
+      "id": "flirt-vibe-03",
+      "setting": "Text message, next day",
+      "scenario": "After a day of silence they reply: \"Sorry, I'm terrible at texting back.\"",
+      "options": [
+        {
+          "text": "Yeah, I noticed. I replied in two minutes and then waited all day, but it's fine. Whatever.",
+          "grade": "miss",
+          "tone": "Passive-aggressive"
+        },
+        {
+          "text": "Noted. I'll lower my expectations to carrier pigeon.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "It's fine.",
+          "grade": "okay",
+          "tone": "Flat"
+        }
+      ],
+      "pattern": "Tease the habit, not the person",
+      "why": "Mocking the situation lets them off the hook and keeps the energy up. \"I noticed\" makes them feel judged."
+    },
+    {
+      "id": "flirt-vibe-04",
+      "setting": "Hostel card night",
+      "scenario": "You win three rounds in a row. They throw down their cards: \"You definitely cheated.\"",
+      "options": [
+        {
+          "text": "I didn't cheat, I'm just good.",
+          "grade": "okay",
+          "tone": "Bragging"
+        },
+        {
+          "text": "You're just a sore loser.",
+          "grade": "miss",
+          "tone": "Jab"
+        },
+        {
+          "text": "I prefer \"creatively interpreted the rules\". Rematch?",
+          "grade": "best",
+          "tone": "Cheeky"
+        }
+      ],
+      "pattern": "Plead guilty, invite more",
+      "why": "Half-admitting it is funnier than denying it, and \"Rematch?\" keeps the two of you playing."
+    },
+    {
+      "id": "flirt-vibe-05",
+      "setting": "Day three of a trek you're guiding",
+      "scenario": "A client in your group says, \"You're very charming, you know.\"",
+      "options": [
+        {
+          "text": "Careful — flattery earns you an extra dal bhat refill. Nothing more.",
+          "grade": "best",
+          "tone": "Gracious"
+        },
+        {
+          "text": "So are you. Drink after the trek, just the two of us?",
+          "grade": "miss",
+          "tone": "Crossing a line"
+        },
+        {
+          "text": "Thank you, that's really kind of you to say — I try hard to make sure everyone in the group enjoys the trek.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "They're your client and you're responsible for them. Even if they meant it, you take the compliment warmly and hold the professional line."
+    },
+    {
+      "id": "flirt-vibe-06",
+      "setting": "Momo shop",
+      "scenario": "Without asking, they steal a momo off your plate and grin.",
+      "options": [
+        {
+          "text": "Seriously? Get your own.",
+          "grade": "miss",
+          "tone": "Sharp"
+        },
+        {
+          "text": "Hey, that was mine!",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "Bold move. I'll need that back with interest — you're buying the next plate.",
+          "grade": "best",
+          "tone": "Cheeky"
+        }
+      ],
+      "pattern": "Mock negotiation",
+      "why": "Treating the theft like a business deal keeps it playful and gets you a second date disguised as a second plate."
+    },
+    {
+      "id": "flirt-vibe-07",
+      "setting": "Bar with a dance floor",
+      "scenario": "You ask them to dance. They laugh: \"I can't dance.\"",
+      "options": [
+        {
+          "text": "Perfect, neither can I. Let's be bad at it together.",
+          "grade": "best",
+          "tone": "Warm"
+        },
+        {
+          "text": "Yeah, I can see that.",
+          "grade": "miss",
+          "tone": "Mean"
+        },
+        {
+          "text": "Everyone can dance, honestly — you just move a little, don't think about it, nobody's watching anyway. Just try!",
+          "grade": "okay",
+          "tone": "Pushy"
+        }
+      ],
+      "pattern": "Shared incompetence",
+      "why": "Joining them in the flaw removes the pressure. Now it's a joke you share, not a test they could fail."
+    },
+    {
+      "id": "flirt-vibe-08",
+      "setting": "Busy bar",
+      "scenario": "You try a joke on someone. They give a polite one-word answer and turn back to their friends.",
+      "options": [
+        {
+          "text": "Come on, don't be boring!",
+          "grade": "miss",
+          "tone": "Pushy"
+        },
+        {
+          "text": "Fair enough — enjoy your night.",
+          "grade": "best",
+          "tone": "Graceful exit"
+        },
+        {
+          "text": "Okay, but have you heard the one about the yak?",
+          "grade": "miss",
+          "tone": "Ignoring signals"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "Charm includes knowing when to leave. A clean, friendly exit is the most attractive thing you can do when someone isn't interested."
+    },
+    {
+      "id": "flirt-vibe-09",
+      "setting": "Text message",
+      "scenario": "They send a photo of a blackened pan: \"I tried to cook.\"",
+      "options": [
+        {
+          "text": "Haha, oh no, what happened? Did you leave it on too long? You have to keep the heat low with that kind of pan.",
+          "grade": "okay",
+          "tone": "Minimal"
+        },
+        {
+          "text": "Bold of you to call that dinner. Next time I cook — you can supervise.",
+          "grade": "best",
+          "tone": "Warm sarcasm"
+        },
+        {
+          "text": "That looks disgusting.",
+          "grade": "miss",
+          "tone": "Harsh"
+        }
+      ],
+      "pattern": "Warm sarcasm + an offer",
+      "why": "The sarcasm is clearly affectionate, and the offer at the end turns a joke into an invitation."
+    },
+    {
+      "id": "flirt-vibe-10",
+      "setting": "Quiet cafe",
+      "scenario": "They catch you looking at them for the second time and raise an eyebrow.",
+      "options": [
+        {
+          "text": "Sorry, I wasn't staring.",
+          "grade": "okay",
+          "tone": "Flustered"
+        },
+        {
+          "text": "What? You were looking at me first.",
+          "grade": "miss",
+          "tone": "Defensive"
+        },
+        {
+          "text": "Caught. In my defence, the view out the window is only mountains.",
+          "grade": "best",
+          "tone": "Owning it"
+        }
+      ],
+      "pattern": "Own it with a compliment",
+      "why": "Admitting it confidently is charming. Denying it is awkward, and accusing them is worse."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "flirt-yes-01",
+      "prompt": "You don't look like a trekking guide.",
+      "cards": [
+        {
+          "text": "Well, I am one.",
+          "keepsGoing": false,
+          "why": "Correct and closed. There's nowhere to go."
+        },
+        {
+          "text": "I know. I'm undercover — the mountains think I'm a tourist.",
+          "keepsGoing": true,
+          "why": "Plays along with a ridiculous premise they can build on."
+        }
+      ],
+      "pattern": "Accept + absurd twist"
+    },
+    {
+      "id": "flirt-yes-02",
+      "prompt": "Are you always this confident?",
+      "cards": [
+        {
+          "text": "No.",
+          "keepsGoing": false,
+          "why": "Honest, maybe, but it gives them nothing."
+        },
+        {
+          "text": "Only until someone asks me that. Now I'm nervous.",
+          "keepsGoing": true,
+          "why": "A quick, self-aware wobble is more charming than a straight yes or no."
+        },
+        {
+          "text": "Yes, always.",
+          "keepsGoing": false,
+          "why": "Flat bragging. It sounds like you mean it."
+        }
+      ],
+      "pattern": "Accept + self-aware wobble"
+    },
+    {
+      "id": "flirt-yes-03",
+      "prompt": "I think you're a bad influence.",
+      "cards": [
+        {
+          "text": "Probably. Which is exactly why you should order dessert.",
+          "keepsGoing": true,
+          "why": "Accepts the role and proves it on the spot."
+        },
+        {
+          "text": "I'm not, I'm a very good person.",
+          "keepsGoing": false,
+          "why": "Takes a tease literally. The fun stops."
+        }
+      ],
+      "pattern": "Accept + prove it"
+    },
+    {
+      "id": "flirt-yes-04",
+      "prompt": "I bet you can't cook.",
+      "cards": [
+        {
+          "text": "I can cook, actually.",
+          "keepsGoing": false,
+          "why": "Defensive. Now it's an argument."
+        },
+        {
+          "text": "Correct. But I make incredible instant noodles and even better excuses.",
+          "keepsGoing": true,
+          "why": "Concedes happily and hands them something to laugh at."
+        },
+        {
+          "text": "Why would you say that?",
+          "keepsGoing": false,
+          "why": "Treats a tease like an attack."
+        }
+      ],
+      "pattern": "Concede + upgrade"
+    },
+    {
+      "id": "flirt-yes-05",
+      "prompt": "You're funnier than you look.",
+      "cards": [
+        {
+          "text": "I'll take that as a compliment to my jokes and ignore what it says about my face.",
+          "keepsGoing": true,
+          "why": "Catches the backhanded bit and plays with it instead of sulking."
+        },
+        {
+          "text": "Thanks, I guess.",
+          "keepsGoing": false,
+          "why": "Sounds wounded. They'll feel bad for teasing."
+        }
+      ],
+      "pattern": "Catch the tease, play with it"
+    },
+    {
+      "id": "flirt-yes-06",
+      "prompt": "I'm only here for three more days.",
+      "cards": [
+        {
+          "text": "Oh, that's short.",
+          "keepsGoing": false,
+          "why": "A sigh, not a reply."
+        },
+        {
+          "text": "Then we'd better be efficient. What's still on your list?",
+          "keepsGoing": true,
+          "why": "Turns a limit into urgency and asks something easy to answer."
+        }
+      ],
+      "pattern": "Accept + create urgency"
+    },
+    {
+      "id": "flirt-yes-07",
+      "prompt": "You always have an answer for everything.",
+      "cards": [
+        {
+          "text": "Not true. Ask me about maths and watch me panic.",
+          "keepsGoing": true,
+          "why": "Offers a weakness as a gift. Now they know how to tease you back."
+        },
+        {
+          "text": "Yes.",
+          "keepsGoing": false,
+          "why": "Proves their point in the least fun way."
+        }
+      ],
+      "pattern": "Offer a weakness"
+    },
+    {
+      "id": "flirt-yes-08",
+      "prompt": "I'm really competitive.",
+      "cards": [
+        {
+          "text": "That's not a good quality.",
+          "keepsGoing": false,
+          "why": "Judging them kills the flirt."
+        },
+        {
+          "text": "Perfect. Loser buys the lassi.",
+          "keepsGoing": true,
+          "why": "Takes the trait and turns it into a game with stakes."
+        },
+        {
+          "text": "Okay.",
+          "keepsGoing": false,
+          "why": "Nothing to push against."
+        }
+      ],
+      "pattern": "Accept + raise the stakes"
+    },
+    {
+      "id": "flirt-yes-09",
+      "prompt": "My friends told me not to talk to strangers.",
+      "cards": [
+        {
+          "text": "Smart friends. Let me introduce myself so I'm not a stranger any more.",
+          "keepsGoing": true,
+          "why": "Agrees with the rule and solves it with a smile."
+        },
+        {
+          "text": "Then why are you talking to me?",
+          "keepsGoing": false,
+          "why": "Sounds like you want them to leave."
+        }
+      ],
+      "pattern": "Agree + solve it"
+    },
+    {
+      "id": "flirt-yes-10",
+      "prompt": "You're kind of weird.",
+      "cards": [
+        {
+          "text": "No, I'm not.",
+          "keepsGoing": false,
+          "why": "Arguing with \"weird\" makes you seem more weird, not less."
+        },
+        {
+          "text": "Only kind of? I'll have to try harder.",
+          "keepsGoing": true,
+          "why": "Embraces the label and makes it a goal."
+        },
+        {
+          "text": "You're weird too.",
+          "keepsGoing": false,
+          "why": "Mirroring a tease back as a jab escalates. Embracing it plays."
+        }
+      ],
+      "pattern": "Embrace the label"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "flirt-up-01",
+      "clunky": "Um, so, I was wondering, if you're not busy, maybe we could like get a coffee or something?",
+      "tiles": [
+        "I'd love to",
+        "take you for coffee —",
+        "are you free",
+        "tomorrow morning?"
+      ],
+      "distractors": [
+        "um",
+        "I was wondering",
+        "or something"
+      ],
+      "answers": [
+        [
+          "I'd love to",
+          "take you for coffee —",
+          "are you free",
+          "tomorrow morning?"
+        ]
+      ],
+      "why": "Say what you want, then make it specific. A time turns a maybe into a plan."
+    },
+    {
+      "id": "flirt-up-02",
+      "clunky": "You look, like, really nice today, I mean you always do, but today especially.",
+      "tiles": [
+        "That colour",
+        "suits you",
+        "perfectly."
+      ],
+      "distractors": [
+        "like",
+        "I mean",
+        "especially"
+      ],
+      "answers": [
+        [
+          "That colour",
+          "suits you",
+          "perfectly."
+        ]
+      ],
+      "why": "A specific compliment lands. A general one, repeated three times, sounds nervous."
+    },
+    {
+      "id": "flirt-up-03",
+      "clunky": "Sorry if this is weird but I think you're kind of cute, maybe.",
+      "tiles": [
+        "I have to say,",
+        "you've got",
+        "a great smile."
+      ],
+      "distractors": [
+        "sorry if this is weird",
+        "kind of",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "I have to say,",
+          "you've got",
+          "a great smile."
+        ]
+      ],
+      "why": "Apologising before a compliment tells them it's a burden. Deliver it clean and let it stand."
+    },
+    {
+      "id": "flirt-up-04",
+      "clunky": "I don't know, I just think you're funny and stuff, you make me laugh a lot.",
+      "tiles": [
+        "You make me laugh",
+        "more than anyone",
+        "I've met",
+        "this year."
+      ],
+      "distractors": [
+        "I don't know",
+        "and stuff",
+        "a lot"
+      ],
+      "answers": [
+        [
+          "You make me laugh",
+          "more than anyone",
+          "I've met",
+          "this year."
+        ]
+      ],
+      "why": "Swap vague for vivid. \"More than anyone this year\" gives the compliment weight."
+    },
+    {
+      "id": "flirt-up-05",
+      "clunky": "Maybe if you want we can, um, text or something, only if you want though.",
+      "tiles": [
+        "Give me your number —",
+        "I'll send you",
+        "the photos",
+        "from today."
+      ],
+      "distractors": [
+        "only if you want though",
+        "um",
+        "or something"
+      ],
+      "answers": [
+        [
+          "Give me your number —",
+          "I'll send you",
+          "the photos",
+          "from today."
+        ]
+      ],
+      "why": "Give them a reason to share it. A concrete excuse is easier to say yes to than a vague request."
+    },
+    {
+      "id": "flirt-up-06",
+      "clunky": "I had like a really fun time tonight, it was good, really good.",
+      "tiles": [
+        "Tonight",
+        "was",
+        "the most fun",
+        "I've had in weeks."
+      ],
+      "distractors": [
+        "like",
+        "it was good",
+        "really good"
+      ],
+      "answers": [
+        [
+          "Tonight",
+          "was",
+          "the most fun",
+          "I've had in weeks."
+        ]
+      ],
+      "why": "One sentence, one measurement. \"In weeks\" does the work of three \"really\"s."
+    },
+    {
+      "id": "flirt-up-07",
+      "clunky": "Sorry I didn't text back, I was busy, sorry, I'm really bad at this.",
+      "tiles": [
+        "Sorry for",
+        "going quiet —",
+        "today ran away with me.",
+        "How was yours?"
+      ],
+      "distractors": [
+        "I'm really bad at this",
+        "sorry",
+        "I was busy"
+      ],
+      "answers": [
+        [
+          "Sorry for",
+          "going quiet —",
+          "today ran away with me.",
+          "How was yours?"
+        ]
+      ],
+      "why": "One apology, one reason, then turn the attention back to them."
+    },
+    {
+      "id": "flirt-up-08",
+      "clunky": "Um, I guess you're like, smart, and like, that's attractive, I guess.",
+      "tiles": [
+        "There's something",
+        "really attractive about",
+        "the way",
+        "your mind works."
+      ],
+      "distractors": [
+        "I guess",
+        "um",
+        "like"
+      ],
+      "answers": [
+        [
+          "There's something",
+          "really attractive about",
+          "the way",
+          "your mind works."
+        ]
+      ],
+      "why": "Commit to it. \"I guess\" at both ends turns a compliment into a shrug."
+    },
+    {
+      "id": "flirt-up-09",
+      "clunky": "If you're not doing anything, and it's not a problem, maybe you could show me your favourite place?",
+      "tiles": [
+        "Show me",
+        "your favourite place",
+        "in the city —",
+        "I'll buy the tea."
+      ],
+      "distractors": [
+        "if it's not a problem",
+        "maybe",
+        "if you're not doing anything"
+      ],
+      "answers": [
+        [
+          "Show me",
+          "your favourite place",
+          "in the city —",
+          "I'll buy the tea."
+        ]
+      ],
+      "why": "A light command plus a fair trade is confident and generous at the same time."
+    },
+    {
+      "id": "flirt-up-10",
+      "clunky": "I'm not good at dancing, I'm really bad, but I will maybe try if you want.",
+      "tiles": [
+        "I dance",
+        "terribly —",
+        "but I'll do it",
+        "if you lead."
+      ],
+      "distractors": [
+        "I'm really bad",
+        "maybe",
+        "if you want"
+      ],
+      "answers": [
+        [
+          "I dance",
+          "terribly —",
+          "but I'll do it",
+          "if you lead."
+        ]
+      ],
+      "why": "Admit the flaw once, cheerfully, then hand them a role. That's an invitation, not an excuse."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "flirt-drop-01",
+      "fact": "An octopus has three hearts.",
+      "source": "Smithsonian Ocean, \"Octopuses\"",
+      "prompt": "On a first date, they admit: \"Sorry, I get nervous. My heart's racing.\"",
+      "options": [
+        {
+          "text": "Lucky you've only got one. An octopus has three — imagine the chaos on a first date.",
+          "grade": "best",
+          "why": "Makes their nerves funny and sweet, not awkward."
+        },
+        {
+          "text": "Did you know octopuses have three hearts?",
+          "grade": "okay",
+          "why": "Fun fact, but it skips right past what they just shared."
+        },
+        {
+          "text": "Actually, a racing heart is just adrenaline. It's your body's stress response, so if you slow your breathing it should settle in a minute or two.",
+          "grade": "miss",
+          "why": "A biology lesson in response to vulnerability."
+        }
+      ],
+      "pattern": "Fact that comforts"
+    },
+    {
+      "id": "flirt-drop-02",
+      "fact": "Honey almost never spoils. Archaeologists have found honey in ancient Egyptian tombs that was still edible.",
+      "source": "Smithsonian Magazine, \"The Science Behind Honey's Eternal Shelf Life\" (2013)",
+      "prompt": "At breakfast they drown their pancake in honey: \"I'm addicted to this stuff.\"",
+      "options": [
+        {
+          "text": "You shouldn't eat that much sugar.",
+          "grade": "miss",
+          "why": "Nobody wants a nutritionist at breakfast."
+        },
+        {
+          "text": "Good choice of addiction. They've found edible honey in Egyptian tombs — it'll outlast both of us.",
+          "grade": "best",
+          "why": "Endorses their habit with a surprising fact and a touch of drama."
+        },
+        {
+          "text": "Honey never spoils, you know.",
+          "grade": "okay",
+          "why": "True, but it hangs there without a point."
+        }
+      ],
+      "pattern": "Endorse with a fact"
+    },
+    {
+      "id": "flirt-drop-03",
+      "fact": "A single day on Venus — one full rotation — lasts longer than a Venus year.",
+      "source": "NASA Science, \"Venus: Facts\"",
+      "prompt": "Lying on the lakeshore looking at the stars, they sigh: \"Today went by way too fast.\"",
+      "options": [
+        {
+          "text": "On Venus, a day is longer than a year.",
+          "grade": "okay",
+          "why": "A good fact delivered like a textbook caption."
+        },
+        {
+          "text": "Technically every day is exactly the same length — twenty-four hours. It only feels faster because you were enjoying yourself.",
+          "grade": "miss",
+          "why": "Correcting a romantic sigh with a clock."
+        },
+        {
+          "text": "We should move to Venus. A single day there lasts longer than its whole year.",
+          "grade": "best",
+          "why": "Agrees with the feeling and makes the fact a daydream you share."
+        }
+      ],
+      "pattern": "Fact as a shared daydream"
+    },
+    {
+      "id": "flirt-drop-04",
+      "fact": "The Himalayan giant honey bee, which builds its combs on high cliffs in Nepal, is the largest honey bee in the world.",
+      "source": "Encyclopaedia Britannica, \"honeybee\"",
+      "prompt": "A bee lands on the cafe table and they jump out of their chair.",
+      "options": [
+        {
+          "text": "Relax, that's a small one. Up on the cliffs we have the biggest honey bees on the planet — this one's an intern.",
+          "grade": "best",
+          "why": "Calms them with a joke, and the fact makes you look like you know your mountains."
+        },
+        {
+          "text": "Stop panicking, it's just a bee.",
+          "grade": "miss",
+          "why": "Dismissing their fear makes them feel silly."
+        },
+        {
+          "text": "The Himalayan giant honey bee is the largest honey bee in the world.",
+          "grade": "okay",
+          "why": "Interesting, and a bit terrifying, delivered flat."
+        }
+      ],
+      "pattern": "Reassure with scale"
+    },
+    {
+      "id": "flirt-drop-05",
+      "fact": "Wombats produce cube-shaped poop.",
+      "source": "Yang et al., \"Intestines of non-uniform stiffness mold the corners of wombat feces\", Soft Matter (2021)",
+      "prompt": "They lean in with a challenge: \"Tell me something I don't know.\"",
+      "options": [
+        {
+          "text": "Um, I don't know… like what?",
+          "grade": "miss",
+          "why": "Freezing when handed an open stage."
+        },
+        {
+          "text": "Wombats poop in cubes. You're welcome — I bring the romance.",
+          "grade": "best",
+          "why": "A ridiculous fact, delivered with a straight face and a self-aware tag."
+        },
+        {
+          "text": "Okay, here's one: wombat poop is cube-shaped. Scientists studied it, and it's because of the way their intestines stretch.",
+          "grade": "okay",
+          "why": "Answers the challenge but leaves the joke on the table."
+        }
+      ],
+      "pattern": "Absurd fact + self-aware tag"
+    },
+    {
+      "id": "flirt-drop-06",
+      "fact": "Sea otters often hold paws while they sleep so they don't drift apart.",
+      "source": "Monterey Bay Aquarium, \"Sea otter\"",
+      "prompt": "The lakeside path is packed for the festival. They say, \"Don't lose me in this crowd.\"",
+      "options": [
+        {
+          "text": "Sea otters hold paws when they sleep so they don't drift apart. Just saying — it's a proven system.",
+          "grade": "best",
+          "why": "Offers your hand without offering your hand. Easy to accept, easy to laugh off."
+        },
+        {
+          "text": "You're an adult, you'll be fine.",
+          "grade": "miss",
+          "why": "Turns down a tiny moment of closeness."
+        },
+        {
+          "text": "Did you know sea otters hold hands?",
+          "grade": "okay",
+          "why": "Almost there. It's the fact without the offer."
+        }
+      ],
+      "pattern": "Fact as an invitation"
+    },
+    {
+      "id": "flirt-drop-07",
+      "fact": "Flamingos are pink because of carotenoid pigments in the algae and shrimp they eat.",
+      "source": "National Geographic, \"Flamingos\"",
+      "prompt": "After an afternoon on the boat without sunscreen, they groan: \"I'm so pink.\"",
+      "options": [
+        {
+          "text": "Told you so.",
+          "grade": "miss",
+          "why": "Being right is less attractive than being kind."
+        },
+        {
+          "text": "Flamingos go pink from what they eat. You went pink from ignoring my sunscreen advice. Different birds.",
+          "grade": "best",
+          "why": "A gentle I-told-you-so wrapped in a fact and a joke."
+        },
+        {
+          "text": "Did you know flamingos are only pink because of their diet? It comes from pigments in the algae and shrimp they eat.",
+          "grade": "okay",
+          "why": "Related, but it misses the chance to tease them."
+        }
+      ],
+      "pattern": "Tease with a fact"
+    },
+    {
+      "id": "flirt-drop-08",
+      "fact": "Botanically, bananas are berries and strawberries are not.",
+      "source": "Encyclopaedia Britannica, \"berry\"",
+      "prompt": "At a fruit stall they shrug: \"I'm simple. I just like strawberries.\"",
+      "options": [
+        {
+          "text": "That's a bit boring.",
+          "grade": "miss",
+          "why": "A put-down with no play in it."
+        },
+        {
+          "text": "Botanically, strawberries aren't berries. Bananas are.",
+          "grade": "okay",
+          "why": "Correct and slightly smug."
+        },
+        {
+          "text": "Simple? Strawberries aren't even real berries — bananas are. You're living a lie and I respect it.",
+          "grade": "best",
+          "why": "Uses the fact to tease their \"simple\" claim, then lets them off with a wink."
+        }
+      ],
+      "pattern": "Tease a claim with a fact"
+    },
+    {
+      "id": "flirt-drop-09",
+      "fact": "Nepal's national bird is the Danphe, or Himalayan monal. The male shimmers in metallic green, blue and copper.",
+      "source": "Government of Nepal, national symbols; Encyclopaedia Britannica, \"monal\"",
+      "prompt": "They show up in a bright, colourful outfit and hesitate: \"Too much?\"",
+      "options": [
+        {
+          "text": "Not at all. You look like a Danphe — our national bird, and the flashiest thing in the Himalayas. That's a compliment.",
+          "grade": "best",
+          "why": "A compliment with a local fact inside it, so it feels personal, not generic."
+        },
+        {
+          "text": "A bit, yes.",
+          "grade": "miss",
+          "why": "They asked for reassurance."
+        },
+        {
+          "text": "The Danphe is Nepal's national bird, and it's very colourful.",
+          "grade": "okay",
+          "why": "The fact is there. The compliment isn't."
+        }
+      ],
+      "pattern": "Compliment with a local fact"
+    },
+    {
+      "id": "flirt-drop-10",
+      "fact": "Charles Darwin called blushing \"the most peculiar and the most human of all expressions\".",
+      "source": "Charles Darwin, \"The Expression of the Emotions in Man and Animals\" (1872)",
+      "prompt": "They cover their face: \"Stop it, you're making me blush.\"",
+      "options": [
+        {
+          "text": "Good. Darwin called blushing the most human of all expressions, so really I'm just making you more human.",
+          "grade": "best",
+          "why": "Doubles down playfully, with a fact that makes it sound almost scientific."
+        },
+        {
+          "text": "You blush really easily.",
+          "grade": "miss",
+          "why": "Points at their embarrassment instead of enjoying it with them."
+        },
+        {
+          "text": "Darwin said blushing is uniquely human.",
+          "grade": "okay",
+          "why": "A clever fact that doesn't finish the flirt."
+        }
+      ],
+      "pattern": "Double down with a fact"
+    }
+  ]
+}

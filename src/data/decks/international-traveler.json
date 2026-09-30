@@ -1,0 +1,911 @@
+{
+  "id": "international-traveler",
+  "title": "The International Traveler",
+  "tagline": "Curious, worldly, never a Wikipedia page.",
+  "description": "Cross-cultural small talk, questions that get people talking about home, and weaving geography and history into a chat with visitors from everywhere.",
+  "vibe": [
+    {
+      "id": "intl-vibe-01",
+      "setting": "Trailhead at Nayapul",
+      "scenario": "A Chinese traveller apologises: \"My English is not good, sorry.\"",
+      "options": [
+        {
+          "text": "It's okay.",
+          "grade": "okay",
+          "tone": "Polite"
+        },
+        {
+          "text": "It's much better than my Chinese — nǐ hǎo is about all I've got.",
+          "grade": "best",
+          "tone": "Levelling"
+        },
+        {
+          "text": "Yes, it's a bit hard to understand you sometimes, but don't worry, I'll speak slowly and use simple words for you.",
+          "grade": "miss",
+          "tone": "Tactless"
+        }
+      ],
+      "pattern": "Level the field",
+      "why": "Putting your own gap next to theirs turns an apology into a shared joke. Now you're both trying."
+    },
+    {
+      "id": "intl-vibe-02",
+      "setting": "Cafe, Lakeside",
+      "scenario": "An American asks, genuinely, \"So is Nepal part of India?\"",
+      "options": [
+        {
+          "text": "No! Why does everyone think that?",
+          "grade": "miss",
+          "tone": "Exasperated"
+        },
+        {
+          "text": "Nope — we're the stubborn neighbour. India to the south, China to the north, and our own flag the whole time.",
+          "grade": "best",
+          "tone": "Warm correction"
+        },
+        {
+          "text": "No, Nepal is an independent country.",
+          "grade": "okay",
+          "tone": "Factual"
+        }
+      ],
+      "pattern": "Correct with warmth",
+      "why": "An honest question deserves a friendly answer. A little national pride makes the correction memorable instead of embarrassing."
+    },
+    {
+      "id": "intl-vibe-03",
+      "setting": "Group dinner at a teahouse",
+      "scenario": "Two travellers from different countries start arguing loudly about politics back home. The table goes quiet.",
+      "options": [
+        {
+          "text": "Honestly, I've read about this, and I think your country is the one in the wrong here — the history is pretty clear.",
+          "grade": "miss",
+          "tone": "Taking sides"
+        },
+        {
+          "text": "I love that you both care this much. Now — who's brave enough to try the chilli pickle?",
+          "grade": "best",
+          "tone": "Redirect"
+        },
+        {
+          "text": "Say nothing and stare at your plate.",
+          "grade": "okay",
+          "tone": "Silent"
+        }
+      ],
+      "pattern": "Redirect the heat",
+      "why": "As a host, you don't need to win their argument. Credit the passion, then give the table something new to focus on."
+    },
+    {
+      "id": "intl-vibe-04",
+      "setting": "Bus stop, waiting",
+      "scenario": "A German hiker sighs: \"In Germany, everything is on time. Here the bus is always late.\"",
+      "options": [
+        {
+          "text": "Well, Germany isn't perfect either.",
+          "grade": "miss",
+          "tone": "Defensive"
+        },
+        {
+          "text": "Yes, sorry about that.",
+          "grade": "okay",
+          "tone": "Apologetic"
+        },
+        {
+          "text": "Fair. Germany has timetables; Nepal has stories. You'll go home with more of the second.",
+          "grade": "best",
+          "tone": "Playful reframe"
+        }
+      ],
+      "pattern": "Agree + reframe",
+      "why": "You conceded the point and then made the delay part of the adventure. No defensiveness, no grovelling."
+    },
+    {
+      "id": "intl-vibe-05",
+      "setting": "Hotel lobby",
+      "scenario": "A Japanese traveller gives you a small, polite bow as you meet.",
+      "options": [
+        {
+          "text": "Oh, you don't need to bow here — in Nepal we just say namaste with our hands together, like this. Bowing is more of a Japanese thing.",
+          "grade": "miss",
+          "tone": "Correcting"
+        },
+        {
+          "text": "Namaste — between your bow and my namaste, we're the politest people on this trail.",
+          "grade": "best",
+          "tone": "Warm"
+        },
+        {
+          "text": "Hello.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Mirror and celebrate",
+      "why": "Meeting their custom with yours honours both. Telling them not to bow makes them feel they got it wrong."
+    },
+    {
+      "id": "intl-vibe-06",
+      "setting": "Street market",
+      "scenario": "A British traveller asks, \"Everyone here calls each other 'dai' and 'didi'. What does it mean?\"",
+      "options": [
+        {
+          "text": "It's just a word we use.",
+          "grade": "miss",
+          "tone": "Dismissive"
+        },
+        {
+          "text": "It means brother and sister.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "Big brother, big sister. Stay a week and you'll have a whole new family — the momo lady's already adopted you.",
+          "grade": "best",
+          "tone": "Inviting"
+        }
+      ],
+      "pattern": "Translate + include them",
+      "why": "Explaining the word is useful. Showing them they're part of it is charming."
+    },
+    {
+      "id": "intl-vibe-07",
+      "setting": "Teahouse at dusk",
+      "scenario": "An Australian claps you on the back: \"Mate, you're the first guide who's laughed at my jokes.\"",
+      "options": [
+        {
+          "text": "Honestly, most of the other guides round here don't have much of a sense of humour — they just walk and say nothing all day.",
+          "grade": "miss",
+          "tone": "Badmouthing"
+        },
+        {
+          "text": "I'm a professional, mate. Above 3,000 metres the oxygen does half the work.",
+          "grade": "best",
+          "tone": "Cheeky"
+        },
+        {
+          "text": "Your jokes are good.",
+          "grade": "okay",
+          "tone": "Plain"
+        }
+      ],
+      "pattern": "Tease back, affectionately",
+      "why": "Australians often show affection by teasing. Matching the energy lands better than a compliment, and never run down colleagues."
+    },
+    {
+      "id": "intl-vibe-08",
+      "setting": "Jeep ride",
+      "scenario": "A French traveller asks what you think of their president.",
+      "options": [
+        {
+          "text": "I only know him from the news — I'd rather hear it from you. What's the view from the ground?",
+          "grade": "best",
+          "tone": "Curious"
+        },
+        {
+          "text": "Honestly, I think he's terrible.",
+          "grade": "miss",
+          "tone": "Hot take"
+        },
+        {
+          "text": "I don't know.",
+          "grade": "okay",
+          "tone": "Closed"
+        }
+      ],
+      "pattern": "Turn it into their story",
+      "why": "You're a guest in their politics. Asking their view is humble and interesting, and it avoids a fight you can't win."
+    },
+    {
+      "id": "intl-vibe-09",
+      "setting": "Cafe",
+      "scenario": "A traveller asks, \"What's something tourists always get wrong about Nepal?\"",
+      "options": [
+        {
+          "text": "That it's all mountains. Go south to the Terai — it's flat, steamy, and there are rhinos in Chitwan.",
+          "grade": "best",
+          "tone": "Surprising"
+        },
+        {
+          "text": "Everything.",
+          "grade": "miss",
+          "tone": "Snarky"
+        },
+        {
+          "text": "A lot of tourists think it's always cold here, but actually in summer it gets quite hot, especially down in the south.",
+          "grade": "okay",
+          "tone": "Fine"
+        }
+      ],
+      "pattern": "Surprise with specifics",
+      "why": "A specific surprise sticks, and it's a travel tip at the same time."
+    },
+    {
+      "id": "intl-vibe-10",
+      "setting": "Walking through a village",
+      "scenario": "A traveller says, \"I didn't expect Nepal to be so poor.\"",
+      "options": [
+        {
+          "text": "And I didn't expect you to be so rude.",
+          "grade": "miss",
+          "tone": "Retaliating"
+        },
+        {
+          "text": "Yes.",
+          "grade": "okay",
+          "tone": "Flat"
+        },
+        {
+          "text": "Money's tight for a lot of families here, that's true. Spend a night in a village homestay and see what else you notice.",
+          "grade": "best",
+          "tone": "Honest + gracious"
+        }
+      ],
+      "pattern": "Agree on facts, widen the frame",
+      "why": "Don't deny the true part and don't take the bait. Acknowledge it calmly, then invite them to look closer."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "intl-yes-01",
+      "prompt": "I'm from Germany.",
+      "cards": [
+        {
+          "text": "Okay.",
+          "keepsGoing": false,
+          "why": "The door opened and you closed it."
+        },
+        {
+          "text": "Then you're qualified to judge — is our bread as bad as every German says?",
+          "keepsGoing": true,
+          "why": "Plays on a friendly stereotype they'll enjoy and makes them the expert."
+        }
+      ],
+      "pattern": "Make them the expert"
+    },
+    {
+      "id": "intl-yes-02",
+      "prompt": "This is my first time in Asia.",
+      "cards": [
+        {
+          "text": "Asia is very big.",
+          "keepsGoing": false,
+          "why": "True and useless."
+        },
+        {
+          "text": "Then I'm honoured to be the one who ruins every other continent for you. What's surprised you so far?",
+          "keepsGoing": true,
+          "why": "Welcomes them warmly and asks an easy, open question."
+        }
+      ],
+      "pattern": "Welcome + open question"
+    },
+    {
+      "id": "intl-yes-03",
+      "prompt": "Everyone here is so friendly.",
+      "cards": [
+        {
+          "text": "Not everyone.",
+          "keepsGoing": false,
+          "why": "Deflates a lovely moment."
+        },
+        {
+          "text": "Careful, we get competitive about it. What's the friendliest thing that's happened to you so far?",
+          "keepsGoing": true,
+          "why": "Accepts the compliment for everyone and invites their story."
+        }
+      ],
+      "pattern": "Accept + invite a story"
+    },
+    {
+      "id": "intl-yes-04",
+      "prompt": "I've been to India before.",
+      "cards": [
+        {
+          "text": "Nepal is very different from India.",
+          "keepsGoing": false,
+          "why": "Sounds like a correction, even if you didn't mean it that way."
+        },
+        {
+          "text": "Perfect — then you'll enjoy spotting the differences. Tell me when you find the first one.",
+          "keepsGoing": true,
+          "why": "Turns comparison into a game you can come back to."
+        },
+        {
+          "text": "Everyone goes to India.",
+          "keepsGoing": false,
+          "why": "Dismisses their experience."
+        }
+      ],
+      "pattern": "Turn it into a game"
+    },
+    {
+      "id": "intl-yes-05",
+      "prompt": "It's winter back home right now.",
+      "context": "An Australian traveller, in July.",
+      "cards": [
+        {
+          "text": "So you swapped winter for monsoon? Bold. What does winter look like where you're from?",
+          "keepsGoing": true,
+          "why": "Teases lightly and asks about their home."
+        },
+        {
+          "text": "Oh.",
+          "keepsGoing": false,
+          "why": "A syllable, not a reply."
+        }
+      ],
+      "pattern": "Tease + ask about home"
+    },
+    {
+      "id": "intl-yes-06",
+      "prompt": "I don't really know anything about Nepal.",
+      "cards": [
+        {
+          "text": "You should read about it before you come.",
+          "keepsGoing": false,
+          "why": "Too late, and a little scolding."
+        },
+        {
+          "text": "Perfect — no bad information to undo. Want the thirty-second version or the three-momo version?",
+          "keepsGoing": true,
+          "why": "Makes ignorance a blank canvas and offers a fun choice."
+        }
+      ],
+      "pattern": "Reframe + offer a choice"
+    },
+    {
+      "id": "intl-yes-07",
+      "prompt": "Do you ever want to travel abroad?",
+      "cards": [
+        {
+          "text": "All the time. Sell me your country in one sentence — I'm taking notes.",
+          "keepsGoing": true,
+          "why": "Answers, then turns the spotlight back on them with a fun challenge."
+        },
+        {
+          "text": "Visas are too difficult.",
+          "keepsGoing": false,
+          "why": "A real frustration, but it ends the conversation on a low."
+        }
+      ],
+      "pattern": "Answer + challenge them"
+    },
+    {
+      "id": "intl-yes-08",
+      "prompt": "The food here is so spicy!",
+      "cards": [
+        {
+          "text": "It's not that spicy.",
+          "keepsGoing": false,
+          "why": "Argues with their experience."
+        },
+        {
+          "text": "You'll get used to it.",
+          "keepsGoing": false,
+          "why": "Kind, but it's a full stop."
+        },
+        {
+          "text": "That was the mild version. Shall I tell the kitchen you're ready for level two?",
+          "keepsGoing": true,
+          "why": "A playful dare that keeps the fun going."
+        }
+      ],
+      "pattern": "Accept + dare"
+    },
+    {
+      "id": "intl-yes-09",
+      "prompt": "How many languages do you speak?",
+      "cards": [
+        {
+          "text": "Three.",
+          "keepsGoing": false,
+          "why": "Answer delivered, conversation over."
+        },
+        {
+          "text": "Three properly, and enough of a few more to order food and get into trouble. What about you?",
+          "keepsGoing": true,
+          "why": "Answers with a smile and passes the question back."
+        }
+      ],
+      "pattern": "Answer + pass it back"
+    },
+    {
+      "id": "intl-yes-10",
+      "prompt": "My grandfather came to Nepal in the seventies.",
+      "cards": [
+        {
+          "text": "It was very different then.",
+          "keepsGoing": false,
+          "why": "Obvious and final."
+        },
+        {
+          "text": "No way — the hippie trail years? Freak Street in Kathmandu? You have to get his stories.",
+          "keepsGoing": true,
+          "why": "Shows you know the era and gets excited about their family story."
+        }
+      ],
+      "pattern": "Show you know + get excited"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "intl-up-01",
+      "clunky": "Um, where are you from, like, which country and stuff?",
+      "tiles": [
+        "So,",
+        "where's home",
+        "for you?"
+      ],
+      "distractors": [
+        "um",
+        "like",
+        "and stuff"
+      ],
+      "answers": [
+        [
+          "So,",
+          "where's home",
+          "for you?"
+        ]
+      ],
+      "why": "\"Where's home?\" is warmer than \"which country?\" It lets them answer with a city, a feeling or a story."
+    },
+    {
+      "id": "intl-up-02",
+      "clunky": "Your country is like very rich and developed and stuff, right?",
+      "tiles": [
+        "What's one thing",
+        "about home",
+        "you'd never",
+        "want to change?"
+      ],
+      "distractors": [
+        "like very rich",
+        "and stuff",
+        "right?"
+      ],
+      "answers": [
+        [
+          "What's one thing",
+          "about home",
+          "you'd never",
+          "want to change?"
+        ]
+      ],
+      "why": "Swap assumptions for curiosity. An open question about what they love beats a statement about what you imagine."
+    },
+    {
+      "id": "intl-up-03",
+      "clunky": "I don't know much about politics but I think maybe your government is, like, good?",
+      "tiles": [
+        "I'd love to hear",
+        "how people at home",
+        "actually feel",
+        "about your government."
+      ],
+      "distractors": [
+        "I don't know much",
+        "maybe",
+        "like, good"
+      ],
+      "answers": [
+        [
+          "I'd love to hear",
+          "how people at home",
+          "actually feel",
+          "about your government."
+        ]
+      ],
+      "why": "Don't guess at an opinion. Ask for theirs. It's safer and far more interesting."
+    },
+    {
+      "id": "intl-up-04",
+      "clunky": "Sorry, I don't understand, can you like repeat but maybe slower?",
+      "tiles": [
+        "Could you",
+        "say that again,",
+        "a little slower?",
+        "I want to get it right."
+      ],
+      "distractors": [
+        "sorry",
+        "like",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "Could you",
+          "say that again,",
+          "a little slower?",
+          "I want to get it right."
+        ]
+      ],
+      "why": "Asking someone to repeat is normal. Adding why (\"I want to get it right\") turns it into a compliment."
+    },
+    {
+      "id": "intl-up-05",
+      "clunky": "Nepal is between India and China and it's like a small country, very small.",
+      "tiles": [
+        "Nepal",
+        "is squeezed between",
+        "two giants —",
+        "India and China."
+      ],
+      "distractors": [
+        "like",
+        "very small",
+        "it's a small country"
+      ],
+      "answers": [
+        [
+          "Nepal",
+          "is squeezed between",
+          "two giants —",
+          "India and China."
+        ]
+      ],
+      "why": "An image (\"squeezed between two giants\") explains the size and the geopolitics in five words."
+    },
+    {
+      "id": "intl-up-06",
+      "clunky": "I think, um, that your English is really good, better than mine, I mean, I think.",
+      "tiles": [
+        "Your English",
+        "puts mine",
+        "to shame."
+      ],
+      "distractors": [
+        "um",
+        "I mean",
+        "I think"
+      ],
+      "answers": [
+        [
+          "Your English",
+          "puts mine",
+          "to shame."
+        ]
+      ],
+      "why": "The best compliments are short. Two \"I think\"s make it sound unsure."
+    },
+    {
+      "id": "intl-up-07",
+      "clunky": "So in Nepal, basically, we have a lot of festivals and stuff like Dashain and Tihar.",
+      "tiles": [
+        "Come back in autumn",
+        "for Dashain and Tihar —",
+        "the whole country",
+        "turns into one long celebration."
+      ],
+      "distractors": [
+        "basically",
+        "and stuff",
+        "we have a lot of"
+      ],
+      "answers": [
+        [
+          "Come back in autumn",
+          "for Dashain and Tihar —",
+          "the whole country",
+          "turns into one long celebration."
+        ]
+      ],
+      "why": "Turn information into an invitation. Name the festivals, give them a season, and paint the picture."
+    },
+    {
+      "id": "intl-up-08",
+      "clunky": "Maybe you can tell me about your country, if you want, only if you want.",
+      "tiles": [
+        "Tell me",
+        "one thing about home",
+        "that no guidebook",
+        "would mention."
+      ],
+      "distractors": [
+        "maybe",
+        "if you want",
+        "only if you want"
+      ],
+      "answers": [
+        [
+          "Tell me",
+          "one thing about home",
+          "that no guidebook",
+          "would mention."
+        ]
+      ],
+      "why": "A specific, slightly unusual question gets a much better answer than \"tell me about your country\"."
+    },
+    {
+      "id": "intl-up-09",
+      "clunky": "It's like, the mountains are, you know, very high, the highest in the world, Everest.",
+      "tiles": [
+        "The highest point",
+        "on Earth",
+        "is a short flight",
+        "east of here."
+      ],
+      "distractors": [
+        "like",
+        "you know",
+        "very high"
+      ],
+      "answers": [
+        [
+          "The highest point",
+          "on Earth",
+          "is a short flight",
+          "east of here."
+        ]
+      ],
+      "why": "Don't describe how high. Make them feel how close. Proximity is more exciting than a superlative."
+    },
+    {
+      "id": "intl-up-10",
+      "clunky": "Sorry for asking, but maybe is it weird if I ask about your religion?",
+      "tiles": [
+        "I'm curious",
+        "about your traditions —",
+        "what does",
+        "a holiday look like at home?"
+      ],
+      "distractors": [
+        "sorry for asking",
+        "maybe",
+        "is it weird"
+      ],
+      "answers": [
+        [
+          "I'm curious",
+          "about your traditions —",
+          "what does",
+          "a holiday look like at home?"
+        ]
+      ],
+      "why": "Ask about something concrete and joyful, like holidays, rather than beliefs. It's the same curiosity with a softer door."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "intl-drop-01",
+      "fact": "Nepal was never colonised. After the Anglo-Nepalese War of 1814–16, Britain began recruiting Nepali soldiers instead.",
+      "source": "Encyclopaedia Britannica, \"Nepal: History\"",
+      "prompt": "A British traveller jokes, \"So, did we colonise you too?\"",
+      "options": [
+        {
+          "text": "You tried, in 1814. It went so badly you hired our soldiers instead — Gurkhas have been in the British Army ever since.",
+          "grade": "best",
+          "why": "Matches their joke, delivers the history, and lands on a shared story."
+        },
+        {
+          "text": "Luckily for us, no. Britain had already done enough damage to enough countries — India, Kenya, half the world, honestly.",
+          "grade": "miss",
+          "why": "Turns a joke into an accusation."
+        },
+        {
+          "text": "No, Nepal was never colonised.",
+          "grade": "okay",
+          "why": "Correct, but it leaves their joke hanging."
+        }
+      ],
+      "pattern": "Match the joke, deliver the history"
+    },
+    {
+      "id": "intl-drop-02",
+      "fact": "Gurkhas from Nepal have served in the British Army since 1815. British Gurkhas Nepal runs its recruitment in Pokhara.",
+      "source": "British Army, \"Brigade of Gurkhas\"",
+      "prompt": "A British visitor asks, \"What's that big British camp across town?\"",
+      "options": [
+        {
+          "text": "That's where the British Army picks its Gurkhas. They've been recruiting Nepali soldiers since 1815 — so, technically, some of your army starts right here in Pokhara.",
+          "grade": "best",
+          "why": "Answers and connects their country to this town in one line."
+        },
+        {
+          "text": "It's a military thing.",
+          "grade": "miss",
+          "why": "Waves off a great story."
+        },
+        {
+          "text": "Gurkhas have served in the British Army since 1815.",
+          "grade": "okay",
+          "why": "Right fact, no link to the camp they asked about."
+        }
+      ],
+      "pattern": "Connect their country to here"
+    },
+    {
+      "id": "intl-drop-03",
+      "fact": "Nepal's 2021 census recorded more than 120 languages spoken as mother tongues.",
+      "source": "National Statistics Office, Nepal, \"National Population and Housing Census 2021\"",
+      "prompt": "A Swiss traveller laughs: \"We have four national languages. It's chaos.\"",
+      "options": [
+        {
+          "text": "That's nothing.",
+          "grade": "miss",
+          "why": "One-upping without the fun."
+        },
+        {
+          "text": "Four? Cute. Our last census counted more than 120 mother tongues. Your chaos is our Tuesday.",
+          "grade": "best",
+          "why": "Playful one-upmanship that's clearly affectionate."
+        },
+        {
+          "text": "Actually, Nepal has a lot of languages. According to the 2021 census, more than 120 different mother tongues are spoken in the country.",
+          "grade": "okay",
+          "why": "Impressive, flatly delivered."
+        }
+      ],
+      "pattern": "Affectionate one-upmanship"
+    },
+    {
+      "id": "intl-drop-04",
+      "fact": "Chitwan National Park in Nepal's southern lowlands is home to the greater one-horned rhinoceros and the Bengal tiger. It's a UNESCO World Heritage Site.",
+      "source": "UNESCO World Heritage List, \"Chitwan National Park\"",
+      "prompt": "A traveller says, \"I didn't know Nepal had jungle.\"",
+      "options": [
+        {
+          "text": "Most people don't. Head south to Chitwan — it's flat, it's steamy, and there are one-horned rhinos wandering past the lodges.",
+          "grade": "best",
+          "why": "Validates the surprise and paints a picture they can go and see."
+        },
+        {
+          "text": "Everyone knows about Chitwan.",
+          "grade": "miss",
+          "why": "Clearly they didn't. Now they feel silly."
+        },
+        {
+          "text": "Chitwan National Park has rhinos and tigers.",
+          "grade": "okay",
+          "why": "Accurate, but it could have been a travel tip."
+        }
+      ],
+      "pattern": "Validate + paint a picture"
+    },
+    {
+      "id": "intl-drop-05",
+      "fact": "The border between Nepal and China runs across the summit of Everest.",
+      "source": "Encyclopaedia Britannica, \"Mount Everest\"",
+      "prompt": "A Chinese traveller mentions they've seen Everest from the Tibet side.",
+      "options": [
+        {
+          "text": "The Nepal side is better.",
+          "grade": "miss",
+          "why": "Competitive and pointless."
+        },
+        {
+          "text": "Then we've been looking at the same mountain from opposite sides — the border runs right over the summit. It's the highest thing our countries share.",
+          "grade": "best",
+          "why": "Turns a border into a connection."
+        },
+        {
+          "text": "The Nepal–China border goes over the summit of Everest.",
+          "grade": "okay",
+          "why": "Interesting, but it stops at the fact."
+        }
+      ],
+      "pattern": "Turn a border into a bond"
+    },
+    {
+      "id": "intl-drop-06",
+      "fact": "In Nepal, Everest is called Sagarmatha; in Tibetan, Chomolungma. The English name honours Sir George Everest, a British Surveyor General of India.",
+      "source": "Encyclopaedia Britannica, \"Mount Everest\"",
+      "prompt": "A traveller says, \"Everest is such a cool name.\"",
+      "options": [
+        {
+          "text": "Here we call it Sagarmatha — roughly \"forehead of the sky\". The English name belongs to a British surveyor. I know which one I'd pick.",
+          "grade": "best",
+          "why": "Shares the local name and its meaning, with a light nudge of opinion."
+        },
+        {
+          "text": "That's not its real name.",
+          "grade": "miss",
+          "why": "Correcting a compliment, and not quite accurate either."
+        },
+        {
+          "text": "In Nepali it's called Sagarmatha, and in Tibetan it's Chomolungma. The English name comes from Sir George Everest, a British Surveyor General of India in the nineteenth century.",
+          "grade": "okay",
+          "why": "Good start, stops short of the story."
+        }
+      ],
+      "pattern": "Share the local name"
+    },
+    {
+      "id": "intl-drop-07",
+      "fact": "The Kathmandu Valley UNESCO World Heritage Site is made up of seven separate monument zones.",
+      "source": "UNESCO World Heritage List, \"Kathmandu Valley\"",
+      "prompt": "An Italian traveller says, \"Kathmandu feels like one big museum.\"",
+      "options": [
+        {
+          "text": "No, it's just old and dusty.",
+          "grade": "miss",
+          "why": "Talks down your own city and their enthusiasm."
+        },
+        {
+          "text": "UNESCO lists seven monument zones in the Kathmandu Valley.",
+          "grade": "okay",
+          "why": "Accurate and museum-label flat."
+        },
+        {
+          "text": "You're more right than you know — UNESCO counts seven monument zones in one valley. Coming from an Italian, I'll take that as a big compliment.",
+          "grade": "best",
+          "why": "Confirms their feeling with a fact, then nods to their own heritage."
+        }
+      ],
+      "pattern": "Confirm + nod to them"
+    },
+    {
+      "id": "intl-drop-08",
+      "fact": "Germany shares land borders with nine countries. Nepal has two neighbours, India and China, the two most populous countries on Earth.",
+      "source": "German Federal Foreign Office; UN World Population Prospects",
+      "prompt": "A German hiker says, \"Only two neighbours? That must make things simple.\"",
+      "options": [
+        {
+          "text": "It's not simple at all. You don't understand.",
+          "grade": "miss",
+          "why": "Defensive, and it shuts down a good question."
+        },
+        {
+          "text": "Two neighbours — but they're the two biggest populations on Earth. You have nine. Honestly, I'm not sure who has it easier.",
+          "grade": "best",
+          "why": "A bit of geopolitics, delivered as friendly comparison."
+        },
+        {
+          "text": "Germany has nine neighbouring countries, while Nepal only has two: India to the south and China to the north. So yes, it has far fewer borders to manage.",
+          "grade": "okay",
+          "why": "Two facts that never become a point."
+        }
+      ],
+      "pattern": "Friendly comparison"
+    },
+    {
+      "id": "intl-drop-09",
+      "fact": "Nepal's elevation ranges from about 60 metres above sea level in the southern Terai to 8,848 metres at the summit of Everest.",
+      "source": "Encyclopaedia Britannica, \"Nepal: Relief\"",
+      "prompt": "A Dutch traveller laughs: \"The Netherlands is completely flat.\"",
+      "options": [
+        {
+          "text": "Then Nepal's your opposite — we go from about 60 metres above sea level to the top of Everest. Your highest hill would be our speed bump.",
+          "grade": "best",
+          "why": "A fond tease built on a striking fact."
+        },
+        {
+          "text": "Flat countries are boring.",
+          "grade": "miss",
+          "why": "A tease with no affection in it."
+        },
+        {
+          "text": "Nepal is the opposite, actually. The elevation goes from about 60 metres above sea level in the Terai all the way up to 8,848 metres at Everest.",
+          "grade": "okay",
+          "why": "Numbers without the joke."
+        }
+      ],
+      "pattern": "Fond tease with a fact"
+    },
+    {
+      "id": "intl-drop-10",
+      "fact": "Nepal abolished its monarchy and became a federal democratic republic in 2008, ending about 240 years of rule by the Shah dynasty.",
+      "source": "Encyclopaedia Britannica, \"Nepal: History\"",
+      "prompt": "An American asks, \"Do you still have a king?\"",
+      "options": [
+        {
+          "text": "Not since 2008. After about 240 years of kings, we became a republic — which makes our democracy younger than the iPhone.",
+          "grade": "best",
+          "why": "Answers, gives the history, and ends on a comparison they'll repeat."
+        },
+        {
+          "text": "No, that's old news.",
+          "grade": "miss",
+          "why": "Makes them feel behind for asking."
+        },
+        {
+          "text": "Nepal became a republic in 2008.",
+          "grade": "okay",
+          "why": "Correct and brief, missing the fun part."
+        }
+      ],
+      "pattern": "Answer + a comparison they'll repeat"
+    }
+  ]
+}

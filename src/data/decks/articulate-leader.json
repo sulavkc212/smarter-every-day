@@ -1,0 +1,929 @@
+{
+  "id": "articulate-leader",
+  "title": "The Articulate Leader",
+  "tagline": "Professional, warm, and in charge.",
+  "description": "Command a room of tired trekkers, give clear instructions to staff, handle complaints gracefully and disagree without making enemies.",
+  "vibe": [
+    {
+      "id": "lead-vibe-01",
+      "setting": "Evening briefing, twelve tired trekkers",
+      "scenario": "Someone groans, \"Why do we have to wake up at five again?\"",
+      "options": [
+        {
+          "text": "Because I said so.",
+          "grade": "miss",
+          "tone": "Authoritarian"
+        },
+        {
+          "text": "Because the clouds roll in by ten, and I refuse to let you miss the view you flew halfway round the world for.",
+          "grade": "best",
+          "tone": "Commanding + warm"
+        },
+        {
+          "text": "It's the schedule, sorry.",
+          "grade": "okay",
+          "tone": "Apologetic"
+        }
+      ],
+      "pattern": "Give the why",
+      "why": "People follow instructions they understand. Tie the rule to what they want, and the early alarm becomes their idea."
+    },
+    {
+      "id": "lead-vibe-02",
+      "setting": "Teahouse at 3,500 m",
+      "scenario": "A client complains loudly in the dining room that their room is freezing and the shower is useless.",
+      "options": [
+        {
+          "text": "This is the mountains. What did you expect?",
+          "grade": "miss",
+          "tone": "Dismissive"
+        },
+        {
+          "text": "Sorry, there's nothing I can do up here.",
+          "grade": "okay",
+          "tone": "Honest but helpless"
+        },
+        {
+          "text": "I hear you — it's rough up here. Let me get you an extra blanket now, and tomorrow's lodge has hot showers.",
+          "grade": "best",
+          "tone": "Acknowledge + act"
+        }
+      ],
+      "pattern": "Acknowledge, act, look ahead",
+      "why": "Name their discomfort, do one thing right now, then give them something to look forward to. Complaints are usually requests to be heard."
+    },
+    {
+      "id": "lead-vibe-03",
+      "setting": "Meeting point, group waiting",
+      "scenario": "A porter arrives twenty minutes late, clearly embarrassed. The whole group is watching.",
+      "options": [
+        {
+          "text": "Good, you're here — grab the red bags first. Let's talk after lunch.",
+          "grade": "best",
+          "tone": "Calm"
+        },
+        {
+          "text": "Why are you always late?",
+          "grade": "miss",
+          "tone": "Public reprimand"
+        },
+        {
+          "text": "It's fine, don't worry about it, these things happen, traffic was probably bad — just try to be on time tomorrow, okay?",
+          "grade": "okay",
+          "tone": "Avoiding"
+        }
+      ],
+      "pattern": "Praise in public, correct in private",
+      "why": "Get the group moving, protect his dignity in front of clients, and still have the conversation later. Ignoring it entirely lets it happen again."
+    },
+    {
+      "id": "lead-vibe-04",
+      "setting": "Group dinner",
+      "scenario": "A client says confidently to the table, \"Nepal was a British colony, right?\"",
+      "options": [
+        {
+          "text": "Hmm, maybe.",
+          "grade": "okay",
+          "tone": "Avoiding"
+        },
+        {
+          "text": "Close call — Britain tried in 1814, and ended up recruiting our soldiers instead. Nepal's never been colonised.",
+          "grade": "best",
+          "tone": "Correct with a story"
+        },
+        {
+          "text": "No, that's wrong.",
+          "grade": "miss",
+          "tone": "Blunt"
+        }
+      ],
+      "pattern": "Correct with a story",
+      "why": "A story corrects without humiliating. They learn something, the table is entertained, and nobody loses face."
+    },
+    {
+      "id": "lead-vibe-05",
+      "setting": "High camp, storm forecast",
+      "scenario": "A determined client insists on crossing the pass today despite the forecast.",
+      "options": [
+        {
+          "text": "Fine, it's your trip.",
+          "grade": "miss",
+          "tone": "Caving"
+        },
+        {
+          "text": "No. The forecast is bad, the wind on the pass will be far too strong, and it's simply too dangerous. We are not going today.",
+          "grade": "okay",
+          "tone": "Firm but cold"
+        },
+        {
+          "text": "I want you on top of that pass as much as you do — which is why we wait a day. The mountain's patient; we can be too.",
+          "grade": "best",
+          "tone": "Firm + warm"
+        }
+      ],
+      "pattern": "Agree on the goal, disagree on the path",
+      "why": "Start from what you both want. The \"no\" lands softer, and it still lands, when they can see you're on their side."
+    },
+    {
+      "id": "lead-vibe-06",
+      "setting": "Guides' planning meeting",
+      "scenario": "A junior guide excitedly proposes a new route. You're fairly sure the permits make it impossible.",
+      "options": [
+        {
+          "text": "Maybe, let's see.",
+          "grade": "okay",
+          "tone": "Vague"
+        },
+        {
+          "text": "That won't work. The permits for that area are a nightmare, it would take months, and honestly the old route is fine.",
+          "grade": "miss",
+          "tone": "Crushing"
+        },
+        {
+          "text": "I like where your head's at. Walk me through how we'd handle the permits?",
+          "grade": "best",
+          "tone": "Curious"
+        }
+      ],
+      "pattern": "Question, don't crush",
+      "why": "A good question lets them find the problem themselves. They keep their enthusiasm, and you keep a guide who brings you ideas."
+    },
+    {
+      "id": "lead-vibe-07",
+      "setting": "Lodge dining room",
+      "scenario": "It's time for the briefing, but the group is loud and scattered across three tables.",
+      "options": [
+        {
+          "text": "Guys, guys, please, sorry, can everyone listen for a moment, please? Sorry, it's important, it will be quick, please?",
+          "grade": "miss",
+          "tone": "Pleading"
+        },
+        {
+          "text": "Right. Two minutes from me, then you can go back to arguing about who snored.",
+          "grade": "best",
+          "tone": "Command + humour"
+        },
+        {
+          "text": "Okay, so, um, let's start maybe.",
+          "grade": "okay",
+          "tone": "Hesitant"
+        }
+      ],
+      "pattern": "Pause, then command",
+      "why": "A short, confident opener with a time limit and a joke gets attention faster than asking for it five times."
+    },
+    {
+      "id": "lead-vibe-08",
+      "setting": "On the trail",
+      "scenario": "A client points at a distant peak and asks its name. You honestly don't know.",
+      "options": [
+        {
+          "text": "Good question — I'm not certain, and I'd rather check than guess. I'll ask the lodge owner tonight.",
+          "grade": "best",
+          "tone": "Honest confidence"
+        },
+        {
+          "text": "That's… Mount Something. Very famous.",
+          "grade": "miss",
+          "tone": "Bluffing"
+        },
+        {
+          "text": "I don't know.",
+          "grade": "okay",
+          "tone": "Flat"
+        }
+      ],
+      "pattern": "A confident \"I don't know\"",
+      "why": "Leaders who admit gaps are trusted on everything else. A bluff that gets caught costs more than the answer was worth."
+    },
+    {
+      "id": "lead-vibe-09",
+      "setting": "Lodge reception, evening",
+      "scenario": "Your group arrives and there are no rooms. You booked the wrong lodge.",
+      "options": [
+        {
+          "text": "I'm so sorry, everyone, I'm really so sorry, this is completely my fault, I don't know how it happened, I feel terrible, I'm so sorry.",
+          "grade": "okay",
+          "tone": "Over-apologising"
+        },
+        {
+          "text": "That's on me — I booked the wrong place. Here's the fix: the lodge next door has rooms, and the first round of tea is on me.",
+          "grade": "best",
+          "tone": "Own it + fix it"
+        },
+        {
+          "text": "The lodge messed up our booking.",
+          "grade": "miss",
+          "tone": "Blaming"
+        }
+      ],
+      "pattern": "Own it, then fix it",
+      "why": "One clear apology, then straight to the solution. The group needs a plan more than they need your guilt."
+    },
+    {
+      "id": "lead-vibe-10",
+      "setting": "Trail at 4,200 m",
+      "scenario": "A client has a pounding headache and nausea, and they're scared. Normally you'd joke to lighten things up.",
+      "options": [
+        {
+          "text": "Ha — the mountain got you!",
+          "grade": "miss",
+          "tone": "Joke at the wrong time"
+        },
+        {
+          "text": "Drink some water and rest a bit.",
+          "grade": "okay",
+          "tone": "Partial"
+        },
+        {
+          "text": "You're not the first and you won't be the last. We're heading down now, and I'll be right beside you.",
+          "grade": "best",
+          "tone": "Calm authority"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "Fear needs calm, not comedy. Normalise it, give a clear action, and stay close. Descending is the standard first response to altitude symptoms."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "lead-yes-01",
+      "prompt": "This trek is harder than I expected.",
+      "context": "A client, halfway up a long climb.",
+      "cards": [
+        {
+          "text": "You should have trained more.",
+          "keepsGoing": false,
+          "why": "True or not, it's too late to be useful, and it stings."
+        },
+        {
+          "text": "It is — and you're doing it anyway. Tomorrow's shorter, and the view at the end is your reward.",
+          "keepsGoing": true,
+          "why": "Validates, credits their effort, then points forward."
+        }
+      ],
+      "pattern": "Validate + point forward"
+    },
+    {
+      "id": "lead-yes-02",
+      "prompt": "The kitchen's out of eggs for tomorrow's breakfast.",
+      "context": "Your camp cook, the night before.",
+      "cards": [
+        {
+          "text": "Okay — what have we got plenty of? Let's build breakfast around that.",
+          "keepsGoing": true,
+          "why": "Accepts the problem and moves straight to solving it together."
+        },
+        {
+          "text": "That's a problem.",
+          "keepsGoing": false,
+          "why": "States the obvious and leaves them holding it."
+        },
+        {
+          "text": "How did that happen?",
+          "keepsGoing": false,
+          "why": "Looks backward for blame when the team needs a plan."
+        }
+      ],
+      "pattern": "Accept + solve together"
+    },
+    {
+      "id": "lead-yes-03",
+      "prompt": "I'm not sure I can make it to the top.",
+      "context": "A client, early on summit morning.",
+      "cards": [
+        {
+          "text": "Everyone makes it, don't worry.",
+          "keepsGoing": false,
+          "why": "Dismisses their fear and makes a promise you can't keep."
+        },
+        {
+          "text": "Then let's not think about the top. Let's get to that chorten, and decide together from there.",
+          "keepsGoing": true,
+          "why": "Shrinks the goal to something reachable and keeps them in the decision."
+        }
+      ],
+      "pattern": "Shrink the goal"
+    },
+    {
+      "id": "lead-yes-04",
+      "prompt": "I think we should change the route this year.",
+      "context": "A fellow guide at a planning meeting.",
+      "cards": [
+        {
+          "text": "No, the old route works.",
+          "keepsGoing": false,
+          "why": "Shuts down the idea before hearing it."
+        },
+        {
+          "text": "Interesting. What's the one thing the new route does better?",
+          "keepsGoing": true,
+          "why": "Invites them to make their case, which is fair and useful to you."
+        }
+      ],
+      "pattern": "Accept + probe"
+    },
+    {
+      "id": "lead-yes-05",
+      "prompt": "Your English is so clear. Where did you learn?",
+      "context": "A client on the first day.",
+      "cards": [
+        {
+          "text": "Mostly on the trail — every group teaches me a new word. What's one I should know from your country?",
+          "keepsGoing": true,
+          "why": "Answers, credits them, and starts an exchange."
+        },
+        {
+          "text": "In school.",
+          "keepsGoing": false,
+          "why": "Accurate, and over."
+        }
+      ],
+      "pattern": "Answer + exchange"
+    },
+    {
+      "id": "lead-yes-06",
+      "prompt": "The bus was two hours late.",
+      "context": "A client, annoyed, at the first night's hotel.",
+      "cards": [
+        {
+          "text": "That's normal in Nepal.",
+          "keepsGoing": false,
+          "why": "Explains it away. They wanted it taken seriously."
+        },
+        {
+          "text": "It wasn't my fault.",
+          "keepsGoing": false,
+          "why": "Defends yourself instead of helping them."
+        },
+        {
+          "text": "It was, and I'm sorry. I've booked a private jeep for tomorrow's transfer, so we leave on our schedule.",
+          "keepsGoing": true,
+          "why": "Acknowledges, apologises once, and shows what's changed."
+        }
+      ],
+      "pattern": "Acknowledge + show the change"
+    },
+    {
+      "id": "lead-yes-07",
+      "prompt": "I feel like I'm slowing everyone down.",
+      "context": "The slowest walker in your group.",
+      "cards": [
+        {
+          "text": "It's okay, just try to walk a bit faster.",
+          "keepsGoing": false,
+          "why": "Confirms their fear and adds pressure."
+        },
+        {
+          "text": "The group moves at the pace of the group. And honestly, a few of them are glad of the breaks.",
+          "keepsGoing": true,
+          "why": "Reframes the pace as a team value and lightens the guilt."
+        }
+      ],
+      "pattern": "Reframe as a team value"
+    },
+    {
+      "id": "lead-yes-08",
+      "prompt": "We need to cut costs this season.",
+      "context": "Your manager.",
+      "cards": [
+        {
+          "text": "Agreed. Can I suggest where? I think we can save on transport without touching anything clients feel.",
+          "keepsGoing": true,
+          "why": "Accepts the goal and shows up with a direction."
+        },
+        {
+          "text": "That's impossible.",
+          "keepsGoing": false,
+          "why": "Refuses the premise, so you lose a seat at the table."
+        }
+      ],
+      "pattern": "Accept + bring a direction"
+    },
+    {
+      "id": "lead-yes-09",
+      "prompt": "I read online that this route is dangerous.",
+      "context": "A worried client, the night before starting.",
+      "cards": [
+        {
+          "text": "The internet is wrong.",
+          "keepsGoing": false,
+          "why": "Dismisses both the source and their worry."
+        },
+        {
+          "text": "Good that you're checking. Let me show you the tricky sections and exactly what we do on each one.",
+          "keepsGoing": true,
+          "why": "Respects their research and replaces fear with specifics."
+        },
+        {
+          "text": "Don't believe everything you read.",
+          "keepsGoing": false,
+          "why": "Sounds like a brush-off, even if it's true."
+        }
+      ],
+      "pattern": "Respect + specifics"
+    },
+    {
+      "id": "lead-yes-10",
+      "prompt": "My back hurts from yesterday.",
+      "context": "One of your porters, quietly, in the morning.",
+      "cards": [
+        {
+          "text": "Thanks for telling me. Let's lighten your load today — I'll move two bags to the others.",
+          "keepsGoing": true,
+          "why": "Thanks them for speaking up, which means they'll speak up next time."
+        },
+        {
+          "text": "Everyone's back hurts.",
+          "keepsGoing": false,
+          "why": "Teaches your team not to tell you things."
+        }
+      ],
+      "pattern": "Thank + act"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "lead-up-01",
+      "clunky": "Um, guys, so tomorrow, like, we have to maybe wake up early, like 5-ish?",
+      "tiles": [
+        "Tomorrow:",
+        "bags outside your door by 4:45,",
+        "breakfast at 5,",
+        "and we walk at 5:30 sharp."
+      ],
+      "distractors": [
+        "um, guys",
+        "like",
+        "5-ish"
+      ],
+      "answers": [
+        [
+          "Tomorrow:",
+          "bags outside your door by 4:45,",
+          "breakfast at 5,",
+          "and we walk at 5:30 sharp."
+        ]
+      ],
+      "why": "Instructions need numbers, not vibes. Give the times in the order people will need them."
+    },
+    {
+      "id": "lead-up-02",
+      "clunky": "I'm sorry, I think maybe the lodge is not really that good, but it's the only one, sorry.",
+      "tiles": [
+        "Tonight's lodge is basic,",
+        "but it's warm,",
+        "and the view",
+        "makes up for the rest."
+      ],
+      "distractors": [
+        "I'm sorry",
+        "I think maybe",
+        "not really that good"
+      ],
+      "answers": [
+        [
+          "Tonight's lodge is basic,",
+          "but it's warm,",
+          "and the view",
+          "makes up for the rest."
+        ]
+      ],
+      "why": "Name the downside plainly, then pivot to what's good. Honest framing earns trust; apologising for things you can't change doesn't."
+    },
+    {
+      "id": "lead-up-03",
+      "clunky": "I don't really agree with you, sorry, but maybe it's not a good idea to go today?",
+      "tiles": [
+        "I see why you want to go,",
+        "but",
+        "I'd rather wait a day",
+        "and do it safely."
+      ],
+      "distractors": [
+        "sorry",
+        "I don't really agree",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "I see why you want to go,",
+          "but",
+          "I'd rather wait a day",
+          "and do it safely."
+        ]
+      ],
+      "why": "Show you understand their side first. Then say what you'd do, not what's wrong with them."
+    },
+    {
+      "id": "lead-up-04",
+      "clunky": "Can you, um, if possible, maybe carry the bags to the, like, jeep?",
+      "tiles": [
+        "Please load",
+        "the bags",
+        "into the jeep —",
+        "blue ones first."
+      ],
+      "distractors": [
+        "um",
+        "if possible",
+        "like"
+      ],
+      "answers": [
+        [
+          "Please load",
+          "the bags",
+          "into the jeep —",
+          "blue ones first."
+        ]
+      ],
+      "why": "Polite and direct aren't opposites. \"Please\" plus a clear verb plus one useful detail is a perfect instruction."
+    },
+    {
+      "id": "lead-up-05",
+      "clunky": "I think basically we are kind of behind schedule a little bit.",
+      "tiles": [
+        "We're",
+        "forty minutes behind,",
+        "so",
+        "we'll take a shorter lunch."
+      ],
+      "distractors": [
+        "I think basically",
+        "kind of",
+        "a little bit"
+      ],
+      "answers": [
+        [
+          "We're",
+          "forty minutes behind,",
+          "so",
+          "we'll take a shorter lunch."
+        ]
+      ],
+      "why": "Name the problem precisely and give the fix in the same breath. Vague bad news worries people; precise bad news with a plan reassures them."
+    },
+    {
+      "id": "lead-up-06",
+      "clunky": "Sorry about the problem with the room, it's not my fault, but sorry.",
+      "tiles": [
+        "I'm sorry",
+        "about the room.",
+        "Here's what",
+        "I'm doing to fix it."
+      ],
+      "distractors": [
+        "it's not my fault",
+        "but sorry",
+        "the problem with"
+      ],
+      "answers": [
+        [
+          "I'm sorry",
+          "about the room.",
+          "Here's what",
+          "I'm doing to fix it."
+        ]
+      ],
+      "why": "A real apology has no \"but\". Follow it with action, not a defence."
+    },
+    {
+      "id": "lead-up-07",
+      "clunky": "Everyone, so, I want to say, like, thank you for everything and stuff.",
+      "tiles": [
+        "Thank you",
+        "for trusting me",
+        "with the most important",
+        "two weeks of your year."
+      ],
+      "distractors": [
+        "so, I want to say",
+        "like",
+        "and stuff"
+      ],
+      "answers": [
+        [
+          "Thank you",
+          "for trusting me",
+          "with the most important",
+          "two weeks of your year."
+        ]
+      ],
+      "why": "Open with the thanks itself, then make it specific. Gratitude with a reason is the kind people remember."
+    },
+    {
+      "id": "lead-up-08",
+      "clunky": "Maybe, if everyone wants, we could maybe take a break, if that's okay?",
+      "tiles": [
+        "Let's",
+        "take ten minutes",
+        "here —",
+        "water, snacks, photos."
+      ],
+      "distractors": [
+        "maybe",
+        "if everyone wants",
+        "if that's okay"
+      ],
+      "answers": [
+        [
+          "Let's",
+          "take ten minutes",
+          "here —",
+          "water, snacks, photos."
+        ]
+      ],
+      "why": "Leaders decide the small things so the group doesn't have to. A time and a checklist beat a vote."
+    },
+    {
+      "id": "lead-up-09",
+      "clunky": "Um, I think your idea is good but like, maybe there's a problem with the cost?",
+      "tiles": [
+        "I like the idea.",
+        "My concern",
+        "is cost —",
+        "can we price it out?"
+      ],
+      "distractors": [
+        "um",
+        "but like",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "I like the idea.",
+          "My concern",
+          "is cost —",
+          "can we price it out?"
+        ]
+      ],
+      "why": "Separate the praise from the concern with a full stop. Then turn the concern into a next step you do together."
+    },
+    {
+      "id": "lead-up-10",
+      "clunky": "So the thing is that the weather is bad so we cannot go, sorry everyone.",
+      "tiles": [
+        "The weather",
+        "has closed the pass today,",
+        "so",
+        "we rest and try again at first light."
+      ],
+      "distractors": [
+        "so the thing is that",
+        "sorry everyone",
+        "cannot go"
+      ],
+      "answers": [
+        [
+          "The weather",
+          "has closed the pass today,",
+          "so",
+          "we rest and try again at first light."
+        ]
+      ],
+      "why": "Give the cause, then the plan. \"We cannot go\" is a dead end; \"we try again at first light\" is a path."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "lead-drop-01",
+      "fact": "Tenzing Norgay joined his first Everest expedition in 1935, eighteen years before he and Edmund Hillary reached the summit on 29 May 1953.",
+      "source": "Encyclopaedia Britannica, \"Tenzing Norgay\"",
+      "prompt": "The night before the pass, a client asks quietly, \"Do you honestly think I can do this?\"",
+      "options": [
+        {
+          "text": "Everyone can do it. It's easy.",
+          "grade": "miss",
+          "why": "Brushes off a real fear, and it isn't true."
+        },
+        {
+          "text": "Tenzing Norgay spent eighteen years on Everest expeditions before he stood on top. You've had four days, and you're already here. Yes, I think you can.",
+          "grade": "best",
+          "why": "The fact puts their effort in proportion, and the answer to their question is a clear yes."
+        },
+        {
+          "text": "Tenzing Norgay tried for eighteen years before summiting Everest.",
+          "grade": "okay",
+          "why": "Inspiring fact, but it never answers them."
+        }
+      ],
+      "pattern": "Fact as encouragement"
+    },
+    {
+      "id": "lead-drop-02",
+      "fact": "In 1993, Pasang Lhamu Sherpa became the first Nepali woman to summit Everest. She died on the descent and is honoured as a national hero.",
+      "source": "Encyclopaedia Britannica, \"Pasang Lhamu Sherpa\"",
+      "prompt": "A woman in your group asks, \"Do many Nepali women climb?\"",
+      "options": [
+        {
+          "text": "More every year. Pasang Lhamu Sherpa was the first Nepali woman on top of Everest, in 1993 — she's a national hero here.",
+          "grade": "best",
+          "why": "Answers the question, then gives her a name to look up and a reason to care."
+        },
+        {
+          "text": "Mostly the men do the climbing.",
+          "grade": "miss",
+          "why": "Dismissive, and it erases the women who do."
+        },
+        {
+          "text": "Pasang Lhamu Sherpa was the first Nepali woman to climb Everest, in 1993. Sadly, she died on the way down, and she is now considered a national hero.",
+          "grade": "okay",
+          "why": "Good fact, but it skips her actual question."
+        }
+      ],
+      "pattern": "Answer + a name"
+    },
+    {
+      "id": "lead-drop-03",
+      "fact": "\"Sherpa\" is the name of an ethnic group from the Everest region, not a job title.",
+      "source": "Encyclopaedia Britannica, \"Sherpa\"",
+      "prompt": "A client keeps calling all of your porters \"the Sherpas\". Most of them are Gurung and Tamang.",
+      "options": [
+        {
+          "text": "They're not Sherpas. Stop calling them that.",
+          "grade": "miss",
+          "why": "Correct, but it shames them in front of the team."
+        },
+        {
+          "text": "Sherpa is an ethnic group, not a job.",
+          "grade": "okay",
+          "why": "Accurate, a little stiff."
+        },
+        {
+          "text": "Quick one — Sherpa is actually an ethnic group from the Everest region. This crew is mostly Gurung and Tamang. Ask them about it; they'll love telling you.",
+          "grade": "best",
+          "why": "Fixes the mistake privately and warmly, and turns it into a way to connect with the team."
+        }
+      ],
+      "pattern": "Correct + connect"
+    },
+    {
+      "id": "lead-drop-04",
+      "fact": "Psychologists call it the pratfall effect: a person who is seen as competent often becomes more likeable after making a small, harmless mistake.",
+      "source": "Aronson, Willerman & Floyd, \"The effect of a pratfall on increasing interpersonal attractiveness\", Psychonomic Science (1966)",
+      "prompt": "A new guide on your team is mortified after tripping over a rope in front of the whole group.",
+      "options": [
+        {
+          "text": "Yeah, that was embarrassing.",
+          "grade": "miss",
+          "why": "Agrees with the worst version of their thought."
+        },
+        {
+          "text": "Relax — there's a name for this: the pratfall effect. When someone competent slips up, people like them more. You're everyone's favourite now.",
+          "grade": "best",
+          "why": "Uses research to reframe the moment, and ends with a smile."
+        },
+        {
+          "text": "In psychology this is called the pratfall effect. A 1966 study found that competent people were rated as more likeable after a small, harmless blunder.",
+          "grade": "okay",
+          "why": "Right idea, but they need the reassurance, not just the term."
+        }
+      ],
+      "pattern": "Research as reassurance"
+    },
+    {
+      "id": "lead-drop-05",
+      "fact": "The peak-end rule: people judge an experience largely by how it felt at its most intense moment and at its end.",
+      "source": "Kahneman, Fredrickson, Schreiber & Redelmeier, \"When more pain is preferred to less\", Psychological Science (1993)",
+      "prompt": "At a staff meeting, someone suggests cutting the farewell dinner to save money.",
+      "options": [
+        {
+          "text": "The last day doesn't matter, they're leaving anyway.",
+          "grade": "miss",
+          "why": "It's the day that matters most."
+        },
+        {
+          "text": "People remember experiences by the peak and the end.",
+          "grade": "okay",
+          "why": "The principle is right; the argument isn't made."
+        },
+        {
+          "text": "I'd cut anywhere else first. Kahneman showed people remember an experience by its high point and its ending — that dinner is the story they take home.",
+          "grade": "best",
+          "why": "Uses the research to win a practical argument, calmly."
+        }
+      ],
+      "pattern": "Research to win an argument"
+    },
+    {
+      "id": "lead-drop-06",
+      "fact": "In 2019, Nirmal \"Nims\" Purja climbed all fourteen of the world's 8,000-metre peaks in six months and six days.",
+      "source": "Guinness World Records, \"Fastest time to climb all 8,000 m mountains\"",
+      "prompt": "A client looks at the itinerary: \"Three passes in three weeks? That's too ambitious.\"",
+      "options": [
+        {
+          "text": "Nims Purja climbed all fourteen 8,000-metre peaks in about six months. Three passes in three weeks? We've got time for tea.",
+          "grade": "best",
+          "why": "Puts their worry in playful perspective without dismissing it."
+        },
+        {
+          "text": "Other people do it easily.",
+          "grade": "miss",
+          "why": "Makes them feel weak."
+        },
+        {
+          "text": "Nirmal Purja, known as Nims, climbed all fourteen of the world's 8,000-metre peaks in six months and six days in 2019, which was a world record.",
+          "grade": "okay",
+          "why": "Impressive, but it doesn't connect to their worry."
+        }
+      ],
+      "pattern": "Perspective with a smile"
+    },
+    {
+      "id": "lead-drop-07",
+      "fact": "The Ringelmann effect: in early rope-pulling experiments, the more people pulled together, the less effort each individual put in.",
+      "source": "Kravitz & Martin, \"Ringelmann rediscovered\", Journal of Personality and Social Psychology (1986)",
+      "prompt": "Breaking camp, a porter suggests, \"Let's all clean up together.\"",
+      "options": [
+        {
+          "text": "No, just do what I say.",
+          "grade": "miss",
+          "why": "Pulls rank when you could have just explained."
+        },
+        {
+          "text": "Let's split it — each pair takes one area. There's research showing people pull less hard on a rope when more hands are on it. Small teams, clean camp.",
+          "grade": "best",
+          "why": "Gives a better plan and a reason, lightly."
+        },
+        {
+          "text": "The Ringelmann effect says big groups work less.",
+          "grade": "okay",
+          "why": "Right, but it sounds like a lecture and gives no instruction."
+        }
+      ],
+      "pattern": "Fact behind a plan"
+    },
+    {
+      "id": "lead-drop-08",
+      "fact": "Kami Rita Sherpa holds the record for the most ascents of Everest by any person.",
+      "source": "Guinness World Records, \"Most ascents of Mount Everest\"",
+      "prompt": "A client teases, \"You must have been to Everest Base Camp a hundred times.\"",
+      "options": [
+        {
+          "text": "Yes, I'm very experienced.",
+          "grade": "miss",
+          "why": "Takes a tease as an invitation to brag."
+        },
+        {
+          "text": "Not even close to the real legend — Kami Rita Sherpa has summited Everest more times than anyone in history. I'm still collecting teahouses.",
+          "grade": "best",
+          "why": "Deflects the praise to a hero, with humility and a joke."
+        },
+        {
+          "text": "Kami Rita Sherpa holds the world record for the most ascents of Mount Everest by any single person — more than anyone in the entire history of mountaineering.",
+          "grade": "okay",
+          "why": "Accurate, but it drops the conversation they started."
+        }
+      ],
+      "pattern": "Deflect praise to a hero"
+    },
+    {
+      "id": "lead-drop-09",
+      "fact": "The Ben Franklin effect: people who do you a favour tend to like you more afterwards.",
+      "source": "Jecker & Landy, \"Liking a person as a function of doing him a favour\", Human Relations (1969)",
+      "prompt": "One client criticises everything. You need them on side for the rest of the trek.",
+      "options": [
+        {
+          "text": "Could you do me a favour? You notice details — would you keep an eye on the back of the group for me today?",
+          "grade": "best",
+          "why": "Applies the effect instead of explaining it. Their critical eye becomes a job."
+        },
+        {
+          "text": "Please, could you stop complaining so much? Everyone else is enjoying the trek, and it's affecting the mood of the whole group.",
+          "grade": "miss",
+          "why": "Makes it a standoff."
+        },
+        {
+          "text": "Research says asking someone for a favour makes them like you more.",
+          "grade": "okay",
+          "why": "Right idea, said out loud to the wrong person."
+        }
+      ],
+      "pattern": "Use it, don't explain it"
+    },
+    {
+      "id": "lead-drop-10",
+      "fact": "In 2020, Nepal and China jointly announced Everest's height as 8,848.86 metres.",
+      "source": "Survey Department, Government of Nepal; Encyclopaedia Britannica, \"Mount Everest\"",
+      "prompt": "A client insists, \"Everest is 8,848 metres, my guidebook says so.\"",
+      "options": [
+        {
+          "text": "Your guidebook is outdated.",
+          "grade": "miss",
+          "why": "Makes it a contest. You'll win and lose them."
+        },
+        {
+          "text": "Your guidebook's close. Nepal and China measured it together in 2020 and got 8,848.86 — so you're only eighty-six centimetres short.",
+          "grade": "best",
+          "why": "Credits them, updates them, and makes the correction funny."
+        },
+        {
+          "text": "It's actually 8,848.86 metres since 2020.",
+          "grade": "okay",
+          "why": "Correct, with a small sting from the \"actually\"."
+        }
+      ],
+      "pattern": "Credit, then update"
+    }
+  ]
+}

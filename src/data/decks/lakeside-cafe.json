@@ -1,0 +1,927 @@
+{
+  "id": "lakeside-cafe",
+  "title": "Lakeside Cafe Casual",
+  "tagline": "Small talk that doesn't feel small.",
+  "description": "Ordering, weather, compliments and the everyday chat of a Lakeside cafe. Keep it light, keep it warm, keep it going.",
+  "vibe": [
+    {
+      "id": "cafe-vibe-01",
+      "setting": "Lakeside cafe",
+      "scenario": "Someone bumps into your table and a drop of your coffee spills.",
+      "options": [
+        {
+          "text": "Oh, don't worry, that's totally okay — it's only a tiny bit, honestly, it's no problem at all.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "Watch where you're going, you ruined my coffee.",
+          "grade": "miss",
+          "tone": "Sharp"
+        },
+        {
+          "text": "Careful — I haven't had my caffeine yet. I bite.",
+          "grade": "best",
+          "tone": "Cheeky"
+        }
+      ],
+      "pattern": "Playful threat",
+      "why": "A mock warning turns a tiny accident into a joke you're both in on, and it tells them you're not actually upset."
+    },
+    {
+      "id": "cafe-vibe-02",
+      "setting": "Monsoon, under a shop awning",
+      "scenario": "A stranger sheltering next to you from the downpour says, \"Great weather, huh?\"",
+      "options": [
+        {
+          "text": "Yeah, it's raining a lot.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "It's monsoon. What did you expect?",
+          "grade": "miss",
+          "tone": "Dismissive"
+        },
+        {
+          "text": "Pokhara's way of telling us to get another tea.",
+          "grade": "best",
+          "tone": "Charming"
+        }
+      ],
+      "pattern": "Give it a motive",
+      "why": "You played along with their sarcasm and gave the rain a reason. Now you're two people in on the same joke, not two people standing under a roof."
+    },
+    {
+      "id": "cafe-vibe-03",
+      "setting": "Cafe counter",
+      "scenario": "A traveller says, \"Wow, your English is really good!\"",
+      "options": [
+        {
+          "text": "Thank you.",
+          "grade": "okay",
+          "tone": "Plain"
+        },
+        {
+          "text": "Why do people always say that? Did you think it would be bad because I'm from Nepal?",
+          "grade": "miss",
+          "tone": "Defensive"
+        },
+        {
+          "text": "Thanks — I practise on tourists. You're doing very well so far.",
+          "grade": "best",
+          "tone": "Cheeky"
+        }
+      ],
+      "pattern": "Flip it back",
+      "why": "Accept the compliment, then turn it around with a grin. They stop being the judge and become part of the joke."
+    },
+    {
+      "id": "cafe-vibe-04",
+      "setting": "Busy cafe",
+      "scenario": "A nervous new waiter brings you a lemon soda. You ordered masala tea. He looks panicked.",
+      "options": [
+        {
+          "text": "Honestly, it looks refreshing — but my heart was set on masala tea. No rush.",
+          "grade": "best",
+          "tone": "Warm"
+        },
+        {
+          "text": "Sorry, I actually ordered masala tea.",
+          "grade": "okay",
+          "tone": "Polite"
+        },
+        {
+          "text": "Did you even listen? I said tea.",
+          "grade": "miss",
+          "tone": "Harsh"
+        }
+      ],
+      "pattern": "Soften the correction",
+      "why": "He's already stressed. A small kindness before the correction, and \"no rush\" after it, fixes the order without costing him his dignity."
+    },
+    {
+      "id": "cafe-vibe-05",
+      "setting": "Sarangkot viewpoint, sunrise",
+      "scenario": "A shivering stranger next to you asks, \"Worth waking up at four for?\"",
+      "options": [
+        {
+          "text": "Yes, it's nice.",
+          "grade": "okay",
+          "tone": "Flat"
+        },
+        {
+          "text": "Ask me again after breakfast. Right now the mountains are winning.",
+          "grade": "best",
+          "tone": "Playful"
+        },
+        {
+          "text": "Honestly? No. It's freezing, there are two hundred people up here, and the clouds might not even move.",
+          "grade": "miss",
+          "tone": "Complaining"
+        }
+      ],
+      "pattern": "Honest, then playful",
+      "why": "You admit it's early and cold, which makes the compliment to the view feel earned instead of polite."
+    },
+    {
+      "id": "cafe-vibe-06",
+      "setting": "Packed cafe",
+      "scenario": "Your friend has just gone to the bathroom. Someone points at their chair: \"Is this seat taken?\"",
+      "options": [
+        {
+          "text": "Yes.",
+          "grade": "miss",
+          "tone": "Curt"
+        },
+        {
+          "text": "It's guarded by my friend's jacket for two more minutes — then it's all yours.",
+          "grade": "best",
+          "tone": "Charming"
+        },
+        {
+          "text": "Sorry, my friend is coming back.",
+          "grade": "okay",
+          "tone": "Literal"
+        }
+      ],
+      "pattern": "Give the object a job",
+      "why": "Turning the jacket into a tiny security guard makes a \"no\" feel like a joke, and the promise at the end keeps it friendly."
+    },
+    {
+      "id": "cafe-vibe-07",
+      "setting": "Coffee bar",
+      "scenario": "The barista hands you a latte and sighs, \"Sorry, it was supposed to be a heart.\"",
+      "options": [
+        {
+          "text": "It's abstract. I can feel the love anyway.",
+          "grade": "best",
+          "tone": "Generous"
+        },
+        {
+          "text": "Oh, it's completely fine, honestly, it doesn't matter at all — don't worry about it, it tastes the same.",
+          "grade": "okay",
+          "tone": "Polite"
+        },
+        {
+          "text": "Yeah, it looks nothing like a heart.",
+          "grade": "miss",
+          "tone": "Blunt"
+        }
+      ],
+      "pattern": "Generous reframe",
+      "why": "You rescued their small failure by calling it art. People remember who made them feel better about a bad moment."
+    },
+    {
+      "id": "cafe-vibe-08",
+      "setting": "Your regular cafe",
+      "scenario": "A tourist you served last week walks back in: \"I'm back! I couldn't find better momos anywhere.\"",
+      "options": [
+        {
+          "text": "Thank you, come again.",
+          "grade": "okay",
+          "tone": "Scripted"
+        },
+        {
+          "text": "Other places are terrible anyway.",
+          "grade": "miss",
+          "tone": "Trash-talk"
+        },
+        {
+          "text": "I know. We ruin people for other momos — it's house policy.",
+          "grade": "best",
+          "tone": "Cheeky"
+        }
+      ],
+      "pattern": "Mock confidence",
+      "why": "Overclaiming on purpose is funny because it's obviously a bit. Putting down the competition just sounds petty."
+    },
+    {
+      "id": "cafe-vibe-09",
+      "setting": "Evening, cafe terrace",
+      "scenario": "Mid-conversation with someone new, the power cuts out and the lights die. They laugh nervously.",
+      "options": [
+        {
+          "text": "Power cut. It happens.",
+          "grade": "okay",
+          "tone": "Literal"
+        },
+        {
+          "text": "Perfect timing — I was just about to say something clever.",
+          "grade": "best",
+          "tone": "Self-deprecating"
+        },
+        {
+          "text": "Ugh, this happens all the time here. Honestly, the electricity in this country is a joke.",
+          "grade": "miss",
+          "tone": "Negative"
+        }
+      ],
+      "pattern": "Self-deprecation",
+      "why": "Making yourself the punchline puts a nervous person at ease. Complaining just drags the mood into the dark with the lights."
+    },
+    {
+      "id": "cafe-vibe-10",
+      "setting": "Quiet corner of a cafe",
+      "scenario": "The traveller at the next table hangs up the phone, eyes wet, and says quietly, \"Sorry — bad news from home.\"",
+      "options": [
+        {
+          "text": "Cheer up! At least you're in Pokhara.",
+          "grade": "miss",
+          "tone": "Brushing it off"
+        },
+        {
+          "text": "Oh no, that's a shame.",
+          "grade": "okay",
+          "tone": "Polite"
+        },
+        {
+          "text": "I'm sorry. Would you like some company, or some quiet?",
+          "grade": "best",
+          "tone": "Warm"
+        }
+      ],
+      "pattern": "Read the room",
+      "why": "Charm isn't always a joke. When someone is hurting, the most charming move is to offer a choice and let them lead."
+    }
+  ],
+  "yesAnd": [
+    {
+      "id": "cafe-yes-01",
+      "prompt": "You look like you've had a long day.",
+      "cards": [
+        {
+          "text": "Yeah, I'm tired.",
+          "keepsGoing": false,
+          "why": "Agrees and stops. There's nothing for them to pick up."
+        },
+        {
+          "text": "You have no idea. I'm running on 10% battery and three milk teas.",
+          "keepsGoing": true,
+          "why": "Accepts the premise and adds an image they can play with."
+        },
+        {
+          "text": "Not really.",
+          "keepsGoing": false,
+          "why": "Rejects the premise, so the conversation has to restart from zero."
+        }
+      ],
+      "pattern": "Accept + add an image"
+    },
+    {
+      "id": "cafe-yes-02",
+      "prompt": "This place has the best view in Lakeside.",
+      "cards": [
+        {
+          "text": "It's okay.",
+          "keepsGoing": false,
+          "why": "Shrugs off their enthusiasm. They'll stop sharing."
+        },
+        {
+          "text": "Agreed. I've been pretending to read this menu for twenty minutes just so I can keep staring.",
+          "keepsGoing": true,
+          "why": "Agrees, then confesses something small and funny. Confessions invite confessions."
+        }
+      ],
+      "pattern": "Accept + confess"
+    },
+    {
+      "id": "cafe-yes-03",
+      "prompt": "Is it always this hot here?",
+      "cards": [
+        {
+          "text": "Only until the afternoon rain turns up to apologise.",
+          "keepsGoing": true,
+          "why": "Answers the question and gives the weather a personality."
+        },
+        {
+          "text": "Yes.",
+          "keepsGoing": false,
+          "why": "Technically an answer. Socially, a closed door."
+        },
+        {
+          "text": "Summer is hot and winter is cool, that's how seasons work.",
+          "keepsGoing": false,
+          "why": "Accurate, but it's a weather report. They wanted a chat."
+        }
+      ],
+      "pattern": "Answer + personality"
+    },
+    {
+      "id": "cafe-yes-04",
+      "prompt": "I think I ate too many momos.",
+      "cards": [
+        {
+          "text": "You should be careful, they're quite heavy.",
+          "keepsGoing": false,
+          "why": "Sounds like a worried parent. It ends the fun."
+        },
+        {
+          "text": "There's no such thing as too many. There's only \"not enough room yet\".",
+          "keepsGoing": true,
+          "why": "Rejects the guilt, not the person, and hands them a line to laugh at."
+        }
+      ],
+      "pattern": "Accept + escalate"
+    },
+    {
+      "id": "cafe-yes-05",
+      "prompt": "I'm trying to learn some Nepali.",
+      "cards": [
+        {
+          "text": "Okay, good.",
+          "keepsGoing": false,
+          "why": "Polite and finished. Nothing to build on."
+        },
+        {
+          "text": "Go on then, say something — I promise to only laugh a little.",
+          "keepsGoing": true,
+          "why": "Invites them to perform, with a tease that makes it feel safe."
+        },
+        {
+          "text": "It's very difficult. Most people give up.",
+          "keepsGoing": false,
+          "why": "Discouraging. You've made them feel silly for trying."
+        }
+      ],
+      "pattern": "Accept + invite"
+    },
+    {
+      "id": "cafe-yes-06",
+      "prompt": "The traffic on the way here was crazy.",
+      "cards": [
+        {
+          "text": "Did you get the full experience — the cow in the middle of the road who refuses to move?",
+          "keepsGoing": true,
+          "why": "Adds a shared, specific detail they'll recognise, and asks them to tell the story."
+        },
+        {
+          "text": "Traffic is bad everywhere.",
+          "keepsGoing": false,
+          "why": "Generalises their experience away. Nothing left to say."
+        }
+      ],
+      "pattern": "Accept + specific detail"
+    },
+    {
+      "id": "cafe-yes-07",
+      "prompt": "This cafe's playlist is great.",
+      "cards": [
+        {
+          "text": "It's just some random songs.",
+          "keepsGoing": false,
+          "why": "Deflecting the compliment deflates the moment."
+        },
+        {
+          "text": "Stay till three. That's when it quietly turns into 90s Bollywood.",
+          "keepsGoing": true,
+          "why": "Agrees and dangles a reason to stay. That's a hook, not a reply."
+        }
+      ],
+      "pattern": "Accept + hook"
+    },
+    {
+      "id": "cafe-yes-08",
+      "prompt": "I only arrived yesterday.",
+      "cards": [
+        {
+          "text": "Welcome.",
+          "keepsGoing": false,
+          "why": "Warm, but it's a full stop."
+        },
+        {
+          "text": "Welcome! So what's the verdict — has Pokhara ruined you for home yet?",
+          "keepsGoing": true,
+          "why": "Welcomes them, then asks a playful question that's easy to answer."
+        },
+        {
+          "text": "Oh, so you haven't seen anything yet.",
+          "keepsGoing": false,
+          "why": "Sounds like you're dismissing their trip before it starts."
+        }
+      ],
+      "pattern": "Accept + ask back"
+    },
+    {
+      "id": "cafe-yes-09",
+      "prompt": "I love your jacket.",
+      "cards": [
+        {
+          "text": "Thanks! It's survived three treks and one very aggressive monkey.",
+          "keepsGoing": true,
+          "why": "Takes the compliment and hands over a story they'll want to hear."
+        },
+        {
+          "text": "It's really old.",
+          "keepsGoing": false,
+          "why": "Arguing with a compliment makes the giver feel wrong."
+        }
+      ],
+      "pattern": "Accept + tease a story"
+    },
+    {
+      "id": "cafe-yes-10",
+      "prompt": "I can't decide what to order.",
+      "cards": [
+        {
+          "text": "Just pick anything.",
+          "keepsGoing": false,
+          "why": "Unhelpful and a little impatient."
+        },
+        {
+          "text": "Everything is good.",
+          "keepsGoing": false,
+          "why": "Kind, but it doesn't help them decide or give them anything to say back."
+        },
+        {
+          "text": "Tell me your mood and I'll tell you your order. I'm basically a menu fortune-teller.",
+          "keepsGoing": true,
+          "why": "Turns a decision into a little game you play together."
+        }
+      ],
+      "pattern": "Accept + make it a game"
+    }
+  ],
+  "upgrader": [
+    {
+      "id": "cafe-up-01",
+      "clunky": "I think this place is like, very good, because of the mountains and stuff.",
+      "tiles": [
+        "The mountain views",
+        "here",
+        "create",
+        "a genuinely remarkable atmosphere."
+      ],
+      "distractors": [
+        "like",
+        "and stuff",
+        "very"
+      ],
+      "answers": [
+        [
+          "The mountain views",
+          "here",
+          "create",
+          "a genuinely remarkable atmosphere."
+        ]
+      ],
+      "why": "Lead with what matters, the views. One strong verb and one precise adjective do the work that \"like, very good\" was reaching for."
+    },
+    {
+      "id": "cafe-up-02",
+      "clunky": "Um, so the weather is, like, kind of bad today, maybe we stay inside?",
+      "tiles": [
+        "With this weather,",
+        "let's stay in",
+        "and order",
+        "another pot of tea."
+      ],
+      "distractors": [
+        "um",
+        "kind of",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "With this weather,",
+          "let's stay in",
+          "and order",
+          "another pot of tea."
+        ]
+      ],
+      "why": "Name the reason first, then suggest confidently. \"Let's\" invites. \"Maybe we…?\" asks permission."
+    },
+    {
+      "id": "cafe-up-03",
+      "clunky": "The food was good, I mean, really good, like the best actually.",
+      "tiles": [
+        "Honestly,",
+        "that was",
+        "the best meal",
+        "I've had all week."
+      ],
+      "distractors": [
+        "I mean",
+        "like",
+        "actually"
+      ],
+      "answers": [
+        [
+          "Honestly,",
+          "that was",
+          "the best meal",
+          "I've had all week."
+        ]
+      ],
+      "why": "Say it once and make it specific. A superlative with a time frame is more believable than three stacked \"really\"s."
+    },
+    {
+      "id": "cafe-up-04",
+      "clunky": "Sorry, sorry, can I maybe get the bill, if it's okay, when you have time?",
+      "tiles": [
+        "Whenever you get a moment,",
+        "could we",
+        "have the bill,",
+        "please?"
+      ],
+      "distractors": [
+        "sorry, sorry",
+        "maybe",
+        "if it's okay"
+      ],
+      "answers": [
+        [
+          "Whenever you get a moment,",
+          "could we",
+          "have the bill,",
+          "please?"
+        ]
+      ],
+      "why": "One polite frame is enough. Over-apologising makes a normal request sound like a burden."
+    },
+    {
+      "id": "cafe-up-05",
+      "clunky": "I don't know, I guess I like Pokhara more than Kathmandu because it's more, like, relaxed?",
+      "tiles": [
+        "I prefer Pokhara —",
+        "life here",
+        "moves at",
+        "the speed of the lake."
+      ],
+      "distractors": [
+        "I guess",
+        "I don't know",
+        "like"
+      ],
+      "answers": [
+        [
+          "I prefer Pokhara —",
+          "life here",
+          "moves at",
+          "the speed of the lake."
+        ]
+      ],
+      "why": "Own the opinion, then give it a picture. Ending on an image is stronger than ending on a question mark."
+    },
+    {
+      "id": "cafe-up-06",
+      "clunky": "So basically the cafe opens at seven, and basically it closes at like ten.",
+      "tiles": [
+        "We're open",
+        "from seven in the morning",
+        "until ten at night."
+      ],
+      "distractors": [
+        "basically",
+        "so",
+        "like"
+      ],
+      "answers": [
+        [
+          "We're open",
+          "from seven in the morning",
+          "until ten at night."
+        ]
+      ],
+      "why": "Opening hours are information. Give them in one clean sweep. \"Basically\" added nothing, twice."
+    },
+    {
+      "id": "cafe-up-07",
+      "clunky": "It was, um, nice meeting you and stuff, maybe we see each other again sometime?",
+      "tiles": [
+        "It was great",
+        "meeting you —",
+        "I hope",
+        "our paths cross again."
+      ],
+      "distractors": [
+        "um",
+        "and stuff",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "It was great",
+          "meeting you —",
+          "I hope",
+          "our paths cross again."
+        ]
+      ],
+      "why": "Close warmly and definitely. \"I hope our paths cross again\" leaves the door open without sounding unsure."
+    },
+    {
+      "id": "cafe-up-08",
+      "clunky": "The momo here is really, really good, you should like try it.",
+      "tiles": [
+        "You have to",
+        "try the momos",
+        "here —",
+        "they're dangerous."
+      ],
+      "distractors": [
+        "really, really",
+        "like",
+        "you should"
+      ],
+      "answers": [
+        [
+          "You have to",
+          "try the momos",
+          "here —",
+          "they're dangerous."
+        ]
+      ],
+      "why": "Turn the recommendation into a friendly order with a hook. \"They're dangerous\" makes people curious; \"really good\" only makes them nod."
+    },
+    {
+      "id": "cafe-up-09",
+      "clunky": "I was thinking that, um, maybe we could sit outside because it's sunny?",
+      "tiles": [
+        "It's too sunny",
+        "to sit inside —",
+        "shall we",
+        "grab a table by the water?"
+      ],
+      "distractors": [
+        "I was thinking that",
+        "um",
+        "maybe"
+      ],
+      "answers": [
+        [
+          "It's too sunny",
+          "to sit inside —",
+          "shall we",
+          "grab a table by the water?"
+        ]
+      ],
+      "why": "Start with the reason as a bold little claim, then make the offer. \"Shall we\" is a question that already assumes yes."
+    },
+    {
+      "id": "cafe-up-10",
+      "clunky": "Sorry my English is not so good but I will try to explain the menu.",
+      "tiles": [
+        "Let me",
+        "walk you through",
+        "the menu —",
+        "stop me if anything sounds good."
+      ],
+      "distractors": [
+        "sorry",
+        "not so good",
+        "I will try"
+      ],
+      "answers": [
+        [
+          "Let me",
+          "walk you through",
+          "the menu —",
+          "stop me if anything sounds good."
+        ]
+      ],
+      "why": "Lead with what you'll do, not what you can't. Confidence in the first three words sets the tone for everything after."
+    }
+  ],
+  "dropIn": [
+    {
+      "id": "cafe-drop-01",
+      "fact": "Nepal is home to 8 of the world's 10 highest mountains, including Everest.",
+      "source": "Encyclopaedia Britannica, \"Himalayas\"",
+      "prompt": "A German hiker at the next table groans that the altitude on the Annapurna trail nearly killed them.",
+      "options": [
+        {
+          "text": "Well, when you've got 8 of the top 10 highest peaks in your backyard, you get used to breathing a little heavier.",
+          "grade": "best",
+          "why": "The fact arrives inside a joke about shared suffering. It's about them, not about the fact."
+        },
+        {
+          "text": "Did you know Nepal has 8 of the 10 highest mountains in the world?",
+          "grade": "okay",
+          "why": "True, but it's a quiz question. It moves the conversation away from their story."
+        },
+        {
+          "text": "Actually, altitude sickness comes from lower oxygen pressure above about 2,500 metres, so really you should have taken an extra rest day to acclimatise—",
+          "grade": "miss",
+          "why": "A lecture. They wanted sympathy, not a seminar."
+        }
+      ],
+      "pattern": "Fact inside sympathy"
+    },
+    {
+      "id": "cafe-drop-02",
+      "fact": "Phewa Lake is the second-largest lake in Nepal, after Rara Lake in the far west.",
+      "source": "Nepal Tourism Board, \"Phewa Lake\"",
+      "prompt": "Out on a rowing boat, a tourist spreads their arms: \"This lake is huge!\"",
+      "options": [
+        {
+          "text": "Not really, there are much bigger lakes in the world.",
+          "grade": "miss",
+          "why": "Correcting someone's delight is the fastest way to end it."
+        },
+        {
+          "text": "And it's only the runner-up. Rara Lake out west is bigger — Phewa just has better cafes.",
+          "grade": "best",
+          "why": "Agrees, adds the fact as a twist, and lands on a local joke."
+        },
+        {
+          "text": "It is the second largest lake in Nepal.",
+          "grade": "okay",
+          "why": "Accurate, but it reads like a signboard."
+        }
+      ],
+      "pattern": "Agree + twist"
+    },
+    {
+      "id": "cafe-drop-03",
+      "fact": "Nepal's flag is the only national flag in the world that isn't a rectangle — it's two stacked pennants.",
+      "source": "Encyclopaedia Britannica, \"flag of Nepal\"",
+      "prompt": "A traveller points at the flag over the cafe door: \"Your flag is so unusual!\"",
+      "options": [
+        {
+          "text": "Yes, it is the only non-rectangular national flag in the world.",
+          "grade": "okay",
+          "why": "Correct and a bit museum-plaque."
+        },
+        {
+          "text": "Everyone else went with rectangles. We took one look at the mountains and went with peaks.",
+          "grade": "best",
+          "why": "The fact is implied, not recited, and it comes with a bit of national swagger."
+        },
+        {
+          "text": "It's not unusual, it has a very deep meaning. The crimson is for the rhododendron, the blue border is for peace, and the sun and moon represent—",
+          "grade": "miss",
+          "why": "Contradicting a compliment to deliver a history lesson."
+        }
+      ],
+      "pattern": "Imply the fact"
+    },
+    {
+      "id": "cafe-drop-04",
+      "fact": "Nepal's time zone is UTC+5:45 — fifteen minutes ahead of India, and one of the very few zones offset by 45 minutes.",
+      "source": "timeanddate.com, \"Time Zone in Nepal\"",
+      "prompt": "A just-landed traveller frowns at their phone: \"Why does my clock say 11:45? That can't be right.\"",
+      "options": [
+        {
+          "text": "Your phone is probably broken.",
+          "grade": "miss",
+          "why": "Wrong, and it makes them feel silly."
+        },
+        {
+          "text": "Nepal's time zone is UTC plus five hours and forty-five minutes.",
+          "grade": "okay",
+          "why": "Answers the question with the charm of an airport announcement."
+        },
+        {
+          "text": "Welcome to Nepal — we run fifteen minutes ahead of India, just to be different.",
+          "grade": "best",
+          "why": "Explains the oddity with a wink of national pride."
+        }
+      ],
+      "pattern": "Explain with a wink"
+    },
+    {
+      "id": "cafe-drop-05",
+      "fact": "Annapurna I was the first 8,000-metre peak ever climbed, by a French expedition in 1950.",
+      "source": "Encyclopaedia Britannica, \"Annapurna\"",
+      "prompt": "A French couple tells you they can see the Annapurnas from their hotel balcony.",
+      "options": [
+        {
+          "text": "Then you're in the right place — a French team were the first to climb Annapurna, back in 1950. You're practically visiting family.",
+          "grade": "best",
+          "why": "Connects the fact to who they are. People love a story they're part of."
+        },
+        {
+          "text": "Annapurna I was first climbed in 1950 by a French expedition led by Maurice Herzog. It was the first 8,000-metre peak anyone ever climbed.",
+          "grade": "okay",
+          "why": "Right fact, no connection to them."
+        },
+        {
+          "text": "Those aren't all Annapurna. The pointy one is Machhapuchhre — tourists always get it wrong.",
+          "grade": "miss",
+          "why": "Corrects them and lumps them in with \"tourists\" in one go."
+        }
+      ],
+      "pattern": "Make them part of it"
+    },
+    {
+      "id": "cafe-drop-06",
+      "fact": "Machhapuchhre, the \"Fishtail\" above Pokhara, is sacred and closed to climbers. A 1957 British team turned back just below the top, and there is no recorded summit.",
+      "source": "Wilfrid Noyce, \"Climbing the Fish's Tail\" (1958); peak closed to climbing by the Government of Nepal",
+      "prompt": "A climber at the cafe nods at the Fishtail: \"Has anyone climbed that one?\"",
+      "options": [
+        {
+          "text": "Why, are you thinking of trying? You'd need a lot more training.",
+          "grade": "miss",
+          "why": "Teasing their fitness isn't the tease they asked for."
+        },
+        {
+          "text": "Nobody's officially stood on top. It's sacred, so it's closed to climbers — the one summit in town that's still just for the gods.",
+          "grade": "best",
+          "why": "Gives the fact, the reason, and a line they'll repeat to their friends."
+        },
+        {
+          "text": "No, it is closed for climbing because it is a sacred mountain.",
+          "grade": "okay",
+          "why": "Correct, but flat for such a good story."
+        }
+      ],
+      "pattern": "Fact + a line worth repeating"
+    },
+    {
+      "id": "cafe-drop-07",
+      "fact": "The rhododendron is Nepal's national flower. In spring, whole hillsides turn red and pink.",
+      "source": "Government of Nepal, national symbols; Encyclopaedia Britannica, \"Nepal\"",
+      "prompt": "A trekker shows you a photo from the trail: \"What are these amazing red trees?\"",
+      "options": [
+        {
+          "text": "Just rhododendrons. They're everywhere here.",
+          "grade": "miss",
+          "why": "\"Just\" shrinks their wonder. Let them be amazed."
+        },
+        {
+          "text": "Rhododendrons — the national flower. Come April, the whole hillside basically shows off.",
+          "grade": "best",
+          "why": "Names it, gives it status, and makes the mountain sound like it has a personality."
+        },
+        {
+          "text": "That is the rhododendron, which is the national flower of Nepal. It grows at many different altitudes and blooms mainly in spring.",
+          "grade": "okay",
+          "why": "Right answer, textbook delivery."
+        }
+      ],
+      "pattern": "Name it + give it character"
+    },
+    {
+      "id": "cafe-drop-08",
+      "fact": "Nepal's official calendar, Bikram Sambat, runs about 56 years and 8 months ahead of the Gregorian calendar. The Nepali new year falls in mid-April.",
+      "source": "Government of Nepal official calendar (Bikram Sambat); Encyclopaedia Britannica, \"Vikrama era\"",
+      "prompt": "A confused traveller holds up the local newspaper: \"Why does this say 2083?\"",
+      "options": [
+        {
+          "text": "Relax, you haven't time-travelled. Well — a little. Our calendar runs about 57 years ahead, so technically you're in the future.",
+          "grade": "best",
+          "why": "Turns confusion into a small thrill. They'll tell this one at home."
+        },
+        {
+          "text": "Nepal uses the Bikram Sambat calendar, which is about 57 years ahead.",
+          "grade": "okay",
+          "why": "Explains it, doesn't enjoy it."
+        },
+        {
+          "text": "Everyone knows Nepal has a different calendar.",
+          "grade": "miss",
+          "why": "Clearly not everyone. Now they feel foolish."
+        }
+      ],
+      "pattern": "Turn confusion into a thrill"
+    },
+    {
+      "id": "cafe-drop-09",
+      "fact": "Nepal grows tea in Ilam, in the far east, on the same hills that continue into Darjeeling across the border in India.",
+      "source": "National Tea and Coffee Development Board, Nepal",
+      "prompt": "A British tea lover takes a sip: \"This is lovely. Is it Darjeeling?\"",
+      "options": [
+        {
+          "text": "Close — it's from Ilam, just over the border. Same hills, same mist, less famous.",
+          "grade": "best",
+          "why": "Accepts their good guess, corrects gently, and gives Nepali tea an underdog charm."
+        },
+        {
+          "text": "No, it's Nepali tea from Ilam, near Darjeeling.",
+          "grade": "okay",
+          "why": "Fine, but it starts with \"no\"."
+        },
+        {
+          "text": "No, no — Darjeeling is in India. This is Nepali tea. People always assume good tea must be Darjeeling, but Nepal grows its own.",
+          "grade": "miss",
+          "why": "A good guess met with a flat correction and a border dispute."
+        }
+      ],
+      "pattern": "Gentle correction"
+    },
+    {
+      "id": "cafe-drop-10",
+      "fact": "The Buddha was born in Lumbini, in southern Nepal. It's a UNESCO World Heritage Site.",
+      "source": "UNESCO World Heritage List, \"Lumbini, the Birthplace of the Lord Buddha\"",
+      "prompt": "A traveller in a Buddha T-shirt says, \"I always thought the Buddha was Indian.\"",
+      "options": [
+        {
+          "text": "No! He was Nepali. People get this wrong all the time and it's very annoying.",
+          "grade": "miss",
+          "why": "Right fact, wrong temperature. They'll remember the scolding, not Lumbini."
+        },
+        {
+          "text": "Easy mistake — he was born in Lumbini, a few hours south of here, and then went travelling. Like you.",
+          "grade": "best",
+          "why": "Corrects without heat and ends on a connection to them."
+        },
+        {
+          "text": "Actually, the Buddha was born in Lumbini, in Nepal.",
+          "grade": "okay",
+          "why": "Correct. The \"actually\" does a little damage."
+        }
+      ],
+      "pattern": "Correct without heat"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+/*
+ * Palette: lake teal, marigold and paper — Pokhara at golden hour.
+ * Raw values live on :root so dark mode can swap them; @theme maps them to utilities.
+ */
+:root {
+  --paper: #faf6ef;
+  --surface: #fffdf9;
+  --sunken: #f1ebe0;
+  --ink: #1b2a30;
+  --muted: #5a6a70;
+  --line: #e4dccd;
+  --lake: #12303a;
+  --lake-soft: #d9e9ec;
+  --on-lake: #faf6ef;
+  --marigold: #f2a93b;
+  --marigold-ink: #8a4d00;
+  --good: #23784a;
+  --good-soft: #dff2e6;
+  --bad: #b73a31;
+  --bad-soft: #f9e0dc;
+  --meh: #7d5b00;
+  --meh-soft: #f8ecc9;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0e1a1f;
+    --surface: #152429;
+    --sunken: #1c2f35;
+    --ink: #ecf1ef;
+    --muted: #9fb1b5;
+    --line: #28404a;
+    --lake: #8fd0dc;
+    --lake-soft: #1d3a42;
+    --on-lake: #0e1a1f;
+    --marigold: #f2a93b;
+    --marigold-ink: #f7c679;
+    --good: #6fd39b;
+    --good-soft: #173a29;
+    --bad: #ff8f84;
+    --bad-soft: #43201d;
+    --meh: #f1cf6f;
+    --meh-soft: #3d3316;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-sunken: var(--sunken);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-lake: var(--lake);
+  --color-lake-soft: var(--lake-soft);
+  --color-on-lake: var(--on-lake);
+  --color-marigold: var(--marigold);
+  --color-marigold-ink: var(--marigold-ink);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-meh: var(--meh);
+  --color-meh-soft: var(--meh-soft);
+  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--paper);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 3px solid var(--marigold);
+  outline-offset: 2px;
+}
+
+/* Countdown bar for Choose the Vibe. Duration is set inline per question. */
+@keyframes drain {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+.timer-fill {
+  transform-origin: left;
+  animation-name: drain;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
