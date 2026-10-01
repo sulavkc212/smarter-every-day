@@ -51,6 +51,14 @@ describe.each([
   })
 })
 
+describe('host page independence', () => {
+  it('sets body text colour itself, so an embedding page cannot make text dark on dark', () => {
+    const body = css.slice(css.indexOf('html body {'), css.indexOf('}', css.indexOf('html body {')))
+    expect(body).toContain('color: var(--ink)')
+    expect(body).toContain('background: var(--paper)')
+  })
+})
+
 describe('fixed feedback banners', () => {
   it.each([
     ['#ffffff', '#15803d'],

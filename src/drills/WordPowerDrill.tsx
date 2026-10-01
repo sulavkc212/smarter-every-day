@@ -74,7 +74,7 @@ export function WordPowerDrill({ item, onResult, onNext }: DrillProps<WordPowerI
                   {i + 1}
                 </span>
                 <span className="flex-1">
-                  <span className="block text-lg font-semibold">{o.text}</span>
+                  <span className="block text-xl font-extrabold text-ink">{o.text}</span>
                   {done && (
                     <span className="mt-1 block text-sm text-muted">
                       <GradeBadge grade={o.grade} /> {o.why}

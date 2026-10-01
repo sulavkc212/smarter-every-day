@@ -79,7 +79,7 @@ export function DropInDrill({ item, onResult, onNext }: DrillProps<DropInItem>) 
                   {i + 1}
                 </span>
                 <span className="flex-1">
-                  <span className="block text-[15px] leading-snug">“{o.text}”</span>
+                  <span className="block text-[17px] font-bold leading-snug text-ink">“{o.text}”</span>
                   {done && (
                     <span className="mt-2 block text-sm text-muted">
                       <GradeBadge grade={o.grade} /> {o.why}

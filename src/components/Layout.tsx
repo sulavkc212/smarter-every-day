@@ -17,7 +17,7 @@ export function Layout() {
   const playing = pathname.startsWith('/play') || pathname.startsWith('/review/play')
 
   return (
-    <div className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-4">
+    <div className="mx-auto flex min-h-dvh w-full max-w-xl flex-col bg-paper px-4 text-ink">
       <header className="flex items-center justify-between gap-3 py-4">
         <Link to="/" className="font-display text-xl font-black tracking-tight text-ink">
           Smarter <span className="text-lake">Everyday</span>

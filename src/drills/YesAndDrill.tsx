@@ -122,7 +122,7 @@ export function YesAndDrill({ item, onResult, onNext }: DrillProps<YesAndItem>) 
           role="group"
           aria-label="Response card"
         >
-          <p className="font-display text-xl font-extrabold leading-snug">“{card.text}”</p>
+          <p className="font-display text-xl font-extrabold leading-snug text-ink">“{card.text}”</p>
           <motion.span
             style={{ opacity: yesOpacity }}
             className="absolute left-4 top-4 -rotate-12 rounded-lg border-2 border-good px-2 py-0.5 text-sm font-black uppercase text-good"

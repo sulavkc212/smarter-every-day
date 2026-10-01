@@ -105,7 +105,7 @@ export function VibeDrill({ item, onResult, onNext }: DrillProps<VibeItem>) {
                     {i + 1}
                   </span>
                   <span className="flex-1">
-                    <span className="block text-[15px] leading-snug">“{o.text}”</span>
+                    <span className="block text-[17px] font-bold leading-snug text-ink">“{o.text}”</span>
                     {done && (
                       <span className="mt-2 flex items-center gap-2 text-xs text-muted">
                         <GradeBadge grade={o.grade} /> {o.tone}
