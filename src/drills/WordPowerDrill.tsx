@@ -16,7 +16,7 @@ function Highlighted({ sentence, target, replacement }: { sentence: string; targ
     <>
       {before}
       <mark
-        className={`rounded-md px-1 ${replacement ? 'bg-good-soft text-good' : 'bg-marigold text-lake'}`}
+        className={`rounded-md px-1 ${replacement ? 'bg-good-soft text-good' : 'bg-[#ffb21e] text-[#14142b]'}`}
       >
         {replacement ?? target}
       </mark>
@@ -45,9 +45,9 @@ export function WordPowerDrill({ item, onResult, onNext }: DrillProps<WordPowerI
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="rounded-3xl bg-lake p-5 text-on-lake">
-        <p className="text-xs font-bold uppercase tracking-widest opacity-75">Swap the tired word</p>
-        <p className="mt-2 font-display text-xl leading-snug">
+      <div className="rounded-3xl border-b-4 border-[#3d1fa3] bg-[#5b2ee6] p-5 text-white">
+        <p className="text-[13px] font-extrabold uppercase tracking-wider opacity-90">Swap the tired word</p>
+        <p className="mt-2 font-display text-xl font-extrabold leading-snug">
           “<Highlighted sentence={item.sentence} target={item.target} />”
         </p>
       </div>
@@ -68,7 +68,7 @@ export function WordPowerDrill({ item, onResult, onNext }: DrillProps<WordPowerI
                 type="button"
                 disabled={done}
                 onClick={() => choose(i)}
-                className={`flex w-full items-start gap-3 rounded-2xl border-2 p-4 text-left transition ${ring}`}
+                className={`flex w-full items-start gap-3 press rounded-2xl border-2 p-4 text-left ${ring}`}
               >
                 <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-sunken text-xs font-bold text-muted">
                   {i + 1}
@@ -94,7 +94,7 @@ export function WordPowerDrill({ item, onResult, onNext }: DrillProps<WordPowerI
           onNext={onNext}
         >
           <div className="flex flex-col gap-3 rounded-2xl bg-surface p-4">
-            <p className="font-display text-lg leading-snug">
+            <p className="font-display text-lg font-bold leading-snug">
               “<Highlighted sentence={item.sentence} target={item.target} replacement={best} />”
             </p>
             <p className="text-sm">

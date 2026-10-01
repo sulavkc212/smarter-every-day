@@ -16,22 +16,22 @@ export function ReviewPage() {
   return (
     <div className="flex flex-col gap-6">
       <section className="pt-1">
-        <h1 className="font-display text-3xl font-bold">Review</h1>
+        <h1 className="font-display text-3xl font-black">Review</h1>
         <p className="mt-1 text-muted">Missed items come back here until they stick. Items you get right return less often.</p>
       </section>
 
       {due > 0 ? (
         <Link
           to="/review/play"
-          className="flex items-center justify-between gap-4 rounded-3xl bg-lake p-5 text-on-lake transition hover:opacity-95"
+          className="press flex items-center justify-between gap-4 rounded-3xl border-lake-edge bg-lake p-5 text-on-lake"
         >
           <span>
-            <span className="block text-xs font-bold uppercase tracking-widest opacity-75">Due now</span>
-            <span className="mt-1 block font-display text-2xl font-bold">
+            <span className="block text-[13px] font-extrabold uppercase tracking-wider opacity-90">Due now</span>
+            <span className="mt-1 block font-display text-2xl font-black">
               {due} {due === 1 ? 'item' : 'items'} to revisit
             </span>
           </span>
-          <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-marigold text-lake">
+          <span className="flex size-12 shrink-0 items-center justify-center rounded-full border-b-4 border-[#d98c00] bg-[#ffb21e] text-[#14142b]">
             <PlayIcon className="size-5 translate-x-0.5" />
           </span>
         </Link>
@@ -43,7 +43,7 @@ export function ReviewPage() {
 
       <section className="flex flex-col gap-3">
         <div>
-          <h2 className="font-display text-xl font-bold">Your saved lines</h2>
+          <h2 className="font-display text-xl font-black">Your saved lines</h2>
           <p className="text-sm text-muted">Tap “Save this line” after any answer to collect lines you want to use.</p>
         </div>
         {saved.length === 0 ? (
@@ -53,7 +53,7 @@ export function ReviewPage() {
             {saved.map((l) => (
               <li key={l.text} className="flex items-start gap-3 rounded-2xl bg-surface p-4">
                 <span className="min-w-0 flex-1">
-                  <span className="block font-display text-lg leading-snug">“{l.text}”</span>
+                  <span className="block font-display text-lg font-bold leading-snug">“{l.text}”</span>
                   {l.pattern && (
                     <span className="mt-2 block">
                       <PatternChip pattern={l.pattern} />

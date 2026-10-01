@@ -28,28 +28,28 @@ export function DeckPage() {
         <BackIcon className="size-4" /> {section.title}
       </Link>
       <section className="flex items-start gap-4">
-        <MasteryRing value={m} icon={deck.icon} />
+        <MasteryRing value={m} icon={deck.icon} color={section.color} />
         <div className="min-w-0">
-          <h1 className="font-display text-3xl font-bold leading-tight">{deck.title}</h1>
-          <p className="mt-1 text-sm font-semibold text-marigold-ink">{Math.round(m * 100)}% mastered</p>
+          <h1 className="font-display text-3xl font-black leading-tight">{deck.title}</h1>
+          <p className="mt-1 text-sm font-extrabold" style={{ color: section.color }}>{Math.round(m * 100)}% mastered</p>
         </div>
       </section>
       <p className="-mt-2 leading-relaxed text-muted">{deck.description}</p>
       {next && m < UNLOCK_THRESHOLD && (
-        <p className="-mt-3 text-xs text-muted">
+        <p className="-mt-3 text-sm font-bold text-muted">
           Reach {Math.round(UNLOCK_THRESHOLD * 100)}% to unlock {next.title}.
         </p>
       )}
 
       <Link
         to={`/play/${deck.id}`}
-        className="flex min-h-14 items-center justify-center rounded-2xl bg-lake text-lg font-bold text-on-lake transition hover:opacity-90"
+        className="flex min-h-14 items-center justify-center press rounded-2xl border-lake-edge bg-lake text-lg font-extrabold text-on-lake"
       >
         Start a mixed session
       </Link>
 
       <section className="flex flex-col gap-3">
-        <h2 className="font-display text-xl font-bold">Or drill one skill</h2>
+        <h2 className="font-display text-xl font-black">Or drill one skill</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           {kinds.map((kind) => {
             const items = deckItems(deck, kind)
@@ -58,11 +58,11 @@ export function DeckPage() {
               <Link
                 key={kind}
                 to={`/play/${deck.id}?drill=${kind}`}
-                className="flex flex-col gap-2 rounded-2xl border border-line bg-surface p-4 transition hover:border-lake"
+                className="flex flex-col gap-2 press rounded-2xl border-2 border-line border-b-edge bg-surface p-4 hover:border-lake"
               >
-                <span className="font-bold">{drillInfo[kind].name}</span>
+                <span className="text-lg font-extrabold">{drillInfo[kind].name}</span>
                 <span className="text-sm leading-snug text-muted">{drillInfo[kind].blurb}</span>
-                <span className="mt-auto pt-1 text-xs font-semibold text-marigold-ink">
+                <span className="mt-auto pt-1 text-sm font-extrabold" style={{ color: section.color }}>
                   {done}/{items.length} mastered
                 </span>
               </Link>

@@ -7,11 +7,12 @@ import { useHotkeys } from '../lib/useHotkeys'
 import { useProgress, type SavedLine } from '../store/progress'
 import { StarIcon } from '../components/icons'
 
+// Solid, fixed colours so the result reads instantly in light and dark mode (all ≥ 4.5:1).
 const headline: Record<Result | 'timeout', { text: string; cls: string }> = {
-  best: { text: 'Nailed it', cls: 'bg-good-soft text-good' },
-  okay: { text: 'Close — not quite', cls: 'bg-meh-soft text-meh' },
-  miss: { text: 'Not that one', cls: 'bg-bad-soft text-bad' },
-  timeout: { text: "Time's up", cls: 'bg-bad-soft text-bad' },
+  best: { text: 'Nailed it!', cls: 'bg-[#15803d] text-white' },
+  okay: { text: 'Close — not quite', cls: 'bg-[#ffb21e] text-[#14142b]' },
+  miss: { text: 'Not that one', cls: 'bg-[#dc2626] text-white' },
+  timeout: { text: "Time's up!", cls: 'bg-[#dc2626] text-white' },
 }
 
 export function Feedback({
@@ -46,20 +47,20 @@ export function Feedback({
       transition={{ duration: 0.25 }}
       className="flex flex-col gap-4"
     >
-      <div className={`flex items-center justify-between rounded-2xl px-4 py-3 font-bold ${h.cls}`}>
-        <span className="text-lg">{h.text}</span>
-        {xp > 0 && <span className="text-sm">+{xp} XP</span>}
+      <div className={`flex items-center justify-between rounded-2xl px-5 py-4 ${h.cls}`}>
+        <span className="text-xl font-black">{h.text}</span>
+        {xp > 0 && <span className="rounded-full bg-black/15 px-3 py-1 text-sm font-extrabold">+{xp} XP</span>}
       </div>
       {pattern && (
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-sm text-muted">Pattern</span>
+          <span className="text-sm font-bold text-muted">Pattern</span>
           <PatternChip pattern={pattern} />
         </div>
       )}
-      {why && <p className="text-[15px] leading-relaxed text-ink">{why}</p>}
+      {why && <p className="text-base leading-relaxed text-ink">{why}</p>}
       {children}
       {save && <SaveLineButton line={save} />}
-      <Button autoFocus onClick={onNext} className="w-full">
+      <Button autoFocus variant={result === 'best' && !timedOut ? 'success' : 'primary'} onClick={onNext} className="w-full">
         Continue
       </Button>
     </motion.section>
@@ -74,13 +75,13 @@ export function SaveLineButton({ line }: { line: SavedLine }) {
       type="button"
       onClick={() => toggle(line)}
       aria-pressed={saved}
-      className={`flex items-start gap-3 rounded-2xl border p-3 text-left text-sm transition ${
-        saved ? 'border-marigold bg-meh-soft' : 'border-line bg-surface hover:border-marigold'
+      className={`press flex items-start gap-3 rounded-2xl border-2 p-3 text-left text-sm ${
+        saved ? 'border-marigold border-b-marigold-edge bg-meh-soft' : 'border-line border-b-edge bg-surface hover:border-marigold'
       }`}
     >
-      <StarIcon className={`mt-0.5 size-5 shrink-0 ${saved ? 'text-marigold' : 'text-muted'}`} />
+      <StarIcon className={`mt-0.5 size-6 shrink-0 ${saved ? 'text-marigold' : 'text-muted'}`} />
       <span>
-        <span className="block font-semibold">{saved ? 'Saved to your lines' : 'Save this line'}</span>
+        <span className="block font-extrabold">{saved ? 'Saved to your lines' : 'Save this line'}</span>
         <span className="block text-muted">“{line.text}”</span>
       </span>
     </button>

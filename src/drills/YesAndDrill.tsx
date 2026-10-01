@@ -122,7 +122,7 @@ export function YesAndDrill({ item, onResult, onNext }: DrillProps<YesAndItem>) 
           role="group"
           aria-label="Response card"
         >
-          <p className="font-display text-xl leading-snug">“{card.text}”</p>
+          <p className="font-display text-xl font-extrabold leading-snug">“{card.text}”</p>
           <motion.span
             style={{ opacity: yesOpacity }}
             className="absolute left-4 top-4 -rotate-12 rounded-lg border-2 border-good px-2 py-0.5 text-sm font-black uppercase text-good"
@@ -163,9 +163,9 @@ export function YesAndDrill({ item, onResult, onNext }: DrillProps<YesAndItem>) 
 
 function Prompt({ item }: { item: YesAndItem }) {
   return (
-    <div className="rounded-3xl bg-lake p-5 text-on-lake">
-      <p className="text-xs font-bold uppercase tracking-widest opacity-75">{item.context ?? 'They say'}</p>
-      <p className="mt-2 font-display text-xl leading-snug">“{item.prompt}”</p>
+    <div className="rounded-3xl border-b-4 border-[#3d1fa3] bg-[#5b2ee6] p-5 text-white">
+      <p className="text-[13px] font-extrabold uppercase tracking-wider opacity-90">{item.context ?? 'They say'}</p>
+      <p className="mt-2 font-display text-xl font-extrabold leading-snug">“{item.prompt}”</p>
     </div>
   )
 }

@@ -84,7 +84,7 @@ export function Session({
           {index + 1}/{items.length}
         </span>
       </div>
-      <p className="text-xs font-bold uppercase tracking-widest text-marigold-ink">
+      <p className="text-[13px] font-extrabold uppercase tracking-wider text-marigold-ink">
         {drillInfo[entry!.kind].name} <span className="text-muted">· {title}</span>
       </p>
       <Drill key={`${index}-${entry!.item.id}`} entry={entry!} onResult={onResult} onNext={onNext} />
@@ -123,9 +123,9 @@ function Results({ played, onAgain, exitTo }: { played: Played[]; onAgain: () =>
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="rounded-3xl bg-lake p-6 text-center text-on-lake">
-        <p className="text-xs font-bold uppercase tracking-widest opacity-75">Session complete</p>
-        <p className="mt-2 font-display text-5xl font-bold">
+      <div className="rounded-3xl border-b-4 border-[#3d1fa3] bg-[#5b2ee6] p-6 text-center text-white">
+        <p className="text-[13px] font-extrabold uppercase tracking-wider opacity-90">Session complete</p>
+        <p className="mt-2 font-display text-5xl font-black">
           {best}/{played.length}
         </p>
         <p className="mt-1 opacity-80">best answers · +{xp} XP</p>
@@ -139,7 +139,7 @@ function Results({ played, onAgain, exitTo }: { played: Played[]; onAgain: () =>
 
       {patterns.length > 0 && (
         <section>
-          <h2 className="mb-3 font-display text-lg font-bold">Patterns you practised</h2>
+          <h2 className="mb-3 font-display text-lg font-black">Patterns you practised</h2>
           <div className="flex flex-wrap gap-2">
             {patterns.map((p) => (
               <PatternChip key={p} pattern={p} />
@@ -149,7 +149,7 @@ function Results({ played, onAgain, exitTo }: { played: Played[]; onAgain: () =>
       )}
 
       <section>
-        <h2 className="mb-3 font-display text-lg font-bold">Round-up</h2>
+        <h2 className="mb-3 font-display text-lg font-black">Round-up</h2>
         <ul className="flex flex-col divide-y divide-line rounded-2xl bg-surface">
           {played.map((p, i) => (
             <li key={i} className="flex items-center justify-between gap-3 px-4 py-3 text-sm">
@@ -166,7 +166,7 @@ function Results({ played, onAgain, exitTo }: { played: Played[]; onAgain: () =>
       <div className="grid grid-cols-2 gap-3">
         <Link
           to={exitTo}
-          className="inline-flex min-h-12 items-center justify-center rounded-2xl border border-line bg-surface px-5 font-semibold hover:bg-sunken"
+          className="press inline-flex min-h-13 items-center justify-center rounded-2xl border-2 border-line border-b-edge bg-surface px-5 text-[17px] font-extrabold hover:bg-sunken"
         >
           Done
         </Link>

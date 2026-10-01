@@ -32,29 +32,44 @@ export function DeckIcon({ icon, className = 'size-6' }: { icon: string; classNa
 }
 
 /** Circular mastery indicator with the deck icon in the middle. */
-export function MasteryRing({ value, icon, locked = false }: { value: number; icon: string; locked?: boolean }) {
+export function MasteryRing({
+  value,
+  icon,
+  color = 'var(--lake)',
+  locked = false,
+}: {
+  value: number
+  icon: string
+  /** Section colour (a CSS colour or variable). */
+  color?: string
+  locked?: boolean
+}) {
   const r = 22
   const c = 2 * Math.PI * r
   const pct = Math.min(Math.max(value, 0), 1)
+  const tint = locked ? 'var(--sunken)' : color
   return (
     <span className="relative inline-flex size-14 shrink-0 items-center justify-center">
       <svg viewBox="0 0 52 52" className="absolute inset-0 size-14 -rotate-90" aria-hidden="true">
-        <circle cx="26" cy="26" r={r} fill="none" stroke="var(--sunken)" strokeWidth="4" />
-        {!locked && (
+        <circle cx="26" cy="26" r="17" fill={tint} fillOpacity={locked ? 1 : 0.16} />
+        <circle cx="26" cy="26" r={r} fill="none" stroke="var(--sunken)" strokeWidth="5" />
+        {!locked && pct > 0 && (
           <circle
             cx="26"
             cy="26"
             r={r}
             fill="none"
-            stroke="var(--marigold)"
-            strokeWidth="4"
+            stroke={color}
+            strokeWidth="5"
             strokeLinecap="round"
             strokeDasharray={c}
             strokeDashoffset={c * (1 - pct)}
           />
         )}
       </svg>
-      <DeckIcon icon={icon} className={`size-6 ${locked ? 'text-muted' : 'text-lake'}`} />
+      <span className="relative" style={{ color: locked ? 'var(--muted)' : color }}>
+        <DeckIcon icon={icon} className="size-6" />
+      </span>
     </span>
   )
 }

@@ -19,8 +19,8 @@ export function Layout() {
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-4">
       <header className="flex items-center justify-between gap-3 py-4">
-        <Link to="/" className="font-display text-xl font-bold tracking-tight text-ink">
-          Smarter <span className="text-marigold-ink">Everyday</span>
+        <Link to="/" className="font-display text-xl font-black tracking-tight text-ink">
+          Smarter <span className="text-lake">Everyday</span>
         </Link>
         <nav aria-label="Main" className="hidden items-center gap-1 sm:flex">
           {!playing &&
@@ -30,7 +30,7 @@ export function Layout() {
                 to={to}
                 end={end}
                 className={({ isActive }) =>
-                  `rounded-full px-3 py-1.5 text-sm font-semibold transition ${
+                  `rounded-full px-3 py-1.5 text-sm font-extrabold transition ${
                     isActive ? 'bg-lake text-on-lake' : 'text-muted hover:bg-sunken hover:text-ink'
                   }`
                 }
@@ -39,13 +39,13 @@ export function Layout() {
               </NavLink>
             ))}
         </nav>
-        <div className="flex items-center gap-2 text-sm font-bold">
-          <span className="flex items-center gap-1 rounded-full bg-surface px-3 py-1.5 text-marigold-ink" title="Day streak">
-            <FlameIcon className="size-4" />
+        <div className="flex items-center gap-2 text-base font-black">
+          <span className="flex items-center gap-1 rounded-full border-2 border-line bg-surface px-3 py-1 text-[var(--sec-everyday)]" title="Day streak">
+            <FlameIcon className="size-5" />
             <span aria-label={`${streak} day streak`}>{streak}</span>
           </span>
-          <span className="flex items-center gap-1 rounded-full bg-surface px-3 py-1.5 text-lake" title="Experience points">
-            <StarIcon className="size-4" />
+          <span className="flex items-center gap-1 rounded-full border-2 border-line bg-surface px-3 py-1 text-lake" title="Experience points">
+            <StarIcon className="size-5" />
             <span aria-label={`${xp} XP`}>{xp}</span>
           </span>
         </div>
@@ -59,7 +59,7 @@ export function Layout() {
       {!playing && (
         <nav
           aria-label="Tabs"
-          className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-surface/95 backdrop-blur sm:hidden"
+          className="fixed inset-x-0 bottom-0 z-20 border-t-2 border-line bg-surface sm:hidden"
           style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
         >
           <ul className="mx-auto grid max-w-xl grid-cols-4">
@@ -69,14 +69,14 @@ export function Layout() {
                   to={to}
                   end={end}
                   className={({ isActive }) =>
-                    `flex min-h-16 flex-col items-center justify-center gap-1 text-xs font-semibold transition ${
+                    `flex min-h-16 flex-col items-center justify-center gap-0.5 text-[13px] font-extrabold transition ${
                       isActive ? 'text-lake' : 'text-muted'
                     }`
                   }
                 >
                   {({ isActive }) => (
                     <>
-                      <span className={`rounded-full px-4 py-1 ${isActive ? 'bg-lake-soft' : ''}`}>
+                      <span className={`rounded-2xl px-5 py-1 ${isActive ? 'bg-lake text-on-lake' : ''}`}>
                         <Icon className="size-6" />
                       </span>
                       {label}

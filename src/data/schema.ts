@@ -51,10 +51,15 @@ export const drillInfo: Record<DrillKind, { name: string; short: string; blurb: 
   },
 }
 
-export const sections: { id: SectionId; title: string; blurb: string }[] = [
-  { id: 'everyday', title: 'Everyday Talk', blurb: 'Cafes, streets, buses and the questions every traveller asks.' },
-  { id: 'craft', title: 'Conversation Craft', blurb: 'Start a chat, keep it flowing, and be the person they remember.' },
-  { id: 'charm', title: 'Charm & Wit', blurb: 'Teasing, banter and flirting, warmly and at the right moment.' },
-  { id: 'culture', title: 'Culture Talk', blurb: 'Music, the world, and what everyone is talking about this season.' },
-  { id: 'leadership', title: 'Leadership', blurb: 'Lead a group, give clear instructions, handle problems gracefully.' },
+/** `color` is a CSS variable from index.css, so each section keeps its colour in light and dark mode. */
+export const sections: { id: SectionId; title: string; blurb: string; color: string }[] = [
+  { id: 'everyday', title: 'Everyday Talk', blurb: 'Cafes, streets, buses and the questions every traveller asks.', color: 'var(--sec-everyday)' },
+  { id: 'craft', title: 'Conversation Craft', blurb: 'Start a chat, keep it flowing, and be the person they remember.', color: 'var(--sec-craft)' },
+  { id: 'charm', title: 'Charm & Wit', blurb: 'Teasing, banter and flirting, warmly and at the right moment.', color: 'var(--sec-charm)' },
+  { id: 'culture', title: 'Culture Talk', blurb: 'Music, the world, and what everyone is talking about this season.', color: 'var(--sec-culture)' },
+  { id: 'leadership', title: 'Leadership', blurb: 'Lead a group, give clear instructions, handle problems gracefully.', color: 'var(--sec-leadership)' },
 ]
+
+export function sectionColor(id: SectionId): string {
+  return sections.find((s) => s.id === id)?.color ?? 'var(--lake)'
+}

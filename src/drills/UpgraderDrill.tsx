@@ -88,9 +88,9 @@ export function UpgraderDrill({ item, onResult, onNext }: DrillProps<UpgraderIte
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="rounded-3xl bg-lake p-5 text-on-lake">
-        <p className="text-xs font-bold uppercase tracking-widest opacity-75">{item.context ?? 'Clunky thought'}</p>
-        <p className="mt-2 font-display text-xl leading-snug opacity-90">“{item.clunky}”</p>
+      <div className="rounded-3xl border-b-4 border-[#3d1fa3] bg-[#5b2ee6] p-5 text-white">
+        <p className="text-[13px] font-extrabold uppercase tracking-wider opacity-90">{item.context ?? 'Clunky thought'}</p>
+        <p className="mt-2 font-display text-xl font-extrabold leading-snug opacity-90">“{item.clunky}”</p>
       </div>
 
       <section aria-label="Your sentence">
@@ -129,7 +129,7 @@ export function UpgraderDrill({ item, onResult, onNext }: DrillProps<UpgraderIte
                   key={t.id}
                   type="button"
                   onClick={() => place(t)}
-                  className="rounded-xl border border-line bg-surface px-3 py-2 text-[15px] shadow-sm transition hover:border-lake active:scale-95"
+                  className="press rounded-xl border-2 border-line border-b-edge bg-surface px-3 py-2 text-base font-bold hover:border-lake"
                 >
                   {t.text}
                 </button>
@@ -163,7 +163,7 @@ export function UpgraderDrill({ item, onResult, onNext }: DrillProps<UpgraderIte
                 </p>
               )}
               <p className="mt-1 text-muted">Model answer</p>
-              <p className="font-display text-lg leading-snug">{item.answers[0].join(' ')}</p>
+              <p className="font-display text-lg font-bold leading-snug">{item.answers[0].join(' ')}</p>
             </div>
           )}
         </Feedback>
@@ -184,8 +184,8 @@ function SortableTile({ tile, locked, onTap }: { tile: Tile; locked: boolean; on
       onClick={onTap}
       disabled={locked}
       style={{ transform: CSS.Transform.toString(transform), transition }}
-      className={`touch-none rounded-xl px-3 py-2 text-[15px] font-medium shadow-sm ${
-        locked && tile.filler ? 'bg-bad text-surface line-through' : 'bg-lake text-on-lake'
+      className={`touch-none rounded-xl border-b-4 px-3 py-2 text-base font-bold ${
+        locked && tile.filler ? 'border-[#991b1b] bg-[#dc2626] text-white line-through' : 'border-lake-edge bg-lake text-on-lake'
       } ${isDragging ? 'z-10 opacity-80 shadow-lg' : ''}`}
       {...attributes}
       {...listeners}

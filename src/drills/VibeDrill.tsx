@@ -64,9 +64,9 @@ export function VibeDrill({ item, onResult, onNext }: DrillProps<VibeItem>) {
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="rounded-3xl bg-lake p-5 text-on-lake">
-        <p className="text-xs font-bold uppercase tracking-widest opacity-75">{item.setting}</p>
-        <p className="mt-2 font-display text-xl leading-snug">{item.scenario}</p>
+      <div className="rounded-3xl border-b-4 border-[#3d1fa3] bg-[#5b2ee6] p-5 text-white">
+        <p className="text-[13px] font-extrabold uppercase tracking-wider opacity-90">{item.setting}</p>
+        <p className="mt-2 font-display text-xl font-extrabold leading-snug">{item.scenario}</p>
       </div>
 
       <div className="h-2.5 overflow-hidden rounded-full bg-sunken" aria-hidden="true">
@@ -99,7 +99,7 @@ export function VibeDrill({ item, onResult, onNext }: DrillProps<VibeItem>) {
                   type="button"
                   disabled={done}
                   onClick={() => choose(i)}
-                  className={`flex w-full items-start gap-3 rounded-2xl border-2 p-4 text-left transition ${ring}`}
+                  className={`flex w-full items-start gap-3 press rounded-2xl border-2 p-4 text-left ${ring}`}
                 >
                   <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-sunken text-xs font-bold text-muted">
                     {i + 1}

@@ -37,8 +37,8 @@ export function DropInDrill({ item, onResult, onNext }: DrillProps<DropInItem>) 
         className="flex flex-col gap-5"
       >
         <div className="rounded-3xl border-2 border-marigold bg-surface p-6">
-          <p className="text-xs font-bold uppercase tracking-widest text-marigold-ink">Fact card</p>
-          <p className="mt-3 font-display text-2xl leading-snug">{item.fact}</p>
+          <p className="text-[13px] font-extrabold uppercase tracking-wider text-marigold-ink">Fact card</p>
+          <p className="mt-3 font-display text-2xl font-extrabold leading-snug">{item.fact}</p>
           <p className="mt-4 text-xs text-muted">Source: {item.source}</p>
         </div>
         <p className="text-center text-sm text-muted">Remember it. Next, you'll drop it into a conversation.</p>
@@ -52,9 +52,9 @@ export function DropInDrill({ item, onResult, onNext }: DrillProps<DropInItem>) 
   const done = phase === 'done'
   return (
     <div className="flex flex-col gap-5">
-      <div className="rounded-3xl bg-lake p-5 text-on-lake">
-        <p className="text-xs font-bold uppercase tracking-widest opacity-75">The moment</p>
-        <p className="mt-2 font-display text-xl leading-snug">{item.prompt}</p>
+      <div className="rounded-3xl border-b-4 border-[#3d1fa3] bg-[#5b2ee6] p-5 text-white">
+        <p className="text-[13px] font-extrabold uppercase tracking-wider opacity-90">The moment</p>
+        <p className="mt-2 font-display text-xl font-extrabold leading-snug">{item.prompt}</p>
       </div>
       <p className="text-sm text-muted">Which line uses the fact like a person, not a textbook?</p>
       <ol className="flex flex-col gap-3">
@@ -73,7 +73,7 @@ export function DropInDrill({ item, onResult, onNext }: DrillProps<DropInItem>) 
                 type="button"
                 disabled={done}
                 onClick={() => choose(i)}
-                className={`flex w-full items-start gap-3 rounded-2xl border-2 p-4 text-left transition ${ring}`}
+                className={`flex w-full items-start gap-3 press rounded-2xl border-2 p-4 text-left ${ring}`}
               >
                 <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-sunken text-xs font-bold text-muted">
                   {i + 1}

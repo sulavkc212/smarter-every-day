@@ -1,10 +1,11 @@
 import type { ButtonHTMLAttributes } from 'react'
 
-type Variant = 'primary' | 'secondary' | 'ghost'
+type Variant = 'primary' | 'success' | 'secondary' | 'ghost'
 
 const styles: Record<Variant, string> = {
-  primary: 'bg-lake text-on-lake hover:opacity-90',
-  secondary: 'bg-surface text-ink border border-line hover:bg-sunken',
+  primary: 'press bg-lake text-on-lake border-lake-edge hover:brightness-105',
+  success: 'press bg-good-fill text-white border-good-edge hover:brightness-105',
+  secondary: 'press bg-surface text-ink border-2 border-line border-b-edge hover:bg-sunken',
   ghost: 'text-muted hover:text-ink hover:bg-sunken',
 }
 
@@ -16,7 +17,7 @@ export function Button({
   return (
     <button
       type="button"
-      className={`inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl px-5 font-semibold transition disabled:cursor-not-allowed disabled:opacity-40 ${styles[variant]} ${className}`}
+      className={`inline-flex min-h-13 items-center justify-center gap-2 rounded-2xl px-5 text-[17px] font-extrabold tracking-wide disabled:cursor-not-allowed disabled:opacity-40 ${styles[variant]} ${className}`}
       {...props}
     />
   )

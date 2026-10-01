@@ -1,51 +1,104 @@
 @import 'tailwindcss';
 
 /*
- * Palette: lake teal, marigold and paper — Pokhara at golden hour.
+ * Bright & playful: white cards, a bold violet, sun yellow, and one colour per section.
  * Raw values live on :root so dark mode can swap them; @theme maps them to utilities.
+ * Token names are historical: "lake" is the primary violet, "marigold" is sun yellow.
+ * Text tokens are checked for ≥ 4.5:1 contrast by src/lib/contrast.test.ts.
  */
 :root {
-  --paper: #faf6ef;
-  --surface: #fffdf9;
-  --sunken: #f1ebe0;
-  --ink: #1b2a30;
-  --muted: #5a6a70;
-  --line: #e4dccd;
-  --lake: #12303a;
-  --lake-soft: #d9e9ec;
-  --on-lake: #faf6ef;
-  --marigold: #f2a93b;
-  --marigold-ink: #8a4d00;
-  --good: #23784a;
-  --good-soft: #dff2e6;
-  --bad: #b73a31;
-  --bad-soft: #f9e0dc;
-  --meh: #7d5b00;
-  --meh-soft: #f8ecc9;
+  --paper: #f6f7fb;
+  --surface: #ffffff;
+  --sunken: #eceef6;
+  --ink: #14142b;
+  --muted: #4a4f67;
+  --line: #dcdfea;
+  --edge: #c9cddd;
+  --lake: #5b2ee6;
+  --lake-edge: #4220b8;
+  --lake-soft: #ece6ff;
+  --on-lake: #ffffff;
+  --marigold: #ffb21e;
+  --marigold-edge: #d98c00;
+  --marigold-ink: #b45309;
+  --good: #15803d;
+  --good-soft: #dcfce7;
+  --good-fill: #15803d;
+  --good-edge: #0e5a2b;
+  --bad: #b91c1c;
+  --bad-soft: #fee2e2;
+  --meh: #92400e;
+  --meh-soft: #fef3c7;
+  --sec-everyday: #c2410c;
+  --sec-craft: #1d4ed8;
+  --sec-charm: #be185d;
+  --sec-culture: #0f766e;
+  --sec-leadership: #6d28d9;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #0e1a1f;
-    --surface: #152429;
-    --sunken: #1c2f35;
-    --ink: #ecf1ef;
-    --muted: #9fb1b5;
-    --line: #28404a;
-    --lake: #8fd0dc;
-    --lake-soft: #1d3a42;
-    --on-lake: #0e1a1f;
-    --marigold: #f2a93b;
-    --marigold-ink: #f7c679;
-    --good: #6fd39b;
-    --good-soft: #173a29;
-    --bad: #ff8f84;
-    --bad-soft: #43201d;
-    --meh: #f1cf6f;
-    --meh-soft: #3d3316;
+  :root:not([data-theme='light']) {
+    --paper: #0e0f1f;
+    --surface: #1a1b33;
+    --sunken: #25274a;
+    --ink: #f4f4ff;
+    --muted: #b9bbda;
+    --line: #34375f;
+    --edge: #0b0c1a;
+    --lake: #8d72ff;
+    --lake-edge: #5b3fd6;
+    --lake-soft: #221c48;
+    --on-lake: #0e0f1f;
+    --marigold: #ffc547;
+    --marigold-edge: #c99520;
+    --marigold-ink: #ffd27a;
+    --good: #4ade80;
+    --good-soft: #12351f;
+    --good-fill: #15803d;
+    --good-edge: #0e5a2b;
+    --bad: #f87171;
+    --bad-soft: #3f1919;
+    --meh: #fcd34d;
+    --meh-soft: #3b2f0c;
+    --sec-everyday: #fb923c;
+    --sec-craft: #60a5fa;
+    --sec-charm: #f472b6;
+    --sec-culture: #2dd4bf;
+    --sec-leadership: #a78bfa;
     color-scheme: dark;
   }
+}
+
+:root[data-theme='dark'] {
+  --paper: #0e0f1f;
+  --surface: #1a1b33;
+  --sunken: #25274a;
+  --ink: #f4f4ff;
+  --muted: #b9bbda;
+  --line: #34375f;
+  --edge: #0b0c1a;
+  --lake: #8d72ff;
+  --lake-edge: #5b3fd6;
+  --lake-soft: #221c48;
+  --on-lake: #0e0f1f;
+  --marigold: #ffc547;
+  --marigold-edge: #c99520;
+  --marigold-ink: #ffd27a;
+  --good: #4ade80;
+  --good-soft: #12351f;
+  --good-fill: #15803d;
+  --good-edge: #0e5a2b;
+  --bad: #f87171;
+  --bad-soft: #3f1919;
+  --meh: #fcd34d;
+  --meh-soft: #3b2f0c;
+  --sec-everyday: #fb923c;
+  --sec-craft: #60a5fa;
+  --sec-charm: #f472b6;
+  --sec-culture: #2dd4bf;
+  --sec-leadership: #a78bfa;
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -55,19 +108,25 @@
   --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-line: var(--line);
+  --color-edge: var(--edge);
   --color-lake: var(--lake);
+  --color-lake-edge: var(--lake-edge);
   --color-lake-soft: var(--lake-soft);
   --color-on-lake: var(--on-lake);
   --color-marigold: var(--marigold);
+  --color-marigold-edge: var(--marigold-edge);
   --color-marigold-ink: var(--marigold-ink);
   --color-good: var(--good);
   --color-good-soft: var(--good-soft);
+  --color-good-fill: var(--good-fill);
+  --color-good-edge: var(--good-edge);
   --color-bad: var(--bad);
   --color-bad-soft: var(--bad-soft);
   --color-meh: var(--meh);
   --color-meh-soft: var(--meh-soft);
-  --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-section: var(--section, var(--lake));
+  --font-display: 'Nunito', ui-rounded, 'SF Pro Rounded', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Nunito', ui-rounded, 'SF Pro Rounded', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 html {
@@ -81,11 +140,34 @@ body {
   min-height: 100dvh;
   background: var(--paper);
   font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
 }
 
 :focus-visible {
   outline: 3px solid var(--marigold);
   outline-offset: 2px;
+}
+
+/* Chunky "pressable" surfaces: a darker bottom edge that squashes on press. */
+.press {
+  border-bottom-width: 4px;
+  transition:
+    transform 80ms ease,
+    border-bottom-width 80ms ease,
+    background-color 150ms ease,
+    border-color 150ms ease;
+}
+.press:not(:disabled):active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
 }
 
 /* Countdown bar for Choose the Vibe. Duration is set inline per question. */

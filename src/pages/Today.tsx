@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
 import { decks, deckItems, getDeck } from '../data'
-import { sections } from '../data/schema'
+import { sectionColor, sections } from '../data/schema'
 import { mastery, nextUpDeck, reviewPool, unlockedDeckIds } from '../lib/session'
 import { lineOfDay } from '../lib/lineOfDay'
 import { today } from '../lib/dates'
@@ -39,7 +39,7 @@ export function Today() {
   return (
     <div className="flex flex-col gap-5">
       <section className="pt-1">
-        <h1 className="font-display text-3xl font-bold leading-tight">{hello}</h1>
+        <h1 className="font-display text-3xl font-black leading-tight">{hello}</h1>
         <p className="mt-1 text-muted">
           {streak > 0
             ? `Day ${streak} of your streak. Keep it going with ten quick ones.`
@@ -49,17 +49,17 @@ export function Today() {
 
       <Link
         to="/play/daily"
-        className="group flex items-center justify-between gap-4 rounded-3xl bg-lake p-5 text-on-lake transition hover:opacity-95"
+        className="press group flex items-center justify-between gap-4 rounded-3xl border-[#3d1fa3] bg-gradient-to-br from-[#5b2ee6] to-[#7c3aed] p-5 text-white"
       >
         <span>
-          <span className="block text-xs font-bold uppercase tracking-widest opacity-75">Daily 10</span>
-          <span className="mt-1 block font-display text-2xl font-bold">Start today's drills</span>
-          <span className="mt-1 block text-sm opacity-80">
+          <span className="block text-[13px] font-extrabold uppercase tracking-wider opacity-90">Daily 10</span>
+          <span className="mt-1 block font-display text-2xl font-black">Start today's drills</span>
+          <span className="mt-1 block text-sm font-bold opacity-90">
             {due > 0 ? `${due} review ${due === 1 ? 'item' : 'items'} first, then fresh ones` : 'A mix from all your open decks'}
           </span>
         </span>
-        <span className="flex size-14 shrink-0 items-center justify-center rounded-full bg-marigold text-lake transition group-hover:scale-105">
-          <PlayIcon className="size-6 translate-x-0.5" />
+        <span className="flex size-16 shrink-0 items-center justify-center rounded-full border-b-4 border-[#d98c00] bg-[#ffb21e] text-[#14142b] transition group-hover:scale-105">
+          <PlayIcon className="size-7 translate-x-0.5" />
         </span>
       </Link>
 
@@ -71,9 +71,9 @@ export function Today() {
       )}
 
       {line && (
-        <section className="rounded-3xl border-2 border-marigold bg-surface p-5">
-          <p className="text-xs font-bold uppercase tracking-widest text-marigold-ink">Line of the day</p>
-          <p className="mt-2 font-display text-xl leading-snug">“{line.text}”</p>
+        <section className="rounded-3xl border-2 border-b-4 border-marigold border-b-marigold-edge bg-surface p-5">
+          <p className="text-[13px] font-extrabold uppercase tracking-wider text-marigold-ink">Line of the day</p>
+          <p className="mt-2 font-display text-xl font-extrabold leading-snug">“{line.text}”</p>
           <div className="mt-3 flex flex-wrap items-center gap-2">
             <PatternChip pattern={line.pattern} />
           </div>
@@ -97,8 +97,8 @@ export function Today() {
 
       <section className="flex flex-col gap-3">
         <div className="flex items-baseline justify-between">
-          <h2 className="font-display text-xl font-bold">Sections</h2>
-          <Link to="/explore" className="text-sm font-semibold text-lake hover:underline">
+          <h2 className="font-display text-xl font-black">Sections</h2>
+          <Link to="/explore" className="text-sm font-extrabold text-lake hover:underline">
             See all decks
           </Link>
         </div>
@@ -111,10 +111,11 @@ export function Today() {
               <Link
                 key={s.id}
                 to={`/explore#${s.id}`}
-                className="flex flex-col gap-1 rounded-2xl border border-line bg-surface p-4 transition hover:border-lake"
+                className="press flex flex-col gap-1 overflow-hidden rounded-2xl border-2 border-line border-b-edge bg-surface p-4 pt-3 hover:border-lake"
               >
-                <span className="font-bold leading-tight">{s.title}</span>
-                <span className="text-xs text-muted">
+                <span aria-hidden="true" className="mb-1 h-1.5 w-10 rounded-full" style={{ background: s.color }} />
+                <span className="font-extrabold leading-tight">{s.title}</span>
+                <span className="text-sm font-bold text-muted">
                   {inSection.length} {inSection.length === 1 ? 'deck' : 'decks'} · {Math.round(m * 100)}%
                 </span>
               </Link>
@@ -133,12 +134,12 @@ function DeckShortcut({ label, deckId }: { label: string; deckId: string }) {
   return (
     <Link
       to={`/deck/${d.id}`}
-      className="flex items-center gap-3 rounded-2xl border border-line bg-surface p-3 transition hover:border-lake"
+      className="flex items-center gap-3 press rounded-2xl border-2 border-line border-b-edge bg-surface p-3 hover:border-lake"
     >
-      <MasteryRing value={m} icon={d.icon} />
+      <MasteryRing value={m} icon={d.icon} color={sectionColor(d.section)} />
       <span className="min-w-0 flex-1">
-        <span className="block text-xs font-bold uppercase tracking-widest text-muted">{label}</span>
-        <span className="block truncate font-bold">{d.title}</span>
+        <span className="block text-[13px] font-extrabold uppercase tracking-wider text-muted">{label}</span>
+        <span className="block truncate text-lg font-extrabold">{d.title}</span>
       </span>
       <ArrowIcon className="size-5 text-muted" />
     </Link>
