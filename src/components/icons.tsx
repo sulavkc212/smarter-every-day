@@ -58,3 +58,8 @@ export const RepeatIcon = (p: P) => <Line d="M17 2l3 3-3 3M20 5H9a5 5 0 0 0-5 5v
 export const UserIcon = (p: P) => <Line d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 9a7 7 0 0 1 14 0" {...p} />
 export const PlayIcon = (p: P) => <Line d="M7 4.5v15l12-7.5-12-7.5Z" {...p} />
 export const ArrowIcon = (p: P) => <Line d="M5 12h14m-6-6 6 6-6 6" {...p} />
+export const FlagIcon = ({ className = 'size-5', filled = false }: P & { filled?: boolean }) => (
+  <svg viewBox="0 0 24 24" fill={filled ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinejoin="round" aria-hidden="true" className={className}>
+    <path d="M5 21V4m0 0h12l-2.5 4.5L17 13H5" />
+  </svg>
+)

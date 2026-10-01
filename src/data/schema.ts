@@ -32,7 +32,7 @@ export const drillInfo: Record<DrillKind, { name: string; short: string; blurb: 
   yesAnd: {
     name: 'Yes, And…',
     short: 'Yes, And',
-    blurb: 'Swipe right on replies that keep the volley going, left on the killers.',
+    blurb: 'Swipe right if a reply keeps the chat going, left if it\'s a dead end.',
   },
   upgrader: {
     name: 'Sentence Upgrader',

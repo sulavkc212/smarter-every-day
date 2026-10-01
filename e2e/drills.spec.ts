@@ -159,6 +159,42 @@ test('a full session ends on results; progress and review survive a reload', asy
   await expect(page.getByText('Continue', { exact: true })).toBeVisible()
 })
 
+test('swipe buttons read "Dead end" and "Keeps it going"', async ({ page }) => {
+  await page.goto('/#/play/lakeside-cafe?drill=yesAnd')
+  await expect(page.getByRole('button', { name: 'Swipe left: dead end' })).toContainText('Dead end')
+  await expect(page.getByRole('button', { name: 'Swipe right: keeps it going' })).toContainText('Keeps it going')
+  await expect(page.getByText('Killer')).toHaveCount(0)
+})
+
+test('flagging a question as weird lists it on the Me tab', async ({ page }) => {
+  await page.goto('/#/play/lakeside-cafe?drill=wordPower')
+  const sentence = (await page.locator('p.font-display').first().innerText()).replace(/[“”]/g, '')
+  await page.getByRole('button', { name: /Flag this question/ }).click()
+  await expect(page.getByRole('button', { name: /Flagged as sounding weird/ })).toBeVisible()
+  await page.goto('/#/me')
+  await expect(page.getByRole('heading', { name: 'Flagged lines (1)' })).toBeVisible()
+  await expect(page.getByText(sentence)).toBeVisible()
+})
+
+test('"Another round" brings new questions, not the ones just played', async ({ page }) => {
+  // Lakeside Cafe has 20 Vibe questions, so two rounds of 10 should not overlap.
+  test.setTimeout(90_000)
+  await page.goto('/#/play/lakeside-cafe?drill=vibe')
+  const scenario = () => page.locator('p.font-display').first().innerText()
+  const firstRound: string[] = []
+  for (let i = 0; i < 10; i++) {
+    firstRound.push(await scenario())
+    await page.locator('ol button').first().click()
+    await page.getByRole('button', { name: 'Continue' }).click()
+  }
+  await page.getByRole('button', { name: 'Another round' }).click()
+  for (let i = 0; i < 3; i++) {
+    expect(firstRound).not.toContain(await scenario())
+    await page.locator('ol button').first().click()
+    await page.getByRole('button', { name: 'Continue' }).click()
+  }
+})
+
 test('locked decks cannot be opened by URL', async ({ page }) => {
   await page.goto('/#/play/street-travel')
   await expect(page.getByRole('heading', { name: 'Explore', level: 1 })).toBeVisible()

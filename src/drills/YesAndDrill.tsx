@@ -4,7 +4,6 @@ import type { YesAndItem } from '../data/schema'
 import type { DrillProps } from './types'
 import { Feedback } from './Feedback'
 import { Button } from '../components/Button'
-import { CheckIcon, XIcon } from '../components/icons'
 import { shuffle } from '../lib/random'
 import { gradeYesAnd, xpFor } from '../lib/scoring'
 import { useHotkeys } from '../lib/useHotkeys'
@@ -86,7 +85,7 @@ export function YesAndDrill({ item, onResult, onNext }: DrillProps<YesAndItem>) 
                 <p className="text-[15px]">“{c.text}”</p>
                 <p className="mt-2 text-xs font-bold uppercase tracking-wide">
                   <span className={c.keepsGoing ? 'text-good' : 'text-bad'}>
-                    {c.keepsGoing ? 'Yes, And' : 'Killer'}
+                    {c.keepsGoing ? 'Keeps it going' : 'Dead end'}
                   </span>
                   {!calls[i].correct && <span className="text-muted"> · you swiped {calls[i].keepsGoing ? 'right' : 'left'}</span>}
                 </p>
@@ -104,7 +103,7 @@ export function YesAndDrill({ item, onResult, onNext }: DrillProps<YesAndItem>) 
       <Prompt item={item} />
 
       <p className="text-center text-sm text-muted">
-        Card {index + 1} of {cards.length} · swipe right if it keeps the volley going
+        Card {index + 1} of {cards.length} · swipe right if it keeps the chat going
       </p>
 
       <div className="relative h-60 select-none">
@@ -127,13 +126,13 @@ export function YesAndDrill({ item, onResult, onNext }: DrillProps<YesAndItem>) 
             style={{ opacity: yesOpacity }}
             className="absolute left-4 top-4 -rotate-12 rounded-lg border-2 border-good px-2 py-0.5 text-sm font-black uppercase text-good"
           >
-            Yes, And
+            Keeps it going
           </motion.span>
           <motion.span
             style={{ opacity: noOpacity }}
             className="absolute right-4 top-4 rotate-12 rounded-lg border-2 border-bad px-2 py-0.5 text-sm font-black uppercase text-bad"
           >
-            Killer
+            Dead end
           </motion.span>
         </motion.div>
         {flash && (
@@ -143,20 +142,20 @@ export function YesAndDrill({ item, onResult, onNext }: DrillProps<YesAndItem>) 
               flash.correct ? 'bg-good text-surface' : 'bg-bad text-surface'
             }`}
           >
-            {flash.correct ? 'Right call' : card.keepsGoing ? 'That one kept it going' : 'That one killed it'}
+            {flash.correct ? 'Right call' : card.keepsGoing ? 'That one kept it going' : 'That one was a dead end'}
           </div>
         )}
       </div>
 
       <div className="mt-2 grid grid-cols-2 gap-3">
-        <Button variant="secondary" onClick={() => decide(false)} disabled={!!flash} aria-label="Swipe left: conversation killer" className="text-bad!">
-          <XIcon /> Killer
+        <Button variant="secondary" onClick={() => decide(false)} disabled={!!flash} aria-label="Swipe left: dead end" className="whitespace-nowrap px-3! text-bad!">
+          Dead end
         </Button>
-        <Button variant="secondary" onClick={() => decide(true)} disabled={!!flash} aria-label="Swipe right: yes, and" className="text-good!">
-          Yes, And <CheckIcon />
+        <Button variant="secondary" onClick={() => decide(true)} disabled={!!flash} aria-label="Swipe right: keeps it going" className="whitespace-nowrap px-3! text-good!">
+          Keeps it going
         </Button>
       </div>
-      <p className="hidden text-center text-xs text-muted sm:block">Keyboard: ← killer · → yes, and</p>
+      <p className="hidden text-center text-xs text-muted sm:block">Keyboard: ← dead end · → keeps it going</p>
     </div>
   )
 }

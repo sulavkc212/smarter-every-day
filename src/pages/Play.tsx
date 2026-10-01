@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { Navigate, useParams, useSearchParams } from 'react-router'
 import { decks, deckItems, getDeck } from '../data'
 import { drillKinds, type DrillKind } from '../data/schema'
-import { buildSession, dailyPool, reviewPool, unlockedDeckIds } from '../lib/session'
+import { buildSession, dailyPool, reviewPool, SESSION_SIZE, unlockedDeckIds } from '../lib/session'
 import { today } from '../lib/dates'
 import { useProgress } from '../store/progress'
 import { Session } from './Session'
@@ -27,7 +27,10 @@ export function Play() {
       key={`${deck.id}-${drill ?? 'mixed'}`}
       title={deck.title}
       exitTo={`/deck/${deck.id}`}
-      build={() => buildSession(deckItems(deck, drill), useProgress.getState().progress, today())}
+      build={() => {
+        const { progress, recentIds } = useProgress.getState()
+        return buildSession(deckItems(deck, drill), progress, today(), SESSION_SIZE, Math.random, new Set(recentIds))
+      }}
     />
   )
 }
@@ -38,8 +41,8 @@ export function Daily() {
       title="Daily 10"
       exitTo="/"
       build={() => {
-        const { progress } = useProgress.getState()
-        return buildSession(dailyPool(decks, progress), progress, today())
+        const { progress, recentIds } = useProgress.getState()
+        return buildSession(dailyPool(decks, progress), progress, today(), SESSION_SIZE, Math.random, new Set(recentIds))
       }}
     />
   )

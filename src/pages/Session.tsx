@@ -7,7 +7,7 @@ import { useProgress } from '../store/progress'
 import { ProgressBar } from '../components/ProgressBar'
 import { Button } from '../components/Button'
 import { GradeBadge, PatternChip } from '../components/GradeBadge'
-import { XIcon } from '../components/icons'
+import { FlagIcon, XIcon } from '../components/icons'
 import { VibeDrill } from '../drills/VibeDrill'
 import { YesAndDrill } from '../drills/YesAndDrill'
 import { UpgraderDrill } from '../drills/UpgraderDrill'
@@ -83,12 +83,34 @@ export function Session({
         <span className="shrink-0 text-sm font-semibold tabular-nums text-muted">
           {index + 1}/{items.length}
         </span>
+        <FlagButton entry={entry!} />
       </div>
       <p className="text-[13px] font-extrabold uppercase tracking-wider text-marigold-ink">
         {drillInfo[entry!.kind].name} <span className="text-muted">· {title}</span>
       </p>
       <Drill key={`${index}-${entry!.item.id}`} entry={entry!} onResult={onResult} onNext={onNext} />
     </div>
+  )
+}
+
+/** Lets the learner mark a question that sounds unnatural, so it can be rewritten later. */
+function FlagButton({ entry }: { entry: SessionItem }) {
+  const flagged = useProgress((s) => s.flagged.some((f) => f.id === entry.item.id))
+  const toggleFlag = useProgress((s) => s.toggleFlag)
+  return (
+    <button
+      type="button"
+      onClick={() => toggleFlag({ id: entry.item.id, text: summary(entry) })}
+      aria-pressed={flagged}
+      aria-label={flagged ? 'Flagged as sounding weird. Tap to unflag' : 'Sounds weird? Flag this question'}
+      title="Sounds weird"
+      className={`flex shrink-0 items-center gap-1 rounded-full border-2 px-2.5 py-1 text-xs font-extrabold ${
+        flagged ? 'border-bad bg-bad-soft text-bad' : 'border-line text-muted hover:text-ink'
+      }`}
+    >
+      <FlagIcon className="size-4" filled={flagged} />
+      {flagged ? 'Flagged' : 'Weird?'}
+    </button>
   )
 }
 

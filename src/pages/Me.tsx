@@ -65,6 +65,8 @@ export function Me() {
         </ul>
       </section>
 
+      <FlaggedLines />
+
       <section className="flex flex-col gap-3">
         <h2 className="font-display text-xl font-black">Settings</h2>
         <label htmlFor="relaxed" className="flex cursor-pointer items-start justify-between gap-4 rounded-2xl bg-surface p-4">
@@ -108,5 +110,77 @@ export function Me() {
         )}
       </section>
     </div>
+  )
+}
+
+/** Lines the learner flagged as sounding weird, ready to copy and send for rewriting. */
+function FlaggedLines() {
+  const flagged = useProgress((s) => s.flagged)
+  const toggleFlag = useProgress((s) => s.toggleFlag)
+  const clearFlags = useProgress((s) => s.clearFlags)
+  const [copied, setCopied] = useState<'idle' | 'done' | 'manual'>('idle')
+  const list = flagged.map((f) => `${f.id}: ${f.text}`).join('\n')
+
+  async function copy() {
+    try {
+      await navigator.clipboard.writeText(list)
+      setCopied('done')
+    } catch {
+      setCopied('manual')
+    }
+  }
+
+  return (
+    <section className="flex flex-col gap-3">
+      <div>
+        <h2 className="font-display text-xl font-black">Flagged lines ({flagged.length})</h2>
+        <p className="text-sm text-muted">
+          Tap “Weird?” during any question that doesn't sound like something you'd say. Copy the list and send it, and
+          those lines get rewritten.
+        </p>
+      </div>
+      {flagged.length === 0 ? (
+        <p className="rounded-2xl border-2 border-dashed border-line p-4 text-sm text-muted">Nothing flagged yet.</p>
+      ) : (
+        <>
+          <ul className="flex flex-col gap-2">
+            {flagged.map((f) => (
+              <li key={f.id} className="flex items-start gap-3 rounded-2xl border-2 border-line bg-surface p-3">
+                <span className="min-w-0 flex-1 text-sm">
+                  <span className="block font-bold text-ink">{f.text}</span>
+                  <span className="block text-xs text-muted">{f.id}</span>
+                </span>
+                <button
+                  type="button"
+                  onClick={() => toggleFlag(f)}
+                  className="shrink-0 rounded-full px-2 py-1 text-xs font-extrabold text-muted hover:bg-sunken hover:text-ink"
+                >
+                  Remove
+                </button>
+              </li>
+            ))}
+          </ul>
+          <div className="grid grid-cols-[1fr_auto] gap-3">
+            <Button onClick={copy}>{copied === 'done' ? 'Copied!' : 'Copy list'}</Button>
+            <Button variant="secondary" onClick={clearFlags}>
+              Clear
+            </Button>
+          </div>
+          {copied === 'manual' && (
+            <label htmlFor="flag-list" className="flex flex-col gap-1 text-sm text-muted">
+              Copying is blocked here. Press and hold to select this text instead:
+              <textarea
+                id="flag-list"
+                readOnly
+                value={list}
+                rows={Math.min(8, flagged.length + 1)}
+                onFocus={(e) => e.currentTarget.select()}
+                className="rounded-xl border-2 border-line bg-surface p-2 font-mono text-xs text-ink"
+              />
+            </label>
+          )}
+        </>
+      )}
+    </section>
   )
 }

@@ -5,6 +5,8 @@ import { daysBetween, today } from '../lib/dates'
 
 export const LINE_XP = 15
 const RECENT_VIBE = 10
+/** How many recently answered items normal rounds try to skip. */
+export const RECENT_ITEMS = 40
 
 interface State {
   progress: Record<string, ItemProgress>
@@ -19,6 +21,10 @@ interface State {
   saved: SavedLine[]
   /** Deck the learner last played, for "Continue". */
   lastDeckId: string | null
+  /** Recently answered item ids, newest last. New rounds avoid them. */
+  recentIds: string[]
+  /** Items the learner marked "Sounds weird", to send back for rewriting. */
+  flagged: FlaggedLine[]
 
   answer: (id: string, result: Result, xp: number, opts?: { vibe?: boolean }) => void
   completeSession: () => void
@@ -26,7 +32,14 @@ interface State {
   setRelaxedTimer: (on: boolean) => void
   toggleSaved: (line: SavedLine) => void
   setLastDeck: (id: string) => void
+  toggleFlag: (line: FlaggedLine) => void
+  clearFlags: () => void
   reset: () => void
+}
+
+export interface FlaggedLine {
+  id: string
+  text: string
 }
 
 export interface SavedLine {
@@ -43,6 +56,8 @@ const initial = {
   lineUsedOn: null,
   saved: [] as SavedLine[],
   lastDeckId: null as string | null,
+  recentIds: [] as string[],
+  flagged: [] as FlaggedLine[],
 }
 
 export const useProgress = create<State>()(
@@ -57,6 +72,7 @@ export const useProgress = create<State>()(
           recentVibe: opts?.vibe
             ? [...s.recentVibe, result === 'best'].slice(-RECENT_VIBE)
             : s.recentVibe,
+          recentIds: [...s.recentIds.filter((x) => x !== id), id].slice(-RECENT_ITEMS),
         })),
 
       completeSession: () =>
@@ -81,6 +97,15 @@ export const useProgress = create<State>()(
         ),
 
       setLastDeck: (id) => set({ lastDeckId: id }),
+
+      toggleFlag: (line) =>
+        set((s) =>
+          s.flagged.some((f) => f.id === line.id)
+            ? { flagged: s.flagged.filter((f) => f.id !== line.id) }
+            : { flagged: [...s.flagged, line] },
+        ),
+
+      clearFlags: () => set({ flagged: [] }),
 
       reset: () => set(initial),
     }),

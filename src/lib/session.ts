@@ -7,9 +7,53 @@ export const SESSION_SIZE = 10
 
 type ProgressMap = Record<string, ItemProgress | undefined>
 
+/** Group items by drill kind, keeping their order within each kind. */
+function byKind(items: SessionItem[]): Map<string, SessionItem[]> {
+  const groups = new Map<string, SessionItem[]>()
+  for (const s of items) groups.set(s.kind, [...(groups.get(s.kind) ?? []), s])
+  return groups
+}
+
+/**
+ * Take up to `n` items, one kind at a time in turn, so a round spreads across all drills.
+ * `items` arrive in priority order; the kind holding the most urgent item goes first.
+ */
+function roundRobin(items: SessionItem[], n: number): SessionItem[] {
+  const queues = [...byKind(items).values()]
+  const out: SessionItem[] = []
+  while (out.length < n && queues.some((q) => q.length > 0)) {
+    for (const q of queues) {
+      if (out.length >= n) break
+      const next = q.shift()
+      if (next) out.push(next)
+    }
+  }
+  return out
+}
+
+/** Order a round so the same drill kind never comes twice in a row when it can be avoided. */
+export function interleave(items: SessionItem[], rng: Rng = Math.random): SessionItem[] {
+  const groups = [...byKind(shuffle(items, rng)).values()]
+  const out: SessionItem[] = []
+  while (groups.some((g) => g.length > 0)) {
+    const last = out.at(-1)?.kind
+    const candidates = groups.filter((g) => g.length > 0 && g[0].kind !== last)
+    const pool = candidates.length > 0 ? candidates : groups.filter((g) => g.length > 0)
+    // Prefer the kind with the most left, so we don't strand a pile of one kind at the end.
+    const most = Math.max(...pool.map((g) => g.length))
+    const tied = pool.filter((g) => g.length === most)
+    out.push(tied[Math.floor(rng() * tied.length)].shift()!)
+  }
+  return out
+}
+
 /**
  * Pick a session from a pool: items due for review first, then unseen items,
- * then the weakest of the rest. The picked set is shuffled so drills mix.
+ * then the weakest of the rest. Picks are spread across drill kinds and
+ * interleaved so the same drill never comes twice in a row.
+ *
+ * `avoid` holds recently played item ids. They are only used when the pool
+ * can't fill the round without them, so "Another round" brings new questions.
  */
 export function buildSession(
   pool: SessionItem[],
@@ -17,6 +61,7 @@ export function buildSession(
   on: string,
   size = SESSION_SIZE,
   rng: Rng = Math.random,
+  avoid: ReadonlySet<string> = new Set(),
 ): SessionItem[] {
   const shuffled = shuffle(pool, rng)
   const p = (s: SessionItem) => progress[s.item.id]
@@ -25,7 +70,15 @@ export function buildSession(
   const rest = shuffled
     .filter((s) => p(s) && p(s)!.box > 0 && !isDue(p(s), on))
     .sort((a, b) => p(a)!.box - p(b)!.box || p(a)!.lastSeen.localeCompare(p(b)!.lastSeen))
-  return shuffle([...due, ...unseen, ...rest].slice(0, size), rng)
+  const ranked = [...due, ...unseen, ...rest]
+
+  const fresh = ranked.filter((s) => !avoid.has(s.item.id))
+  const picked = roundRobin(fresh, size)
+  if (picked.length < size) {
+    const recent = ranked.filter((s) => avoid.has(s.item.id))
+    picked.push(...roundRobin(recent, size - picked.length))
+  }
+  return interleave(picked, rng)
 }
 
 /** Items due for review, across the given decks. */

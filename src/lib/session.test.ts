@@ -24,6 +24,39 @@ describe('session builder', () => {
     expect(buildSession(pool, progress, day, 3, seeded(2)).map((s) => s.item.id)).toContain(missed)
   })
 
+  it('never puts the same drill kind twice in a row in a mixed round', () => {
+    for (let seed = 1; seed <= 25; seed++) {
+      const s = buildSession(deckItems(decks[0]), {}, day, 10, seeded(seed))
+      for (let i = 1; i < s.length; i++) expect(s[i].kind, `seed ${seed}`).not.toBe(s[i - 1].kind)
+      expect(new Set(s.map((x) => x.kind)).size, `seed ${seed}`).toBe(5)
+    }
+  })
+
+  it('"another round" avoids the questions just played, even the missed ones', () => {
+    const pool = deckItems(decks[0])
+    const progress: Record<string, ItemProgress> = {}
+    const first = buildSession(pool, progress, day, 10, seeded(3))
+    for (const s of first) progress[s.item.id] = record(undefined, 'miss', day)
+    const recent = new Set(first.map((s) => s.item.id))
+    const second = buildSession(pool, progress, day, 10, seeded(4), recent)
+    expect(second.filter((s) => recent.has(s.item.id))).toEqual([])
+  })
+
+  it('falls back to recent questions only when the pool is too small', () => {
+    const pool = deckItems(decks[0], 'vibe').slice(0, 4)
+    const recent = new Set(pool.slice(0, 2).map((s) => s.item.id))
+    const s = buildSession(pool, {}, day, 4, seeded(5), recent)
+    expect(s).toHaveLength(4)
+  })
+
+  it('review rounds still include items just missed', () => {
+    const pool = deckItems(decks[0])
+    const missed = pool[3].item.id
+    const progress = { [missed]: record(undefined, 'miss', day) }
+    const review = buildSession(reviewPool(decks, progress, day), progress, day)
+    expect(review.map((s) => s.item.id)).toEqual([missed])
+  })
+
   it('opens the first deck of each section and unlocks within a section at 60%', () => {
     const vibe = (id: string) => ({
       id,
